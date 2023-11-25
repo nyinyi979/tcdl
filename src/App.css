@@ -83,8 +83,6 @@ body , html{
 }
 body{
     font-family: 'Raleway', sans-serif !important;
-    background-image: url('/home-banner-img.jpg');
-    background-position: -260px 10px;
 }
 html::-webkit-scrollbar{
     display: none;

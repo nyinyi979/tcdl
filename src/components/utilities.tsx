@@ -121,7 +121,7 @@ export const quoteClass = `leading-8 py-28 relative
     before:[background-image:url('/left_quote.png')] before:absolute md:before:left-[45%] before:left-[40%] before:top-0 before:w-[100px] before:h-[100px]
     after:[background-image:url('/right_quote.png')] after:absolute md:after:left-[45%] after:left-[40%] after:bottom-0 after:w-[100px] after:h-[100px]`
 
-
+export const bg0Class = `[background-image: url('/bg1.jpg')] md:bg-center bg-[center_left_-400px] bg-cover`;
 export const bg1Class = `[background-image:url('/bg1.jpg')] md:bg-center bg-[center_left_-800px] bg-cover [background-repeat: no-repeat]`
 export const bg3Class = `[background-image:url('/bg3.jpg')] bg-fixed md:bg-[center_left_0px] bg-[center_left_-500px] bg-repeat bg-cover`
 export const bg2Class = `[background-image:url('/bg2.jpg')] md:bg-[top_center_-300px] md:bg-[center_left_0px]  bg-[center_left_-450px] bg-cover bg-no-repeat`

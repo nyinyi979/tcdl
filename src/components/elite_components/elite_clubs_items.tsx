@@ -25,10 +25,10 @@ export default function EliteClubItems(){
             </div>
 
 
-            <div className="grid md:grid-cols-2 grid-cols-1 lg:w-9/12 md:w-11/12 w-9/12 lg:gap-12 md:gap-8 gap-12 mx-auto">
+            <div className="grid md:grid-cols-2 grid-cols-1 lg:w-9/12 md:w-11/12 w-10/12 lg:gap-12 md:gap-8 gap-12 mx-auto">
 
                 {bg.map((value , index)=>(
-                <div key={index} className="rounded-xl relative lg:h-[30rem] md:h-fit md:w-full pb-20 w-[25rem] mx-auto h-fit bg-gray-200 mt-4">
+                <div key={index} className="rounded-xl relative lg:h-[30rem] md:h-fit md:w-full pb-20 w-fit mx-auto h-fit bg-gray-200 mt-4">
                     <div className={`lg:font-bold w-full text-3xl rounded-t-xl lg:px-6 lg:py-7 py-5 px-4 text-white  bg-gradient-to-r ${value}`}>{items[index]}</div>
                     <div className="pb-3">
                         <ul className="p-4 pt-5 lg:text-xl text-lg ml-4 text-t_violet lg:leading-[2.5rem] leading-[2rem]">
