@@ -9,10 +9,10 @@ export default function Feedback(){
     const quoteClassHere = 'text-center text-violet ' + quoteClass;
     return(
         <div className="bg-white py-20">
-            <h2 id='feedback' className="text-violet md:text-5xl text-4xl font-bold text-center py-5">
+            <h2 id='feedback' className="text-violet md:text-4xl text-4xl font-bold text-center py-5">
                 The Feedbacks
             </h2>
-            <h2 id='feedback_text' className="text-violet md:text-3xl text-2xl font-bold text-center leading-10">
+            <h2 id='feedback_text' className="text-violet text-2xl font-bold text-center leading-10">
             Incredibly accurate and insightful, <br />
                 and whatelse of their sayings!
             </h2>

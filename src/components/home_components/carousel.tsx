@@ -5,8 +5,8 @@ import 'swiper/css/navigation'
 import {  bg4Class } from '../utilities';
 const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
 export default function Carosusel(){
-    const headingClass = "lg:text-2xl text-xl text-secondary font-bold py-5";
-    const pClass = "text-white lg:text-xl md:text-lg text-base text-justify"
+    const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
+    const pClass = "text-white font-light text-lg text-justify"
     return(
         <div className={`py-20 ${bg4Class}`}>
             <h2 className="font-bold col-span-2 lg:text-4xl text-3xl text-center py-10 text-secondary">The Highlights</h2>
@@ -21,7 +21,7 @@ export default function Carosusel(){
 
             <div className="w-full arrow relative">
                
-                <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode loop speed={1500} breakpoints={{0: {slidesPerView:2, spaceBetween:20}, 640: {slidesPerView: 3 , spaceBetween: 30}}} modules={[Navigation]} className=" w-9/12 mySwiper">
+                <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode loop speed={1500}  breakpoints={{0: {slidesPerView:2 , spaceBetween:50}, 640: {slidesPerView: 3, spaceBetween: 70 }}} modules={[Navigation]} className=" w-9/12 mySwiper">
                     
                     <SwiperSlide className=''>
                         <img src="/TheCardDon_tLie-TDCL-Tarot-Rune-Photo-8.jpg" alt="img" className="w-full h-32 bg-cover rounded-md"/>
@@ -95,8 +95,8 @@ export default function Carosusel(){
                         <a href="/" className={MoreClass}>More</a>
                     </SwiperSlide>
                 </Swiper>
-                <span className='next absolute top-[45%] md:right-[9%] right-[5%] text-primary text-4xl cursor-pointer scale-y-110'>&gt;</span>
-                <span className='prev absolute top-[45%] md:left-[9%]  left-[5%] text-primary text-4xl cursor-pointer scale-y-110'>&lt;</span>
+                <span className='next absolute font-bold top-[45%] md:right-[9%] right-[5%] text-secondary text-4xl cursor-pointer scale-y-125'>&gt;</span>
+                <span className='prev absolute font-bold top-[45%] md:left-[9%]  left-[5%] text-secondary text-4xl cursor-pointer scale-y-125'>&lt;</span>
             </div>
             
         </div>

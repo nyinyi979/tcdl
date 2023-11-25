@@ -117,7 +117,7 @@ export function useAnimateScale(selector:string){
     }, [selector])
 }
 
-export const quoteClass = `font-semibold leading-8 py-28 relative
+export const quoteClass = `leading-8 py-28 relative
     before:[background-image:url('/left_quote.png')] before:absolute md:before:left-[45%] before:left-[40%] before:top-0 before:w-[100px] before:h-[100px]
     after:[background-image:url('/right_quote.png')] after:absolute md:after:left-[45%] after:left-[40%] after:bottom-0 after:w-[100px] after:h-[100px]`
 
