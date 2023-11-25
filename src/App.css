@@ -83,8 +83,7 @@ body , html{
 }
 body{
     background-image: url('/TheCardDon_tLie-TDCL-Tarot-Rune-01.jpg');
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center 1rem;
 }
 html::-webkit-scrollbar{
     display: none;
