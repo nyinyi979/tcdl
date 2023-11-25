@@ -1,0 +1,141 @@
+.underline_effect, .underline_active{
+    position: relative;
+}
+.underline_effect::after, .underline_active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    left: 0;
+    bottom: 0;
+    background-color: #ef4165;
+    transform: scale(0);
+    transition: 800ms;
+}
+.underline_active::after{
+    transform: scale(1);
+}
+.underline_effect:hover::after{
+    transform: scale(1);
+}
+.underline_effect:hover{
+    transition: 1200ms;
+    color: #ef4165;
+}
+.fill_effect {
+    position: relative;
+    overflow:hidden;
+    color: #eac473;
+    z-index: 4;
+}
+.fill_effect_active{
+    position: relative;
+    overflow:hidden;
+    color: white;
+    z-index: 4;
+}
+.fill_effect:hover{
+    transition: 1200ms;
+    color: white;
+}
+.fill_effect::after , .fill_effect_active::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    transition: 500ms;
+    z-index: -1;
+    background-color: #ef4165;
+    transform: translateX(-500px);
+}
+.fill_effect_active::after{
+    transform: translateX(0);
+}
+.fill_effect:hover::after{
+    transform: translateX(0);
+}
+.float_clear::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.yellow_block{
+    position: relative;
+}
+.yellow_block::after{
+    content: '';
+    position: absolute;
+    width: 2.4%;
+    height: 40%;
+    top: 40%;
+    z-index: 3;
+    right: -1%;
+    background-color: #eac473;
+}
+body , html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+body{
+    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 01.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.img_2_bg{
+    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 03.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+.img_3_bg{
+    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - Photo - 01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img_4_bg{
+    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 04.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.img_5_bg{
+    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 05.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -26rem 0;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+blockquote{
+    position: relative;
+}
+blockquote::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 45%;
+    background-image: url('/left_quote.png') ;
+}
+blockquote::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 45%;
+    background-image: url('/right_quote.png') ;
+}
