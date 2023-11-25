@@ -67,7 +67,7 @@
 .yellow_block::after{
     content: '';
     position: absolute;
-    width: 2.4%;
+    width: 8%;
     height: 40%;
     top: 40%;
     z-index: 3;

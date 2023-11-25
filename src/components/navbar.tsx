@@ -6,7 +6,7 @@ import { ImCross } from "react-icons/im";
 let Drawer:AnimeInstance;
 export default function Navbar(props:{currentLink:string}){
     const linkClass = 'pt-12 -mt-3 xl:mr-8 lg:mr-[1.2rem] mr-2 lg:text-lg text-base font-semibold underline_effect';
-    const btnClass = "py-2 px-3 mt-6 font-semibold lg:text-lg text-base text-white bg-primary rounded-full w-fit h-fit hover:bg-white hover:text-primary duration-500"
+    const btnClass = "py-2 px-3 mt-6 lg:text-lg text-base text-white bg-primary rounded-full w-fit h-fit hover:bg-white hover:text-primary duration-500"
     const notRoundedbtnClass = "inline-block py-2 px-3 mr-2  font-semibold text-sm text-white bg-primary rounded-lg w-fit h-fit hover:bg-white hover:text-primary duration-500";
     const drawerBTN = 'inline-block text-left w-full py-1 px-4 text-lg h-fit'
     const [ drawer , setDrawer ] = React.useState(false);
@@ -43,8 +43,8 @@ export default function Navbar(props:{currentLink:string}){
     },[drawer])
     return(
         <>
-        <div id='navbar' className="lg:relative sticky z-10 top-0 right-0 px-2 w-full float_clear lg:py-12 lg:bg-transparent bg-black/70 opacity-0">
-            <img src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo" className='lg:w-[10rem] lg:h-24 lg:ml-[4%] w-[5.5rem] h-16 bg-cover float-left ml-[1%]'/>
+        <div id='navbar' className="lg:relative sticky z-10 top-0 right-0 px-2 w-full float_clear lg:py-[4rem] lg:bg-transparent bg-black/70 opacity-0">
+            <img src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo" className='lg:w-[10rem] lg:h-28 lg:ml-[4%] w-[5.5rem] h-16 bg-cover float-left ml-[1%]'/>
             <div className='float-right lg:flex lg:gap-4 gap-5 lg:mr-4 mr-0 hidden'>
                 <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link>
                 <Link to="/journey" className={`${linkClass} ${props.currentLink === '/Journey'? 'text-primary underline_active' : 'text-secondary'}`}>The Journey</Link>

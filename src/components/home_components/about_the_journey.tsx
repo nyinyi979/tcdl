@@ -10,7 +10,7 @@ export default function Journey(){
                 <div className="col-span-2 w-full">
                     <h1 id='about_the_journey' className="text-secondary text-4xl font-bold">About the journey</h1>
                     <div id='about_the_journey_text'>
-                        <p className="text-gray-200 lg:leading-[3rem] leading-[2rem] py-8 text-xl text-justify">
+                        <p className="text-gray-200 lg:leading-[3rem] leading-[2rem] py-8 lg:text-xl md:text-base text-justify lg:pr-20 pr-0">
                             Her tarot journey is not easy. Immense traumatic events served as significant 
                             catalysts for her journey of self-discovery, healing, and transformation. The awakening 
                             transformation and further motivation empowered her to assist to individuals in her vicinity.
