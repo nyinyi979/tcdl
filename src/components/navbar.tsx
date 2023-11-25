@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import {AiOutlineMenu} from 'react-icons/ai'
+import { IoMdMenu } from "react-icons/io";
 import React from 'react';
 import anime, { AnimeInstance, } from 'animejs';
 import { ImCross } from "react-icons/im";
@@ -7,7 +7,7 @@ let Drawer:AnimeInstance;
 export default function Navbar(props:{currentLink:string}){
     const linkClass = 'pt-12 -mt-3 xl:mr-8 lg:mr-[1.2rem] mr-2 lg:text-lg text-base font-semibold underline_effect';
     const btnClass = "py-2 px-3 mt-6 lg:text-lg text-base text-white bg-primary rounded-full w-fit h-fit hover:bg-white hover:text-primary duration-500"
-    const notRoundedbtnClass = "inline-block py-2 px-3 mr-2  font-semibold text-sm text-white bg-primary rounded-lg w-fit h-fit hover:bg-white hover:text-primary duration-500";
+    const notRoundedbtnClass = "inline-block py-2 px-3 mr-2 font-semibold text-sm text-white bg-primary rounded-lg w-fit h-fit hover:bg-white hover:text-primary duration-500";
     const drawerBTN = 'inline-block text-left w-full py-1 px-4 text-lg h-fit'
     const [ drawer , setDrawer ] = React.useState(false);
     React.useEffect(()=>{
@@ -57,7 +57,7 @@ export default function Navbar(props:{currentLink:string}){
             <div className='float-right lg:hidden block '>
                 <Link to="/" className={notRoundedbtnClass}>Join Elite?</Link>
                 <Link to="/" className={notRoundedbtnClass}>Elite Login?</Link>
-                <div className="inline-block text-white cursor-pointer hover:text-primary" onClick={()=>{setDrawer(!drawer)}}><AiOutlineMenu className="pt-3 w-12 h-8 text-2xl"/></div>
+                <div className="inline-block w-12 h-[2rem] pt-4 text-white cursor-pointer hover:text-primary" onClick={()=>{setDrawer(!drawer)}}><IoMdMenu className="text-2xl"/></div>
             </div>
         </div>
         

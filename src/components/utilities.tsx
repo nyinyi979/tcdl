@@ -125,4 +125,4 @@ export const quoteClass = `leading-8 py-28 relative
 export const bg1Class = `[background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-Photo-01.jpg')] bg-cover [background-repeat: no-repeat]`
 export const bg3Class = `bg-fixed md:bg-[center_left_0px] bg-[center_left_-500px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-03.jpg')] bg-cover [background-repeat: no-repeat]`
 export const bg4Class = `bg-fixed md:bg-[center_left_-300px] bg-[center_left_-800px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-04.jpg')] bg-cover [background-repeat: no-repeat]`
-export const bg5Class = `bg-fixed md:bg-[center_left_-500px] bg-[center_left_-1000px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-05.jpg')] bg-cover [background-repeat: no-repeat]`
+export const bg5Class = `bg-fixed md:bg-[center_left_-500px] bg-[center_left_-1500px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-05.jpg')] bg-cover [background-repeat: no-repeat]`
