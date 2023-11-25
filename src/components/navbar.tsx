@@ -61,7 +61,7 @@ export default function Navbar(props:{currentLink:string}){
             </div>
         </div>
         
-            <div id='drawers' className='fixed right-0 top-0 opacity-0 bg-violet w-52 h-full z-10'>
+            <div id='drawers' className='fixed right-0 top-0 opacity-0 bg-violet w-64 h-full z-10'>
                 <div className='text-white text-xl p-3 hover:text-primary cursor-pointer' onClick={()=>{setDrawer(!drawer)}}><ImCross /></div>
                 <Link to={'/'} className={`${drawerBTN} ${props.currentLink === '/'? 'fill_effect_active' : 'fill_effect'} `}>Home</Link>
                 <Link to={'/'} className={`${drawerBTN} ${props.currentLink === '/journey'? 'fill_effect_active' : 'fill_effect'} `}>The Journey</Link>
