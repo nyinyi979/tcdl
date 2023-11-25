@@ -11,7 +11,7 @@ export default function Insight(){
     useAnimateLeft('h7');
     return(
         <div className="text-white img_3_bg">
-                <div className="grid grid-cols-2 lg:text-3xl text-2xl text-left md:px-32 px-20 pt-10 lg:pb-48 pb-12">
+                <div className="grid grid-cols-2 lg:text-3xl text-2xl text-left md:px-32 px-12 pt-10 lg:pb-48 pb-12">
                     <h2 id="insights" className="font-bold col-span-2 lg:text-4xl text-3xl text-center py-10">Insights</h2>
                     <div>
                         <h2 id="h1" className="py-4">Tarot Reading</h2>
