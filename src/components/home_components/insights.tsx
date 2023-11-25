@@ -1,4 +1,4 @@
-import { useAnimateLeft, useAnimateScale } from "../utilities"
+import { bg1Class, useAnimateLeft, useAnimateScale } from "../utilities"
 
 export default function Insight(){
     useAnimateScale('insights');
@@ -10,7 +10,7 @@ export default function Insight(){
     useAnimateLeft('h6');
     useAnimateLeft('h7');
     return(
-        <div className="text-white img_3_bg">
+        <div className={`text-white ${bg1Class}`}>
                 <div className="grid grid-cols-2 lg:text-3xl md:text-2xl text-lg text-left md:px-32 px-12 pt-10 lg:pb-48 pb-16">
                     <h2 id="insights" className="font-bold col-span-2 lg:text-4xl text-3xl text-center py-10">Insights</h2>
                     <div>

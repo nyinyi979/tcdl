@@ -76,66 +76,22 @@
 }
 body , html{
     width: 100%;
+    max-width: 100%;
     height: 100%;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 01.jpg');
+    background-image: url('/TheCardDon_tLie-TDCL-Tarot-Rune-01.jpg');
     background-position: center;
     background-attachment: fixed;
 }
 html::-webkit-scrollbar{
     display: none;
 }
-.img_2_bg{
-    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 03.jpg');
-    background-position: center;
-    background-attachment: fixed;
-}
-.img_3_bg{
-    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - Photo - 01.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.img_4_bg{
-    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 04.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.img_5_bg{
-    background-image: url('/The Card Don_t Lie - TDCL - Tarot - Rune - 05.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: -26rem 0;
-}
-
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-blockquote{
-    position: relative;
-}
-blockquote::before{
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    left: 40%;
-    background-image: url('/left_quote.png') ;
-}
-blockquote::after{
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    bottom: 0;
-    left: 40%;
-    background-image: url('/right_quote.png') ;
 }

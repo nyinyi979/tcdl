@@ -1,11 +1,12 @@
 import { Navigation , Autoplay } from 'swiper/modules';
 import {Swiper , SwiperSlide} from 'swiper/react'
 import 'swiper/css'
-import { useAnimateLeft, useAnimateRight } from '../utilities';
+import { quoteClass, useAnimateLeft, useAnimateRight } from '../utilities';
 export default function Feedback(){
     useAnimateLeft('feedback');
     useAnimateRight('feedback_text')
     useAnimateLeft('feedback_swiper');
+    const quoteClassHere = 'text-center text-violet ' + quoteClass;
     return(
         <div className="bg-white py-20">
             <h2 id='feedback' className="text-violet md:text-5xl text-4xl font-bold text-center py-5">
@@ -18,7 +19,7 @@ export default function Feedback(){
 
             <Swiper id='feedback_swiper' navigation={false} autoplay={{delay: 2500, disableOnInteraction: false}} speed={1500} direction='horizontal' spaceBetween={20} slidesPerView={1} modules={[Navigation, Autoplay]} className="md:text-2xl text-xl px-4">
                 <SwiperSlide>
-                    <blockquote id="quote" className="font-semibold text-center leading-8 py-28 my-3 text-violet">
+                    <blockquote id="quote" className={quoteClassHere}>
                         She is a wise and insightful teacher who has helped me <br /> to  see the world in a new way
                     </blockquote>
                         <div className="text-center leading-8 py-10 text-violet">
@@ -27,7 +28,7 @@ export default function Feedback(){
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <blockquote id="quote" className="font-semibold text-center leading-8 py-28 my-3 text-violet">
+                    <blockquote id="quote" className={quoteClassHere}>
                         She is a wise and insightful teacher who has helped me <br /> to  see the world in a new way
                     </blockquote>
                         <div className="text-center leading-8 py-10 text-violet">
@@ -36,7 +37,7 @@ export default function Feedback(){
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <blockquote id="quote" className="font-semibold text-center leading-8 py-28 my-3 text-violet">
+                    <blockquote id="quote" className={quoteClassHere}>
                         She is a wise and insightful teacher who has helped me <br /> to  see the world in a new way
                     </blockquote>
                         <div className="text-center leading-8 py-10 text-violet">

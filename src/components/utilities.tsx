@@ -117,3 +117,12 @@ export function useAnimateScale(selector:string){
     }, [selector])
 }
 
+export const quoteClass = `font-semibold leading-8 py-28 relative
+    before:[background-image:url('/left_quote.png')] before:absolute md:before:left-[45%] before:left-[40%] before:top-0 before:w-[100px] before:h-[100px]
+    after:[background-image:url('/right_quote.png')] after:absolute md:after:left-[45%] after:left-[40%] after:bottom-0 after:w-[100px] after:h-[100px]`
+
+
+export const bg1Class = `[background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-Photo-01.jpg')] bg-cover [background-repeat: no-repeat]`
+export const bg3Class = `bg-fixed md:bg-[center_left_0px] bg-[center_left_-200px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-03.jpg')] bg-cover [background-repeat: no-repeat]`
+export const bg4Class = `bg-fixed md:bg-[center_left_-600px] bg-[center_left_-800px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-04.jpg')] bg-cover [background-repeat: no-repeat]`
+export const bg5Class = `bg-fixed md:bg-[center_left_-600px] bg-[center_left_-800px] bg-repeat [background-image:url('/TheCardDon_tLie-TDCL-Tarot-Rune-05.jpg')] bg-cover [background-repeat: no-repeat]`
