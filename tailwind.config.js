@@ -12,12 +12,14 @@ export default {
         violet: '#372c44',
         light_violet: '#443548',
         dark_violet: '#18141a',
+        t_violet: '#272228',
         light_blue: '#908ec1',
         blue: '#5f4e7c',
       }
     },
   },
 }
+//272228 text violet
 //ef4165 - pink
 //eac473 - yellow
 //372c44 - feedback

@@ -2,7 +2,7 @@ import { FaFacebookF, FaPlay, } from "react-icons/fa6";
 import {FaTelegramPlane} from 'react-icons/fa';
 import { MdOutlineMusicNote } from "react-icons/md";
 export default function Footer(){
-    const linkClass = 'text-light_blue hover:text-primary duration-500 lg:text-xl md:text-lg text-base font-semibold ';
+    const linkClass = 'text-light_blue hover:text-primary duration-500 lg:text-xl md:text-lg text-base';
     const iconClass ="text-dark_violet hover:rotate-[20deg] rounded-full w-12 h-12 p-3 bg-blue cursor-pointer hover:bg-primary duration-500";
     return(
         <div className="bg-dark_violet py-20">
@@ -24,7 +24,7 @@ export default function Footer(){
                 <FaTelegramPlane className={iconClass} />
                 <MdOutlineMusicNote className={iconClass} />
             </div>
-            <img src="/footer-logo-e48cc106.png" alt="" className="w-72 h-fit bg-cover mx-auto"/>
+            <img src="/footer-logo-e48cc106.png" alt="" className="w-72 h-fit bg-cover mt-4 mx-auto"/>
             <div className="text-light_blue text-center pt-10">
                 Copyright © 2024 The Card's Don't Lie (TCDL). All Rights Reserved.
             </div>

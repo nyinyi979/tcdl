@@ -1,4 +1,4 @@
-import { bg3Class, quoteClass, useAnimateLeft, useAnimateRight, useAnimateTop } from '../utilities';
+import { bg1Class, quoteClass, useAnimateLeft, useAnimateRight, useAnimateTop } from '../utilities';
 export default function Private(){
     useAnimateLeft('private');
     useAnimateRight('private_group');
@@ -6,7 +6,7 @@ export default function Private(){
     useAnimateRight('mySwiper');
     useAnimateTop('private_btn')
     return(
-        <div className={`text-white text-center py-20 ${bg3Class}`}>
+        <div className={`text-white text-center py-20 ${bg1Class}`}>
             <h1 id='private' className="md:text-3xl text-2xl font-bold">The Private Group</h1>
             <h2 id='private_group' className="md:text-2xl text-xl font-bold py-8">A Private Group of <br /> Seeking and Awakening Individuals</h2>
             <div id='private_text' className="lg:w-5/6 w-11/12 text-justify mx-auto md:text-xl text-lg" style={{lineHeight:'2.6rem'}}>

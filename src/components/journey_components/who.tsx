@@ -1,8 +1,8 @@
-import { bg2Class } from "../utilities";
+import { bg4Class } from "../utilities";
 
 export default function Who(){
     return(
-        <div className={`w-full ${bg2Class} text-white py-20`}>
+        <div className={`w-full ${bg4Class} text-white py-20`}>
             <h1 className="md:text-4xl text-3xl py-3 font-semibold text-center">
                 Who she is?
             </h1>

@@ -22,7 +22,7 @@ export default function Journey(){
                     </div>
                 </div>
                 <div id='image' className="col-span-1 w-full mx-auto relative yellow_block">
-                    <img src="/TheCardDon_tLie-TDCL-Tarot-Rune-Photo-0.jpg" alt="" className="bg-cover w-11/12 lg:h-fit lg:mt-10 md:h-72 h-52 md:mt-20 mt-0 rounded-xl md:float-right float-left my-3"/>
+                    <img src="/img1.jpg" alt="" className="bg-cover w-11/12 lg:h-fit lg:mt-10 md:h-72 h-52 md:mt-20 mt-0 rounded-xl md:float-right float-left my-3"/>
                   
                 </div>
             </div>
