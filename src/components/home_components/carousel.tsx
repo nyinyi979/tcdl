@@ -6,7 +6,7 @@ import {  bg4Class } from '../utilities';
 const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
 export default function Carosusel(){
     const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
-    const pClass = "text-white font-light text-lg text-justify"
+    const pClass = "text-white font-light text-lg md:text-justify text-left"
     return(
         <div className={`py-20 ${bg4Class}`}>
             <h2 className="font-bold col-span-2 lg:text-4xl text-3xl text-center py-10 text-secondary">The Highlights</h2>
