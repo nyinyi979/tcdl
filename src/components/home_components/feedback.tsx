@@ -16,17 +16,10 @@ export default function Feedback(){
             <h2 id='feedback_text' className={h2Class}>
                 Incredibly accurate and insightful, <br />
                 and whatelse of their sayings!
-            </h2>
-
-            <Swiper id='feedback_swiper' pagination={{clickable: true,}} navigation={false} className='pb-10'
+            </h2>   
+            <Swiper id='feedback_swiper' pagination={{clickable: true}} navigation={false} className='pb-10'
             autoplay={{delay: 2500, disableOnInteraction: false}} speed={1500} direction='horizontal' 
             style={{
-                "--swiper-pagination-color": "#eac473",
-                "--swiper-pagination-bullet-inactive-color": "#443548",
-                "--swiper-pagination-active-bullet-size": "20px",
-                "--swiper-pagination-bullet-inactive-opacity": "1",
-                "--swiper-pagination-bullet-size": "16px",
-                "--swiper-pagination-bullet-horizontal-gap": "6px"
             }}
             spaceBetween={20} slidesPerView={1} modules={[Navigation, Autoplay, Pagination]}>
                 <SwiperSlide>

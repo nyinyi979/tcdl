@@ -26,14 +26,6 @@ export default function Carosusel(){
                
                 <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode loop speed={1000} 
                 pagination={{clickable:true}}
-                style={{
-                    "--swiper-pagination-color": "#eac473",
-                    "--swiper-pagination-bullet-inactive-color": "#443548",
-                    "--swiper-pagination-active-bullet-size": "20px",
-                    "--swiper-pagination-bullet-inactive-opacity": "1",
-                    "--swiper-pagination-bullet-size": "16px",
-                    "--swiper-pagination-bullet-horizontal-gap": "6px"
-                }}
                  breakpoints={{0: {slidesPerView:2 , spaceBetween:40}, 640: {slidesPerView: 2, spaceBetween: 40 }, 767: {spaceBetween: 40,slidesPerView:3}}} 
                  modules={[Navigation, Pagination]} className="lg:w-[80%] w-[87%]" >
 

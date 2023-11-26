@@ -107,10 +107,12 @@ html::-webkit-scrollbar{
     top: 1%;
     font-weight: bolder;
 }
-:root{
-    --swiper-pagination-color: "#372c44" !important;
-    --swiper-pagination-bullet-inactive-color: "#999999" !important;
-    --swiper-pagination-bullet-inactive-opacity: "1" !important;
-    --swiper-pagination-bullet-size: "16px" !important;
-    --swiper-pagination-bullet-horizontal-gap: "6px" !important;
+span.swiper-pagination-bullet{
+    background-color: #443548;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+span.swiper-pagination-bullet-active{
+    background-color:#eac473 ;
 }
