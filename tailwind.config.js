@@ -5,6 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      'xs' : '479px',
+      'ssm' : '560px' ,
+      'sm' : '690px' , 
+      'md' : '767px' , 
+      'lg' : '992px',
+      'llg' : '1099px' , 
+      'xl' : '1199px' , 
+      'xll' : '1365px',
+      'xxl' : '1700px',
+    },
     extend: {
       colors:{
         primary: '#ef4165',       //pink

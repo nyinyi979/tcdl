@@ -2,18 +2,16 @@ import { FaFacebookF, FaPlay, } from "react-icons/fa6";
 import {FaTelegramPlane} from 'react-icons/fa';
 import { MdOutlineMusicNote } from "react-icons/md";
 export default function Footer(){
-    const linkClass = 'text-light_blue hover:text-primary duration-500 lg:text-xl md:text-lg text-base';
+    const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[22px] md:text-lg text-base';
     const iconClass ="text-dark_violet hover:rotate-[20deg] rounded-full w-12 h-12 p-3 bg-blue cursor-pointer hover:bg-primary duration-500";
     return(
         <div className="bg-dark_violet py-20">
-            <div className="flex lg:w-[48%] md:w-[70%] w-[98%] mx-auto my-4" style={{justifyContent:'space-between'}}>
+            <div className="flex lg:w-[60%] w-[76%] mx-auto items-center justify-center my-4 flex-wrap gap-6">
                 <a href="/" className={linkClass}>Home</a>
                 <a href="/journey" className={linkClass}>The Journey</a>
                 <a href="/be-an-elite" className={linkClass}>Be an Elite?</a>
                 <a href="/highlights" className={linkClass}>The Highlights</a>
                 <a href="/faq" className={linkClass}>Q & A</a>
-            </div>
-            <div className="flex lg:w-[38%] md:w-[66%] w-[90%] mx-auto my-4" style={{justifyContent:'space-between'}}>
                 <a href="/faq" className={linkClass}>Contact Us</a>
                 <a href="/faq" className={linkClass}>Terms & Conditions</a>
                 <a href="/faq" className={linkClass}>Privacy Policy</a>

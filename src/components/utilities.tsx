@@ -117,14 +117,19 @@ export function useAnimateScale(selector:string){
     }, [selector])
 }
 
-export const quoteClass = `leading-8 py-28 relative
-    before:[background-image:url('/left_quote.png')] before:absolute md:before:left-[45%] before:left-[40%] before:top-0 before:w-[100px] before:h-[100px]
-    after:[background-image:url('/right_quote.png')] after:absolute md:after:left-[45%] after:left-[40%] after:bottom-0 after:w-[100px] after:h-[100px]`
+export const quoteClass = `leading-8 xl:py-28 md:py-24 py-20 relative
+    before:[background-image:url('/left_quote.png')] before:absolute before:w-[70px] before:h-[70px] md:before:left-[45%] before:left-[40%] before:top-0 lg:before:w-[100px] lg:before:h-[100px] before:bg-cover
+    after:[background-image:url('/right_quote.png')] after:absolute  after:w-[70px] after:h-[70px] md:after:left-[45%] after:left-[40%] after:bottom-0 lg:after:w-[100px] lg:after:h-[100px] after:bg-cover  `
 
-export const bg0Class = `[background-image: url('/bg1.jpg')] md:bg-center bg-[center_left_-400px] bg-cover`;
-export const bg1Class = `[background-image:url('/bg1.jpg')] md:bg-center bg-[center_left_-800px] bg-cover [background-repeat: no-repeat]`
+export const h1Class = "oswald xxl:text-[4.6rem] xxl:leading-[4.5rem] xxl:mr-12 font-bold xll:text-[2.8rem] xll:mr-8 xl:text-[2.5rem] xl:mr-6 md:text-[2.3rem] md:mr-4 md:leading-[3.8rem] text-3xl mr-2 leading-[3.1rem]"
+export const h2Class = "oswald font-[600] xxl:text-5xl xxl:mr-16 xll:text-3xl xll:leading-[2.7rem] xll:mr-11 xl:text-[1.6rem] xl:mr-7 xl:leading-7 md:text-[1.6rem] md:leading-8 mr-5 text-[1.2rem] py-2"
+export const BeEliteBtn = "mx-auto block oswald font-[500] xxl:w-[21.5rem] xxl:h-[6rem] xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4 pt-3 w-40 h-[3.3rem] text-base bg-primary hover:bg-secondary hover:text-black text-center rounded-full duration-500"
+export const ReBeEliteBtn = "mx-auto block oswald font-[500] xxl:w-[21.5rem] xxl:h-[6rem] xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4 pt-3 w-40 h-[3.3rem] text-base bg-secondary hover:bg-primary hover:text-white text-black/90 text-center rounded-full duration-500"
+export const moreBtn = 'inline-block oswald clear-both font-[400] text-secondary hover:text-primary xxl:text-[2rem] xll:text-[1.5rem] xl:text-[1.4rem] md:text-[1.3rem]';
+export const bg0Class = `[background-image:url('/home-banner-img.jpg')] bg-fixed md:bg-center bg-[center_left_-400px] bg-cover [background-repeat: no-repeat]`;
+export const bg1Class = `[background-image:url('/bg1.jpg')] bg-fixed md:bg-center bg-[center_left_-800px] bg-cover [background-repeat: no-repeat]`
 export const bg3Class = `[background-image:url('/bg3.jpg')] bg-fixed md:bg-[center_left_0px] bg-[center_left_-500px] bg-repeat bg-cover`
-export const bg2Class = `[background-image:url('/bg2.jpg')] md:bg-[top_center_-300px] md:bg-[center_left_0px]  bg-[center_left_-450px] bg-cover bg-no-repeat`
+export const bg2Class = `[background-image:url('/bg2.jpg')] bg-center bg-cover bg-no-repeat`
 export const bg4Class = `[background-image:url('/bg4.jpg')] md:bg-center bg-[center_left_-400px] bg-repeat bg-cover `
 export const bg5Class = `[background-image:url('/img5.jpg')] bg-fixed md:bg-[center_left_-500px] bg-[center_left_-1500px] bg-repeat bg-cover`
 export const bg6Class = `[background-image:url('/bg6.png')] bg-center bg-repeat bg-cover`
