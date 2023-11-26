@@ -1,12 +1,14 @@
+import { h2Class_V, } from "../utilities";
+
 export default function PrivacyPolicy(){
     return(
-        <div className="lg:w-5/6 w-11/12 py-10 border-b-4 border-b-gray-400">
+        <div className="lg:w-5/6 w-11/12 py-10 border-b-[3px] border-b-gray-400 font-[400] ">
             
-            <h1 className="text-4xl my-8 text-violet font-bold">Privacy Policy</h1>
-            <p className="font-extralight text-lg text-stone-600 py-3">
+            <h1 className={`oswald ${h2Class_V} text-[#4b2c64] lg:pt-8 pt-3 pb-3`}>Privacy Policy</h1>
+            <p className="text-lg text-stone-600 py-3">
                 For a personalised reading these data and info will be collected with high confidentiality for the reader:
             </p>
-            <ol className="px-20 py-4 list-decimal list-outside font-extralight text-lg text-stone-600 ">
+            <ol className="px-10 lg:py-4 py-2 list-decimal list-outside text-lg text-stone-600 ">
                 <li className="py-3">Member's DOB</li>
                 <li className="py-3">Member's time and city of birth</li>
                 <li className="py-3">Member's photo without masks/glasses</li>

@@ -1,4 +1,3 @@
-
 import { Navigation , Pagination} from 'swiper/modules';
 import {Swiper , SwiperSlide} from 'swiper/react'
 import 'swiper/css'
@@ -25,9 +24,9 @@ export default function Carosusel(){
             <div className="w-full arrow relative">
                
                 <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode loop speed={1000} 
-                pagination={{clickable:true}}
-                 breakpoints={{0: {slidesPerView:2 , spaceBetween:40}, 640: {slidesPerView: 2, spaceBetween: 40 }, 767: {spaceBetween: 40,slidesPerView:3}}} 
-                 modules={[Navigation, Pagination]} className="lg:w-[80%] w-[87%]" >
+                pagination={{clickable:true, dynamicBullets: true}}
+                breakpoints={{0: {slidesPerView:2 , spaceBetween:40}, 640: {slidesPerView: 2, spaceBetween: 40 }, 767: {spaceBetween: 60,slidesPerView:3} , 1099 : {spaceBetween: 80, slidesPerView: 3}}} 
+                 modules={[Navigation, Pagination]} className="lg:w-[80%] w-[87%] py-10" >
 
                     <SwiperSlide className=''>
                         <img src="/img2.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
@@ -102,8 +101,8 @@ export default function Carosusel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
-                <span className='next absolute font-bold md:top-[20%] top-[10%] lg:right-[6%] right-[3%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
-                <span className='prev absolute font-bold md:top-[20%] top-[10%] lg:left-[6%] left-[3%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
+                    <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[6%] right-[3%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
+                    <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[6%] left-[3%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
             </div>
             
         </div>

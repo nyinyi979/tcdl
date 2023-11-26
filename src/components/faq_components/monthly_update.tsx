@@ -1,10 +1,12 @@
+import { h2Class_V } from "../utilities";
+
 export default function Monthly(){
     return(
-        <div className="lg:w-5/6 w-11/12 py-10">
+        <div className="lg:w-5/6 w-11/12 py-10 font-[400]">
             
-            <h1 className="text-3xl my-8 text-light_violet">Monthly Highlights and Updates</h1>
+            <h1 className={`${h2Class_V} text-[#4b2c64] lg:pt-8 pt-3 pb-3`}>Monthly Highlights and Updates</h1>
     
-            <ol className="px-20 py-4 list-none font-extralight text-lg text-stone-600 ">
+            <ol className="px-10 md:py-4 py-2 list-none text-lg text-stone-600">
                 <li className="py-3">Monthly General Collective PAC Tarot Readings</li>
                 <li className="py-3">Monthly Full Moon and New Moon Rituals (General)</li>
                 <li className="py-3">Product Highlights (if any)</li>

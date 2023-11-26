@@ -2,7 +2,7 @@ import React from 'react';
 export default function HighlightItems(){
     const MoreClass = 'text-primary hover:text-secondary duration-500 text-xl font-semibold inline-block my-8 scale-y-125'
     
-    const linkClass = "hover:text-white hover:bg-primary duration-500 px-4 py-2 rounded-lg cursor-pointer text-lg font-bold"
+    const linkClass = "hover:text-white hover:bg-primary duration-500 px-5 py-3 rounded-lg cursor-pointer text-lg font-bold"
 
     //can use useState to change the pages, here it is just used to check for active color
     const [ active , setActive ] = React.useState('1');
@@ -19,17 +19,18 @@ export default function HighlightItems(){
     ]
     return(
         <div className="bg-white py-10">
-            <div className="grid md:grid-cols-3 grid-cols-1 lg:w-[88%] md:w-[96%] w-[60%] lg:gap-10 gap-5 mx-auto">
+            <div className="grid md:grid-cols-3 grid-cols-1 xl:w-[88%] lg:w-[85%] md:w-[96%] w-[70%] lg:gap-10 gap-5 mx-auto py-10">
+
             {contents.map((content)=>(
                 <div key={content.title}>
-                    <img src={content.img} alt="img" className="w-full lg:h-60 md:h-52 h-60 bg-cover rounded-md my-2"/>
-                    <h1 className="text-[#4b3a5f] my-5 lg:scale-y-125 scale-y-105 lg:leading-7 lg:text-2xl text-xl lg:font-bold font-semibold">{content.title}</h1>
-                    <div className="text-[1.2rem] text-left lg:leading-9 leading-6 text-gray-900" style={{fontWeight: 100}}>{content.contents}</div>
+                    <img src={content.img} alt="img" className="w-full xl:h-72 lg:h-60 md:h-52 h-60 bg-cover rounded-md my-2"/>
+                    <h1 className="oswald text-[#4b3a5f] my-5 xl:text-4xl text-2xl font-[400]">{content.title}</h1>
+                    <div className="font-[400] xl:text-xl text-base leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
                     <a href="#" className={MoreClass}>More</a>
                 </div>
             ))}
             </div>
-            <div className="w-fit mx-auto flex gap-5 my-10">
+            <div className="w-fit mx-auto flex lg:gap-5 gap-3 my-10">
                 <a onClick={()=>{setActive('1')}} href="#" className={`${linkClass} ${active === '1'? 'text-white bg-primary' : 'text-stone-500 bg-stone-200'}`}>1</a>
                 <a onClick={()=>{setActive('2')}} href="#" className={`${linkClass} ${active === '2'? 'text-white bg-primary' : 'text-stone-500 bg-stone-200'}`}>2</a>
                 <a onClick={()=>{setActive('3')}} href="#" className={`${linkClass} ${active === '3'? 'text-white bg-primary' : 'text-stone-500 bg-stone-200'}`}>3</a>

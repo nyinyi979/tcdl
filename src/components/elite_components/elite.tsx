@@ -1,16 +1,25 @@
+import Navbar from "../navbar"
+import React from 'react'
+import { h1Class, h2Class } from "../utilities";
 export default function TheElite(){
+    React.useEffect(()=>{
+        document.getElementById('body')!.style.backgroundImage = `url('/home-banner-img.jpg')`;
+    })
     return(
+        <div id="body">
+        
+        <Navbar currentLink="/be-an-elite"/>
         <div className="text-center py-5">
 
-            <h1 className="lg:text-5xl md:text-4xl text-3xl pb-3 text-primary font-bold">Be an Elite?</h1>
-            <h1 className="lg:text-3xl md:text-2xl text-xl py-5 text-secondary font-bold">Founder's Message</h1>
+            <h1 className={`${h1Class} text-primary py-2`}>Be an Elite?</h1>
+            <h1 className={`${h2Class} text-secondary`}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 py-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10">
 
                 <div id='image' className="col-span-1 w-full mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-[20rem] mt-10 rounded-xl my-3 mx-auto"/>
                 </div>
-                <div className="lg:col-span-2 col-span-2 text-white text-xl mx-auto lg:w-5/6 w-11/12 py-6 text-justify pr-4" style={{fontWeight:100,lineHeight:'2.4rem'}}>
+                <div className="xl:w-5/6 lg:[w-90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl text-lg mx-auto py-6 text-justify pr-4 font-[400]">
                     <p className="py-2">
                         Magic exists in you. But most of us don't know about it and completely untapped.
                         We were born with this ability, therefore you've always had it. It's a quest you must undertake;
@@ -47,6 +56,7 @@ export default function TheElite(){
                 </div>
 
             </div>
+        </div>
         </div>
     )
 }

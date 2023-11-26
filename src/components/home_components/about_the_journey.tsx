@@ -1,5 +1,5 @@
 import Navbar from '../navbar';
-import { bg0Class, moreBtn, useAnimateLeft, useAnimateRight } from '../utilities';
+import { bg0Class, h1Class, moreBtn, useAnimateLeft, useAnimateRight } from '../utilities';
 export default function Journey(){
     useAnimateLeft('about_the_journey')
     useAnimateLeft('about_the_journey_text')
@@ -10,12 +10,12 @@ export default function Journey(){
             <div className="xll:w-[73rem] w-11/12 h-fit mx-auto mt-6 pb-8">
                 <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full">
                     
-                    <div id='image' className="col-span-1 w-64 ml-[45%] relative yellow_block md:hidden block">
+                    <div id='image' className="col-span-1 w-64 ml-[40%] relative yellow_block md:hidden block">
                         <img src="/img1.jpg" alt="" className="block bg-cover w-full h-[92%] mt-7 rounded-xl md:float-right float-left my-3"/>
                     </div>
 
                     <div className="col-span-2 w-full">
-                        <h1 id='about_the_journey' className="oswald text-secondary xll:[font-weight:bold] xll:text-5xl xll:leading-[5rem] xl:text-[2.5rem] xl:leading-[4.3rem] text-3xl leading-[3rem] py-3">About the journey</h1>
+                        <h1 id='about_the_journey' className={`${h1Class} text-secondary pb-8`}>About the journey</h1>
                         <div id='about_the_journey_text'>
                             <p className="text-gray-200 xxl:text-2xl font-[450] text-justify xll:leading-10 xll:mb-7 xl:text-[1.3rem] xl:mb-5 xl:leading-9 mb-4 text-base leading-8">
                                 Her tarot journey is not easy. Immense traumatic events served as significant 

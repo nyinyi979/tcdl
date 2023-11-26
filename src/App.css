@@ -115,4 +115,6 @@ span.swiper-pagination-bullet{
 }
 span.swiper-pagination-bullet-active{
     background-color:#eac473 ;
+    width: 18px;
+    height: 18px;
 }

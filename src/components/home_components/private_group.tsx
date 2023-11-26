@@ -7,8 +7,8 @@ export default function Private(){
     useAnimateTop('private_btn')
     return(
         <div className={`text-white text-center py-16 ${bg1Class}`}>
-            <h1 id='private' className={h1Class}>The Private Group</h1>
-            <h2 id='private_group' className={h2Class}>
+            <h1 id='private' className={`${h1Class} py-3`}>The Private Group</h1>
+            <h2 id='private_group' className={`${h2Class} py-2`}>
                 A Private Group of <br /> Seeking and Awakening Individuals
             </h2>
             <div id='private_text' className="xl:w-5/6 md:w-[90%] w-[85%] font-[400] text-justify mx-auto xl:text-xl xl:leading-[2.4rem] lg:text-xl lg:leading-[2.7rem] text-lg leading-9 md:py-6">

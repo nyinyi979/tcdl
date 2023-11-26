@@ -1,14 +1,16 @@
+import { h1Class, h2Class } from "../utilities";
+
 export default function Beginning(){
     return(
-        <div className="bg-white text-light_violet py-20 leading-10">
-            <h1 className="md:text-4xl text-3xl py-3 font-bold text-center">
+        <div className="bg-white text-[#4b2c64] py-20 leading-10 text-center">
+            <h1 className={`${h1Class} py-3`}>
                 The Beginning
             </h1>
-            <h1 className="md:text-3xl text-2xl py-3 font-semibold text-center">
+            <h1 className={`${h2Class} py-3`}>
                 Initial phrase of <br />
                 the Journey on Facebook
             </h1>
-            <div className="lg:w-5/6 w-11/12 mx-auto py-4 text-light_violet" style={{fontSize: '1.2rem',fontWeight: 10,lineHeight:'2.7rem'}}>
+            <div className="xl:w-5/6 w-[95%] mx-auto py-4 text-light_violet text-justify font-[400] text-xl leading-10">
                 She began "The Cards Don't Lie" as a closed Facebook group, but its members' 
                 candor and willingness to share have allowed it to grow into a larger spiritual 
                 awakening community. Despite the fact that their spiritual paths diverge, they were 

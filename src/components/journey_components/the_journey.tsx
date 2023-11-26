@@ -1,19 +1,26 @@
+import Navbar from "../navbar";
+import { bg0Class, h1Class, h2Class } from "../utilities";
+
 export default function TheJourney(){
     return(
-        <div className="text-center py-20">
-            <h1 className="lg:text-5xl md:text-4xl text-3xl py-5 text-primary font-bold">The Journey</h1>
-            <h1 className="lg:text-3xl md:text-2xl text-xl py-5 text-secondary font-bold">The Awakening</h1>
-            <h1 className="lg:text-3xl md:text-2xl text-xl py-5 text-white font-bold">
+        <div className={`${bg0Class} lg:pb-20 pb-5`}>
+        
+        <Navbar currentLink="/journey"/>
+        <div className="text-center py-2">
+            <h1 className={`${h1Class} lg:pt-8 pt-3 pb-2 text-primary`}>The Journey</h1>
+            <h1 className={`${h2Class} lg:py-8 py-2 text-secondary`}>The Awakening</h1>
+            <h1 className="text-white xl:w-5/6 md:w-[90%] w-[85%] py-4 mx-auto font-[600] xxl:leading-[3.4rem] xxl:text-[2.3rem] xll:text-3xl xll:leading-[3rem] lg:text-2xl text-xl leading-8">
                 In the midst of immense turmoils, <br />
-                there arises a quest to uncover significance.
+                there arises a quest to uncover <br className="md:hidden block"/> significance.
             </h1>
-            <div className="text-white lg:text-2xl md:text-xl text-lg leading-10 mx-auto lg:w-5/6 w-11/12 py-6 text-justify">
+            <div className="text-white xl:w-5/6 w-[88%] font-[400] text-justify mx-auto xl:text-2xl md:text-xl text-lg xl:leading-[3rem] lg:leading-[2.5rem] leading-8 lg:py-6 py-3">
                 Two immense incidents: Covid-19 pandemic, as well as the political unrest in 
                 Myanmar during 2020 - 2021 served as significant catalysts for her awakening, 
                 further motivating her to extend her assistance to individuals in her vicinity. 
                 The individual's trajectory as a tarot reader was propelled by word-of-mouth recommendations 
                 amidst throughout those two turmoils.
             </div>
+        </div>
         </div>
     )
 }

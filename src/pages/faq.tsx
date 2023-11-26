@@ -3,16 +3,17 @@ import Footer from "../components/footer";
 import Communities from "../components/home_components/communities";
 import Navbar from "../components/navbar";
 import React from 'react';
+import { h1Class, h2Class } from "../components/utilities";
 export default function FAQ(){
     React.useEffect(()=>{
-        document.body.style.backgroundImage = `url('/bg7.png')`;
-        document.body.style.backgroundPositionY = `-200px`;
+        document.body.style.backgroundImage = `url('/bg6.png')`;
+        document.body.style.backgroundPositionY = `-150px`;
     })
     return(
         <>
             <Navbar currentLink="/faq"/>
-            <div className="text-4xl tracking-tight text-center text-primary font-bold">Q & A</div>
-            <div className="text-3xl tracking-tight py-10 text-center text-secondary font-bold">Membership Privileges</div>
+            <div className={`${h1Class} py-2 text-primary text-center`}>Q & A</div>
+            <div className={`${h2Class} py-4 pb-10 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />
             <Footer />
