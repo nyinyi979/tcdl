@@ -26,9 +26,9 @@ export default function Carosusel(){
                 <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode loop speed={1000} 
                 pagination={{clickable:true, dynamicBullets: true}}
                 breakpoints={{0: {slidesPerView:2 , spaceBetween:40}, 640: {slidesPerView: 2, spaceBetween: 40 }, 767: {spaceBetween: 60,slidesPerView:3} , 1099 : {spaceBetween: 80, slidesPerView: 3}}} 
-                 modules={[Navigation, Pagination]} className="lg:w-[80%] w-[87%] py-10" >
+                 modules={[Navigation, Pagination]} className="lg:w-[80%] w-[86%] py-10" >
 
-                    <SwiperSlide className=''>
+                    <SwiperSlide>
                         <img src="/img2.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
                         <h1 className= {headingClass}>
                             Tarot &amp; Spirituality
@@ -88,7 +88,7 @@ export default function Carosusel(){
                         <a href="/" className={MoreClass}>More</a>
                     </SwiperSlide>
 
-                    <SwiperSlide className=''>
+                    <SwiperSlide>
                         <img src="/img4.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
                         <h1 className= {headingClass}>
                             The power of amulets
@@ -101,8 +101,8 @@ export default function Carosusel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
-                    <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[6%] right-[3%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
-                    <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[6%] left-[3%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
+                    <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[6%] md:right-[3%] right-[0%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
+                    <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[6%] md:left-[3%] left-[0%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
             </div>
             
         </div>

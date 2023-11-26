@@ -99,8 +99,8 @@ export default function H_Carousel(){
                         </SwiperSlide>                    
                     
                     </Swiper>
-                    <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[6%] right-[3%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
-                    <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[6%] left-[3%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
+                    <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[6%] md:right-[3%] right-[0%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
+                    <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[6%] md:left-[3%] left-[0%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
                 </div>
                 
         </div>
