@@ -5,8 +5,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import {  bg3Class, h1Class, h2Class } from '../utilities';
 import Navbar from '../navbar';
-const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
 export default function H_Carousel(){
+    const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
     const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
     const pClass = "text-white font-light lg:text-xl lg:leading-10 font-[500] text-lg text-justify"
     return(
