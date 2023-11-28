@@ -128,7 +128,7 @@ export default function SignUp(){
 
                 <div className={requiredInputBoxClass}>
                     <span className={labelClass}>Password</span>
-                    <img id='s_hide' src="/pass-hide-icon.png" className='absolute right-16 top-7 z-30' onClick={()=>{setPW(!PW)}}/>
+                    <img id='s_hide' src="/pass-hide-icon.png" className='absolute right-16 lg:top-7 top-5 z-30' onClick={()=>{setPW(!PW)}}/>
                     <input id='s_password' placeholder='Enter Password' className={inputClass} type="password" value={userInfo.password} onChange={(input)=>{setPassword(input.target.value)}}/>
                 </div>
                 

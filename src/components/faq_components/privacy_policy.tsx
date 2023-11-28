@@ -2,7 +2,7 @@ import { h2Class_V, } from "../utilities";
 
 export default function PrivacyPolicy(){
     return(
-        <div className="lg:w-5/6 w-11/12 py-10 border-b-[3px] border-b-gray-400 font-[400] ">
+        <div className="lg:w-5/6 w-11/12 py-10 border-b-[3px] border-b-gray-400 font-[400] text-justify">
             
             <h1 className={`oswald ${h2Class_V} text-[#4b2c64] lg:pt-8 pt-3 pb-3`}>Privacy Policy</h1>
             <p className="text-lg text-stone-600 py-3">

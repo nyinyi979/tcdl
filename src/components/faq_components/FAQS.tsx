@@ -11,7 +11,7 @@ export default function FAQS(){
                 <div className="text-[#372c44] rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 bg-[#9f99a5] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
             </div>
 
-            <div className="lg:w-5/6 w-[97%] mx-auto font-[400] lg:leading-10 leading-8">
+            <div className="lg:w-5/6 w-[97%] mx-auto font-[400] lg:leading-10 leading-8 text-justify">
 
                 <div className="w-full text-lg text-stone-600 border-b-[3px] border-b-gray-300 py-4">
                     <h1 className={`${h2Class_V} text-[#4b2c64]`}>Elite Plus and Elite Star Privileges</h1>
