@@ -29,6 +29,7 @@ export default {
       }
     },
   },
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true })]
 }
 //272228 text violet
 //ef4165 - pink

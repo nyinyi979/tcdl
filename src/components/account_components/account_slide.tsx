@@ -41,7 +41,7 @@ export default function Accounts(){
     }
     return(
 
-        <div className='lg:float-left float-none lg:w-[68%] w-[94%] lg:mx-[1%] mx-auto h-fit bg-white rounded-3xl py-3'>
+        <>
             
             <div className='w-full py-5 border-b border-gray-400'>
                 <div className='w-fit table clear-both mx-auto'>
@@ -53,7 +53,7 @@ export default function Accounts(){
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 lg:px-5 lg:py-3 py-2 px-2 lg:gap-0 gap-1'>
+            <div className='grid grid-cols-2 lg:px-5 lg:py-1 py-2 px-2 lg:gap-0 gap-1'>
                 
                 <div className={requiredInputBoxClass}>
                     <span className={labelClass}>First name</span>
@@ -92,8 +92,8 @@ export default function Accounts(){
                     <input className={inputClass} type="text" value={userInfo.DOB} onChange={(input)=>{setDOB(input.target.value)}}/>
                 </div>
 
-                <div className={'relative grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 w-[74%] mx-auto lg:py-10 py-6 text-[#5c545f] font-[600] lg:text-xl text-sm'}>
-                    <span className={`z-[20] font-[400] absolute -top-2 -left-2 block w-full h-fit bg-white rounded-full text-lg`}>Gender</span>
+                <div className={'relative grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 xll:gap-3 gap-1 w-[74%] mx-auto xll:py-10 py-6 text-[#5c545f] font-[600] lg:text-lg xll:text-xl text-sm'}>
+                    <span className={`z-[20] font-[400] absolute -top-2 left-2 block w-full h-fit bg-white rounded-full text-lg`}>Gender</span>
 
                     <label className='xl:pb-1' htmlFor="a_male">    <input onClick={()=>{setGender('Male')}} type="radio" name="gender" id="a_male" />Male</label>
                     <label className='xl:pb-1' htmlFor="a_female">  <input onClick={()=>{setGender('Female')}} type="radio" name="gender" id="a_female" />female</label>
@@ -101,15 +101,15 @@ export default function Accounts(){
                     <label className='xl:pb-1 lg:col-span-2' htmlFor="a_NO">      <input onClick={()=>{setGender('No answer')}} type="radio" name="gender" id="a_NO" />No answer</label>
                 </div>
 
-                <div className='col-span-2 w-full py-4 border-t border-t-gray-500'>
+                <div className='col-span-2 w-full lg:py-3 py-4 border-t border-t-gray-500'>
                     <div className='w-fit mx-auto'>
-                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] w-[9rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
-                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] w-[9rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Save</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] w-[9rem] h-[3.4rem] ssm:text-2xl text-xl py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] w-[9rem] h-[3.4rem] ssm:text-2xl text-xl py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Save</a>
                     </div>
                     
                 </div>
             </div>
                 
-        </div>
+        </>
     )
 }
