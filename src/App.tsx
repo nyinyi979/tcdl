@@ -5,6 +5,7 @@ import Journey from './pages/journey'
 import FAQ from './pages/faq'
 import BeAnElite from './pages/be_an_elite'
 import Highlights from './pages/highlights'
+import Account from './pages/account'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/faq' element={<FAQ />} />
         <Route path='/be-an-elite' element={<BeAnElite />} />
         <Route path='/highlights' element={<Highlights />} />
+        <Route path='/account' element={<Account />} />
       </Routes>
     </>
   )

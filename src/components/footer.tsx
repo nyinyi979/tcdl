@@ -2,7 +2,7 @@ import { FaFacebookF, FaPlay, } from "react-icons/fa6";
 import {FaTelegramPlane} from 'react-icons/fa';
 import { MdOutlineMusicNote } from "react-icons/md";
 export default function Footer(){
-    const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[22px] md:text-lg text-base';
+    const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[20px] md:text-lg text-base';
     const iconClass ="text-dark_violet hover:rotate-[20deg] rounded-full w-12 h-12 p-3 bg-blue cursor-pointer hover:bg-primary duration-500";
     return(
         <div className="bg-dark_violet py-20">

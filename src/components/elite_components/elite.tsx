@@ -1,14 +1,13 @@
-import Navbar from "../navbar"
 import React from 'react'
 import { h1Class, h2Class } from "../utilities";
 export default function TheElite(){
     React.useEffect(()=>{
-        document.getElementById('body')!.style.backgroundImage = `url('/home-banner-img.jpg')`;
-    })
+        document.body.style.backgroundImage = "url(/bg5.png)"
+        document.body.style.backgroundPositionY = "0px"
+        document.body.style.backgroundSize = 'auto'
+        document.body.style.backgroundRepeat = 'repeat'
+    }, [])
     return(
-        <div id="body">
-        
-        <Navbar currentLink="/be-an-elite"/>
         <div className="text-center py-5">
 
             <h1 className={`${h1Class} text-primary py-2`}>Be an Elite?</h1>
@@ -56,7 +55,6 @@ export default function TheElite(){
                 </div>
 
             </div>
-        </div>
         </div>
     )
 }
