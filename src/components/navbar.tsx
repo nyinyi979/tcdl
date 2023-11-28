@@ -111,7 +111,7 @@ export default function Navbar(props:{currentLink:string}){
             </div>
 
         </div>
-            <div id='drawers' className='lg:hidden fixed right-[-400px] hidden top-0 bg-violet w-64 h-full z-10'>
+            <div id='drawers' className='lg:hidden fixed right-[-400px] hidden top-0 bg-violet w-64 h-full z-[60]'>
                 <div className='inline-block w-fit h-fit text-white text-xl p-3 hover:text-primary cursor-pointer' onClick={()=>{DrawerOutro.current!.restart()}}><ImCross /></div>
                 <Link to={'/'} className={`${drawerBTN} ${props.currentLink === '/'? 'fill_effect_active' : 'fill_effect'} `}>Home</Link>
                 <Link to={'/journey'} className={`${drawerBTN} ${props.currentLink === '/journey'? 'fill_effect_active' : 'fill_effect'} `}>The Journey</Link>
