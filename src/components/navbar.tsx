@@ -36,7 +36,7 @@ export default function Navbar(props:{currentLink:string}){
             opacity: [0 , 1],
             translateY: [-50 , 0],
             delay: 500,
-            scale: [.95 , 1],
+            easing: 'easeInOutQuad',
             duration: 400,
         })
         Drawer.current = anime({
@@ -118,6 +118,7 @@ export default function Navbar(props:{currentLink:string}){
                 <Link to={'/be-an-elite'} className={`${drawerBTN} ${props.currentLink === '/be-an-elite'? 'fill_effect_active' : 'fill_effect'} `}>Be an Elite</Link>
                 <Link to={'/highlights'} className={`${drawerBTN} ${props.currentLink === '/highlights'? 'fill_effect_active' : 'fill_effect'} `}>The Highlights</Link>
                 <Link to={'/faq'} className={`${drawerBTN} ${props.currentLink === '/faq'? 'fill_effect_active' : 'fill_effect'} `}>Q & A</Link>
+                <Link to={'/account'} className={`${drawerBTN} ${props.currentLink === '/account'? 'fill_effect_active' : 'fill_effect'} `}>Account</Link>
             </div>
         
         </>

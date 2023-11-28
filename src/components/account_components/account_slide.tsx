@@ -14,7 +14,7 @@ export default function Accounts(){
 
     const inputClass ='z-10 font-[600] relative w-full ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 lg:text-xl text-base leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none text-[#5c545f] placeholder:text-[#5c545f]'
     const inputBoxClass = `z-10 block relative w-full ssm:px-10 px-4 mx-auto my-2 py-2 text-[#5c545f]`
-    const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary after:right-4 after:top-[37%]`;
+    const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary lg:after:right-4 lg:after:top-[36%] after:-right-0 after:top-[33%]`;
     const setFirstName = (value:string) =>{
         setUserInfo({...userInfo, firstName: value})
     }  
@@ -53,7 +53,7 @@ export default function Accounts(){
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 px-5 gap-0'>
+            <div className='grid grid-cols-2 lg:px-5 lg:py-3 py-2 px-2 lg:gap-0 gap-1'>
                 
                 <div className={requiredInputBoxClass}>
                     <span className={labelClass}>First name</span>
@@ -87,7 +87,7 @@ export default function Accounts(){
                 </div>
 
 
-                <div className={requiredInputBoxClass}>
+                <div className={inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary lg:after:right-4 lg:after:top-[22%] md:after:top-[40%] after:-right-0 after:top-[15%]`}>
                     <span className={labelClass}>Date of Birth</span>
                     <input className={inputClass} type="text" value={userInfo.DOB} onChange={(input)=>{setDOB(input.target.value)}}/>
                 </div>
@@ -103,8 +103,8 @@ export default function Accounts(){
 
                 <div className='col-span-2 w-full py-4 border-t border-t-gray-500'>
                     <div className='w-fit mx-auto'>
-                        <a className='inline-block mx-4 cursor-pointer ssm:mt-5 ssm:w-[13.2rem] ssm:h-[4.2rem] w-[11.4rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] px-6 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
-                        <a className='inline-block mx-4 cursor-pointer ssm:mt-5 ssm:w-[13.2rem] ssm:h-[4.2rem] w-[11.4rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] px-6 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Save</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] w-[9rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] w-[9rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Save</a>
                     </div>
                     
                 </div>

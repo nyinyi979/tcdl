@@ -6,7 +6,7 @@ import { bg6Class, h1Class } from "../components/utilities";
 export default function Account(){
     return(
         <div className={bg6Class}>
-            <Navbar currentLink="."/>
+            <Navbar currentLink="/account"/>
             <h1 className={`${h1Class} text-primary text-center pt-16`}>My Account</h1>
             <div className="mx-auto w-full md:my-8 my-4 table clear-both py-20">
                 <AccountSidebar />
