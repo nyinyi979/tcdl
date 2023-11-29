@@ -10,6 +10,7 @@ export function useAnimateLeft(selector:string){
             translateX: [-50 , 0],
             opacity: [0 , 1],
             duration: 500,
+            delay: 600,
             easing: 'linear'
         })
         outroAnimation.current = anime({
@@ -39,6 +40,7 @@ export function useAnimateRight(selector:string){
             translateX: [50 , 0],
             opacity: [0 , 1],
             duration: 500,
+            delay: 600,
             easing: 'linear'
         })
         outroAnimation.current = anime({

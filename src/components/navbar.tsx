@@ -24,20 +24,12 @@ export default function Navbar(props:{currentLink:string}){
             targets: '#loading',
             opacity: [1 , 0],
             easing: 'linear',
-            duration: 500,
+            duration: 1400,
             complete: ()=>{
                 document.getElementById('loading')!.style.display = 'none';
                 document.body.style.display = 'none'
                 document.body.style.display = 'block'
             }
-        })
-        anime({
-            targets: '#navbar',
-            opacity: [0 , 1],
-            translateY: [-50 , 0],
-            delay: 500,
-            easing: 'easeInOutQuad',
-            duration: 400,
         })
         Drawer.current = anime({
             targets: '#drawers',
@@ -78,14 +70,16 @@ export default function Navbar(props:{currentLink:string}){
     return(
         <>
         <SignUp /> <Login /><Forgotten />
-        <div id='loading' className='fixed overflow-hidden overscroll-contain top-0 left-0 [background-image:url(/site-logo.png)] bg-no-repeat bg-center w-full h-full bg-white' style={{zIndex: '9999'}}></div>
-        <div id='navbar' className="z-50 lg:relative lg:h-fit lg:py-12 py-4 lg:bg-transparent sticky top-0 right-0 h-16 px-2 w-full float_clear bg-black/80 opacity-0">
+        <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
+            <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto'/>
+        </div>
+        <div id='navbar' className="z-50 lg:relative lg:h-fit lg:py-12 py-4 lg:bg-transparent sticky top-0 right-0 h-16 px-2 w-full float_clear bg-black/80">
             
             <div className='xxl:w-[12.3rem] xll:top-16 xll:left-10 xll:w-[11rem] lg:top-12 lg:left-6 lg:w-[8.4rem] left-3 top-1 w-[5.5rem] h-full bg-cover float-left absolute'>
-                <img src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/>
+                <img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/>
             </div>
             
-            <div className='float-right xll:pr-8 xl:pr-5 lg:pr-2 pr-0'>
+            <div id='links' className='float-right xll:pr-8 xl:pr-5 lg:pr-2 pr-0'>
                 <div className='lg:block mr-0 hidden float-left xll:pt-16 xll:pr-8 xl:pt-7 lg:pt-6'>
                     <li className={liClass}>
                         <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link> 
@@ -103,7 +97,7 @@ export default function Navbar(props:{currentLink:string}){
                         <Link to="/faq" className={`${linkClass} ${props.currentLink === '/faq'? 'text-primary underline_active' : 'text-secondary'}`}>Q & A</Link> 
                     </li>
                 </div>
-                <div className='float-right xll:pt-12 lg:pt-2 lg:mt-2'>
+                <div id='btns' className='float-right xll:pt-12 lg:pt-2 lg:mt-2'>
                     <span className={btnClass} onClick={openSignUpPopUp}>Join Elite?</span>
                     <span className={btnClass} onClick={openLoginPopUp}>Elite Login?</span>
                     <div className="lg:hidden block float-left ml-3 w-fit h-[2rem] text-white cursor-pointer hover:text-primary" onClick={()=>{Drawer.current!.restart()}}><IoMdMenu className="text-3xl"/></div>

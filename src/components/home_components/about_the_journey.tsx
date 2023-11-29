@@ -10,7 +10,7 @@ export default function Journey(){
             <div className="xll:w-[73rem] w-11/12 h-fit mx-auto mt-6 pb-8">
                 <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full">
                     
-                    <div id='image' className="col-span-1 w-64 ml-[38%] relative yellow_block md:hidden block">
+                    <div id='image' className="col-span-1 w-64 ssm:ml-[43%] ml-[38%] relative yellow_block md:hidden block">
                         <img src="/img1.jpg" alt="" className="block bg-cover w-full h-[92%] mt-7 rounded-xl md:float-right float-left my-3"/>
                     </div>
 

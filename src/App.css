@@ -123,17 +123,6 @@ span.swiper-pagination-bullet-active{
     height: 18px;
 }
 
-.required_dot::after{
-    content: '';
-    position:absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    z-index: 30;
-    right: 0;
-    top: 0;
-    background-color: red;
-}
 input[type='radio']{
     -webkit-appearance: none;
     appearance: none;
