@@ -82,11 +82,11 @@ function TimeSelectBox(){
     const setTimeForInputBox = (value:string) =>{
         setDisplayTime(value)
     }
-    const selectClass = 'inline-block mx-1 outline-none bg-stone-100 text-sm'
+    const selectClass = 'inline-block md:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
     return(
     <>
         <div className={`block relative ssm:px-10 px-4 mx-auto py-1 text-[#5c545f] xl:w-[48%] lg:w-[60%] md:w-[50%] ssm:w-[87%] w-full float-left after:z-20
-        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 after:top-2 xll:after:left-[76%] ssm:after:left-[70%] after:left-[73%] after:w-10 after:h-10 scale-110
+        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 after:top-2 xll:after:left-[76%] ssm:after:left-[70%] after:left-[70%] after:w-10 after:h-10 scale-110
         after:bg-cover`}>
             <span className={'z-[20] font-[400] absolute -top-2 ssm:left-[4.3rem] left-[2.3rem] block w-fit h-fit py-1 px-5 bg-white rounded-full xl:text-lg lg:text-base text-sm'}>Select a time slot</span>
             <div className='dropdown relative'>

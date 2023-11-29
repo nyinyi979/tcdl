@@ -1,6 +1,6 @@
 export default function Password(){
     return(
-        <div>
+        <div className="h-72">
             
         </div>
     )
