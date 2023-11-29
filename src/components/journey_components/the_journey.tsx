@@ -1,11 +1,9 @@
-import Navbar from "../navbar";
-import { bg0Class, h1Class, h2Class } from "../utilities";
+import { h1Class, h2Class } from "../utilities";
 
 export default function TheJourney(){
     return(
-        <div className={bg0Class}>
+        <div>
         
-            <Navbar currentLink="/journey"/>
             <div className="text-center md:py-10 py-2 md:pb-20 pb-4">
                 <h1 className={`${h1Class} lg:pt-8 pt-3 pb-2 text-primary`}>The Journey</h1>
                 <h1 className={`${h2Class} lg:py-6 py-2 text-secondary`}>The Awakening</h1>

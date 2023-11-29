@@ -9,7 +9,7 @@ export default function J_Carosusel(props:{text:boolean}){
     const videoClass = 'lg:h-48 md:h-32 h-36 relative bg-cover rounded-[1.2rem] object-cover w-full'
     const playBtn = `w-20 h-20 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
     hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover xl:left-[37%] lg:left-[37%] 
-    md:left-[30%] lg:top-[27%] top-[20%] left-[35%] z-10 text-6xl p-3 cursor-pointer`
+    md:left-[30%] lg:top-[27%] top-[20%] left-[30%] z-10 text-6xl p-3 cursor-pointer`
     return(
         <div className={`py-20 ${bg7Class} text-center`}>
             <h2 className={`${h1Class} text-secondary`}>The Feedbacks</h2>

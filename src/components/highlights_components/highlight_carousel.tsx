@@ -3,16 +3,13 @@ import {Swiper , SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { bg7Class, h1Class, h2Class } from '../utilities';
-import Navbar from '../navbar';
+import { h1Class, h2Class } from '../utilities';
 export default function H_Carousel(){
     const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
     const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
     const pClass = "text-white font-[400] lg:text-xl leading-10 text-justify"
     return(
-        <div className={`py-10 ${bg7Class}`}>
-            
-            <Navbar currentLink="/highlights"/>
+        <div className={`pb-10`}>
             <h2 className={`${h1Class} text-center text-primary md:py-10 py-4`}>The Highlights</h2>
             <h2 className={`${h2Class} text-center text-secondary pb-5s`}>
                 This Month's Highlights

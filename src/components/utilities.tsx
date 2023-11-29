@@ -132,7 +132,6 @@ export const BeEliteBtn = "mx-auto block oswald font-[500] xxl:w-[21.5rem] xxl:h
 export const ReBeEliteBtn = "mx-auto block oswald font-[500] xxl:w-[21.5rem] xxl:h-[6rem] xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4 pt-3 w-40 h-[3.3rem] text-base bg-secondary hover:bg-primary hover:text-white text-black/90 text-center rounded-full duration-500"
 export const moreBtn = 'inline-block oswald clear-both font-[400] text-secondary hover:text-primary xxl:text-[2rem] xll:text-[1.5rem] xl:text-[1.4rem] md:text-[1.3rem] text-[1.2rem]';
 export const bg0Class = `[background-image:url('/home-banner-img.jpg')] [background-position:center top] bg-cover [background-repeat: no-repeat]`;
-export const bg00Class = `[background-image:url('/bg5.png')] bg-cover bg-repeat`;
 export const bg1Class = `[background-image:url('/bg1.jpg')] md:bg-center bg-[center_left_-800px] bg-cover [background-repeat: no-repeat]`
 export const bg3Class = `[background-image:url('/bg3.jpg')] md:bg-[center_left_0px] bg-[center_left_-400px] bg-repeat bg-cover`
 export const bg2Class = `[background-image:url('/bg2.jpg')] bg-center bg-cover bg-no-repeat`

@@ -7,7 +7,11 @@ import Insight from "../components/home_components/insights"
 import Private from "../components/home_components/private_group"
 import anime from "animejs"
 import React from 'react';
+import Navbar from "../components/navbar"
 export default function Home(){
+    React.useEffect(()=>{   
+        document.body.style.backgroundImage = `url('/home-banner-img.jpg')`;
+    }, [])
     React.useEffect(()=>{
         anime({
             targets: '#links',
@@ -36,6 +40,7 @@ export default function Home(){
     }, [])
     return(
         <>
+            <Navbar currentLink='/'/>
             <Journey />
             <Private />
             <Insight />

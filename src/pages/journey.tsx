@@ -5,16 +5,21 @@ import Beginning from "../components/journey_components/beginning";
 import J_Carosusel from "../components/journey_components/j_carousel";
 import TheJourney from "../components/journey_components/the_journey";
 import Who from "../components/journey_components/who";
-
+import Navbar from "../components/navbar";
+import React from 'react';
 export default function Journey(){
+    React.useEffect(()=>{   
+        document.body.style.backgroundImage = `url('/home-banner-img.jpg')`;
+    }, [])
     return(
         <>
-                <TheJourney />
-                <Beginning />
-                <Who />
-                <Private />
-                <J_Carosusel text/>
-                <Communities />
+            <Navbar currentLink="/journey"/>
+            <TheJourney />
+            <Beginning />
+            <Who />
+            <Private />
+            <J_Carosusel text/>
+            <Communities />
             <Footer />
         </>
     )

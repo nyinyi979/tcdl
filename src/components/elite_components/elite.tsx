@@ -1,14 +1,12 @@
 import React from 'react'
-import { bg00Class, h1Class, h2Class } from "../utilities";
-import Navbar from '../navbar';
+import { h1Class, h2Class } from "../utilities";
 
 export default function TheElite(){
     React.useEffect(()=>{
     }, [])
     return(
-        <div className={`text-center ${bg00Class} pb-16`}>
+        <div className={`text-center pb-16`}>
 
-            <Navbar currentLink="/be-an-elite"/>
             <h1 className={`${h1Class} text-primary py-4`}>Be an Elite?</h1>
             <h1 className={`${h2Class} text-secondary pt-5`}>Founder's Message</h1>
 

@@ -1,12 +1,10 @@
-import Navbar from '../navbar';
-import { bg0Class, h1Class, moreBtn, useAnimateLeft, useAnimateRight } from '../utilities';
+import { h1Class, moreBtn, useAnimateLeft, useAnimateRight } from '../utilities';
 export default function Journey(){
     useAnimateLeft('about_the_journey')
     useAnimateLeft('about_the_journey_text')
     useAnimateRight('image');
     return(
-        <div className={bg0Class}>
-            <Navbar currentLink='/'/>
+        <div>
             <div className="xll:w-[72rem] xl:w-[65rem] w-11/12 h-fit mx-auto xll:mt-[3.2rem] xl:mt-[2rem] mt-8 lg:pb-20 pb-8">
                 <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full">
                     
