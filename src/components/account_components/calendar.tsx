@@ -142,7 +142,7 @@ function TimeSelectBox(){
                 </div>
             </div>
         </div>
-        <a href="" className={'block oswald font-[500] md:float-right md:ml-0 md:mt-0 mt-2 float-left ml-16 xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4 pt-3 w-40 h-[3.3rem] text-base bg-primary text-white hover:bg-secondary hover:text-black text-center rounded-full duration-500'}>Schedule Now</a>
+        <a href="" className={'block oswald font-[500] md:float-right md:ml-0 md:mt-0 mt-2 float-left ssm:ml-16 ml-12 xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4 pt-3 w-40 h-[3.3rem] text-base bg-primary text-white hover:bg-secondary hover:text-black text-center rounded-full duration-500'}>Schedule Now</a>
     </>
     )
 }
