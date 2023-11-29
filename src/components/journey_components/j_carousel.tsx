@@ -89,8 +89,14 @@ export default function J_Carosusel(props:{text:boolean}){
                     <a className={MoreClass} href='#'>
                         More Videos
                     </a>
-                    <span className='next absolute font-bold top-[25%] xl:right-[3%] lg:right-[3%] md:right-[10%] right-[2%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
-                    <span className='prev absolute font-bold top-[25%] xl:left-[3%] lg:left-[3%] md:left-[10%] left-[2%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
+                    <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                    hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
+                    prev md:top-[30%] top-[24%] xll:left-[40px] xl:left-[35px] md:left-[50px] ssm:left-[10px] left-[3px] 
+                    cursor-pointer `}></span>
+                    <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                    hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
+                    next md:top-[30%] top-[24%] xll:right-[35px] xl:right-[25px] md:right-[30px] ssm:-right-[4px] -right-[10px]  
+                    cursor-pointer `}></span>
               
             </div>
             

@@ -92,8 +92,14 @@ export default function Carosusel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
-                <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[4%] md:right-[10%] ssm:right-[3%] right-[0%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
-                <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[4%] md:left-[10%] ssm:left-[3%]  left-[0%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
+                <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
+                prev md:top-[20%] top-[24%] xll:left-[40px] xl:left-[35px] md:left-[50px] ssm:left-[10px] left-[3px] 
+                cursor-pointer `}></span>
+                <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
+                next md:top-[20%] top-[24%] xll:right-[35px] xl:right-[25px] md:right-[30px] ssm:-right-[4px] -right-[10px]  
+                cursor-pointer `}></span>
             </div>
             
         </div>
