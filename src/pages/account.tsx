@@ -2,7 +2,7 @@ import Accounts from "../components/account_components/account_slide";
 import Footer from "../components/footer";
 import React from 'react';
 import Navbar from "../components/navbar";
-import { bg6Class, h1Class } from "../components/utilities";
+import { bg7Class, h1Class } from "../components/utilities";
 import AccountSidebar from "../components/account_components/account_sidebar";
 import Calendar from "../components/account_components/calendar";
 import Voices from "../components/account_components/voices";
@@ -33,14 +33,14 @@ export default function Account(){
         setPages({...init ,password: true})
     }
     return(
-        <div className={bg6Class}>
+        <div className={bg7Class} style={{backgroundPosition: 'center top'}}>
             <Navbar currentLink="/account"/>
             <h1 className={`${h1Class} text-primary text-center pt-16`}>
             {pages.account? 'My Account' : pages.calendar? 'Schedule Zoom Meeting' : pages.voice? 'Voice Message' : pages.password? 'Change Password' : ''}
             </h1>
             <div className="mx-auto w-full md:my-8 my-4 table clear-both py-20">
                 
-                <div className="lg:float-left float-none bg-white rounded-3xl lg:w-[27%] w-[94%] h-fit lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
+                <div className="lg:float-left float-none bg-gray-100 rounded-3xl lg:w-[27%] w-[94%] h-fit lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
                     <div className="lg:border-b-2 lg:border-b-[#908ec0]">
                         <div className="flex lg:flex-col flex-row flex-wrap w-full lg:gap-4 gap-2 lg:py-10 py-5 lg:px-10 px-0">
 

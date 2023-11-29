@@ -11,8 +11,8 @@ import jQuery from "jquery";
 			<div id="calTbody" class="flex flex-wrap p-1"></div>
 		</div>
 		<div id="calTFooter" class="flex mt-2 justify-between items-center">
-			<h3 id="eventTitle" class="text-lg p-2 font-[600]">No events today.</h3>
-			<a href="javascript:void(0);" id="calLink" class="text-lg p-2 font-[600]">ALL EVENTS</a>
+			<h3 id="eventTitle" class="md:text-lg text-sm p-2 font-[600]">No events today.</h3>
+			<a href="javascript:void(0);" id="calLink" class="md:text-lg text-sm p-2 font-[600]">ALL EVENTS</a>
 		</div>
     `;
     const weekDaysFromSunday = `

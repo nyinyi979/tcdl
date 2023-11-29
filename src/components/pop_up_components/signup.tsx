@@ -70,7 +70,7 @@ export default function SignUp(){
     return(
         <div onClick={closePopUp} id='signUpBG' className='hidden bg-black/30 w-full h-[100%] fixed overscroll-y-contain overflow-y-scroll z-[100]'>
             
-            <div id='signUp' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[31rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
+            <div id='signUp' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 
                 <div className={headingBoxClass}>
                     <h2 className='oswald float-left tracking-[1px]'>Sign Up</h2>
@@ -78,7 +78,7 @@ export default function SignUp(){
                 </div>
                 
 
-                <div className={requiredInputBoxClass}>
+                <div className={`${requiredInputBoxClass} mt-12`}>
                     <span className={labelClass}>First name</span>
                     <input className={inputClass} type="text" value={userInfo.firstName} onChange={(input)=>{setFirstName(input.target.value)}}/>
                 </div>
@@ -132,7 +132,7 @@ export default function SignUp(){
                     <input id='s_password' placeholder='Enter Password' className={inputClass} type="password" value={userInfo.password} onChange={(input)=>{setPassword(input.target.value)}}/>
                 </div>
                 
-                <div className='text-stone-700 font-[500] text-left md:ml-24 md:w-[60%] w-[70%] ml-12 lg:text-base text-sm md:leading-8 leading-6'>
+                <div className='text-[#5c545f] font-[500] text-left md:ml-24 md:w-[70%] w-[70%] ml-12 lg:text-lg text-base md:leading-10 leading-6'>
                    <span className='inline-block w-3 h-3 bg-primary rounded-full mr-1'></span> Required fields <br />
                    <p className='ml-5'>Password must be 8 characters with alphabet and numeric.</p>
                 </div>

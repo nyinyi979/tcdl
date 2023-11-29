@@ -1,24 +1,23 @@
 import React from 'react'
-import { h1Class, h2Class } from "../utilities";
+import { bg00Class, h1Class, h2Class } from "../utilities";
+import Navbar from '../navbar';
+
 export default function TheElite(){
     React.useEffect(()=>{
-        document.body.style.backgroundImage = "url(/bg5.png)"
-        document.body.style.backgroundPositionY = "0px"
-        document.body.style.backgroundSize = 'auto'
-        document.body.style.backgroundRepeat = 'repeat'
     }, [])
     return(
-        <div className="text-center py-5">
+        <div className={`text-center ${bg00Class} pb-16`}>
 
-            <h1 className={`${h1Class} text-primary py-2`}>Be an Elite?</h1>
-            <h1 className={`${h2Class} text-secondary`}>Founder's Message</h1>
+            <Navbar currentLink="/be-an-elite"/>
+            <h1 className={`${h1Class} text-primary py-4`}>Be an Elite?</h1>
+            <h1 className={`${h2Class} text-secondary pt-5`}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-5 lg:pl-10">
 
                 <div id='image' className="col-span-1 w-full mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-[20rem] mt-10 rounded-xl my-3 mx-auto"/>
                 </div>
-                <div className="xl:w-5/6 lg:[w-90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl text-lg mx-auto py-6 text-justify pr-4 font-[400]">
+                <div className="xl:w-5/6 lg:[w-90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl text-lg mx-auto text-justify pr-4 font-[400]" style={{lineHeight:'2.2rem'}}>
                     <p className="py-2">
                         Magic exists in you. But most of us don't know about it and completely untapped.
                         We were born with this ability, therefore you've always had it. It's a quest you must undertake;
@@ -51,7 +50,7 @@ export default function TheElite(){
                 </div>
 
                 <div id='image' className="md:block hidden col-span-1 w-full mx-auto relative">
-                    <img src="/pic1.png" alt="" className="bg-cover lg:w-[22rem] lg:h-[22rem] lg:ml-5 ml-0 w-[18rem] h-[18rem] mt-10 rounded-xl float-left"/>
+                    <img src="/pic1.png" alt="" className="bg-cover lg:w-[22rem] lg:h-[22rem] ml-0 w-[18rem] h-[18rem] xl:mt-10 mt-5 rounded-xl float-left"/>
                 </div>
 
             </div>

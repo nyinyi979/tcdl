@@ -35,7 +35,7 @@ export default function Home(){
         })
     }, [])
     return(
-        <div>
+        <>
             <Journey />
             <Private />
             <Insight />
@@ -43,6 +43,6 @@ export default function Home(){
             <Carosusel />
             <Communities />
             <Footer />
-        </div>
+        </>
     )
 } 

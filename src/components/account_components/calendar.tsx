@@ -85,18 +85,22 @@ function TimeSelectBox(){
     const selectClass = 'inline-block md:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
     return(
     <>
-        <div className={`block relative ssm:px-10 px-4 mx-auto py-1 text-[#5c545f] xl:w-[48%] lg:w-[60%] md:w-[50%] ssm:w-[87%] w-full float-left after:z-20
-        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 after:top-2 xll:after:left-[76%] ssm:after:left-[70%] after:left-[70%] after:w-10 after:h-10 scale-110
-        after:bg-cover`}>
-            <span className={'z-[20] font-[400] absolute -top-2 ssm:left-[4.3rem] left-[2.3rem] block w-fit h-fit py-1 px-5 bg-white rounded-full xl:text-lg lg:text-base text-sm'}>Select a time slot</span>
+        <div className={`block relative  mx-auto py-1 text-[#5c545f] xl:w-[48%] lg:w-[55%] md:w-[50%] ssm:w-[87%] w-full float-left after:z-20
+        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 after:top-2 xll:after:left-[65%] ssm:after:left-[60%] 
+        after:left-[73%] after:w-10 after:h-10 md:scale-110 after:bg-cover`}>
+            <span className={'z-[20] font-[400] absolute -top-2 left-[3rem] block w-fit h-fit py-1 px-5 bg-white rounded-full xl:text-lg lg:text-base text-sm'}>Select a time slot</span>
             <div className='dropdown relative'>
+
+                <span className='absolute top-[2.9rem] z-20 left-10 outline-1 outline-gray-300
+                border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] border-b-[#ffffff] w-0 h-0'></span>
+
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] 
-                    font-[600] relative ssm:w-full w-[95%] ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4
+                    font-[600] relative md:w-[80%] w-[95%] ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4
                     xl:text-lg text-base leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
                     text-[#5c545f] placeholder:text-[#5c545f] tracking-tighter`} type="text" name="daterange" id="date" 
                     placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
                 <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute w-80 h-fit 
-                bg-white pt-5 left-0 top-[110%] hidden border-[1px] border-stone-300' style={{fontFamily:'initial'}}>
+                bg-white pt-5 ssm:left-0 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
                     <div>
 
                         <select className={selectClass} name="s_hours" id="s_hours" defaultValue={time.startHour} onChange={(e)=>{setStartHour(e.target.value)}}>

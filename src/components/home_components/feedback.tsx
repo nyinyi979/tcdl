@@ -7,7 +7,7 @@ export default function Feedback(){
     useAnimateLeft('feedback');
     useAnimateRight('feedback_text')
     useAnimateLeft('feedback_swiper');
-    const quoteClassHere = 'xl:w-[50%] md:w-[60%] w-[90%] mx-auto xxl:text-[2.37rem] xll:leading-[3.3rem] font-[600] xll:text-[1.7rem]  xl:text-2xl xl:leading-[2.75rem] ssm:text-[1.4rem] ssm:leading-[2.4rem] text-xl leading-8 text-center'+ quoteClass;
+    const quoteClassHere = 'xl:w-[50%] md:w-[60%] w-[80%] mx-auto xxl:text-[2.37rem] xll:leading-[3.3rem] font-[600] xll:text-[1.7rem]  ssm:text-2xl xl:leading-[2.75rem] ssm:leading-[2.4rem] text-xl leading-8 text-center'+ quoteClass;
     return(
         <div className="bg-white text-[#372c44] py-20 text-center">
             <h2 id='feedback' className={`${h1Class} py-2`}>

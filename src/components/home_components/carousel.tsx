@@ -7,14 +7,14 @@ import {  bg3Class, h1Class, h2Class } from '../utilities';
 const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
 export default function Carosusel(){
     const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
-    const pClass = "text-white font-light text-lg text-justify"
+    const pClass = "text-white font-[400] lg:text-xl leading-10 text-justify"
     return(
         <div className={`py-20 ${bg3Class}`}>
-            <h2 className={`${h1Class} text-center text-secondary md:py-10 py-4`}>The Highlights</h2>
+            <h2 className={`${h1Class} text-center text-secondary md:py-6 py-4`}>The Highlights</h2>
             <h2 className={`${h2Class} text-center text-yellow-100`}>
                 Sharing is caring
             </h2>
-            <p className="xl:w-5/6 md:w-[90%] w-[85%] mx-auto text-justify font-[400] leading-9 text-white xxl:text-[1.6rem] xll:text-[1.4rem] text-base py-10">
+            <p className="xll:w-5/6 xl:w-[80%] md:w-[90%] w-[85%] mx-auto text-justify font-[400] leading-9 text-white xxl:text-[1.6rem] lg:text-[1.4rem] text-base py-10">
                 In order to create a more interconnected and compassionate world, the founder and members 
                 share their insights, knowledge, and spiritual experiences with others. Substantial value and
                 worth reading articles.
@@ -23,17 +23,20 @@ export default function Carosusel(){
             
             <div className="w-full arrow relative">
                
-                <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode loop speed={1000} 
-                pagination={{clickable:true, dynamicBullets: true}}
-                breakpoints={{0: {slidesPerView:2 , spaceBetween:40}, 640: {slidesPerView: 2, spaceBetween: 40 }, 767: {spaceBetween: 60,slidesPerView:3} , 1099 : {spaceBetween: 80, slidesPerView: 3}}} 
-                 modules={[Navigation, Pagination]} className="lg:w-[80%] w-[86%] py-10" >
+                <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
+                pagination={{clickable:true}}
+                breakpoints={{0: {slidesPerView:2 , spaceBetween:40}, 640: {slidesPerView: 2, spaceBetween: 40 }, 
+                767: {spaceBetween: 50,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
+                , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
+                ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
+                 modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[70%] w-[85%]  py-10" >
 
                     <SwiperSlide>
                         <img src="/img2.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
                         <h1 className= {headingClass}>
                             Tarot &amp; Spirituality
                         </h1>
-                        <div className= {pClass}>
+                        <div className= {pClass} style={{lineHeight: '2rem'}}>
                         Tarot spirituality is a way of using the tarot cards to connect with your higher self 
                         and the divine. It is a practice that can help you to ...
                         </div>
@@ -45,7 +48,7 @@ export default function Carosusel(){
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
                         </h1>
-                        <div className= {pClass}>
+                        <div className= {pClass} style={{lineHeight: '2rem'}}>
                             The majority of tarot readers assert that the cards provide the clearest
                             answers during the full moon. It reflects the diviner's enhanced intuition.
                         </div>
@@ -57,21 +60,9 @@ export default function Carosusel(){
                         <h1 className= {headingClass}>
                             The power of amulets
                         </h1>
-                        <div className= {pClass}>
+                        <div className= {pClass} style={{lineHeight: '2rem'}}>
                             Since prehistoric times, particularly during the emergence of Egypt's pharaohs, 
                             people have sought spiritual protection by donning amulets, the religious equivalent of armor.
-                        </div>
-                        <a href="/" className={MoreClass}>More</a>
-                    </SwiperSlide>
-
-                    <SwiperSlide className=''>
-                        <img src="/img2.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
-                        <h1 className= {headingClass}>
-                            Tarot &amp; Spirituality
-                        </h1>
-                        <div className= {pClass}>
-                        Tarot spirituality is a way of using the tarot cards to connect with your higher self 
-                        and the divine. It is a practice that can help you to ...
                         </div>
                         <a href="/" className={MoreClass}>More</a>
                     </SwiperSlide>
@@ -101,8 +92,8 @@ export default function Carosusel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
-                    <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[6%] md:right-[3%] right-[0%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
-                    <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[6%] md:left-[3%] left-[0%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
+                <span className='next absolute font-bold md:top-[20%] top-[24%] xl:right-[3%] lg:right-[4%] md:right-[10%] ssm:right-[3%] right-[0%] text-secondary text-4xl cursor-pointer hover:text-primary' style={{transform:'scaleY(1.8)'}}>&gt;</span>
+                <span className='prev absolute font-bold md:top-[20%] top-[24%] xl:left-[3%] lg:left-[4%] md:left-[10%] ssm:left-[3%]  left-[0%] text-secondary text-4xl cursor-pointer  hover:text-primary' style={{transform:'scaleY(1.8)'}}>&lt;</span>
             </div>
             
         </div>

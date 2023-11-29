@@ -30,7 +30,7 @@ export default function Voices(){
                                     }
                             
                                     
-                                    <div className="bg-[#dcc9e0] rounded-xl float-left flex flex-row items-center gap-3 ssm:pr-2 pr-4">
+                                    <div className="bg-[#e3dbe5] rounded-xl float-left flex flex-row items-center gap-3 ssm:pr-2 pr-4">
                                         <img src="/sound.png" alt="" className="ssm:w-full w-40"/>
                                         <span className="font-[700] ssm:text-2xl text-base ssm:-mt-1 mt-0 text-[#755f83]">{message.messageDuration}</span>
                                     </div>

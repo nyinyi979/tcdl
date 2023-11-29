@@ -17,7 +17,7 @@ export default function Who(){
                 During the global pandemic of 2020, she began her search for meaning and a higher purpose in 
                 life after earning two diplomas, a degree, and a master's in education.
             </div>
-            <div className="w-fit h-fit mx-auto lg:pt-72 lg:pb-96 lg:pl-40 pt-96">
+            <div className="w-fit h-fit font-[500] mx-auto lg:pt-72 lg:pb-96 lg:pl-28 pt-96">
                 <span className="text-3xl">Thazin Soe </span> <br />
                 <span className="text-2xl pl-1">The Founder</span>
             </div>

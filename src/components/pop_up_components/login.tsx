@@ -49,7 +49,7 @@ export default function Login(){
     return(
         <div onClick={closePopUp} id='loginBG' className='hidden bg-black/30 w-full h-[100%] fixed overscroll-y-contain overflow-y-scroll z-[100]'>
             
-            <div id='login' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[31rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
+            <div id='login' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 
                 <div className={headingBoxClass}>
                     <h2 className='oswald float-left tracking-[1px]'>Login</h2>
@@ -57,7 +57,7 @@ export default function Login(){
                 </div>
                 
 
-                <div className={requiredInputBoxClass}>
+                <div className={`${requiredInputBoxClass} mt-12`}>
                     <span className={labelClass}>Email ID</span>
                     <input placeholder='drjsmith@gmail.com' className={inputClass} type="text" value={userInfo.emailID} onChange={(input)=>{setEmailID(input.target.value)}}/>
                 </div>
@@ -68,8 +68,8 @@ export default function Login(){
                     <input id='l_password' placeholder='Enter Password' className={inputClass} type="password" value={userInfo.password} onChange={(input)=>{setPassword(input.target.value)}}/>
                 </div>
                 
-                <div className='px-6 ssm:px-10 text-lg text-[#5c545f] after:clear-both after:table'>
-                    <label className='float-left' htmlFor="remember" defaultChecked={false}><input type="checkbox" name="remember" id="remember" /> Remeber me</label> <br className='ssm:hidden block'/>
+                <div className='px-6 ssm:px-8 text-lg text-[#5c545f] after:clear-both after:table'>
+                    <label className='float-left px-2 ml-2 -pt-2 font-[500]' htmlFor="remember" defaultChecked={false}><input type="checkbox" name="remember" id="remember" /> Remember me</label> <br className='ssm:hidden block'/>
                     <h2 onClick={openForogtten} className='hover:text-primary cursor-pointer ssm:float-right float-none text-center ssm:text-right underline duration-200'>Forgot your password?</h2>
                 </div>
 

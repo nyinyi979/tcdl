@@ -6,15 +6,15 @@ export default function FAQS(){
     return(
         <div className="w-full bg-white">
             
-            <div className="w-fit h-fit mx-auto flex lg:my-8 my-4 py-8">
+            <div className="w-fit h-fit mx-auto flex lg:my-8 my-4 pt-16 pb-8">
                 <div className="text-white rounded-l-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
-                <div className="text-[#372c44] rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 bg-[#9f99a5] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
+                <div className="text-[#372c44] rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
             </div>
 
-            <div className="lg:w-5/6 w-[97%] mx-auto font-[400] lg:leading-10 leading-8 text-justify">
+            <div className="lg:w-[84%] w-[97%] mx-auto font-[400] lg:leading-10 leading-8 md:text-left text-justify">
 
                 <div className="w-full text-lg text-stone-600 border-b-[3px] border-b-gray-300 py-4">
-                    <h1 className={`${h2Class_V} text-[#4b2c64]`}>Elite Plus and Elite Star Privileges</h1>
+                    <h1 className={`${h2Class_V} text-[#583f74]`}>Elite Plus and Elite Star Privileges</h1>
                     <p className="lg:my-5  my-3">
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
                         EP and ES members are to specify the type of reading or consultation requested upon booking.
@@ -58,7 +58,7 @@ export default function FAQS(){
                 </div>
 
                 <div className="w-full text-lg text-stone-600 border-b-[3px] border-b-gray-300 py-4">
-                <h1 className={` ${h2Class_V} text-[#4b2c64]`}>Elite Express and Elite Membership Privileges</h1>
+                <h1 className={` ${h2Class_V} text-[#583f74]`}>Elite Express and Elite Membership Privileges</h1>
 
                     <p className="lg:my-5 my-3">
                         EE and EL members are allowed a 30-min group consultation sessions every two month. 
