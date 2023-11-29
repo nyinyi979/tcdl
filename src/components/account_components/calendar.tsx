@@ -22,7 +22,7 @@ export default function CalendarPage(){
             date: someDaynextMonth, // Some day as today, next month
             link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
         }];
-		$("#calendar").MEC({
+		($("#calendar") as any).MEC({
 			calendar_link: "example.com/myCalendar",
 			events: sampleEvents
 		});
