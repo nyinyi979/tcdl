@@ -149,7 +149,7 @@ function TimeSelectBox(){
 function TimeDetails(){
     const spanClass = 'inline-block w-3 h-3 xl:mx-2 lg:mx-0 md:mx-2 mx-1 rounded-full';
     return(
-        <div className='w-full font-[500] xll:px-12 xl:px-8 llg:px-4 lg:px-12 md:px-10 px-5 xll:text-lg lg:text-base text-sm ssm:text-left text-center'>
+        <div className='w-full font-[500] xll:px-12 xl:px-8 llg:px-4 lg:px-12 md:px-10 px-5 xll:text-lg lg:text-base text-sm ssm:text-left text-center leading-8'>
             <p className='inline-block'>
                 Singapore Standard Time (SST) 
                 <span className={`${spanClass} bg-[#e3dcee]`}></span> 
