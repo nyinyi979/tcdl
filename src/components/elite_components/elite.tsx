@@ -10,9 +10,9 @@ export default function TheElite(){
             <h1 className={`${h1Class} text-primary py-4`}>Be an Elite?</h1>
             <h1 className={`${h2Class} text-secondary pt-5`}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-5 lg:pl-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-5 lg:pl-10 pl-0">
 
-                <div id='image' className="col-span-1 w-full mx-auto relative md:hidden block">
+                <div id='image' className="col-span-1 xs:w-full w-[96%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-[20rem] mt-10 rounded-xl my-3 mx-auto"/>
                 </div>
                 <div className="xl:w-5/6 lg:[w-90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl text-lg mx-auto text-justify pr-4 font-[400]" style={{lineHeight:'2.2rem'}}>

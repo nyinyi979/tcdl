@@ -22,35 +22,35 @@ export default function Voices(){
                     {voiceMessages.length === 0? <div className="flex items-center justify-center">No messages</div> : 
                     <div className="table clear-both">
                         {voiceMessages.map((message)=>(
-                            <div className={`${message.sender? 'float-right' : 'float-left'} my-6`}>
+                            <div key={Math.random()*9000} className={`${message.sender? 'float-right' : 'float-left'} my-6`}>
                                 <div className="table w-fit">
                                     {message.sender? 
                                     '' :
-                                    <img className="float-left -mt-1 mr-4 ssm:w-20 ssm:h-20 w-12 h-12 rounded-full border-[3px] border-[#755f83]/80 p-[2px]" src="/pic1.png" alt="sender" />
+                                    <img className="float-left xs:-mt-1 mr-4 ssm:w-20 ssm:h-20 xs:w-12 xs:h-12 w-10 -mt-3 h-10 rounded-full border-[3px] border-[#755f83]/80 p-[2px]" src="/pic1.png" alt="sender" />
                                     }
                             
                                     
                                     <div className="bg-[#e3dbe5] rounded-xl float-left flex flex-row items-center gap-3 ssm:pr-2 pr-4">
-                                        <img src="/sound.png" alt="" className="ssm:w-full w-40"/>
-                                        <span className="font-[700] ssm:text-2xl text-base ssm:-mt-1 mt-0 text-[#755f83]">{message.messageDuration}</span>
+                                        <img src="/sound.png" alt="" className="ssm:w-full xs:w-40 w-20"/>
+                                        <span className="font-[700] ssm:text-2xl xs:text-base text-sm ssm:-mt-1 mt-0 text-[#755f83]">{message.messageDuration}</span>
                                     </div>
                                     
                                     
                                     {message.sender? 
-                                    <img className="float-right ml-4 -mt-1 ssm:w-20 ssm:h-20 w-12 h-12 rounded-full border-[3px] border-[#755f83]/80 p-[2px]" src="/upload-img.png" alt="sender" />
+                                    <img className="float-right ml-4 xs:-mt-1 ssm:w-20 ssm:h-20 xs:w-12 xs:h-12 w-10 -mt-3 h-10 rounded-full border-[3px] border-[#755f83]/80 p-[2px]" src="/upload-img.png" alt="sender" />
                                     : ''}
                                 </div>
-                                <span className={`block font-[400] mt-2 ${message.sender? 'float-right' : 'float-left'} text-[#5c545fbe]`}>{message.date} {message.time} </span>
+                                <span className={`block font-[400] md:text-lg xs:text-base text-sm mt-2 ${message.sender? 'float-right' : 'float-left'} text-[#5c545fbe]`}>{message.date} {message.time} </span>
                             </div>
                         ))}
                     </div>
                     }
                 </div>
             </div>
-            <div className="border-t-2 border-t-[#908ec0] pt-8 w-full">
-                <div className="clear-both table w-full pl-10 pr-16">
-                    <h1 className="float-left ml-10 mt-2 text-sm text-[#5c545f]">Your voice message can be recorded by clicking on the mic icon</h1>
-                    <img src="/sound-icon.png" alt="sound" className="w-[70px] h-[70px] -mt-4 float-right cursor-pointer"/>
+            <div className="border-t-2 border-t-[#908ec0] md:pt-8 py-4 w-full">
+                <div className="clear-both table w-full md:pl-10 md:pr-16 px-5">
+                    <h1 className="float-left md:ml-10 ml-0 md:mt-2 mt-0 text-sm text-[#5c545f] w-3/4">Your voice message can be recorded by clicking on the mic icon</h1>
+                    <img src="/sound-icon.png" alt="sound" className="md:w-[70px] md:h-[70px] w-10 h-10 md:-mt-4 mt-0 float-right cursor-pointer"/>
                 </div>
             </div>
         </div>

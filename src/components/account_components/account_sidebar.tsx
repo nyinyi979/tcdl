@@ -1,13 +1,12 @@
-import { FaFacebook } from "react-icons/fa6"
 
 export default function AccountSidebar(){
     
     return(
         <>
-            <div className="border-b-2 border-b-[#908ec0] lg:block hidden">
+            <div className="border-t-2 border-t-[#908ec0] block">
 
                 <div className="py-6 w-full px-16">
-                    <ul className="d font-[500] w-full leading-7">
+                    <ul className="d font-[500] w-full leading-7 md:text-base text-sm">
                         <li className="px-3">Help</li>
                         <li className="px-3">Contact Us </li>
                         <li className="px-3">Terms and Condition </li>
@@ -17,8 +16,8 @@ export default function AccountSidebar(){
 
             </div>
 
-            <div className="flex-row gap-3 pl-12 py-5 items-center lg:flex hidden">
-                <div><FaFacebook className="inline-block text-violet w-[3.5rem] h-[3.5rem]"/></div>
+            <div className="flex-row gap-3 md:pl-12 px-4 py-5 items-center flex border-t-2 border-t-[#908ec0]">
+                <div><img src='/fb-icon.png' className="inline-block text-violet lg:w-[8rem] md:w-[4rem] w-[5rem] h-fit"/></div>
                 <div className="text-sm font-[300]">Copyright © 2024 The Card's Don't Lie (TCDL). All Rights Reserved.</div>
             </div>
         </>

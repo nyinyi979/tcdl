@@ -18,8 +18,8 @@ export default function HighlightItems(){
         {title: 'Next career or financial goal' , contents: 'What comes next in your professional or economic life is totally up to you. However, here are some general prediction according to zodiac' , img: '/img14.png'},
     ]
     return(
-        <div className="bg-white py-10">
-            <div className="grid md:grid-cols-3 grid-cols-1 xl:w-[88%] md:w-[94%] w-[22rem] lg:gap-10 gap-5 mx-auto py-10">
+        <div className="bg-white xs:py-10 py-5">
+            <div className="grid md:grid-cols-3 grid-cols-1 xll:w-[80%] xl:w-[88%] lg:w-[87%] md:w-[94%] xs:w-[22rem] w-[18rem] lg:gap-10 gap-5 mx-auto py-10">
 
             {contents.map((content)=>(
                 <div key={content.title}>

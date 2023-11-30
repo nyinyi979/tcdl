@@ -6,8 +6,6 @@
     background: #ffffff;
     color: #5c545f;
     font-weight: 500;
-    width: 82%;
-    height: 450px;
 }
 
 #calTbody .a-date {
@@ -42,8 +40,14 @@
     outline: none;
     font-size: 0.9em;
 }
-
-
+@media only screen and (max-width:325px) {
+    #calTbody .a-date{
+        padding: .5em;
+    }
+    #calThead > div{
+        padding: .1 rem;
+    }
+}
 #calTbody .a-date.event:before {
     content: '';
     position: absolute;

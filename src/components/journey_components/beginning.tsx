@@ -3,10 +3,10 @@ import { h1Class, h2Class } from "../utilities";
 export default function Beginning(){
     return(
         <div className="bg-white text-[#4b2c64] py-20 leading-10 text-center">
-            <h1 className={`${h1Class} py-3`}>
+            <h1 className={`${h1Class} text-[#4b2c64] py-3`}>
                 The Beginning
             </h1>
-            <h1 className={`${h2Class} py-3`}>
+            <h1 className={`${h2Class} text-[#612a60] py-3`}>
                 Initial phrase of <br />
                 the Journey on Facebook
             </h1>

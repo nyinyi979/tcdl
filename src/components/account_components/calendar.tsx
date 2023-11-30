@@ -32,10 +32,10 @@ export default function CalendarPage(){
         dropdown_content.style.display = 'none';
     }
     return(
-        <div onClick={closeTimeBox}>
-            <h1 className='text-center text-xl text-stone-600 font-[700] pt-7'>Select Date & Time</h1>
-            <div id="calendar" className='clear-both table py-0 mx-auto'></div>
-            <div className='table clear-both w-full px-24 pb-6'>
+        <div onClick={closeTimeBox} className='xxs:w-full w-[310px] mx-auto'>
+            <h1 className='text-center md:text-2xl xs:text-xl text-sm text-stone-600 font-[700] py-5 xs:pt-7'>Select Date & Time</h1>
+            <div id="calendar" className='clear-both table lg:w-[70%] md:w-[80%] xs:w-[90%] w-[90%] h-fit py-0 mx-auto'></div>
+            <div className='table clear-both w-full pb-6'>
                 <TimeSelectBox />
             </div>
                 <TimeDetails />
@@ -82,24 +82,30 @@ function TimeSelectBox(){
     const setTimeForInputBox = (value:string) =>{
         setDisplayTime(value)
     }
-    const selectClass = 'inline-block md:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
+    const selectClass = 'inline-block xs:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
     return(
-    <>
-        <div className={`block relative  mx-auto py-1 text-[#5c545f] xl:w-[48%] lg:w-[55%] md:w-[50%] ssm:w-[87%] w-full float-left after:z-20
-        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 after:top-2 xll:after:left-[65%] ssm:after:left-[60%] 
-        after:left-[73%] after:w-10 after:h-10 md:scale-110 after:bg-cover`}>
-            <span className={'z-[20] font-[400] absolute -top-2 left-[3rem] block w-fit h-fit py-1 px-5 bg-white rounded-full xl:text-lg lg:text-base text-sm'}>Select a time slot</span>
+    <div className='xs:w-full md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
+        
+        <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto after:z-20 
+        xs:w-1/3
+        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 
+        after:left-[80%] after:top-3 xs:after:top-4
+        md:after:w-10 after:w-7 after:h-7 md:after:h-10 md:scale-110 after:bg-cover`}>
+
+            <span className={`z-[20] font-[400] absolute -top-2 lg:left-3 md:left-[3rem] left-[1rem] block xxs:w-fit w-fit h-fit py-1
+            px-5 bg-white rounded-full xl:text-lg md:text-sm text-xs`}>Select a time slot</span>
+            
             <div className='dropdown relative'>
 
                 <span className='absolute top-[2.9rem] z-20 left-10 outline-1 outline-gray-300
-                border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] border-b-[#ffffff] w-0 h-0'></span>
+                border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] hidden border-b-[#ffffff] w-0 h-0'></span>
 
-                <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] 
-                    font-[600] relative md:w-[80%] w-[95%] ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4
-                    xl:text-lg text-base leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
+                <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
+                    font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1
+                    xl:text-lg ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
                     text-[#5c545f] placeholder:text-[#5c545f] tracking-tighter`} type="text" name="daterange" id="date" 
                     placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
-                <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute w-80 h-fit 
+                <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xxs:w-80 w-72 h-fit 
                 bg-white pt-5 ssm:left-0 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
                     <div>
 
@@ -137,7 +143,7 @@ function TimeSelectBox(){
 
                     </div>
                     <div className='clear-both table my-2 w-full border-t-[1px] border-stone-300 py-2'>
-                        <div className='float-right text-xs font-[500] font-sans'>
+                        <div className='xxs:float-right float-left xxs:text-xs text-[10px] font-[500] font-sans'>
                             {`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM} `}
                             <button className='px-2 py-1 rounded-sm duration-300 text-black hover:bg-stone-300 mx-1 outline-none border-[1px] border-stone-300'>Cancel</button>
                             <button className='px-2 py-1 rounded-sm duration-300 bg-sky-700 text-white hover:text-white hover:bg-sky-800 mx-1 outline-none border-[1px] border-stone-300'>Apply</button>
@@ -146,14 +152,17 @@ function TimeSelectBox(){
                 </div>
             </div>
         </div>
-        <a href="" className={'block oswald font-[500] md:float-right md:ml-0 md:mt-0 mt-2 float-left ssm:ml-12 ml-10 xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4 pt-3 w-40 h-[3.3rem] text-base bg-primary text-white hover:bg-secondary hover:text-black text-center rounded-full duration-500'}>Schedule Now</a>
-    </>
+        <a href="" className={`block mx-auto oswald font-[500] md:float-right md:mt-0 mt-2 
+        xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4
+        xs:w-40 xs:h-[3.3rem] w-32 h-[3rem] pt-3 text-base bg-primary text-white hover:bg-secondary hover:text-black
+        text-center rounded-full duration-500`}>Schedule Now</a>
+    </div>
     )
 }
 function TimeDetails(){
     const spanClass = 'inline-block w-3 h-3 xl:mx-2 lg:mx-0 md:mx-2 mx-1 rounded-full';
     return(
-        <div className='w-full font-[500] xll:px-12 xl:px-8 llg:px-4 lg:px-12 md:px-10 px-5 xll:text-lg lg:text-base text-sm ssm:text-left text-center leading-8'>
+        <div className='w-fit font-[500] mx-auto xll:px-12 xl:px-8 llg:px-4 lg:px-12 md:px-10 xs:px-5 px-0 xll:text-lg xl:text-base xs:text-sm text-[10px] ssm:text-left text-center leading-8'>
             <p className='inline-block'>
                 Singapore Standard Time (SST) 
                 <span className={`${spanClass} bg-[#e3dcee]`}></span> 

@@ -9,7 +9,7 @@ import Navbar from "../components/navbar";
 import React from 'react';
 export default function Journey(){
     React.useEffect(()=>{   
-        document.body.style.backgroundImage = `url('/home-banner-img.jpg')`;
+        document.body.style.backgroundAttachment = 'scroll';
     }, [])
     return(
         <>

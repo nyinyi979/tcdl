@@ -1,18 +1,18 @@
 import jQuery from "jquery";
 (function($) {
     const calenderTpl = `
-		<div id="calTitle" class="flex justify-between items-center text-2xl px-2 pt-2 ">
-			<button type="button" class="inline-block prev bg-cover hover:scale-105 duration-300 month-mover w-8 h-8 rotate-90 [background-image:url('/drop-icon.png')]"></button>
-			<div id="monthYear" class="inline-block ssm:text-[30px] font-[700] text-[#4b2c64]"></div>
-			<button type="button" class="inline-block next bg-cover hover:scale-105 duration-300 month-mover w-8 h-8 -rotate-90 [background-image:url('/drop-icon.png')]"></button>
+		<div id="calTitle" class="flex w-fit mx-auto gap-4 items-center md:text-2xl xs:text-lg xxs:text-base text-xs md:py-2 px-2 pt-2 ">
+			<button type="button" class="inline-block self-start prev bg-cover hover:scale-105 duration-300 month-mover xs:w-8 xs:h-8 w-4 h-4 rotate-90 [background-image:url('/drop-icon.png')]"></button>
+			<div id="monthYear" class="inline-block font-[700] text-[#4b2c64]"></div>
+			<button type="button" class="inline-block self-end next bg-cover hover:scale-105 duration-300 month-mover xs:w-8 xs:h-8 w-4 h-4 -rotate-90 [background-image:url('/drop-icon.png')]"></button>
 		</div>
-		<div>
-			<div id="calThead" class="text-center flex flex-wrap w-full py-4 text-sm"></div>
+		<div class="md:text-sm text-xs">
+			<div id="calThead" class="text-center flex flex-wrap w-full py-4"></div>
 			<div id="calTbody" class="flex flex-wrap p-1"></div>
 		</div>
-		<div id="calTFooter" class="flex mt-2 justify-between items-center">
-			<h3 id="eventTitle" class="md:text-lg text-sm p-2 font-[600]">No events today.</h3>
-			<a href="javascript:void(0);" id="calLink" class="md:text-lg text-sm p-2 font-[600]">ALL EVENTS</a>
+		<div id="calTFooter" class="flex my-2 justify-between items-center md:text-lg xs:text-sm text-xs">
+			<h3 id="eventTitle" class=" p-2 font-[600]">No events today.</h3>
+			<a href="javascript:void(0);" id="calLink" class="p-2 font-[600]">ALL EVENTS</a>
 		</div>
     `;
     const weekDaysFromSunday = `

@@ -9,6 +9,7 @@ export default function BeAnElite(){
         document.body.style.backgroundImage = `url('/bg5.png')`;
         document.body.style.backgroundPosition = 'left top'
         document.body.style.backgroundSize = 'cover'
+        document.body.style.backgroundAttachment = 'scroll';
     }, [])
     return(
         <>

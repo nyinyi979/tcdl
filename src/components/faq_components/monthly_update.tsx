@@ -2,7 +2,7 @@ import { h2Class_V } from "../utilities";
 
 export default function Monthly(){
     return(
-        <div className="lg:w-5/6 w-11/12 py-10 font-[400] md:text-left text-justify">
+        <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] py-10 font-[400] md:text-left text-justify">
             
             <h1 className={`${h2Class_V} text-[#583f74] lg:pt-8 pt-3 pb-3`}>Monthly Highlights and Updates</h1>
     
