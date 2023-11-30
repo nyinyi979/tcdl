@@ -5,17 +5,8 @@ import Footer from "../components/footer";
 import React from 'react';
 import Navbar from "../components/navbar";
 export default function BeAnElite(){
-    React.useEffect(()=>{   
-        document.getElementById('bg')!.style.backgroundImage = `url('/bg5.png')`;
-        document.getElementById('bg')!.style.opacity = '1'
-        document.getElementById('bg')!.style.height = '170vh'
-        document.getElementById('bg')!.style.backgroundPositionY = '10px'
-        document.getElementById('bg')!.style.transform = 'scale(1.02)'
-        if(window.innerWidth < 1099) {
-            document.getElementById('bg')!.style.height = '250vh'
-            document.getElementById('bg')!.style.backgroundPosition = 'center center'
-            document.getElementById('bg')!.style.transform = 'scale(1)'
-        }
+    React.useEffect(()=>{  
+        document.getElementById('bg_elite')!.style.opacity = '1'
     }, [])
     return(
         <>

@@ -89,13 +89,13 @@ export default function J_Carosusel(props:{text:boolean}){
                     <a className={MoreClass} href='#'>
                         More Videos
                     </a>
-                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
+                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
                     hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                    md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[30px] 
+                    md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[44px] 
                     cursor-pointer `}></span>
-                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
+                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
                     hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                    md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[15px] 
+                    md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[36px] 
                     cursor-pointer `}></span>
             </div>
             

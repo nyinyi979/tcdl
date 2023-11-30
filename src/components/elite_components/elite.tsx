@@ -17,7 +17,7 @@ export default function TheElite(){
                 <div id='image' className="col-span-1 xs:w-full w-[96%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-[20rem] mt-10 rounded-xl my-3 mx-auto"/>
                 </div>
-                <div className="xl:w-[84%] lg:w-[90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl ssm:text-lg text-base mx-auto text-justify pr-4 font-[400]" style={{lineHeight:'2.2rem'}}>
+                <div className="xl:w-[84%] lg:w-[90%] lg:ml-0 sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl ssm:text-lg text-base mx-auto llg:mx-auto text-justify pr-4 font-[400]" style={{lineHeight:'2.2rem'}}>
                     <p className="py-2">
                         Magic exists in you. But most of us don't know about it and completely untapped.
                         We were born with this ability, therefore you've always had it. It's a quest you must undertake;
@@ -49,8 +49,8 @@ export default function TheElite(){
                     </p>
                 </div>
 
-                <div id='image' className="md:block hidden col-span-1 w-full mx-auto relative">
-                    <img src="/pic1.png" alt="" className="bg-cover lg:w-[22rem] lg:h-[22rem] ml-0 w-[18rem] h-[18rem] xl:mt-6 mt-5 rounded-xl float-left"/>
+                <div id='image' className="md:block hidden col-span-1 w-full mr-10 relative">
+                    <img src="/pic1.png" alt="" className="bg-cover xl:w-[22rem] xl:h-[22rem]  w-[16rem] h-[16rem] xl:mt-6 mt-5 rounded-xl float-left"/>
                 </div>
 
             </div>

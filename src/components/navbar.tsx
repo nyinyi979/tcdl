@@ -70,7 +70,8 @@ export default function Navbar(props:{currentLink:string}){
     return(
         <>
         <SignUp /> <Login /><Forgotten />
-        <div id='bg' className='absolute w-full h-full [background-image:url(/home-banner-img.jpg) bg-cover lg:[background-position: top center] -z-10 bg-repeat-y bg-scroll'></div>
+        <div id='bg_elite' className='absolute opacity-0 w-full h-[180vh] scale-105 -left-5 top-8 [background-image:url(/bg5.png)] bg-cover -z-10 bg-repeat-y bg-scroll'></div>
+        <div id='bg' className='absolute opacity-0 w-full h-full [background-image:url(/home-banner-img.jpg) bg-cover lg:[background-position: top center] -z-10 bg-repeat-y bg-scroll'></div>
         <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
             <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto cursor-pointer'/>
         </div>
