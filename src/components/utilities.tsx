@@ -2,8 +2,8 @@ import anime, {AnimeInstance} from 'animejs'
 import React from 'react';
 export function useAnimateLeft(selector:string){
     const introAnimation = React.useRef<undefined|AnimeInstance>(undefined);
-    const outroAnimation = React.useRef<undefined|AnimeInstance>(undefined);
     const played = React.useRef(false);
+    
     React.useEffect(()=>{
         introAnimation.current = anime({
             targets: `#${selector}`,
@@ -14,30 +14,22 @@ export function useAnimateLeft(selector:string){
             delay: 600,
             easing: 'linear'
         })
-        outroAnimation.current = anime({
-            targets:  `#${selector}`,
-            autoplay: false,
-            translateX: [0 , -50 ],
-            opacity: [1, 0],
-            duration: 500,
-            easing: 'linear'
-        })
         const observer = new IntersectionObserver((entries)=>{
             if (entries[0].intersectionRatio <= 0) {
-                if(!played.current) {
-                console.log(played);
-                    outroAnimation.current!.restart();
-                    played.current = true
-                }
+                return;
             }
+            if(!played.current) {
                 introAnimation.current!.restart();
+                played.current = true;
+            }
         })
         observer.observe(document.getElementById(selector)!);
     }, [selector, played])
 }
 export function useAnimateRight(selector:string){
     const introAnimation = React.useRef<undefined|AnimeInstance>(undefined);
-    const outroAnimation = React.useRef<undefined|AnimeInstance>(undefined);
+    const played = React.useRef(false);
+    
     React.useEffect(()=>{
         introAnimation.current = anime({
             targets: `#${selector}`,
@@ -48,22 +40,17 @@ export function useAnimateRight(selector:string){
             delay: 600,
             easing: 'linear'
         })
-        outroAnimation.current = anime({
-            targets:  `#${selector}`,
-            autoplay: false,
-            translateX: [0 , 50 ],
-            opacity: [1, 0],
-            duration: 500,
-            easing: 'linear'
-        })
         const observer = new IntersectionObserver((entries)=>{
             if (entries[0].intersectionRatio <= 0) {
-                outroAnimation.current!.restart();
+                return;
             }
+            if(!played.current) {
                 introAnimation.current!.restart();
+                played.current = true;
+            }
         })
         observer.observe(document.getElementById(selector)!);
-    }, [selector])
+    }, [selector, played])
 }
 export function useAnimateTop(selector:string){
     const introAnimation = React.useRef<undefined|AnimeInstance>(undefined);
