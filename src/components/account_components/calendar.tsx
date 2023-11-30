@@ -162,7 +162,7 @@ function TimeSelectBox(){
 function TimeDetails(){
     const spanClass = 'md:inline-block md:float-none float-left mt-2 w-3 h-3 xl:mx-2 lg:mx-0 md:mx-2 mx-1 rounded-full';
     return(
-        <div className='w-fit font-[500] mx-auto xll:px-12 xl:px-8 llg:px-4 lg:pb-0 pb-4 md:px-8 xs:px-5 px-0 xll:text-lg xl:text-base md:text-sm text-[10px] ssm:text-left text-center leading-8'>
+        <div className='w-fit font-[500] mx-auto xll:px-12 xl:px-8 llg:px-4 lg:pb-0 pb-4 md:px-8 xs:px-5 px-0 xll:text-lg xl:text-base xs:text-sm text-[10px] ssm:text-left text-center leading-8'>
             <p className='md:inline-block clear-both table'>
                 <span className='float-right md:float-none'>
                     Singapore Standard Time (SST) 
