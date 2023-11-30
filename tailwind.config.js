@@ -21,6 +21,7 @@ export default {
       colors:{
         primary: '#ef4165',       //pink
         secondary: '#eac473',     //yellow
+        light_secondary: '#ffeacf',
         violet: '#372c44',
         light_violet: '#443548',
         dark_violet: '#18141a',

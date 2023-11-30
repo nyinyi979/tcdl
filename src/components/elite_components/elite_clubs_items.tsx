@@ -29,9 +29,9 @@ export default function EliteClubItems(){
 
                 {bg.map((value , index)=>(
                 <div key={Math.random()*1000} className="rounded-xl md:h-[28rem] md:w-full ssm:w-[74%] relative pb-24 w-fit mx-auto h-fit bg-gray-200 mt-4">
-                    <div className={`oswald font-[500] w-full text-3xl rounded-t-xl px-5 py-5 text-white bg-gradient-to-r ${value}`}>{items[index]}</div>
-                    <div className="pb-3 px-2">
-                        <ul className="c pl-1 pt-5 md:text-xl text-lg font-[500] ml-4 text-t_violet lg:leading-[2.5rem] leading-[2rem]">
+                    <div className={`oswald font-[500] w-full md:text-3xl text-2xl rounded-t-xl px-5 py-5 text-white bg-gradient-to-r ${value}`}>{items[index]}</div>
+                    <div className="pb-3 px-3">
+                        <ul className="c pl-1 pt-5 md:text-xl ssm:text-lg xs:text-lg text-base font-[500] ml-4 text-t_violet lg:leading-[2.5rem] leading-[2rem]">
                             {texts[index].map((text)=>(
                                 <li className="ml-4 lg:mt-3 mt-1" key={Math.random()*900}>{text}</li>
                             ))}

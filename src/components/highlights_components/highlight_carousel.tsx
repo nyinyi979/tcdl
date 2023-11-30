@@ -9,11 +9,11 @@ export default function H_Carousel(){
     const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
     const pClass = "text-white font-[400] lg:text-xl leading-10 text-justify"
     return(
-        <div className={`pb-10`}>
+        <div className={`pb-10 mt-10 lg:mt-0`}>
             <h2 className={`${h1Class} text-center text-primary md:py-10 py-4`}>The Highlights</h2>
             <h2 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
             xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl 
-            md:leading-8 mr-3 text-2xl text-center text-secondary pb-3`}>
+            md:leading-8 mr-3 ssm:text-2xl text-xl text-center text-secondary pb-3`}>
                 This Month's Highlights
             </h2>
             
@@ -22,10 +22,10 @@ export default function H_Carousel(){
                 <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
                 pagination={{clickable:true}}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
-                768: {spaceBetween: 30,slidesPerView:2} , 992 : {spaceBetween: 30, slidesPerView :3} 
+                768: {spaceBetween: 30,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
                 , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
                 ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
-                 modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[70%] w-[85%]  py-10" >
+                 modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[70%] w-[60%] xs:py-10 py-0">
 
                     <SwiperSlide>
                         <img src="/img2.jpg" alt="img" className="w-full h-64 bg-cover rounded-lg"/>
@@ -88,13 +88,13 @@ export default function H_Carousel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
-                <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                 hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                 md:top-[20%] top-[24%] xll:left-[40px] xl:left-[35px] md:left-[20px] xs:left-[13px] left-[10px] 
+                 md:top-[23%] top-[25%] xll:left-[40px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] left-[20px] 
                 cursor-pointer `}></span>
-                <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                 hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                 md:top-[20%] top-[23%] xll:right-[35px] xl:right-[25px] md:right-[5px] xs:-right-[7px] -right-[5px] 
+                 md:top-[23%] top-[25%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[15px] right-[5px] 
                 cursor-pointer `}></span>
             </div>
         </div>

@@ -6,15 +6,15 @@ import 'swiper/css/pagination'
 import {  bg3Class, h1Class, h2Class } from '../utilities';
 const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
 export default function Carosusel(){
-    const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
-    const pClass = "text-white font-[400] lg:text-xl leading-10 text-justify"
+    const headingClass = "lg:text-2xl md:text-xl ssm:text-lg text-base text-secondary font-semibold py-5";
+    const pClass = "text-white font-[400] lg:text-xl ssm:text-base text-sm leading-10 text-justify"
     return(
         <div className={`py-20 ${bg3Class}`}>
             <h2 className={`${h1Class} text-center text-secondary md:py-6 py-4`}>The Highlights</h2>
-            <h2 className={`${h2Class} text-center text-[#ffeacf]`}>
+            <h2 className={`${h2Class} text-center text-light_secondary`}>
                 Sharing is caring
             </h2>
-            <p className="xll:w-5/6 xl:w-[80%] lg:w-[95%] md:w-[90%] w-[85%] mx-auto text-justify font-[400] leading-9 text-white xxl:text-[1.6rem] lg:text-[1.4rem] text-base xs:py-10 py-8">
+            <p className="xll:w-5/6 xl:w-[80%] lg:w-[95%] md:w-[90%] w-[85%] mx-auto text-justify font-[400] leading-9 text-white xxl:text-[1.6rem] lg:text-[1.4rem] xs:text-base text-sm xs:py-10 py-8">
                 In order to create a more interconnected and compassionate world, the founder and members 
                 share their insights, knowledge, and spiritual experiences with others. Substantial value and
                 worth reading articles.
@@ -26,7 +26,7 @@ export default function Carosusel(){
                 <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
                 pagination={{clickable:true}}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
-                768: {spaceBetween: 30,slidesPerView:2} , 992 : {spaceBetween: 30, slidesPerView :3} 
+                768: {spaceBetween: 30,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
                 , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
                 ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
                  modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[70%] w-[60%] xs:py-10 py-0" >
@@ -92,13 +92,13 @@ export default function Carosusel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
-                <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                 hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                 md:top-[20%] top-[24%] xll:left-[40px] xl:left-[35px] md:left-[20px] xs:left-[13px] left-[10px] 
+                 md:top-[23%] top-[25%] xll:left-[40px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] left-[20px] 
                 cursor-pointer `}></span>
-                <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                 hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                 md:top-[20%] top-[23%] xll:right-[35px] xl:right-[25px] md:right-[5px] xs:-right-[7px] -right-[5px] 
+                 md:top-[23%] top-[25%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[15px] right-[5px] 
                 cursor-pointer `}></span>
             </div>
             

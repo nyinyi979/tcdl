@@ -8,8 +8,14 @@ export default function BeAnElite(){
     React.useEffect(()=>{   
         document.getElementById('bg')!.style.backgroundImage = `url('/bg5.png')`;
         document.getElementById('bg')!.style.opacity = '1'
-        document.getElementById('bg')!.style.height = '180vh'
-        if(window.innerHeight < 1099) document.getElementById('bg')!.style.height = '390vh'
+        document.getElementById('bg')!.style.height = '170vh'
+        document.getElementById('bg')!.style.backgroundPositionY = '10px'
+        document.getElementById('bg')!.style.transform = 'scale(1.02)'
+        if(window.innerWidth < 1099) {
+            document.getElementById('bg')!.style.height = '250vh'
+            document.getElementById('bg')!.style.backgroundPositionY = '-10px'
+            document.getElementById('bg')!.style.transform = 'scale(1)'
+        }
     }, [])
     return(
         <>

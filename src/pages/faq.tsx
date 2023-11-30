@@ -39,7 +39,7 @@ export default function FAQ(){
     return(
         <>
             <Navbar currentLink="/faq"/>
-            <div className={`${h1Class} py-2 text-primary text-center`}>Q & A</div>
+            <div className={`${h1Class} mt-10 lg:mt-0 py-2 text-primary text-center`}>Q & A</div>
             <div className={`${h2Class} md:py-8 py-4 pb-10 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />

@@ -8,15 +8,15 @@ export default function PrivacyPolicy(){
             <p className="text-lg text-stone-600 py-3">
                 For a personalised reading these data and info will be collected with high confidentiality for the reader:
             </p>
-            <ol className="px-10 lg:py-4 py-2 list-decimal list-outside text-lg text-stone-600 ">
-                <li className="py-3">Member's DOB</li>
-                <li className="py-3">Member's time and city of birth</li>
-                <li className="py-3">Member's photo without masks/glasses</li>
-                <li className="py-3">Member's full residential address (for delivery purposes)</li>
-                <li className="py-3">Member's current phone number(s)</li>
-                <li className="py-3">Member's valid email address</li>
-                <li className="py-3">Member's preferred type of reading or consultation (may choose more than one)</li>
-                <li className="py-3">Member's preferred process and outcome through the sessions with the reader</li>
+            <ol className="px-10 lg:py-4 py-2 list-decimal list-outside ssm:text-lg text-base text-stone-600 ">
+                <li className="ssm:py-3 py-2">Member's DOB</li>
+                <li className="ssm:py-3 py-2">Member's time and city of birth</li>
+                <li className="ssm:py-3 py-2">Member's photo without masks/glasses</li>
+                <li className="ssm:py-3 py-2">Member's full residential address (for delivery purposes)</li>
+                <li className="ssm:py-3 py-2">Member's current phone number(s)</li>
+                <li className="ssm:py-3 py-2">Member's valid email address</li>
+                <li className="ssm:py-3 py-2">Member's preferred type of reading or consultation (may choose more than one)</li>
+                <li className="ssm:py-3 py-2">Member's preferred process and outcome through the sessions with the reader</li>
             </ol>
 
         </div>

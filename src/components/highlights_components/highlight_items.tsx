@@ -2,7 +2,7 @@ import React from 'react';
 export default function HighlightItems(){
     const MoreClass = 'oswald text-primary hover:text-secondary duration-500 xs:text-xl text-lg font-[500] inline-block xs:my-8 my-4'
     
-    const linkClass = "hover:text-white hover:bg-primary duration-500 px-5 py-3 rounded-lg cursor-pointer text-lg font-bold"
+    const linkClass = "hover:text-white hover:bg-primary duration-500 px-5 py-3 rounded-lg cursor-pointer xs:text-lg text-base font-bold"
 
     //can use useState to change the pages, here it is just used to check for active color
     const [ active , setActive ] = React.useState('1');
@@ -24,8 +24,8 @@ export default function HighlightItems(){
             {contents.map((content)=>(
                 <div key={content.title}>
                     <img src={content.img} alt="img" className="w-full xl:h-72 lg:h-60 md:h-52 h-60 bg-cover rounded-md my-2"/>
-                    <h1 className="oswald text-[#583f74] my-5 xl:text-4xl text-2xl font-[400]">{content.title}</h1>
-                    <div className="font-[400] xl:text-xl text-base leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
+                    <h1 className="oswald text-[#583f74] my-5 xl:text-4xl ssm:text-2xl text-xl font-[400]">{content.title}</h1>
+                    <div className="font-[400] xl:text-xl ssm:text-base text-sm leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
                     <a href="#" className={MoreClass}>More</a>
                 </div>
             ))}

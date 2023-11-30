@@ -6,14 +6,14 @@ import {  bg7Class, h1Class, h2Class } from '../utilities';
 export default function J_Carosusel(props:{text:boolean}){
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 lg:text-3xl text-xl font-[400] block mt-4 mb-16 w-fit h-fit mx-auto cursor-pointer'
     const headingClass = "md:text-xl xs:text-lg text-base text-left text-secondary font-semibold py-5";
-    const videoClass = 'lg:h-48 md:h-32 xs:h-36 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
-    const playBtn = `w-20 h-20 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
-    hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover xl:left-[37%] lg:left-[37%] 
-    md:left-[30%] lg:top-[27%] xs:top-[20%] lg:left-[30%] md:left-[36%] xs:left-[35%] top-[10%] left-[28%] z-10 text-6xl p-3 cursor-pointer`
+    const videoClass = 'xl:h-42 lg:h-36 md:h-28 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
+    const playBtn = `md:w-20 md:h-20 w-16 h-16 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
+    hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover xll:left-[35%] xl:left-[37%] lg:left-[37%] 
+    md:left-[29%] md:top-[13%] lg:top-[24%] xs:top-[20%] xxs:top-[23%] xxs:left-[35%] lg:left-[30%] md:left-[36%] ssm:left-[35%] xs:left-[37%] top-[14%] ssm:left-[35%] left-[30%] z-10 text-6xl p-3 cursor-pointer`
     return(
         <div className={`md:py-20 py-10 ${bg7Class} text-center`}>
             <h2 className={`${h1Class} text-secondary`}>The Feedbacks</h2>
-            <h2 className={`${h2Class} text-[#ffeacf] py-5`}>
+            <h2 className={`${h2Class} text-light_secondary py-5`}>
             Incredibly accurate and insightful, <br /> and whatelse of their sayings!
             </h2>
             <div className={`${props.text? 'block' : 'hidden'} font-[500] xl:w-[84%] md:w-[90%] w-[85%] h-fit text-justify text-white leading-10 mx-auto md:text-xl text-lg py-9`}>
@@ -27,10 +27,10 @@ export default function J_Carosusel(props:{text:boolean}){
             <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
                 pagination={{clickable:true}}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
-                768: {spaceBetween: 30,slidesPerView:2} , 992 : {spaceBetween: 30, slidesPerView :3} 
+                768: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
                 , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
                 ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
-                 modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[65%] w-[50%] pt-10 md:pb-20 pb-10" >
+                 modules={[Navigation, Pagination]} className="xxl:w-[40%] xll:w-[70%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[70%] xs:w-[60%] xxs:w-[200px] w-[50%] pt-10 md:pb-20 pb-10" >
                     
                     <SwiperSlide className=''>
                         
@@ -89,15 +89,14 @@ export default function J_Carosusel(props:{text:boolean}){
                     <a className={MoreClass} href='#'>
                         More Videos
                     </a>
-                    <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                     hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                    prev md:top-[32%] xs:top-[40%] top-[24%] xll:left-[40px] xl:left-[35px] md:left-[20px] xs:left-[14px] left-[3px] 
+                    md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[30px] 
                     cursor-pointer `}></span>
-                    <span className={`absolute w-10 h-10 bg-no-repeat bg-contain duration-300 
+                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                     hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                    next md:top-[32%] xs:top-[40%] top-[24%] xll:right-[35px] xl:right-[25px] md:right-[10px] xs:-right-[8px] -right-[12px]  
+                    md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[25px] right-[15px] 
                     cursor-pointer `}></span>
-              
             </div>
             
         </div>
