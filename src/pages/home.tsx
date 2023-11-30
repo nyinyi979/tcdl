@@ -11,7 +11,7 @@ import Navbar from "../components/navbar"
 export default function Home(){
     React.useEffect(()=>{   
         document.body.style.backgroundImage = `url('/home-banner-img.jpg')`;
-        document.body.style.backgroundAttachment = 'fixed'
+        document.body.style.backgroundAttachment = 'scroll'
     }, [])
     React.useEffect(()=>{
         anime({

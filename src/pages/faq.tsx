@@ -9,6 +9,7 @@ export default function FAQ(){
     React.useEffect(()=>{
         document.body.style.backgroundImage = `url('/bg6.png')`;
         document.body.style.backgroundPositionY = `-150px`;
+        document.body.style.backgroundAttachment = 'scroll'
         anime({
             targets: '#links',
             opacity: [0 , 1],
@@ -38,7 +39,7 @@ export default function FAQ(){
         <>
             <Navbar currentLink="/faq"/>
             <div className={`${h1Class} py-2 text-primary text-center`}>Q & A</div>
-            <div className={`${h2Class} py-4 pb-10 text-secondary text-center`}>Membership Privileges</div>
+            <div className={`${h2Class} md:py-8 py-4 pb-10 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />
             <Footer />

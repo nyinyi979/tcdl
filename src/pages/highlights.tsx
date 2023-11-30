@@ -8,6 +8,8 @@ import Navbar from "../components/navbar";
 export default function Highlights(){
     React.useEffect(()=>{   
         document.body.style.backgroundImage = `url(/bg7.png)`;
+        document.body.style.backgroundAttachment = 'fixed'
+        document.body.style.backgroundRepeat = 'repeat'
     }, [])
     return(
         <>

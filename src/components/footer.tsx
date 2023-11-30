@@ -1,8 +1,7 @@
-import { FaFacebookF, FaPlay, } from "react-icons/fa6";
+import { FaFacebookF, FaPlay, FaTiktok, } from "react-icons/fa6";
 import {FaTelegramPlane} from 'react-icons/fa';
-import { MdOutlineMusicNote } from "react-icons/md";
 export default function Footer(){
-    const linkClass = 'text-light_blue font-[600] hover:text-primary duration-500 xll:text-[20px] md:text-lg text-base';
+    const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[20px] md:text-lg text-base';
     const iconClass ="text-dark_violet hover:rotate-[20deg] hover:text-black rounded-full lg:w-12 lg:h-12 w-10 h-10 xs:p-3 p-2 bg-blue cursor-pointer hover:bg-primary duration-300";
     return(
         <div className="bg-dark_violet xs:py-12 py-7">
@@ -20,7 +19,7 @@ export default function Footer(){
                 <FaFacebookF className={iconClass}/>
                 <FaPlay className={iconClass} />
                 <FaTelegramPlane className={iconClass} />
-                <MdOutlineMusicNote className={iconClass} />
+                <FaTiktok className={iconClass} />
             </div>
             <a href="/"><img src="/footer-logo-e48cc106.png" alt="" className="lg:w-64 w-36 h-fit bg-cover md:mt-12 mt-4 mx-auto"/></a>
             <div className="text-light_blue text-center pt-10 xs:pb-8 pb-3 sm:px-0 px-2 leading-10">
