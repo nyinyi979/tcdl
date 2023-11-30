@@ -12,7 +12,7 @@ export default function FAQ(){
         document.getElementById('bg_j')!.style.top = '-20%'
         document.getElementById('bg_j')!.style.height = '100%'
         if(window.innerWidth < 1024){
-            document.getElementById('bg')!.style.backgroundPositionX = '-100px'
+            document.getElementById('bg_j')!.style.backgroundPositionX = '-100px'
         }
         anime({
             targets: '#links',
