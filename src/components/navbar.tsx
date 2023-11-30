@@ -70,7 +70,7 @@ export default function Navbar(props:{currentLink:string}){
     return(
         <>
         <SignUp /> <Login /><Forgotten />
-        <div id='bg'></div>
+        <div id='bg' className='absolute w-full h-full [background-image:url(/home-banner-img.jpg) bg-cover lg:[background-position: top center] -z-10 bg-repeat-y bg-scroll'></div>
         <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
             <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto cursor-pointer'/>
         </div>
@@ -80,7 +80,7 @@ export default function Navbar(props:{currentLink:string}){
                 <a href="/"><img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/></a>
             </div>
             
-            <div id='links' className='float-right xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
+            <div id='links' className='mt-1 float-right xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
                 <div className='lg:block mr-0 hidden float-left xll:pt-16 xll:pr-8 lg:pt-6'>
                     <li className={liClass}>
                         <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link> 

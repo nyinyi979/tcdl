@@ -130,4 +130,4 @@ export const bg2Class = `[background-image:url('/bg2.jpg')] bg-center bg-cover b
 export const bg4Class = `[background-image:url('/bg4.jpg')] md:bg-center lg:[background-size: 95%] sm:bg-center xs:bg-[center_left_-250px] bg-[center_left_-300px] bg-repeat bg-cover `
 export const bg5Class = `[background-image:url('/img5.jpg')] md:[background-position:center top] bg-[center_left_-400px] bg-repeat bg-cover`
 export const bg6Class = `[background-image:url('/bg6.png')] bg-center bg-repeat bg-cover`
-export const bg7Class = `[background-image:url('/bg7.png')] bg-cover bg-scroll`
+export const bg7Class = `[background-image:url('/bg7.png')] lg:bg-center bg-[center_left_-400px] bg-cover bg-scroll`

@@ -9,7 +9,7 @@ export default function J_Carosusel(props:{text:boolean}){
     const videoClass = 'xl:h-42 lg:h-36 md:h-28 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
     const playBtn = `md:w-20 md:h-20 w-16 h-16 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
     hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover xll:left-[35%] xl:left-[37%] lg:left-[37%] 
-    md:left-[29%] md:top-[13%] lg:top-[24%] xs:top-[20%] xxs:top-[23%] xxs:left-[35%] lg:left-[30%] md:left-[36%] ssm:left-[35%] xs:left-[37%] top-[14%] ssm:left-[35%] left-[30%] z-10 text-6xl p-3 cursor-pointer`
+    md:left-[29%] md:top-[13%] lg:top-[24%] xs:top-[20%] xxs:top-[23%] xxs:left-[35%] lg:left-[30%] md:left-[35%] ssm:left-[35%] xs:left-[35%] top-[14%] ssm:left-[35%] left-[30%] z-10 text-6xl p-3 cursor-pointer`
     return(
         <div className={`md:py-20 py-10 ${bg7Class} text-center`}>
             <h2 className={`${h1Class} text-secondary`}>The Feedbacks</h2>
@@ -95,7 +95,7 @@ export default function J_Carosusel(props:{text:boolean}){
                     cursor-pointer `}></span>
                     <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 
                     hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                    md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[25px] right-[15px] 
+                    md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[15px] 
                     cursor-pointer `}></span>
             </div>
             

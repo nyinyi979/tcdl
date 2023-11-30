@@ -9,7 +9,10 @@ export default function Highlights(){
     React.useEffect(()=>{   
         document.getElementById('bg')!.style.backgroundImage = `url('/bg7.png')`;
         document.getElementById('bg')!.style.opacity = '1'
-        document.getElementById('bg')!.style.height = '180vh'
+        document.getElementById('bg')!.style.height = document.getElementById('highlight')!.style.height
+        if(window.innerWidth < 1024){
+            document.getElementById('bg')!.style.backgroundPositionX = '-200px'
+        }
     }, [])
     return(
         <>

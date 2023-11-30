@@ -13,7 +13,7 @@ export default function BeAnElite(){
         document.getElementById('bg')!.style.transform = 'scale(1.02)'
         if(window.innerWidth < 1099) {
             document.getElementById('bg')!.style.height = '250vh'
-            document.getElementById('bg')!.style.backgroundPositionY = '-10px'
+            document.getElementById('bg')!.style.backgroundPosition = 'center center'
             document.getElementById('bg')!.style.transform = 'scale(1)'
         }
     }, [])

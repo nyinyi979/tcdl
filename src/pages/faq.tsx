@@ -11,6 +11,9 @@ export default function FAQ(){
         document.getElementById('bg')!.style.opacity = '1'
         document.getElementById('bg')!.style.top = '-20%'
         document.getElementById('bg')!.style.height = '100%'
+        if(window.innerWidth < 1024){
+            document.getElementById('bg')!.style.backgroundPositionX = '-100px'
+        }
         anime({
             targets: '#links',
             opacity: [0 , 1],

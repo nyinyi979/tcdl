@@ -9,7 +9,8 @@ import Navbar from "../components/navbar";
 import React from 'react';
 export default function Journey(){
     React.useEffect(()=>{   
-        document.getElementById('bg')!.style.opacity = '1'
+        document.body.style.backgroundPosition = 'center center';
+        document.body.style.backgroundAttachment = 'fixed';
     }, [])
     return(
         <>

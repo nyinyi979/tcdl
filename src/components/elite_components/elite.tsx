@@ -5,19 +5,19 @@ export default function TheElite(){
     React.useEffect(()=>{
     }, [])
     return(
-        <div className={`text-center mt-10 lg:mt-0 pb-16`}>
+        <div className={`text-center mt-10 lg:mt-0 pb-12`}>
 
-            <h1 className={`${h1Class} text-primary py-5`}>Be an Elite?</h1>
+            <h1 className={`${h1Class} text-primary py-6`}>Be an Elite?</h1>
             <h1 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
-            xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl 
-            md:leading-8 mr-3 ssm:text-2xl text-xl text-center text-secondary md:pt-2 `}>Founder's Message</h1>
+            xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl md:leading-8 mr-3 ssm:text-2xl 
+            text-xl text-center text-secondary md:pt-2 `}>Founder's Message</h1>
 
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-5 lg:pl-10 pl-0">
 
                 <div id='image' className="col-span-1 xs:w-full w-[96%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-[20rem] mt-10 rounded-xl my-3 mx-auto"/>
                 </div>
-                <div className="xl:w-5/6 lg:[w-90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl ssm:text-lg text-base mx-auto text-justify pr-4 font-[400]" style={{lineHeight:'2.2rem'}}>
+                <div className="xl:w-[84%] lg:w-[90%] sm:w-[92%] w-[88%] lg:col-span-2 col-span-2 text-white md:text-xl ssm:text-lg text-base mx-auto text-justify pr-4 font-[400]" style={{lineHeight:'2.2rem'}}>
                     <p className="py-2">
                         Magic exists in you. But most of us don't know about it and completely untapped.
                         We were born with this ability, therefore you've always had it. It's a quest you must undertake;
@@ -50,7 +50,7 @@ export default function TheElite(){
                 </div>
 
                 <div id='image' className="md:block hidden col-span-1 w-full mx-auto relative">
-                    <img src="/pic1.png" alt="" className="bg-cover lg:w-[22rem] lg:h-[22rem] ml-0 w-[18rem] h-[18rem] xl:mt-10 mt-5 rounded-xl float-left"/>
+                    <img src="/pic1.png" alt="" className="bg-cover lg:w-[22rem] lg:h-[22rem] ml-0 w-[18rem] h-[18rem] xl:mt-6 mt-5 rounded-xl float-left"/>
                 </div>
 
             </div>
