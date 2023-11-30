@@ -21,7 +21,7 @@ import jQuery from "jquery";
     <div class="w-[14.2%]">Tue</div>
     <div class="w-[14.2%]">Wed</div>
     <div class="w-[14.2%]">Thu</div>
-    <div class="w-[14.2%]">Fir</div>
+    <div class="w-[14.2%]">Fri</div>
     <div class="w-[14.2%]">Sat</div>`;
     const weekDaysFromMonday = '<div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div><div>S</div>';
     const shortMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

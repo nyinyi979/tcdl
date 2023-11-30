@@ -32,9 +32,9 @@ export default function CalendarPage(){
         dropdown_content.style.display = 'none';
     }
     return(
-        <div onClick={closeTimeBox} className='xxs:w-full w-[310px] mx-auto'>
+        <div onClick={closeTimeBox} className='xs:w-full xxs:w-[370px] xxs:-ml-3 w-[310px] xs:mx-auto'>
             <h1 className='text-center md:text-2xl xs:text-xl text-sm text-stone-600 font-[700] py-5 xs:pt-7'>Select Date & Time</h1>
-            <div id="calendar" className='clear-both table lg:w-[70%] md:w-[80%] xs:w-[90%] w-[90%] h-fit py-0 mx-auto'></div>
+            <div id="calendar" className='clear-both table lg:w-[70%] md:w-[80%] xs:w-[90%] xxs:w-[90.7%] w-[90%] h-fit py-0 mx-auto'></div>
             <div className='table clear-both w-full pb-6'>
                 <TimeSelectBox />
             </div>
@@ -84,7 +84,7 @@ function TimeSelectBox(){
     }
     const selectClass = 'inline-block xs:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
     return(
-    <div className='xs:w-full md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
+    <div className='ssm:w-full ssm:-ml-0 xs:-ml-10 xs:w-[120%] md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
         
         <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto after:z-20 
         xs:w-1/3
@@ -102,11 +102,11 @@ function TimeSelectBox(){
 
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
                     font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1
-                    xl:text-lg ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
+                    xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
                     text-[#5c545f] placeholder:text-[#5c545f] tracking-tighter`} type="text" name="daterange" id="date" 
                     placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
                 <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xxs:w-80 w-72 h-fit 
-                bg-white pt-5 ssm:left-0 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
+                bg-white pt-5 ssm:left-0 xs:-left-20 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
                     <div>
 
                         <select className={selectClass} name="s_hours" id="s_hours" defaultValue={time.startHour} onChange={(e)=>{setStartHour(e.target.value)}}>
@@ -160,19 +160,21 @@ function TimeSelectBox(){
     )
 }
 function TimeDetails(){
-    const spanClass = 'inline-block w-3 h-3 xl:mx-2 lg:mx-0 md:mx-2 mx-1 rounded-full';
+    const spanClass = 'md:inline-block md:float-none float-left mt-2 w-3 h-3 xl:mx-2 lg:mx-0 md:mx-2 mx-1 rounded-full';
     return(
-        <div className='w-fit font-[500] mx-auto xll:px-12 xl:px-8 llg:px-4 lg:px-12 md:px-10 xs:px-5 px-0 xll:text-lg xl:text-base xs:text-sm text-[10px] ssm:text-left text-center leading-8'>
-            <p className='inline-block'>
-                Singapore Standard Time (SST) 
+        <div className='w-fit font-[500] mx-auto xll:px-12 xl:px-8 llg:px-4 lg:pb-0 pb-4 md:px-8 xs:px-5 px-0 xll:text-lg xl:text-base md:text-sm text-[10px] ssm:text-left text-center leading-8'>
+            <p className='md:inline-block clear-both table'>
+                <span className='float-right md:float-none'>
+                    Singapore Standard Time (SST) 
+                </span>
                 <span className={`${spanClass} bg-[#e3dcee]`}></span> 
             </p>
-            <p className='inline-block'>
-                Available 
+            <p className='md:inline-block clear-both table'>
+                <span className='float-right md:float-none'>Available</span> 
                 <span className={`${spanClass} bg-secondary`}></span>
             </p>
-            <p className='inline-block'>
-                Limited time slot 
+            <p className='md:inline-block clear-both table'>
+                <span className='float-right md:float-none'>Limited time slot </span>
                 <span className={`${spanClass} bg-primary`}></span>Unavailable
                 (or) Fully booked
             </p>

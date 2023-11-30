@@ -16,8 +16,8 @@ export default function AccountSidebar(){
 
             </div>
 
-            <div className="flex-row gap-3 md:pl-12 px-4 py-5 items-center flex border-t-2 border-t-[#908ec0]">
-                <div><img src='/fb-icon.png' className="inline-block text-violet lg:w-[8rem] md:w-[4rem] w-[5rem] h-fit"/></div>
+            <div className="flex-row gap-3 md:pl-12 px-7 py-5 items-center flex border-t-2 border-t-[#908ec0]">
+                <div><img src='/fb-icon.png' className="inline-block text-violet xxl:w-[5rem] lg:w-[8rem] w-[4rem] h-fit"/></div>
                 <div className="text-sm font-[300]">Copyright © 2024 The Card's Don't Lie (TCDL). All Rights Reserved.</div>
             </div>
         </>

@@ -70,6 +70,7 @@ export default function Navbar(props:{currentLink:string}){
     return(
         <>
         <SignUp /> <Login /><Forgotten />
+        <div id='bg'></div>
         <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
             <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto cursor-pointer'/>
         </div>

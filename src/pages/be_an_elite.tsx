@@ -6,10 +6,10 @@ import React from 'react';
 import Navbar from "../components/navbar";
 export default function BeAnElite(){
     React.useEffect(()=>{   
-        document.body.style.backgroundImage = `url('/bg5.png')`;
-        document.body.style.backgroundPosition = 'left top'
-        document.body.style.backgroundSize = 'cover'
-        document.body.style.backgroundAttachment = 'scroll';
+        document.getElementById('bg')!.style.backgroundImage = `url('/bg5.png')`;
+        document.getElementById('bg')!.style.opacity = '1'
+        document.getElementById('bg')!.style.height = '180vh'
+        if(window.innerHeight < 1099) document.getElementById('bg')!.style.height = '390vh'
     }, [])
     return(
         <>

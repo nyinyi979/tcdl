@@ -5,9 +5,25 @@ body, :root{
     width: 100% !important;
     max-width: 100% !important;
     min-width: 100% !important;
-    height: 100%;
+    height: 130vh;
     overflow-x:hidden;
+    position: relative;
     font-family: 'Raleway', sans-serif !important;
+}
+#bg{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-image: url(/home-banner-img.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: repeat-y;
 }
 body::-webkit-scrollbar{
     display: none;

@@ -1,6 +1,6 @@
 import React from 'react';
 export default function HighlightItems(){
-    const MoreClass = 'text-primary hover:text-secondary duration-500 text-xl font-semibold inline-block my-8 scale-y-125'
+    const MoreClass = 'oswald text-primary hover:text-secondary duration-500 xs:text-xl text-lg font-[500] inline-block xs:my-8 my-4'
     
     const linkClass = "hover:text-white hover:bg-primary duration-500 px-5 py-3 rounded-lg cursor-pointer text-lg font-bold"
 

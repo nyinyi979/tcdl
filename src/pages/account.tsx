@@ -40,7 +40,7 @@ export default function Account(){
             </h1>
             <div className="w-full max-w-full md:my-8 my-4 table clear-both py-20">
                 
-                <div className="lg:float-left float-none bg-gray-100 rounded-3xl lg:w-[27%] w-[94%] h-fit lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
+                <div className="lg:float-left float-none bg-gray-100 rounded-3xl lg:w-[27%] w-[94%] xll:h-[47.5rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
                     
                         <div className="flex xl:flex-col flex-row flex-wrap w-full lg:gap-4 gap-2 lg:py-10 py-5 lg:px-10 px-0">
 
@@ -66,7 +66,7 @@ export default function Account(){
                     </div>
                      <AccountSidebar />
                 </div>
-                <div className='lg:float-left float-none lg:w-[68%] w-[94%] lg:mx-[1%] mx-auto xl:h-[47.6rem] lg:h-[48.5rem] h-fit bg-white rounded-3xl py-3'>
+                <div className='lg:float-left float-none lg:w-[68%] w-[94%] lg:mx-[1%] mx-auto xll:h-[47.5rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] h-fit bg-white rounded-3xl py-3'>
                     {pages.account? <Accounts /> : pages.calendar? <Calendar /> : pages.voice? <Voices /> : pages.password? <Password /> : ''}
                 </div>
             </div>

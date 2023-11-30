@@ -14,7 +14,7 @@ export default function Accounts(){
 
     const inputClass ='z-10 font-[600] relative w-full ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 lg:text-xl text-base leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none text-[#5c545f] placeholder:text-[#5c545f]'
     const inputBoxClass = `z-10 block relative w-full ssm:px-10 px-4 mx-auto my-2 py-2 text-[#5c545f]`
-    const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary lg:after:right-4 lg:after:top-[36%] after:-right-0 after:top-[33%]`;
+    const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary md:after:right-4 md:after:top-[36%] after:-right-0 after:top-[33%]`;
     const setFirstName = (value:string) =>{
         setUserInfo({...userInfo, firstName: value})
     }  
@@ -85,12 +85,14 @@ export default function Accounts(){
                 </div>
 
 
-                <div className={inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary lg:after:right-4 lg:after:top-[22%] md:after:top-[40%] after:-right-0 after:top-[15%]`}>
+                <div className={inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 
+                after:rounded-full after:bg-primary md:after:right-4 lg:after:top-[22%] md:after:top-[40%] 
+                after:-right-0 after:top-[40%]`}>
                     <span className={labelClass}>Date of Birth</span>
                     <input className={inputClass} type="text" value={userInfo.DOB} onChange={(input)=>{setDOB(input.target.value)}}/>
                 </div>
 
-                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-3 gap-1 w-[80%] mx-auto xll:py-10 py-6 text-[#5c545f] font-[600] lg:text-lg xll:text-xl text-sm'}>
+                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-3 gap-1 w-[80%] mx-auto xll:py-8 py-6 text-[#5c545f] font-[600] lg:text-lg xll:text-xl text-sm'}>
                     <span className={`z-[20] font-[400] absolute -top-2 left-2 block w-full h-fit bg-white rounded-full text-lg`}>Gender</span>
 
                     <label className='xl:pb-1' htmlFor="a_male">    <input onClick={()=>{setGender('Male')}} type="radio" name="gender" id="a_male" />Male</label>
