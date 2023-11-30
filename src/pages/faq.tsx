@@ -7,10 +7,10 @@ import { h1Class, h2Class } from "../components/utilities";
 import anime from "animejs";
 export default function FAQ(){
     React.useEffect(()=>{
-        document.getElementById('bg')!.style.backgroundImage = `url('/bg6.png')`;
-        document.getElementById('bg')!.style.opacity = '1'
-        document.getElementById('bg')!.style.top = '-20%'
-        document.getElementById('bg')!.style.height = '100%'
+        document.getElementById('bg_j')!.style.backgroundImage = `url('/bg6.png')`;
+        document.getElementById('bg_j')!.style.opacity = '1'
+        document.getElementById('bg_j')!.style.top = '-20%'
+        document.getElementById('bg_j')!.style.height = '100%'
         if(window.innerWidth < 1024){
             document.getElementById('bg')!.style.backgroundPositionX = '-100px'
         }

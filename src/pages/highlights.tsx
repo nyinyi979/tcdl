@@ -7,9 +7,9 @@ import React from 'react';
 import Navbar from "../components/navbar";
 export default function Highlights(){
     React.useEffect(()=>{   
-        document.getElementById('bg')!.style.backgroundImage = `url('/bg7.png')`;
-        document.getElementById('bg')!.style.opacity = '1'
-        document.getElementById('bg')!.style.height = '1400px'
+        document.getElementById('bg_j')!.style.backgroundImage = `url('/bg7.png')`;
+        document.getElementById('bg_j')!.style.opacity = '1'
+        document.getElementById('bg_j')!.style.height = '1400px'
     }, [])
     return(
         <>
