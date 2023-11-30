@@ -5,14 +5,14 @@ export default function TheElite(){
     React.useEffect(()=>{
     }, [])
     return(
-        <div className={`text-center mt-10 lg:mt-0 pb-12`}>
+        <div className={`text-center mt-10 lg:mt-0`}>
 
             <h1 className={`${h1Class} text-primary py-6`}>Be an Elite?</h1>
             <h1 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
             xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl md:leading-8 mr-3 ssm:text-2xl 
             text-xl text-center text-secondary md:pt-2 `}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-5 lg:pl-10 pl-0">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-8 lg:pl-10 pl-0">
 
                 <div id='image' className="col-span-1 xs:w-full w-[96%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-[20rem] mt-10 rounded-xl my-3 mx-auto"/>
@@ -42,7 +42,7 @@ export default function TheElite(){
                         person who is constantly working to improve their mental, physical, and spiritual self. 
                         You can do it, too, if I can. I'm here to guide you to the light.
                     </p>
-                    <p className="py-2">
+                    <p className="py-2 pb-10">
                         Thazin Soe <br />
                         The Founder <br />
                         The Cards Don't Lie <br />

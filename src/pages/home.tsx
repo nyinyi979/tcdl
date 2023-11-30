@@ -10,10 +10,8 @@ import React from 'react';
 import Navbar from "../components/navbar"
 export default function Home(){
     React.useEffect(()=>{   
-        document.body.style.backgroundImage = `url('/home-banner-img.jpg')`;
         document.body.style.backgroundAttachment = 'fixed'
-        document.body.style.backgroundPositionY = '-1px'
-        document.body.style.backgroundPositionX = '-2px'
+        document.body.style.backgroundPosition = 'center center'
         document.body.style.backgroundSize = 'cover'
     }, [])
     React.useEffect(()=>{
