@@ -70,12 +70,14 @@ export default function Navbar(props:{currentLink:string}){
     return(
         <>
         <SignUp /> <Login /><Forgotten />
-        <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] lg:w-[1450px] md:h-[1350px] h-[1970px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  bg-cover -z-10 bg-repeat-y bg-fixed`}></div>
+        <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] lg:h-[1450px] md:h-[1350px] h-[1970px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  bg-cover -z-10 bg-repeat-y bg-fixed`}></div>
         <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full h-full [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-center bg-repeat-y bg-scroll'></div>
+        <div id='bg_acc'  className={`absolute opacity-0 top-0 bg-center left-0 w-full xll:h-[1500px] xl:h-[1200px] lg:h-[1600px] md:h-[2100px] h-[1970px] [background-image:url(/bg7.png)] bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
         <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
             <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto cursor-pointer'/>
         </div>
-        <div id='navbar' className="block z-50 lg:relative lg:h-fit lg:py-10 py-5 lg:bg-transparent sticky top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full float_clear bg-black/80">
+        
+        <div id='navbar' className="block z-50 lg:relative lg:h-fit lg:py-10 py-5 lg:bg-transparent fixed top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full float_clear bg-black/80">
             
             <div className='xxl:w-[12.3rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 lg:top-8 lg:left-6 lg:w-[8rem] left-3 top-1 xs:w-[5.5rem] w-[4.5rem] h-full bg-cover float-left absolute'>
                 <a href="/"><img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/></a>

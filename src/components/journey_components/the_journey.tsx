@@ -2,7 +2,7 @@ import { h1Class, h2Class } from "../utilities";
 
 export default function TheJourney(){
     return(
-        <div className="mt-10 lg:mt-0">
+        <div className="mt-10 lg:mt-0 lg:pt-0 pt-[4.5rem]">
         
             <div className="text-center md:py-10 py-2 md:pb-20 pb-4">
                 <h1 className={`${h1Class} lg:pt-8 pt-3 pb-2 text-primary`}>The Journey</h1>

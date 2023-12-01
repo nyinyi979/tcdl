@@ -5,7 +5,7 @@ export default function Journey(){
     useAnimateRight('image1');
     useAnimateRight('image2')
     return(
-            <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[100%] w-11/12 h-fit mx-auto xll:mt-[3.2rem] xl:mt-[2rem] mt-10 lg:mt-8 lg:pb-20 pb-8">
+            <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[100%] w-11/12 h-fit mx-auto xll:mt-[3.2rem] xl:mt-[2rem] mt-10 lg:mt-8 lg:pb-20 pb-8 lg:pt-0 pt-[4.5rem]">
                 <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full">
                     
                     <div id='image1' className="col-span-2 w-full h-full flex items-center justify-center relative md:hidden">

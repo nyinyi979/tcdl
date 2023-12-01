@@ -12,7 +12,7 @@ export default function FAQ(){
         document.getElementById('bg_j')!.style.top = '-20%'
         document.getElementById('bg_j')!.style.height = '100%'
         if(window.innerWidth < 1024){
-            document.getElementById('bg')!.style.backgroundPositionX = '-100px'
+            document.getElementById('bg_j')!.style.backgroundPositionX = '-100px'
         }
         anime({
             targets: '#links',
@@ -42,7 +42,7 @@ export default function FAQ(){
     return(
         <>
             <Navbar currentLink="/faq"/>
-            <div className={`${h1Class} mt-10 lg:mt-0 py-2 text-primary text-center`}>Q & A</div>
+            <div className={`${h1Class} mt-10 lg:mt-0 py-2 text-primary text-center lg:pt-0 pt-[4.5rem]`}>Q & A</div>
             <div className={`${h2Class} md:py-8 py-4 pb-10 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />

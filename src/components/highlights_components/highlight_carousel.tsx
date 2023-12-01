@@ -9,7 +9,7 @@ export default function H_Carousel(){
     const headingClass = "lg:text-2xl text-xl text-secondary font-semibold py-5";
     const pClass = "text-white font-[400] lg:text-xl leading-10 text-justify"
     return(
-        <div id='highlight' className={`pb-10 mt-10 lg:mt-0`}>
+        <div id='highlight' className={`pb-10 mt-10 lg:mt-0 lg:pt-0 pt-[4.5rem]`}>
             <h2 className={`${h1Class} text-center text-primary md:py-10 py-4`}>The Highlights</h2>
             <h2 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
             xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl 

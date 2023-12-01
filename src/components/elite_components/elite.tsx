@@ -5,7 +5,7 @@ export default function TheElite(){
     React.useEffect(()=>{
     }, [])
     return(
-        <div className={`text-center mt-10 lg:mt-0`}>
+        <div className={`text-center mt-10 lg:mt-0 lg:pt-0 pt-[4.5rem]`}>
 
             <h1 className={`${h1Class} text-primary py-6`}>Be an Elite?</h1>
             <h1 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
