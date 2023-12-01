@@ -42,13 +42,11 @@ export default function Login(){
     const openForogtten = () =>{
         const {bgOpen , boxOpen} = forgottenPWPopUpBox();
         closePopUp();
-        setTimeout(() => {
             bgOpen.restart();
             boxOpen.restart();
-        }, (100));
     }
     return(
-        <div onClick={closePopUp} id='loginBG' className='hidden bg-black/30 w-full h-[100%] fixed overscroll-y-contain overflow-y-scroll z-[100]'>
+        <div onClick={closePopUp} id='loginBG' className='hidden bg-black/30 w-full h-[100%] fixed top-0 left-0 overscroll-y-contain overflow-y-scroll z-[100]'>
             
             <div id='login' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 

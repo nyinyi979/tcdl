@@ -26,8 +26,8 @@ function popUpBox(bg:string , ele:string){
         opacity: [0 , 1 ],
         begin: ()=>{
             document.getElementById(bg)!.style.display = 'block'
+            document.body.style.overflowY = 'hidden'
             document.getElementById(ele)!.style.opacity = '0';
-            document.body.style.overflowY = 'hidden';
         },
         autoplay: false,
         duration: 600,
@@ -39,6 +39,9 @@ function popUpBox(bg:string , ele:string){
         opacity: [0 , 1],
         duration: 300,
         easing: 'easeInOutQuad',
+        begin: ()=>{
+            document.body.style.overflowY = 'hidden'
+        },
         autoplay: false,
         delay: 200
     })

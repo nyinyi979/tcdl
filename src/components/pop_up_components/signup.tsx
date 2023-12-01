@@ -69,7 +69,7 @@ export default function SignUp(){
         }
     }, [PW])
     return(
-        <div onClick={closePopUp} id='signUpBG' className='hidden bg-black/30 w-full h-[100%] fixed overscroll-y-contain overflow-y-scroll z-[100]'>
+        <div onClick={closePopUp} id='signUpBG' className='hidden bg-black/30 w-full h-[100%] top-0 fixed overscroll-y-contain overflow-y-scroll z-[100]'>
             
             <div id='signUp' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 
