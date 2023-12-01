@@ -1,9 +1,10 @@
 import { h1Class } from "../utilities";
-import { Link } from 'react-router-dom':
+import { Link } from "react-router-dom";
 export function HighLightItemHeading({title}:{title:string}){
     return(
         <div className="pt-16 md:pt-0">
-            <h1 className={`${h1Class} text-primary text-center lg:pt-20 pt-16`}>
+            <h1 className={`oswald font-[500] xxl:text-[3rem] xxl:leading-[4.5rem] xxl:mr-12
+    xll:text-[2.5rem] xll:mr-4 lg:text-[2rem] xl:mr-6 md:font-[600] md:text-3xl md:mr-4 md:leading-[3.8rem] xs:text-2xl text-xl mr-2 leading-[3.1rem] font-bold text-primary text-center lg:pt-20 pt-16`}>
                The Highlights &gt; {title}
             </h1>
             <h2 className={`oswald xxl:text-5xl xxl:mr-16 text-center pt-10 pb-20
