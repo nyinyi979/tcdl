@@ -7,6 +7,7 @@ import { h1Class, h2Class } from "../components/utilities";
 import anime from "animejs";
 export default function FAQ(){
     React.useEffect(()=>{
+        document.title = 'FAQ';
         document.getElementById('bg_j')!.style.backgroundImage = `url('/bg6.png')`;
         document.getElementById('bg_j')!.style.opacity = '1'
         document.getElementById('bg_j')!.style.top = '-20%'

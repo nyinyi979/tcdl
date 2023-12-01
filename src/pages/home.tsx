@@ -10,6 +10,7 @@ import React from 'react';
 import Navbar from "../components/navbar"
 export default function Home(){
     React.useEffect(()=>{
+        document.title = 'Home';
         anime({
             targets: '#links',
             opacity: [0 , 1],

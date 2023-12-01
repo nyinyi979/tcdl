@@ -9,6 +9,7 @@ import Navbar from "../components/navbar";
 import React from 'react';
 export default function Journey(){
     React.useEffect(()=>{  
+        document.title = 'Journey';
         document.getElementById('bg_j')!.style.opacity = '1';
     }, [])
     return(

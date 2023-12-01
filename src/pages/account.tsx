@@ -16,6 +16,7 @@ const init = {
 
 export default function Account(){
     React.useEffect(()=>{
+        document.title = 'My Account';
         document.getElementById('bg_acc')!.style.opacity = '1';
     }, [])
     return(
@@ -36,15 +37,19 @@ export function PageChooser(){
         account: true, calendar: false, voice: false, password: false
     })
     const goAccout = () =>{
+        document.title = 'My Account';
         setPages({...init , account: true})
     }
     const goCalendar = () =>{
+        document.title = 'Schedule a meeting!';
         setPages({ ...init, calendar: true})
     }
     const goVoice = () =>{
+        document.title = 'Voice messages';
         setPages({...init , voice: true})
     }
     const goPassword = () =>{
+        document.title = 'Change Password';
         setPages({...init ,password: true})
     }
     return(

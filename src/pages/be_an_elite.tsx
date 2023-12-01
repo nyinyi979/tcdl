@@ -6,6 +6,7 @@ import React from 'react';
 import Navbar from "../components/navbar";
 export default function BeAnElite(){
     React.useEffect(()=>{  
+        document.title = 'Be an Elite';
         // elite background is used
         document.getElementById('bg_elite')!.style.opacity = '1'
     }, [])
