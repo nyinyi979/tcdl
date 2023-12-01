@@ -1,5 +1,5 @@
 import { h1Class } from "../utilities";
-
+import { Link } from 'react-router-dom':
 export function HighLightItemHeading({title}:{title:string}){
     return(
         <div className="pt-16 md:pt-0">
@@ -9,9 +9,9 @@ export function HighLightItemHeading({title}:{title:string}){
             <h2 className={`oswald xxl:text-5xl xxl:mr-16 text-center pt-10 pb-20
                 xxl:text-[2rem] xll:leading-[2.7rem] xll:mr-6 xl:mr-4 xl:leading-9 xl:text-[1.5rem]
                 md:text-[1.3rem] md:leading-8 mr-5 text-[1rem] text-primary`}>
-                Home 
+                <Link to="/">Home</Link>
                 <span className="px-3 text-[#583f74]">&gt;</span>
-                Highlight 
+                <Link to="/highlights">Highlight </Link>
                 <span className="px-3 text-[#583f74]">&gt;</span>
                 <span className="px-2 text-[#583f74]"> {title}</span>
             </h2>
