@@ -79,7 +79,8 @@ export default function Navbar(props:{currentLink:string}){
 
             {/* journey background picture, in certain page it is used too, since it is just aligned center */}
             <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full h-full 
-            [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-center bg-repeat-y bg-scroll'></div>
+            [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 lg:bg-center bg-top
+            bg-repeat-y bg-scroll'></div>
 
             {/* account page background */}
             <div id='bg_acc'  className={`absolute opacity-0 top-0 bg-center left-0 w-full xll:h-[1500px] 
