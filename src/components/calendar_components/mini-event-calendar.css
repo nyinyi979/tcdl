@@ -1,3 +1,4 @@
+/* calendar styling , since it is a bit hard to do it directly with tailwind */
 .mini-cal {
     -webkit-user-select: none;
     -moz-user-select: none;

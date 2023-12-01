@@ -13,6 +13,7 @@ type pages = {
 const init = {
     account: false , calendar: false , voice: false, password: false
 }
+
 export default function Account(){
     React.useEffect(()=>{
         document.getElementById('bg_acc')!.style.opacity = '1';
@@ -20,13 +21,14 @@ export default function Account(){
     return(
         <>
         <Navbar currentLink="/account"/>
-        <AccountChosing />
+        <PageChooser />
         <Footer />
         </>
     )
 }
 
-export function AccountChosing(){
+//Side bar
+export function PageChooser(){
     const btnClass = "inline-block text-[#5c545f] cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center hover:bg-[#908ec0] border-2 border-[#9580bc] hover:text-white duration-200"
     const btnActiveClass = "inline-block cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center bg-[#908ec0] border-2 border-[#9580bc] text-white duration-200"
 
@@ -47,8 +49,8 @@ export function AccountChosing(){
     }
     return(
         <>
-            <h1 className={`${h1Class} text-primary text-center lg:pt-16 pt-[6rem]`}>
-            {pages.account? 'My Account' : pages.calendar? 'Schedule Zoom Meeting' : pages.voice? 'Voice Message' : pages.password? 'Change Password' : ''}
+            <h1 className={`${h1Class} text-primary text-center lg:pt-16 pt-[7rem]`}>
+                {pages.account? 'My Account' : pages.calendar? 'Schedule Zoom Meeting' : pages.voice? 'Voice Message' : pages.password? 'Change Password' : ''}
             </h1>
             <div className="w-full max-w-full md:my-8 my-4 table clear-both py-20">
                 

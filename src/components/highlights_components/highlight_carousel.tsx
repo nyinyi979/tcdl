@@ -11,6 +11,7 @@ export default function H_Carousel(){
     return(
         <div id='highlight' className={`pb-10 mt-10 lg:mt-0 lg:pt-0 pt-[4.5rem]`}>
             <h2 className={`${h1Class} text-center text-primary md:py-10 py-4`}>The Highlights</h2>
+
             <h2 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
             xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl 
             md:leading-8 mr-3 ssm:text-2xl text-xl text-center text-secondary pb-3`}>
@@ -21,6 +22,7 @@ export default function H_Carousel(){
             
                 <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
                 pagination={{clickable:true}}
+                // Swiepr breakpoints , screenSize(>=) : {spaceBetweenEachComponents , slidesVisible per view}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
                 768: {spaceBetween: 30,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
                 , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
@@ -39,7 +41,7 @@ export default function H_Carousel(){
                         <a href="/" className={MoreClass}>More</a>
                     </SwiperSlide>
 
-                    <SwiperSlide className=''>
+                    <SwiperSlide>
                         <img src="/img3.jpg" alt="img" className="w-full h-32 bg-cover rounded-lg"/>
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
@@ -51,7 +53,7 @@ export default function H_Carousel(){
                         <a href="/" className={MoreClass}>More</a>
                     </SwiperSlide>
 
-                    <SwiperSlide className=''>
+                    <SwiperSlide>
                         <img src="/img4.jpg" alt="img" className="w-full h-64 bg-cover rounded-lg"/>
                         <h1 className= {headingClass}>
                             The power of amulets
@@ -63,7 +65,7 @@ export default function H_Carousel(){
                         <a href="/" className={MoreClass}>More</a>
                     </SwiperSlide>
 
-                    <SwiperSlide className=''>
+                    <SwiperSlide>
                         <img src="/img3.jpg" alt="img" className="w-full h-32 bg-cover rounded-lg"/>
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
@@ -88,14 +90,15 @@ export default function H_Carousel(){
                     </SwiperSlide>                    
                 
                 </Swiper>
+                {/* LEFT ARROW AND RIGHT ARROW */}
                 <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
                 hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                md:top-[23%] top-[25%] xll:left-[40px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] left-[20px] 
-                cursor-pointer `}></span>
+                md:top-[23%] top-[25%] xll:left-[40px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
+                left-[20px] cursor-pointer`}></span>
                 <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
                 hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                 md:top-[23%] top-[25%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[15px] right-[5px] 
-                cursor-pointer `}></span>
+                md:top-[23%] top-[25%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[15px] 
+                right-[5px] cursor-pointer`}></span>
             </div>
         </div>
     )

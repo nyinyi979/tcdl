@@ -9,6 +9,7 @@ type userInfo = {
 export default function SignUp(){
     const bgCloseAnimation = React.useRef<AnimeInstance>();
     const signUpCloseAnimation = React.useRef<AnimeInstance>();
+    // userinfos are stored here
     const [userInfo , setUserInfo] = React.useState<userInfo>({
         firstName: 'David' , middleName: 'Robert Joseph', lastName: 'Smith',
         DOB: '02/05/1975' , birthTime: '-' , POB: 'London, England', 

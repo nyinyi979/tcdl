@@ -7,6 +7,7 @@ type userInfo = {
 export default function Login(){
     const bgCloseAnimation = React.useRef<AnimeInstance>();
     const logInCloseAnimation = React.useRef<AnimeInstance>();
+    // user input values are stored here
     const [userInfo , setUserInfo] = React.useState<userInfo>({ emailID: '', password: ''});
     const [PW , setPW] = React.useState(false);
     React.useEffect(()=>{

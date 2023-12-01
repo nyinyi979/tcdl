@@ -1,6 +1,7 @@
 import { bg2Class, useAnimateLeft, useAnimateScale } from "../utilities"
 
 export default function Insight(){
+    //adding animation
     useAnimateScale('insights');
     useAnimateLeft('h1');
     useAnimateLeft('h2');
@@ -9,7 +10,8 @@ export default function Insight(){
     useAnimateLeft('h5');
     useAnimateLeft('h6');
     useAnimateLeft('h7');
-    const listClass = "xs:font-[600] font-[500] xxl:text-4xl xxl:leading-[6.4rem] xl:text-[1.7rem] lg:py-3 md:leading-[3.4rem] py-2 ssm:text-2xl xs:text-xl text-lg leading-[3.175rem]"
+    const listClass = `xs:font-[600] font-[500] xxl:text-4xl xxl:leading-[6.4rem] 
+    xl:text-[1.7rem] lg:py-3 md:leading-[3.4rem] py-2 ssm:text-2xl xs:text-xl text-lg leading-[3.175rem]`
     return(
         <div className={`relative py-10 text-white after:[content:''] z-10 after:absolute after:z-[-1] after:bg-black/40 after:w-full after:h-full after:top-0 after:left-0 ${bg2Class}`}>
             <div className="grid xs:grid-cols-2 grid-cols-1 lg:text-3xl md:text-2xl text-lg text-left xl:px-32 lg:px-10 md:px-32 xs:px-12 px-8 md:pt-10 pt-0 lg:pb-48 pb-20">

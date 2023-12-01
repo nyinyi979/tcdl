@@ -11,9 +11,11 @@ export default function FAQ(){
         document.getElementById('bg_j')!.style.opacity = '1'
         document.getElementById('bg_j')!.style.top = '-20%'
         document.getElementById('bg_j')!.style.height = '100%'
+        //adjust bg position if the screen width is small
         if(window.innerWidth < 1024){
-            document.getElementById('bg_j')!.style.backgroundPositionX = '-100px'
+            document.getElementById('bg_j')!.style.backgroundPositionX = '-300px'
         }
+        // faq has navigation bar animation
         anime({
             targets: '#links',
             opacity: [0 , 1],
@@ -38,7 +40,7 @@ export default function FAQ(){
             easing:'linear',
             duration: 1000,
         })
-    })
+    }, [])
     return(
         <>
             <Navbar currentLink="/faq"/>

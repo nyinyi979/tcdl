@@ -1,5 +1,6 @@
+//icons are used instead of images, which can improve quality of icons
 import { FaFacebookF, FaPlay, FaTiktok, } from "react-icons/fa6";
-import {FaTelegramPlane} from 'react-icons/fa';
+import { FaTelegramPlane } from 'react-icons/fa';
 export default function Footer(){
     const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[20px] md:text-lg ssm:text-base text-sm';
     const iconClass ="text-dark_violet hover:rotate-[20deg] hover:text-black rounded-full lg:w-12 lg:h-12 w-10 h-10 xs:p-3 p-2 bg-blue cursor-pointer hover:bg-primary duration-300";

@@ -1,3 +1,4 @@
+// jQuery code for MEC 
 import jQuery from "jquery";
 (function($) {
     const calenderTpl = `

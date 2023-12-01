@@ -5,6 +5,7 @@ import { inputClass , labelClass , requiredInputBoxClass, submitClass, forgotten
 export default function Forgotten(){
     const bgCloseAnimation = React.useRef<AnimeInstance>();
     const logInCloseAnimation = React.useRef<AnimeInstance>();
+    //email value is stored here
     const [email , setEmail] = React.useState('')
     React.useEffect(()=>{
         const { bgClose, boxClose } = forgottenPWPopUpBox();

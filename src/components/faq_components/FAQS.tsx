@@ -3,6 +3,8 @@ import Monthly from "./monthly_update";
 import PrivacyPolicy from "./privacy_policy";
 
 export default function FAQS(){
+    const pClass = 'lg:my-5 my-3';
+    const privilegesClass = 'w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4'
     return(
         <div className="w-full bg-white">
             
@@ -13,25 +15,25 @@ export default function FAQS(){
 
             <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] mx-auto font-[400] md:leading-10 leading-8 text-left ">
 
-                <div className="w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4">
+                <div className={privilegesClass}>
                     <h1 className={`${h2Class_V} text-[#583f74]`}>Elite Plus and Elite Star Privileges</h1>
                     <p className="lg:my-5  my-3">
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
                         EP and ES members are to specify the type of reading or consultation requested upon booking.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Bookings of appointment sessions are available for selection upon logging in with 
                         membership log in.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Membership log in info will be sent to the members via email/messenger upon monthly 
                         subscription payment.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         If appointment date needs to be postponed, the previous booking date must be 
                         cancelled first before making a new booking.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         For one-question responses , members may send their text questions to the reader.
                     </p>
                 </div>
@@ -40,68 +42,70 @@ export default function FAQS(){
                     <h1 className={`${h3Class} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>
-                    <p className="lg:my-5 my-3"> 
+                    <p className={pClass}> 
                         Monthly subscription payment is required on each calendar month. For better 
                         consultation results and progress monitoring, consecutive membership of at least 6-month 
                         is highly recommended for regular consultation check-ins every month.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Payment screenshot must be sent to the email for verification.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Payment reminders will be sent to the members one week before the payment is due.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         If the payment lapse for more than two times within 6 months, membership may be 
                         cancelled until further notice.
                     </p>
                 </div>
 
-                <div className="w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4">
+                <div className={privilegesClass}>
                 <h1 className={` ${h2Class_V} text-[#583f74]`}>Elite Express and Elite Membership Privileges</h1>
 
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         EE and EL members are allowed a 30-min group consultation sessions every two month. 
                         EE and EL members are to specify their preferred group consultation slots through 
                         the members' log in system.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Bookings of appointment sessions are available for selection upon 
                         logging in with membership log in.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Membership log in info will be sent to the members via email/messenger upon 
                         monthly subscription payment.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         If appointment date needs to be postponed, the previous 
                         booking date must be cancelled first before making a new booking.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         For next-day one-question responses , members may send their text questions to 
                         the reader. Responses will be sent to the member within a week.
                     </p>
                 </div>
 
-                <div className="w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4">
+                <div className={privilegesClass}>
                     <h1 className={`${h3Class} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>
 
-                    <p className="lg:my-5 my-3"> 
+                    <p className={pClass}> 
                         Monthly subscription payment is required on each calendar month. For better 
                         consultation results and progress monitoring, consecutive membership of at 
                         least 6-month is highly recommended for regular consultation check-ins every month.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         Payment reminders will be sent to the members one week before the payment is due.
                     </p>
-                    <p className="lg:my-5 my-3">
+                    <p className={pClass}>
                         If the payment lapse for more than two times within 6 months, 
                         membership may be cancelled until further notice.
                     </p>
                 </div>
 
+                {/* these two componenets are added here for the same width and padding, otherwise 
+                you would have to adjust it for two times */}
                 <PrivacyPolicy />
                 <Monthly />
             </div>

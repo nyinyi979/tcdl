@@ -7,6 +7,7 @@ import BeAnElite from './pages/be_an_elite'
 import Highlights from './pages/highlights'
 import Account from './pages/account'
 
+//setting routes 
 function App() {
   return (
     <>

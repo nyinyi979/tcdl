@@ -7,9 +7,12 @@ export default function J_Carosusel(props:{text:boolean}){
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 lg:text-3xl text-xl font-[400] block mt-4 mb-16 w-fit h-fit mx-auto cursor-pointer'
     const headingClass = "md:text-xl xs:text-lg text-base text-left text-secondary font-semibold py-5";
     const videoClass = 'xl:h-42 lg:h-36 md:h-28 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
+    //play button style
     const playBtn = `md:w-20 md:h-20 w-16 h-16 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
-    hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover xll:left-[35%] xl:left-[37%] lg:left-[37%] 
-    md:left-[29%] md:top-[13%] lg:top-[24%] xs:top-[20%] xxs:top-[23%] xxs:left-[35%] lg:left-[30%] md:left-[35%] ssm:left-[35%] xs:left-[35%] top-[14%] ssm:left-[35%] left-[30%] z-10 text-6xl p-3 cursor-pointer`
+    hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover
+    md:top-[13%] lg:top-[24%] xs:top-[20%] xxs:top-[23%] top-[14%]
+    xll:left-[35%] xl:left-[37%] lg:left-[37%] xxs:left-[35%] lg:left-[30%] md:left-[29%] ssm:left-[35%] xs:left-[35%] left-[30%] 
+    z-10 text-6xl p-3 cursor-pointer`
     return(
         <div className={`md:py-20 py-10 ${bg7Class} text-center`}>
             <h2 className={`${h1Class} text-secondary`}>The Feedbacks</h2>
@@ -85,18 +88,18 @@ export default function J_Carosusel(props:{text:boolean}){
                     </SwiperSlide>
 
                 </Swiper>
-                
-                    <a className={MoreClass} href='#'>
-                        More Videos
-                    </a>
-                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
-                    hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                    md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[44px] 
-                    cursor-pointer `}></span>
-                    <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
-                    hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                    md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[36px] 
-                    cursor-pointer `}></span>
+                <a className={MoreClass} href='#'>
+                    More Videos
+                </a>
+                {/* left and right button */}
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
+                hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
+                md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[44px] 
+                cursor-pointer `}></span>
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
+                hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
+                md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[36px] 
+                cursor-pointer `}></span>
             </div>
             
         </div>

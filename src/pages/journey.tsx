@@ -8,8 +8,7 @@ import Who from "../components/journey_components/who";
 import Navbar from "../components/navbar";
 import React from 'react';
 export default function Journey(){
-    React.useEffect(()=>{   
-        document.body!.style.backgroundImage = ''
+    React.useEffect(()=>{  
         document.getElementById('bg_j')!.style.opacity = '1';
     }, [])
     return(

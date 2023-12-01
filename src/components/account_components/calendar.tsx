@@ -1,4 +1,3 @@
-import '../../calendar.css'
 import $ from "jquery"
 import '../calendar_components/mini-event-calendar'
 import '../calendar_components/mini-event-calendar.css'
@@ -22,6 +21,7 @@ export default function CalendarPage(){
             date: someDaynextMonth, // Some day as today, next month
             link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
         }];
+        //if you are using typescript, type any should be added ( or create a global type of JQuery containing MEC )
 		($("#calendar") as any).MEC({
 			calendar_link: "example.com/myCalendar",
 			events: sampleEvents
@@ -42,7 +42,9 @@ export default function CalendarPage(){
         </div>
     )
 }
+
 type time = {startHour: number , startMinute: number , startAM: string, endHour: number, endMinute: number, endAM: string}
+//
 function TimeSelectBox(){
     const [time , setTime] = React.useState<time>({
         startHour: 12 , startMinute: 0 , startAM: 'AM' , endHour: 11 , endMinute: 59 , endAM: 'PM'
@@ -82,29 +84,33 @@ function TimeSelectBox(){
     const setTimeForInputBox = (value:string) =>{
         setDisplayTime(value)
     }
+    //since all of the select boxes are the same I used this 
     const selectClass = 'inline-block xs:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
     return(
     <div className='ssm:w-full ssm:-ml-0 xs:-ml-10 xs:w-[120%] md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
         
+        {/* icon of down arrow is added here */}
         <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto after:z-20 
-        xs:w-1/3
-        after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 
-        after:left-[80%] after:top-3 xs:after:top-4
-        md:after:w-10 after:w-7 after:h-7 md:after:h-10 md:scale-110 after:bg-cover`}>
+        xs:w-1/3 after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 
+        after:left-[80%] after:top-3 xs:after:top-4 md:after:w-10 after:w-7 after:h-7 md:after:h-10 md:scale-110 
+        after:bg-cover`}>
 
             <span className={`z-[20] font-[400] absolute -top-2 lg:left-3 md:left-[3rem] left-[1rem] block xxs:w-fit w-fit h-fit py-1
             px-5 bg-white rounded-full xl:text-lg md:text-sm text-xs`}>Select a time slot</span>
             
             <div className='dropdown relative'>
 
+                {/* this is the up arrow of the dropdow box */}
                 <span className='absolute top-[2.9rem] z-20 left-10 outline-1 outline-gray-300
                 border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] hidden border-b-[#ffffff] w-0 h-0'></span>
 
+                
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
                     font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1
                     xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
                     text-[#5c545f] placeholder:text-[#5c545f] tracking-tighter`} type="text" name="daterange" id="date" 
                     placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
+                {/* dropdown content */}
                 <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xxs:w-80 w-72 h-fit 
                 bg-white pt-5 ssm:left-0 xs:-left-20 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
                     <div>
@@ -142,12 +148,27 @@ function TimeSelectBox(){
                         </select>   
 
                     </div>
+
                     <div className='clear-both table my-2 w-full border-t-[1px] border-stone-300 py-2'>
                         <div className='xxs:float-right float-left xxs:text-xs text-[10px] font-[500] font-sans'>
-                            {`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM} `}
-                            <button className='px-2 py-1 rounded-sm duration-300 text-black hover:bg-stone-300 mx-1 outline-none border-[1px] border-stone-300'>Cancel</button>
-                            <button className='px-2 py-1 rounded-sm duration-300 bg-sky-700 text-white hover:text-white hover:bg-sky-800 mx-1 outline-none border-[1px] border-stone-300'>Apply</button>
+
+                            {/* adding 0 before signle digit in hour and minute */}
+                            {`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + 
+                            time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + 
+                            time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM} `}
+                            
+                            <button className='px-2 py-1 rounded-sm duration-300 text-black 
+                            hover:bg-stone-300 mx-1 outline-none border-[1px] border-stone-300'>
+                                Cancel
+                            </button>
+
+                            <button className='px-2 py-1 rounded-sm duration-300 bg-sky-700 text-white
+                             hover:text-white hover:bg-sky-800 mx-1 outline-none border-[1px] border-stone-300'>
+                                Apply
+                            </button>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -159,6 +180,7 @@ function TimeSelectBox(){
     </div>
     )
 }
+
 function TimeDetails(){
     const spanClass = 'md:inline-block md:float-none float-left mt-2 w-3 h-3 xl:mx-2 lg:mx-0 md:mx-2 mx-1 rounded-full';
     return(

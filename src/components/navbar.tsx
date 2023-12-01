@@ -69,46 +69,67 @@ export default function Navbar(props:{currentLink:string}){
     }
     return(
         <>
-        <SignUp /> <Login /><Forgotten />
-        <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] lg:h-[1450px] md:h-[1350px] h-[1970px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  bg-cover -z-10 bg-repeat-y bg-fixed`}></div>
-        <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full h-full [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-center bg-repeat-y bg-scroll'></div>
-        <div id='bg_acc'  className={`absolute opacity-0 top-0 bg-center left-0 w-full xll:h-[1500px] xl:h-[1200px] lg:h-[1600px] md:h-[2100px] h-[1970px] [background-image:url(/bg7.png)] bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
-        <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
-            <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto cursor-pointer'/>
-        </div>
-        
-        <div id='navbar' className="block z-50 lg:relative lg:h-fit lg:py-10 py-5 lg:bg-transparent fixed top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full float_clear bg-black/80">
-            
-            <div className='xxl:w-[12.3rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 lg:top-8 lg:left-6 lg:w-[8rem] left-3 top-1 xs:w-[5.5rem] w-[4.5rem] h-full bg-cover float-left absolute'>
-                <a href="/"><img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/></a>
-            </div>
-            
-            <div id='links' className='mt-0 float-right xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
-                <div className='lg:block mr-0 hidden float-left xll:pt-16 xll:pr-8 lg:pt-6'>
-                    <li className={liClass}>
-                        <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link> 
-                    </li>
-                    <li className={liClass}>
-                        <Link to="/journey" className={`${linkClass} ${props.currentLink === '/journey'? 'text-primary underline_active' : 'text-secondary'}`}>The Journey</Link> 
-                    </li>
-                    <li className={liClass}>
-                        <Link to="/be-an-elite" className={`${linkClass} ${props.currentLink === '/be-an-elite'? 'text-primary underline_active' : 'text-secondary'}`}>Be an elite?</Link> 
-                    </li>
-                    <li className={liClass}>
-                        <Link to="/highlights" className={`${linkClass} ${props.currentLink === '/highlights'? 'text-primary underline_active' : 'text-secondary'}`}>The Highlights</Link> 
-                    </li>
-                    <li className={liClass}>
-                        <Link to="/faq" className={`${linkClass} ${props.currentLink === '/faq'? 'text-primary underline_active' : 'text-secondary'}`}>Q & A</Link> 
-                    </li>
-                </div>
-                <div id='btns' className='float-right xll:pt-12 lg:pt-2 lg:mt-2'>
-                    <span className={btnClass} onClick={openSignUpPopUp}>Join Elite?</span>
-                    <span className={btnClass} onClick={openLoginPopUp}>Elite Login?</span>
-                    <div className="lg:hidden block float-left ml-3 w-fit h-[2rem] text-white cursor-pointer hover:text-primary" onClick={()=>{Drawer.current!.restart()}}><IoMdMenu className="text-3xl"/></div>
-                </div>
+            {/* Pop up are added in the navigataion bar because navigation bar is present in all pages */}
+            <SignUp /> <Login /><Forgotten />
+            {/* Be an elite background picture */}
+            <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] 
+            lg:h-[1450px] md:h-[1350px] h-[1970px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] 
+            bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  
+            bg-cover -z-10 bg-repeat-y bg-fixed`}></div>
+
+            {/* journey background picture, in certain page it is used too, since it is just aligned center */}
+            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full h-full 
+            [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-center bg-repeat-y bg-scroll'></div>
+
+            {/* account page background */}
+            <div id='bg_acc'  className={`absolute opacity-0 top-0 bg-center left-0 w-full xll:h-[1500px] 
+            xl:h-[1200px] lg:h-[1600px] md:h-[2100px] h-[1970px] [background-image:url(/bg7.png)] 
+            bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
+
+            {/* loading screen */}
+            <div id='loading' className='fixed flex justify-center items-center overflow-hidden overscroll-contain top-0 left-0 w-full h-full bg-white' style={{zIndex: '9999'}}>
+                <img src="/site-logo.png" alt="" className='w-fit h-fit scale-[.6] mx-auto cursor-pointer'/>
             </div>
 
-        </div>
+            {/* navigation bar starts from here */}
+            <div id='navbar' className="z-50 lg:relative lg:h-fit lg:py-10 py-5 lg:bg-transparent fixed top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full clear-both table bg-black/80">
+
+                <div className={`xxl:w-[12.3rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 
+                lg:top-8 lg:left-6 lg:w-[8rem] left-3 top-1 xs:w-[5.5rem] w-[4.5rem] h-full 
+                bg-cover float-left absolute`}>
+                    <a href="/"><img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/></a>
+                </div>
+
+                {/* links */}
+                <div id='links' className='mt-0 float-right xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
+                    <div className='lg:block mr-0 hidden float-left xll:pt-16 xll:pr-8 lg:pt-6'>
+                        <li className={liClass}>
+                            <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link> 
+                        </li>
+                        <li className={liClass}>
+                            <Link to="/journey" className={`${linkClass} ${props.currentLink === '/journey'? 'text-primary underline_active' : 'text-secondary'}`}>The Journey</Link> 
+                        </li>
+                        <li className={liClass}>
+                            <Link to="/be-an-elite" className={`${linkClass} ${props.currentLink === '/be-an-elite'? 'text-primary underline_active' : 'text-secondary'}`}>Be an elite?</Link> 
+                        </li>
+                        <li className={liClass}>
+                            <Link to="/highlights" className={`${linkClass} ${props.currentLink === '/highlights'? 'text-primary underline_active' : 'text-secondary'}`}>The Highlights</Link> 
+                        </li>
+                        <li className={liClass}>
+                            <Link to="/faq" className={`${linkClass} ${props.currentLink === '/faq'? 'text-primary underline_active' : 'text-secondary'}`}>Q & A</Link> 
+                        </li>
+                    </div>
+
+                    {/* btns only displayed in small screen */}
+                    <div id='btns' className='float-right xll:pt-12 lg:pt-2 lg:mt-2'>
+                        <span className={btnClass} onClick={openSignUpPopUp}>Join Elite?</span>
+                        <span className={btnClass} onClick={openLoginPopUp}>Elite Login?</span>
+                        <div className="lg:hidden block float-left ml-3 w-fit h-[2rem] text-white cursor-pointer hover:text-primary" onClick={()=>{Drawer.current!.restart()}}><IoMdMenu className="text-3xl"/></div>
+                    </div>
+                </div>
+
+            </div>
+            {/* drawer component */}
             <div id='drawers' className='lg:hidden fixed right-[-400px] hidden top-0 bg-violet w-64 h-full z-[60]'>
                 <div className='inline-block w-fit h-fit text-white text-xl p-3 hover:text-primary cursor-pointer' onClick={()=>{DrawerOutro.current!.restart()}}><ImCross /></div>
                 <Link to={'/'} className={`${drawerBTN} ${props.currentLink === '/'? 'fill_effect_active' : 'fill_effect'} `}>Home</Link>
@@ -118,7 +139,6 @@ export default function Navbar(props:{currentLink:string}){
                 <Link to={'/faq'} className={`${drawerBTN} ${props.currentLink === '/faq'? 'fill_effect_active' : 'fill_effect'} `}>Q & A</Link>
                 <Link to={'/account'} className={`${drawerBTN} ${props.currentLink === '/account'? 'fill_effect_active' : 'fill_effect'} `}>Account</Link>
             </div>
-        
         </>
     )
 }

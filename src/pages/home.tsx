@@ -9,11 +9,6 @@ import anime from "animejs"
 import React from 'react';
 import Navbar from "../components/navbar"
 export default function Home(){
-    React.useEffect(()=>{   
-        document.body.style.backgroundAttachment = 'fixed'
-        document.body.style.backgroundPosition = 'center center'
-        document.body.style.backgroundSize = 'cover'
-    }, [])
     React.useEffect(()=>{
         anime({
             targets: '#links',

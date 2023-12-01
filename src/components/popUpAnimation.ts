@@ -1,3 +1,4 @@
+//this file is for login, signup and forogtten password animation
 import anime from "animejs"
 function popUpBox(bg:string , ele:string){
     const bgClose = anime({
