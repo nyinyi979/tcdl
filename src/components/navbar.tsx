@@ -84,7 +84,7 @@ export default function Navbar(props:{currentLink:string}){
 
             {/* account page background */}
             <div id='bg_acc'  className={`absolute opacity-0 top-0 bg-center left-0 w-full xll:h-[1500px] 
-            xl:h-[1200px] lg:h-[1600px] md:h-[2100px] h-[1970px] [background-image:url(/bg7.png)] 
+            xl:h-[1400px] lg:h-[1600px] md:h-[2100px] h-[1970px] [background-image:url(/bg7.png)] 
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
             {/* loading screen */}
