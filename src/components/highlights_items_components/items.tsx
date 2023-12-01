@@ -2,20 +2,20 @@ import { h1Class } from "../utilities";
 
 export function HighLightItemHeading({title}:{title:string}){
     return(
-        <>
-        <h1 className={`${h1Class} text-primary text-center lg:pt-20 pt-16`}>
-           The Highlights &gt; {title}
-        </h1>
-        <h2 className={`oswald xxl:text-5xl xxl:mr-16 text-center pt-10 pb-20
-            xxl:text-[2rem] xll:leading-[2.7rem] xll:mr-6 xl:mr-4 xl:leading-9 xl:text-[1.5rem]
-            md:text-[1.3rem] md:leading-8 mr-5 xs:text-[1.2rem] text-[1.1rem] text-primary`}>
+        <div className="pt-16 md:pt-0">
+            <h1 className={`${h1Class} text-primary text-center lg:pt-20 pt-16`}>
+               The Highlights &gt; {title}
+            </h1>
+            <h2 className={`oswald xxl:text-5xl xxl:mr-16 text-center pt-10 pb-20
+                xxl:text-[2rem] xll:leading-[2.7rem] xll:mr-6 xl:mr-4 xl:leading-9 xl:text-[1.5rem]
+                md:text-[1.3rem] md:leading-8 mr-5 text-[1rem] text-primary`}>
                 Home 
                 <span className="px-3 text-[#583f74]">&gt;</span>
                 Highlight 
                 <span className="px-3 text-[#583f74]">&gt;</span>
                 <span className="px-2 text-[#583f74]"> {title}</span>
-        </h2>
-        </>
+            </h2>
+        </div>
     
     )
 }
@@ -151,7 +151,7 @@ export default function HighLightItem({id}:{id: string}){
     return(
         <>
         <HighLightItemHeading title={ItemTextAndImg[0].title}/>
-        <div className="w-full bg-white text-black xxl:text-xl text-lg text-left md:leading-10 leading-9 lg:py-10 py-20">
+        <div className="w-full bg-white text-black xxl:text-xl text-lg text-left md:leading-10 leading-9 py-10">
             <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[96%] w-11/12 h-fit mx-auto ">
                 <div className="oswald">
                     <h1 className="text-light_blue xxl:text-2xl text-[22px]">{ItemTextAndImg[0].title}</h1>

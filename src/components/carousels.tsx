@@ -64,7 +64,7 @@ export default function ImageCarousel(){
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
 
-                    <img src={item.img} alt="img" className="w-full lg:h-64 md:h-48 ssm:h-40 h-36 bg-cover rounded-lg"/>
+                    <img src={item.img} alt="img" className="w-full h-64 bg-cover rounded-lg"/>
                     <h1 className= {headingClass}>
                         {item.heading}
                     </h1>
