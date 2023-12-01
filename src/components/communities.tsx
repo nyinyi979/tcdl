@@ -1,4 +1,4 @@
-import { ReBeEliteBtn, bg5Class } from "../utilities";
+import { ReBeEliteBtn, bg5Class } from "./utilities";
 
 export default function Communities(){
     return(

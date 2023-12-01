@@ -27,7 +27,7 @@ export default function J_Carosusel(props:{text:boolean}){
 
             <div className="w-full arrow relative my-5">
                
-            <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
+            <Swiper navigation={{nextEl: '.v_next', prevEl: '.v_prev'}} freeMode speed={1000} 
                 pagination={{clickable:true}}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
                 768: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
@@ -92,11 +92,11 @@ export default function J_Carosusel(props:{text:boolean}){
                     More Videos
                 </a>
                 {/* left and right button */}
-                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 v_prev
                 hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
                 md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[44px] 
                 cursor-pointer `}></span>
-                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
+                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 v_next
                 hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
                 md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[36px] 
                 cursor-pointer `}></span>

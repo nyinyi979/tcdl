@@ -6,6 +6,7 @@ import FAQ from './pages/faq'
 import BeAnElite from './pages/be_an_elite'
 import Highlights from './pages/highlights'
 import Account from './pages/account'
+import Highlight from './pages/highlight_item'
 
 //setting routes 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/be-an-elite' element={<BeAnElite />} />
         <Route path='/highlights' element={<Highlights />} />
         <Route path='/account' element={<Account />} />
+        <Route path='/highlight/:id' element={<Highlight />} />
       </Routes>
     </>
   )

@@ -21,9 +21,9 @@ export default function Account(){
     }, [])
     return(
         <>
-        <Navbar currentLink="/account"/>
-        <PageChooser />
-        <Footer />
+            <Navbar currentLink="/account"/>
+            <PageChooser />
+            <Footer />
         </>
     )
 }

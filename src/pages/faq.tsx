@@ -1,6 +1,6 @@
 import FAQS from "../components/faq_components/FAQS";
 import Footer from "../components/footer";
-import Communities from "../components/home_components/communities";
+import Communities from "../components/communities";
 import Navbar from "../components/navbar";
 import React from 'react';
 import { h1Class, h2Class } from "../components/utilities";

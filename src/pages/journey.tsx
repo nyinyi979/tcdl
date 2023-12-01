@@ -1,5 +1,5 @@
 import Footer from "../components/footer";
-import Communities from "../components/home_components/communities";
+import Communities from "../components/communities";
 import Private from "../components/home_components/private_group";
 import Beginning from "../components/journey_components/beginning";
 import J_Carosusel from "../components/journey_components/j_carousel";
