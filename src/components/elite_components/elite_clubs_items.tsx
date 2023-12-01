@@ -24,7 +24,7 @@ export default function EliteClubItems(){
         name:'Elite EXPRESS', price: '50' , 
         texts: [<><b>30-mins </b>Zoom group consultations</>, <><b>7 short question responses </b>within a week</>],
         },
-        {bg:'from-[#0080c5] to-[#004e7c]' , 
+        {bg:'from-[#859086] to-[#405658]' , 
         name:'Elite LITE', price: '30' , 
         texts: [<><b>5 short question responses</b>within a week</>],
         },
