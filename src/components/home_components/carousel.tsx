@@ -44,7 +44,7 @@ export default function Carosusel(){
                     </SwiperSlide>
 
                     <SwiperSlide className=''>
-                        <img src="/img3.jpg" alt="img" className="w-full h-32 bg-cover rounded-md"/>
+                        <img src="/img3.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
                         </h1>
@@ -68,7 +68,7 @@ export default function Carosusel(){
                     </SwiperSlide>
 
                     <SwiperSlide className=''>
-                        <img src="/img3.jpg" alt="img" className="w-full h-32 bg-cover rounded-md"/>
+                        <img src="/img3.jpg" alt="img" className="w-full h-64 bg-cover rounded-md"/>
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
                         </h1>

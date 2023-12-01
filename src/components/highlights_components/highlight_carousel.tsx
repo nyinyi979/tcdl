@@ -42,7 +42,7 @@ export default function H_Carousel(){
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src="/img3.jpg" alt="img" className="w-full h-32 bg-cover rounded-lg"/>
+                        <img src="/img3.jpg" alt="img" className="w-full h-64 bg-cover rounded-lg"/>
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
                         </h1>
@@ -66,7 +66,7 @@ export default function H_Carousel(){
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src="/img3.jpg" alt="img" className="w-full h-32 bg-cover rounded-lg"/>
+                        <img src="/img3.jpg" alt="img" className="w-full h-64 bg-cover rounded-lg"/>
                         <h1 className= {headingClass}>
                             How the moon affects your psyhe
                         </h1>
