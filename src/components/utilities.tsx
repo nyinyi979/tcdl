@@ -109,11 +109,11 @@ export const quoteClass = `leading-8 xl:py-32 md:py-24 py-20 relative
 
 //Class for h1 and h2 used in almost all pages
 export const h1Class = `oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] xxl:mr-12
-    xll:text-[3rem] xll:mr-4 lg:text-[2.5rem] xl:mr-6 md:font-[600] md:text-[2.2rem] 
+    xxl:text-[3rem] xll:mr-4 xl:text-[2.8rem] lg:text-[2.5rem] xl:mr-6 md:font-[600] md:text-[2.2rem] 
     md:mr-4 md:leading-[3.8rem] xs:text-4xl text-3xl mr-2 leading-[3.1rem]`
 
 export const h2Class = `oswald font-[500] xxl:text-5xl xxl:mr-16 
-    xll:text-[2rem] xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 
+    xxl:text-[2rem] xl:text-[1.9em] xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 
     md:font-[600] md:text-[1.3rem] md:leading-8 mr-5 xs:text-[1.4rem] text-[1.1rem]`
 
 //Second version of h2 which is used in Q&A pages
@@ -137,7 +137,7 @@ export const bg0Class = `[background-image:url('/home-banner-img.jpg')] [backgro
 export const bg1Class = `[background-image:url('/bg1.jpg')] bg-fixed md:bg-center 
     bg-[center_left_-600px] bg-cover bg-repeat`
 export const bg3Class = `[background-image:url('/bg3.jpg')] bg-scroll bg-center bg-repeat bg-cover`
-export const bg2Class = `[background-image:url('/bg2.jpg')] bg-center bg-cover bg-no-repeat`
+export const bg2Class = `[background-image:url('/bg2.jpg')] bg-[center_top_-20px] bg-cover bg-no-repeat`
 export const bg4Class = `[background-image:url('/bg4.jpg')] md:bg-center lg:[background-size: 95%] 
     sm:bg-center xs:bg-[center_left_-250px] bg-[center_left_-300px] bg-repeat bg-cover `
 export const bg5Class = `[background-image:url('/img5.jpg')] bg-fixed md:bg-[center_left_-400px]

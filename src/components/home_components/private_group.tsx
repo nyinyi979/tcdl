@@ -21,7 +21,9 @@ export default function Private(){
             </div>
 
             <div id='mySwiper' className="xll:w-5/6 xl:w-[75%] md:w-[94%] w-[85%] py-8 mx-auto">
-                <blockquote id="quote" className={`font-[500] text-left mx-auto xxl:leading-[3rem] xxl:text-[1.7rem] lg:text-2xl lg:leading-[2.8rem] ssm:text-[1.32rem] text-[1.2rem] leading-9 py-10 ${quoteClass}`}>
+                <blockquote id="quote" className={`font-[500] text-left mx-auto xxl:leading-[3rem] 
+                xxl:text-[2rem] xl:text-[1.7rem] lg:text-2xl lg:leading-[2.8rem] ssm:text-[1.32rem] text-[1.2rem] 
+                leading-9 py-10 ${quoteClass}`}>
                 Her primary mission is to serve as a source of enlightenment and support for individuals and 
                 communities seeking answers and guidance on a regular basic, hence, the Elite Club.
                 </blockquote>

@@ -33,8 +33,8 @@ export default function Journey(){
 
                 {/* image displayed in large screen */}
                 <div id='image2' className="col-span-1 xl:w-full w-[96%] mx-auto relative md:block hidden">
-                    <img src="/img1.jpg" alt="" className="bg-cover lg:w-[88%] lg:h-[90%] md:w-[100%] md:h-[70%] md:mt-20 lg:mt-9 mt-7 rounded-2xl md:float-right float-left my-3"/>
-                    <div className='absolute w-[6.5%] lg:h-[36%] h-1/4 bg-secondary md:bottom-16 -right-1 lg:bottom-6'></div>
+                    <img src="/img1.jpg" alt="" className="bg-cover lg:w-[88%] xl:h-[94%] lg:h-[90%] md:w-[100%] md:h-[70%] md:mt-20 lg:mt-9 mt-7 rounded-2xl md:float-right float-left my-3"/>
+                    <div className='absolute w-[30px] h-[200px] bg-secondary md:bottom-16 -right-3 lg:bottom-6'></div>
                 </div>
 
             </div>
