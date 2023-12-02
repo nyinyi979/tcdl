@@ -74,13 +74,13 @@ export default function Navbar(props:{currentLink:string}){
             {/* Be an elite background picture */}
             <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] 
             lg:h-[1450px] md:h-[1350px] h-[1970px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] 
-            bg-[center_left_-900px] lg:[background-position: top center] [background-image:url(/bg5.png)]  
-            bg-cover -z-10 bg-repeat-y bg-fixed`}></div>
+            bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  
+            bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
             {/* Highlight item background picture */}
             <div id='highlight_item' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] 
             xl:h-[1200px] lg:h-[1000px] md:h-[700px] h-[700px] [background-image:url(/bg7.png)] 
-            bg-[left_-300px_top_-330px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
+            lg:bg-[left_0px_top_-530px] bg-[left_-200px_top_-330px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 
             {/* journey background picture, in certain page it is used too, since it is just aligned center */}
             <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full h-full 
