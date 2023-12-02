@@ -8,7 +8,7 @@ type items = {id: number, img: string , heading: React.ReactNode , paragraph: st
 export function ImageCarousel(){
     const headingClass = "lg:text-2xl md:text-xl ssm:text-lg text-base text-secondary font-semibold py-5";
     const pClass = "text-white font-[400] lg:text-xl ssm:text-base text-sm leading-10 text-justify"
-    const MoreClass = 'text-secondary hover:text-primary duration-500 text-xl font-semibold inline-block my-8'
+    const MoreClass = 'oswald text-secondary hover:text-primary duration-500 text-xl font-[400] inline-block my-8'
     const items:items = [
         {
             id: 1,

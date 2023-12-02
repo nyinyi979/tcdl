@@ -8,9 +8,7 @@ import H_Carosusel_Video from "../components/highlights_components/highlight_vid
 export default function Highlights(){
     React.useEffect(()=>{   
         document.title = 'Highlights';
-        document.getElementById('bg_j')!.style.backgroundImage = `url('/bg7.png')`;
-        document.getElementById('bg_j')!.style.opacity = '1'
-        document.getElementById('bg_j')!.style.height = '1400px'
+        document.getElementById('highlight_pic')!.style.opacity = '1'
     }, [])
     return(
         <>
