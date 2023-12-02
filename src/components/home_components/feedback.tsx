@@ -9,9 +9,9 @@ export default function Feedback(){
     useAnimateRight('feedback_text')
     useAnimateLeft('feedback_swiper');
     //overall quoteClass doesn't have text size values
-    const quoteClassHere = `xl:w-[50%] lg:w-[74%] md:w-[65%] xs:w-[80%] w-[90%] mx-auto xxl:text-[2.37rem] 
-    xll:leading-[3.3rem] font-[600] xll:text-[1.7rem]  ssm:text-2xl xl:leading-[2.75rem] ssm:leading-[2.4rem] 
-    ssm:text-xl text-lg leading-8 text-center` + quoteClass;
+    const quoteClassHere = `xll:w-[40%] xl:w-[50%] lg:w-[74%] md:w-[65%] sm:w-[70%] ssm:w-[88%] xs:w-[90%] w-[90%] mx-auto xxl:text-[2.37rem] 
+    xll:leading-[3.3rem] font-[600] xll:text-[1.7rem] md:text-2xl xl:leading-[2.75rem] ssm:leading-[2.4rem]  
+    xs:text-xl text-lg leading-8 text-center` + quoteClass;
     return(
         <div className="bg-white text-[#372c44] xl:py-20 py-16 text-center">
             <h2 id='feedback' className={`${h1Class} py-2`}>
@@ -28,29 +28,29 @@ export default function Feedback(){
             }}
             spaceBetween={20} slidesPerView={1} modules={[Navigation, Autoplay, Pagination]}>
                 <SwiperSlide>
-                    <blockquote id="quote" className={quoteClassHere}>
+                    <p id="quote" className={quoteClassHere}>
                         She is a wise and insightful teacher who has 
                     helped me to see the world in a new way
-                    </blockquote>
+                    </p>
                     <div className="text-center leading-8 xs:py-10 py-8 text-violet">
                         <span className="font-bold py-4 lg:text-2xl ssm:text-xl text-lg">Ms.Rose Marray</span>  <br /> 
                         <span className="ssm:text-lg text-base">ABC Company </span>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <blockquote id="quote" className={quoteClassHere}>
+                    <p id="quote" className={quoteClassHere}>
                         She is a wise and insightful teacher who has 
                          helped me  to  see the world in a new way
-                    </blockquote>
+                    </p>
                     <div className="text-center leading-8 xs:py-10 py-8 text-violet">
                         <span className="font-bold py-4 lg:text-2xl ssm:text-xl text-lg">Ms.Rose Marray</span>  <br /> 
                         <span className="ssm:text-lg text-base">ABC Company </span>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <blockquote id="quote" className={quoteClassHere}>
+                    <p id="quote" className={quoteClassHere}>
                         She is a wise and insightful teacher who has helped me to  see the world in a new way
-                    </blockquote>
+                    </p>
                     <div className="text-center leading-8 xs:py-10 py-8 text-violet">
                         <span className="font-bold py-4 lg:text-2xl ssm:text-xl text-lg">Ms.Rose Marray</span>  <br /> 
                         <span className="ssm:text-lg text-base">ABC Company </span>
