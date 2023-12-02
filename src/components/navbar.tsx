@@ -89,8 +89,8 @@ export default function Navbar(props:{currentLink:string}){
             lg:bg-[left_-400px_top_-380px] md:bg-[left_-340px_top_-100px] bg-[left_-410px_top_0px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 
             {/* journey background picture, in certain page it is used too, since it is just aligned center */}
-            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[900px] xs:h-full h-[900px]
-            [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 lg:bg-center md:bg-[center_top] bg-center
+            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[900px] xs:h-[750px] h-[850px]
+            [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-[top_center]
             bg-repeat-y bg-scroll'></div>
 
             {/* account page background */}
