@@ -1,4 +1,4 @@
-import { bg6Class, h1Class, h2Class } from "../utilities";
+import { bg6Class, h1Class, h2Class_S } from "../utilities";
 
 type ClubItems = {bg:string , name:string, texts:React.ReactNode[] , price:string}[]
 export default function EliteClubItems(){
@@ -33,7 +33,7 @@ export default function EliteClubItems(){
         <div className={`w-full py-20 text-center ${bg6Class}`}>
     
             <h1 className={`${h1Class} py-2 text-secondary`}>The Membership</h1>
-            <h1 className={`${h2Class} py-2 text-yellow-100`}>
+            <h1 className={`${h2Class_S} py-2 text-yellow-100`}>
                 Quality of reading remains consistent <br />
                 across all membership levels.
             </h1>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { h1Class, } from "../utilities";
+import { h1Class, h2Class, } from "../utilities";
 
 export default function TheElite(){
     React.useEffect(()=>{
@@ -8,9 +8,7 @@ export default function TheElite(){
         <div className={`text-center mt-10 lg:mt-0 lg:pt-0 pt-[4.5rem]`}>
 
             <h1 className={`${h1Class} text-primary py-6`}>Be an Elite?</h1>
-            <h1 className={`oswald md:font-[600] font-[500] xxl:text-5xl xxl:mr-16 xll:text-[2rem] 
-            xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 md:text-3xl md:leading-8 mr-3 ssm:text-2xl 
-            text-xl text-center text-secondary md:pt-2 `}>Founder's Message</h1>
+            <h1 className={`${h2Class} text-center text-secondary md:pt-2 `}>Founder's Message</h1>
 
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-8 lg:pl-10 pl-0">
 

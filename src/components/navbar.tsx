@@ -73,7 +73,7 @@ export default function Navbar(props:{currentLink:string}){
             <SignUp /> <Login /><Forgotten />
             {/* Be an elite background picture */}
             <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] 
-            lg:h-[1450px] md:h-[1350px] h-[1970px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] 
+            lg:h-[1450px] md:h-[1350px] h-[2100px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] 
             bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 

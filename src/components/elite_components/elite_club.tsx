@@ -1,4 +1,4 @@
-import { h1Class, h2Class } from "../utilities";
+import { h1Class, h2Class_S } from "../utilities";
 
 export default function Elite_Club(){
     return(
@@ -6,7 +6,7 @@ export default function Elite_Club(){
             <h1 className={`${h1Class} py-2`}>
                 Elite Club Privileges
             </h1>
-            <h1 className={`${h2Class} py-4`}>
+            <h1 className={`${h2Class_S} text-[#612a60] px-2 md:py-4`}>
                 Take a seat, walk along with the reader for<br />
                 your personalize coaching and healing
             </h1>
