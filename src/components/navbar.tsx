@@ -89,7 +89,7 @@ export default function Navbar(props:{currentLink:string}){
             lg:bg-[left_-400px_top_-380px] md:bg-[left_-340px_top_-100px] bg-[left_-410px_top_0px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 
             {/* journey background picture */}
-            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[900px] xl:h-[950px] xs:h-[750px] h-[900px]
+            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[900px] xl:h-[950px] xs:h-[750px] h-[950px]
             [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-[top_center]
             bg-repeat-y bg-scroll'></div>
 
