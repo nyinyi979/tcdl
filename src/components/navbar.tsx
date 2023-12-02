@@ -77,7 +77,7 @@ export default function Navbar(props:{currentLink:string}){
             bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
-            {/* Highlight item background picture */}
+            {/* Highlight item and q and a background picture */}
             <div id='highlight_item' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] 
             xl:h-[1200px] lg:h-[1000px] md:h-[700px] h-[700px] [background-image:url(/bg7.png)] 
             lg:bg-[left_0px_top_-530px] bg-[left_-200px_top_-330px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>

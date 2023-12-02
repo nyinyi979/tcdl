@@ -8,14 +8,8 @@ import anime from "animejs";
 export default function FAQ(){
     React.useEffect(()=>{
         document.title = 'FAQ';
-        document.getElementById('bg_j')!.style.backgroundImage = `url('/bg6.png')`;
-        document.getElementById('bg_j')!.style.opacity = '1'
-        document.getElementById('bg_j')!.style.top = '-20%'
-        document.getElementById('bg_j')!.style.height = '100%'
-        //adjust bg position if the screen width is small
-        if(window.innerWidth < 1024){
-            document.getElementById('bg_j')!.style.backgroundPositionX = '-300px'
-        }
+        document.getElementById('highlight_item')!.style.opacity = '1'
+        
         // faq has navigation bar animation
         anime({
             targets: '#links',

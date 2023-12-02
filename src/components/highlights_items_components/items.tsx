@@ -124,28 +124,22 @@ export default function HighLightItem({id}:{id: string}){
                     Numerous publications and websites can instruct you on the meanings of the various 
                     tarot cards. 
                 </p>
-            </>,
-            restP: <>
                 <p className={pClass}>
-                    Once you have a basic comprehension of tarot symbolism, you can begin to intuitively interpret 
-                    the meaning of the cards.
-                </p>
-                <p className={pClass}>
-                    Finally, patience and an open mind are essential when using tarot cards for spiritual development. It 
-                    requires time and practice to learn how to effectively use tarot cards. Do not become disheartened 
-                    if you do not see immediate results. You will eventually develop a deeper understanding of tarot and 
-                    how to use it for your own spiritual development if you continue to practice and study.
+                    Finally, patience and an open mind are essential when using tarot cards for spiritual
+                    development. It requires time and practice to learn how to effectively use tarot cards.
+                    Do not become disheartened if you do not see immediate results. You will eventually develop
+                    a deeper understanding of tarot and how to use it for your own spiritual development if you 
+                    continue to practice and study.
                 </p>
                 <p className={pClass}>
                     Here are some additional guidelines for employing tarot cards for spiritual development:
                 </p>
+            </>,
+            restP: <>
                 <p className={pClass}>
                     Create a sacred space in which to read.This could be a basic area of your home in which you feel r
                     elaxed and at ease. You may wish to decorate your space with candles, crystals, or other sacred 
-                    objects.
-                </p>
-                <p>
-                    Set a purpose for your reading before beginning.What are you hoping to discover from the cards?
+                    objects. Set a purpose for your reading before beginning.What are you hoping to discover from the cards?
                 </p>
                 </>
             }
@@ -154,7 +148,7 @@ export default function HighLightItem({id}:{id: string}){
     return(
         <>
         <HighLightItemHeading title={ItemTextAndImg[0].title}/>
-        <div className=" w-full bg-white text-black xxl:text-xl md:text-[19px] text-lg text-left font-[400] leading-9 lg:py-12 py-10">
+        <div className=" w-full bg-white text-black xxl:text-xl md:text-[19px] text-lg text-left font-[400] leading-9 lg:pb-32 xl:pb-20 lg:py-12 py-10">
             <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[97%] md:w-[96%] w-11/12 h-fit mx-auto">
                 <div>
                     <h1 className="oswald font-[700] text-[#583f74] xll:text-4xl md:text-[34px] text-[25px] trackingwide">{ItemTextAndImg[0].title}</h1>
