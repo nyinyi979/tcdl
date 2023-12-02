@@ -1,4 +1,4 @@
-import { BeEliteBtn, bg1Class, h1Class, h2Class, quoteClass, useAnimateLeft, useAnimateRight, useAnimateTop } from '../utilities';
+import { BeEliteBtn, bg1Class, h1Class, h2Class_S, quoteClass, useAnimateLeft, useAnimateRight, useAnimateTop } from '../utilities';
 export default function Private(){
     //adding animation
     useAnimateLeft('private');
@@ -9,10 +9,10 @@ export default function Private(){
     return(
         <div className={`text-white text-center py-16 ${bg1Class}`}>
             <h1 id='private' className={`${h1Class} py-3`}>The Private Group</h1>
-            <h2 id='private_group' className={`${h2Class} py-2`}>
+            <h2 id='private_group' className={`${h2Class_S} py-2`}>
                 A Private Group of <br /> Seeking and Awakening Individuals
             </h2>
-            <div id='private_text' className="xll:w-5/6 xl:w-[75%] lg:w-[94%] md:w-[90%] w-[85%] font-[400] text-justify mx-auto xl:text-xl xl:leading-[2.4rem] lg:text-xl lg:leading-[2.7rem] ssm:text-lg text-base py-3 leading-9 md:py-6">
+            <div id='private_text' className="xll:w-5/6 xl:w-[75%] md:w-[94%] w-[85%] font-[400] text-justify mx-auto xl:text-xl xl:leading-[2.4rem] lg:text-xl lg:leading-[2.7rem] md:leading-10 ssm:text-lg text-base py-3 leading-9 md:py-6">
                 The initial phase of the trip was tarot card readings, but it has since expanded to encompass 
                 many forms of energy healing, runic readings, astrological/birth chart readings, spiritual practices, 
                 and even the acquisition of knowledge in global languages and guidance. Consequently, she has made the
