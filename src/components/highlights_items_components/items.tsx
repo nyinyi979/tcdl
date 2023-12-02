@@ -4,19 +4,19 @@ export function HighLightItemHeading({title}:{title:string}){
     return(
         <div className="pt-16 lg:pt-0">
             <h1 className={`oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
-                xll:text-[3rem] lg:text-[2.5rem] md:font-[600] md:text-[2.4rem] 
+                xll:text-[3rem] lg:text-[2.5rem] md:font-[600] md:text-[2.4rem] lg:mr-3
                 md:leading-[3.8rem] xs:text-4xl text-3xl leading-[3.1rem]
-                text-primary text-center lg:pt-20 pt-12`}>
+                text-primary text-center xl:pt-10 lg:pt-20 pt-12`}>
                The Highlights 
             </h1>
             <h2 className={`lg:font-[400] md:font-[500] font-[600] xxl:text-5xl text-center md:pt-3 pt-6 
-            lg:pb-12 md:pb-6 pb-10 xxl:text-[2rem] xll:leading-[2.7rem] xl:leading-9 xl:text-[1.5rem]
+            lg:pt-7 lg:pb-12 md:pb-6 pb-10 xxl:text-[2rem] xll:leading-[2.7rem] xl:leading-9
             lg:text-[1.3rem] md:leading-8 xxs:text-[1.1rem] text-base text-primary`}>
                 <Link className="hover:text-[#583f74] duration-500" to="/">Home</Link>
                 <span className={gtClass}>&gt;</span>
                 <Link className="hover:text-[#583f74] duration-500" to="/highlights">Tarot </Link>
                 <span className={gtClass}>&gt;</span>
-                <span className={gtClass}> {title}</span>
+                <span className={'px-2 text-[#584f74]'}> {title}</span>
             </h2>
         </div>
     
@@ -148,11 +148,11 @@ export default function HighLightItem({id}:{id: string}){
     return(
         <>
         <HighLightItemHeading title={ItemTextAndImg[0].title}/>
-        <div className=" w-full bg-white text-black xxl:text-xl md:text-[19px] text-lg text-left font-[400] leading-9 lg:pb-32 xl:pb-20 lg:py-12 py-10">
+        <div className=" w-full bg-white text-black xxl:text-xl md:text-[19px] text-lg text-left font-[400] leading-9 lg:pb-20 xl:pb-32 xl:pt-16 lg:py-12 py-10">
             <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[97%] md:w-[96%] w-11/12 h-fit mx-auto">
                 <div>
-                    <h1 className="oswald font-[700] text-[#583f74] xll:text-4xl md:text-[34px] text-[25px] trackingwide">{ItemTextAndImg[0].title}</h1>
-                    <h2 className="lg:pt-6 md:pt-5 pt-3 font-[300]">Posted on 2023/10/02</h2>
+                    <h1 className="oswald font-[700] text-[#583f74] xxl:text-5xl xl:text-[40px] md:text-[34px] text-[25px] trackingwide">{ItemTextAndImg[0].title}</h1>
+                    <h2 className="xl:pt-8 lg:pt-6 md:pt-5 pt-3 font-[300]">Posted on 2023/10/02</h2>
                 </div>
         
                 <div className={divClass}>
