@@ -19,7 +19,7 @@ export default function Journey(){
             <Beginning />
             <Who />
             <Private />
-            <J_Carosusel text/>
+            <J_Carosusel />
             <Communities />
             <Footer />
         </>

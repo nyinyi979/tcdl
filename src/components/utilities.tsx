@@ -110,7 +110,7 @@ export const quoteClass = `leading-8 xl:py-32 md:py-24 py-20 relative
 //Class for h1 and h2 used in almost all pages
 export const h1Class = `oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] xxl:mr-12
     xll:text-[3rem] xll:mr-4 lg:text-[2.5rem] xl:mr-6 md:font-[600] md:text-[2.2rem] 
-    md:mr-4 md:leading-[3.8rem] xs:text-4xl text-3xl mr-2 leading-[3.1rem] font-bold `
+    md:mr-4 md:leading-[3.8rem] xs:text-4xl text-3xl mr-2 leading-[3.1rem]`
 
 export const h2Class = `oswald font-[500] xxl:text-5xl xxl:mr-16 
     xll:text-[2rem] xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] xl:mr-4 xl:leading-9 

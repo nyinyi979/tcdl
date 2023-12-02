@@ -1,5 +1,5 @@
 import {  bg3Class, h1Class, h2Class } from '../utilities';
-import ImageCarousel from '../carousels';
+import {ImageCarousel} from '../carousels';
 export default function Carosusel(){
     return(
         <div className={`py-20 ${bg3Class}`}>

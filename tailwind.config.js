@@ -18,6 +18,10 @@ export default {
       'xxl' : '1700px',
     },
     extend: {
+      gridTemplateColumns: {
+        1.10: '1fr 1.1fr',
+        1.01: '1.1fr 1fr',
+      },
       colors:{
         primary: '#ef4165',       //pink
         secondary: '#eac473',     //yellow

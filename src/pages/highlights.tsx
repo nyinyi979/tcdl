@@ -1,10 +1,10 @@
 import Footer from "../components/footer";
-import H_Carosusel from "../components/highlights_components/highlight_carousel";
 import HighlightItems from "../components/highlights_components/highlight_items";
 import Communities from "../components/communities";
-import J_Carosusel from "../components/journey_components/j_carousel";
 import React from 'react';
 import Navbar from "../components/navbar";
+import H_Carousel_Img from "../components/highlights_components/highlight_carousel";
+import H_Carosusel_Video from "../components/highlights_components/highlight_video_carousel";
 export default function Highlights(){
     React.useEffect(()=>{   
         document.title = 'Highlights';
@@ -15,9 +15,9 @@ export default function Highlights(){
     return(
         <>
             <Navbar currentLink="/highlights"/>
-            <H_Carosusel />
+            <H_Carousel_Img />
             <HighlightItems />
-            <J_Carosusel text={false}/>
+            <H_Carosusel_Video />
             <Communities />
             <Footer />
         </>

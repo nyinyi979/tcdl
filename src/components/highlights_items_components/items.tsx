@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 export function HighLightItemHeading({title}:{title:string}){
+    const gtClass = 'px-2 lg:px-4 text-[#584f74]'
     return(
-        <div className="pt-16 md:pt-0">
-            <h1 className={`oswald font-[500] xxl:text-[3rem] xxl:leading-[4.5rem] xxl:mr-12
-                xll:text-[2.5rem] xll:mr-4 lg:text-[2rem] xl:mr-6 md:font-[600] md:text-3xl 
-                md:mr-4 md:leading-[3.8rem] xs:text-2xl text-xl mr-2 leading-[3.1rem] font-bold 
-                text-primary text-center lg:pt-20 pt-16`}>
-               The Highlights &gt; {title}
+        <div className="pt-16 lg:pt-0">
+            <h1 className={`oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
+                xll:text-[3rem] lg:text-[2.5rem] md:font-[600] md:text-[2.4rem] 
+                md:leading-[3.8rem] xs:text-4xl text-3xl leading-[3.1rem]
+                text-primary text-center lg:pt-20 pt-12`}>
+               The Highlights 
             </h1>
-            <h2 className={`oswald xxl:text-5xl xxl:mr-16 text-center pt-10 pb-20
-                xxl:text-[2rem] xll:leading-[2.7rem] xll:mr-6 xl:mr-4 xl:leading-9 xl:text-[1.5rem]
-                md:text-[1.3rem] md:leading-8 mr-5 text-[1rem] text-primary`}>
-                <Link to="/">Home</Link>
-                <span className="px-3 text-[#583f74]">&gt;</span>
-                <Link to="/highlights">Highlight </Link>
-                <span className="px-3 text-[#583f74]">&gt;</span>
-                <span className="px-2 text-[#583f74]"> {title}</span>
+            <h2 className={`lg:font-[400] md:font-[500] font-[600] xxl:text-5xl text-center md:pt-3 pt-6 
+            lg:pb-12 md:pb-6 pb-10 xxl:text-[2rem] xll:leading-[2.7rem] xl:leading-9 xl:text-[1.5rem]
+            lg:text-[1.3rem] md:leading-8 xxs:text-[1.1rem] text-base text-primary`}>
+                <Link className="hover:text-[#583f74] duration-500" to="/">Home</Link>
+                <span className={gtClass}>&gt;</span>
+                <Link className="hover:text-[#583f74] duration-500" to="/highlights">Tarot </Link>
+                <span className={gtClass}>&gt;</span>
+                <span className={gtClass}> {title}</span>
             </h2>
         </div>
     
@@ -24,8 +25,8 @@ export function HighLightItemHeading({title}:{title:string}){
 
 export default function HighLightItem({id}:{id: string}){
     console.log(id);
-    const pClass = 'md:my-2 my-1'
-    const imgClass = "w-full h-full bg-cover rounded-md";
+    const pClass = 'lg:my-3 md:my-2 my-1'
+    const imgClass = "w-full h-[95%] bg-cover rounded-md self-center";
     const divClass = 'my-4';
     //THIS IS A DATA STYLE FOR DYNAMIC RENDERING, YOU CAN MATCH THE ID AND RENDER
     //NOW IT IS JUST USED AS A SAMPLE
@@ -153,24 +154,24 @@ export default function HighLightItem({id}:{id: string}){
     return(
         <>
         <HighLightItemHeading title={ItemTextAndImg[0].title}/>
-        <div className="w-full bg-white text-black xxl:text-xl text-lg text-left md:leading-10 leading-9 py-10">
-            <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[96%] w-11/12 h-fit mx-auto ">
-                <div className="oswald">
-                    <h1 className="text-light_blue xxl:text-2xl text-[22px]">{ItemTextAndImg[0].title}</h1>
-                    <h2>Posted on 2023/10/02</h2>
+        <div className=" w-full bg-white text-black xxl:text-xl md:text-[19px] text-lg text-left font-[400] leading-9 lg:py-12 py-10">
+            <div className="xll:w-[72rem] xl:w-[65rem] lg:w-[97%] md:w-[96%] w-11/12 h-fit mx-auto">
+                <div>
+                    <h1 className="oswald font-[700] text-[#583f74] xll:text-4xl md:text-[34px] text-[25px] trackingwide">{ItemTextAndImg[0].title}</h1>
+                    <h2 className="lg:pt-6 md:pt-5 pt-3 font-[300]">Posted on 2023/10/02</h2>
                 </div>
         
                 <div className={divClass}>
                     {/* top */}
                     {ItemTextAndImg[0].topP}
-                    <img src="/pic2.jpg" alt="" className={`${imgClass} py-5`}/>
+                    <img src="/pic2.jpg" alt="" className={`${imgClass} my-5`}/>
                     {/* bottom text */}
                     {ItemTextAndImg[0].bottomP}
                 </div>
                 
         
                 {/* text right */}
-                <div className={`${divClass} grid lg:grid-cols-2 grid-cols-1 gap-10`}>
+                <div className={`${divClass} grid xl:grid-cols-2 lg:grid-cols-1.1 grid-cols-1 lg:gap-7 gap-3`}>
                     <img src={ItemTextAndImg[0].leftImg} alt="" className={imgClass}/>
                     <div>
                         {ItemTextAndImg[0].rightP}
@@ -178,7 +179,7 @@ export default function HighLightItem({id}:{id: string}){
                 </div>
                 
                 {/* text left */}
-                <div className={`${divClass} grid lg:grid-cols-2 grid-cols-1 gap-10`}>
+                <div className={`${divClass} grid xl:grid-cols-2 lg:grid-cols-1.1 grid-cols-1 lg:gap-7 gap-3`}>
                     <div>
                         {ItemTextAndImg[0].leftP}
                     </div>
