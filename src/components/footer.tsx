@@ -3,9 +3,9 @@ import { FaFacebookF, FaPlay, FaTiktok, } from "react-icons/fa6";
 import { FaTelegramPlane } from 'react-icons/fa';
 export default function Footer(){
     const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[20px] md:text-lg ssm:text-base text-sm';
-    const iconClass ="text-dark_violet hover:rotate-[20deg] hover:text-black rounded-full lg:w-12 lg:h-12 w-10 h-10 xs:p-3 p-2 bg-blue cursor-pointer hover:bg-primary duration-300";
+    const iconClass ="text-darker_violet hover:rotate-[20deg] hover:text-black rounded-full lg:w-12 lg:h-12 w-10 h-10 xs:p-3 p-2 bg-blue cursor-pointer hover:bg-primary duration-300";
     return(
-        <div className="bg-dark_violet xs:py-12 py-7">
+        <div className="bg-darker_violet xs:py-12 py-7">
             <div className="flex lg:w-[60%] w-[76%] mx-auto items-center justify-center my-4 flex-wrap gap-6">
                 <a href="/" className={linkClass}>Home</a>
                 <a href="/journey" className={linkClass}>The Journey</a>

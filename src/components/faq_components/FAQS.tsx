@@ -10,13 +10,13 @@ export default function FAQS(){
             
             <div className="w-fit h-fit mx-auto flex lg:my-8 my-4 md:pt-16 pt-10 md:pb-8 pb-5">
                 <div className="text-white rounded-l-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-7 py-3 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
-                <div className="text-[#372c44] rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-7 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
+                <div className="text-violet rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-7 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
             </div>
 
             <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] mx-auto font-[400] md:leading-10 leading-8 text-left ">
 
                 <div className={privilegesClass}>
-                    <h1 className={`${h2Class_V} text-[#583f74]`}>Elite Plus and Elite Star Privileges</h1>
+                    <h1 className={`${h2Class_V} text-dark_violet`}>Elite Plus and Elite Star Privileges</h1>
                     <p className="lg:my-5  my-3">
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
                         EP and ES members are to specify the type of reading or consultation requested upon booking.
@@ -60,7 +60,7 @@ export default function FAQS(){
                 </div>
 
                 <div className={privilegesClass}>
-                <h1 className={` ${h2Class_V} text-[#583f74]`}>Elite Express and Elite Membership Privileges</h1>
+                <h1 className={` ${h2Class_V} text-dark_violet`}>Elite Express and Elite Membership Privileges</h1>
 
                     <p className={pClass}>
                         EE and EL members are allowed a 30-min group consultation sessions every two month. 

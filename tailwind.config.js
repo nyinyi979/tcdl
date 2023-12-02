@@ -28,10 +28,11 @@ export default {
         light_secondary: '#ffeacf',
         violet: '#372c44',
         light_violet: '#443548',
-        dark_violet: '#18141a',
+        darker_violet: '#18141a',
         t_violet: '#272228',
         light_blue: '#908ec1',
         blue: '#5f4e7c',
+        dark_violet: '#583f74'
       }
     },
   },

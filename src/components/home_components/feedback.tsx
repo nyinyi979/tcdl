@@ -13,7 +13,7 @@ export default function Feedback(){
     xll:leading-[3.3rem] font-[600] xll:text-[1.7rem] md:text-2xl xl:leading-[2.75rem] ssm:leading-[2.4rem]  
     xs:text-xl text-lg leading-8 text-center` + quoteClass;
     return(
-        <div className="bg-white text-[#372c44] xl:py-20 py-16 text-center">
+        <div className="bg-white text-violet xl:py-20 py-16 text-center">
             <h2 id='feedback' className={`${h1Class} py-2`}>
                 The Feedbacks
             </h2>

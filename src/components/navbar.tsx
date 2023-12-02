@@ -11,7 +11,7 @@ export default function Navbar(props:{currentLink:string}){
     const liClass = 'float-left xll:px-[1.2rem] lg:px-4 list-none'
     const linkClass = 'block underline_effect xxl:text-[1.7rem] xll:text-[1.2rem] xll:ml-0 xl:text-[1.1rem] xl:ml-2 font-[500] lg:text-base text-base underline_effect';
     const btnClass = 'cursor-pointer float-left font-[500] block xll:w-36 xll:h-[3.1rem] xl:w-32 xl:h-11 lg:w-28 lg:h-10 w-[5.5rem] h-8 xl:pt-3 pt-2 px-2 xll:text-[1.2rem] lg:text-base text-[0.8rem] lg:rounded-full rounded-[.7rem] leading-4 lg:ml-5 ml-2 text-center text-white bg-primary hover:bg-white hover:text-primary text-xs duration-500';
-    const drawerBTN = 'inline-block text-left w-full py-1 px-4 text-lg h-fit'
+    const drawerBTN = 'inline-block text-left -mt-[5px] w-full py-[6px] font-[500] px-4 text-lg h-fit text-lg'
 
     const Drawer = React.useRef<AnimeInstance>();
     const DrawerOutro = React.useRef<AnimeInstance>();
@@ -136,7 +136,7 @@ export default function Navbar(props:{currentLink:string}){
 
             </div>
             {/* drawer component */}
-            <div id='drawers' className='lg:hidden fixed right-[-400px] hidden top-0 bg-violet w-64 h-full z-[60]'>
+            <div id='drawers' className='lg:hidden fixed right-[-400px] hidden top-0 bg-[#37213c] w-64 h-full z-[60]'>
                 <div className='inline-block w-fit h-fit text-white text-xl p-3 hover:text-primary cursor-pointer' onClick={()=>{DrawerOutro.current!.restart()}}><ImCross /></div>
                 <Link to={'/'} className={`${drawerBTN} ${props.currentLink === '/'? 'fill_effect_active' : 'fill_effect'} `}>Home</Link>
                 <Link to={'/journey'} className={`${drawerBTN} ${props.currentLink === '/journey'? 'fill_effect_active' : 'fill_effect'} `}>The Journey</Link>
