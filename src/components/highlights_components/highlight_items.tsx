@@ -1,6 +1,6 @@
 import React from 'react';
 export default function HighlightItems(){
-    const MoreClass = 'oswald text-primary hover:text-secondary duration-500 xs:text-xl text-lg font-[500] inline-block xs:my-8 my-4'
+    const MoreClass = 'oswald text-primary hover:text-secondary duration-500 xll:text-2xl xs:text-xl text-lg font-[400] inline-block xs:my-8 my-4'
     
     const linkClass = "hover:text-white hover:bg-primary duration-500 px-5 py-3 rounded-lg cursor-pointer xs:text-lg text-base font-bold"
 
@@ -47,11 +47,11 @@ export default function HighlightItems(){
     ]
     return(
         <div className="bg-white xs:py-10 py-5">
-            <div className="grid md:grid-cols-3 grid-cols-1 xll:w-[90%] xl:w-[88%] lg:w-[87%] md:w-[94%] xs:w-[22rem] w-[18rem] lg:gap-10 gap-5 mx-auto py-10">
+            <div className="grid md:grid-cols-3 grid-cols-1 xll:w-[80%] xl:w-[88%] lg:w-[87%] md:w-[94%] xs:w-[22rem] w-[18rem] lg:gap-8 gap-5 mx-auto py-10">
 
             {contents.map((content)=>(
                 <div key={content.title}>
-                    <img src={content.img} alt="img" className="w-full xl:h-72 lg:h-60 md:h-52 h-60 bg-cover rounded-md my-2"/>
+                    <img src={content.img} alt="img" className="w-full xl:h-72 lg:h-52 md:h-44 h-60 bg-cover rounded-md my-2"/>
                     <h1 className="oswald text-dark_violet my-5 xl:text-4xl ssm:text-2xl text-xl font-[400]">{content.title}</h1>
                     <div className="font-[400] xl:text-xl ssm:text-base text-sm leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
                     <a href={`/highlight/${content.id}`} className={MoreClass}>More</a>

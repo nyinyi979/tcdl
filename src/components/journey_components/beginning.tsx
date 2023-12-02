@@ -10,7 +10,7 @@ export default function Beginning(){
                 Initial phrase of <br />
                 the Journey on Facebook
             </h1>
-            <div className="xl:w-[84%] w-[95%] mx-auto md:py-10 py-4 text-light_violet text-justify font-[400] text-xl leading-10">
+            <div className="xll:w-[78%] xl:w-[84%] w-[95%] mx-auto md:py-10 py-4 text-light_violet text-justify font-[400] text-xl leading-10">
                 She began "The Cards Don't Lie" as a closed Facebook group, but its members' 
                 candor and willingness to share have allowed it to grow into a larger spiritual 
                 awakening community. Despite the fact that their spiritual paths diverge, they were 

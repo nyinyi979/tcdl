@@ -56,15 +56,15 @@ export function ImageCarousel(){
         pagination={{clickable:true}}
         // Swiper breakpoints , screenSize(>=) : {spaceBetweenEachComponents , slidesVisible per view}
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
-        768: {spaceBetween: 30,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
-        , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
+        769: {spaceBetween: 30,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
+        , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 80, slidesPerView: 3}
         ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
          modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[70%] w-[60%] xs:py-10 py-0" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
 
-                    <img src={item.img} alt="img" className="w-full h-64 bg-cover rounded-lg"/>
+                    <img src={item.img} alt="img" className="w-full xs:h-64 h-56 bg-cover rounded-lg"/>
                     <h1 className= {headingClass}>
                         {item.heading}
                     </h1>
