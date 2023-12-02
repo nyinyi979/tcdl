@@ -73,8 +73,9 @@ export default function Navbar(props:{currentLink:string}){
             <SignUp /> <Login /><Forgotten />
             {/* Be an elite background picture */}
             <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] 
-            lg:h-[1450px] md:h-[1350px] h-[2100px] xl:bg-center lg:bg-[center_left_-230px] md:bg-[center_left_-350px] 
-            bg-[center_left_-900px] lg:[background-position: top center] scale-100 [background-image:url(/bg5.png)]  
+            lg:h-[1280px] md:h-[1350px] h-[1880px] xl:bg-center lg:bg-[top_-5px_left_-200px] md:bg-[top_5px_left_-370px]
+            bg-[top_-0px_left_-840px] lg:[background-position: top center] 
+            scale-100 [background-image:url(/bg5.png)]  
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
             {/* Highlight item and q and a background picture */}

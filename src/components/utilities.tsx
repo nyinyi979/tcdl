@@ -114,7 +114,7 @@ export const h1Class = `oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem]
 
 export const h2Class = `oswald font-[500]
     xll:text-[2.1rem] xl:text-[1.9em] xll:leading-[2.7rem] xl:text-[1.8rem] xl:leading-9 
-    md:font-[600] md:text-[1.8rem] md:leading-8 text-[1.6rem]`
+    md:font-[600] md:text-[1.8rem] md:leading-8 text-[1.5rem]`
 
 export const h2Class_S = `oswald font-[600] xxl:text-5xl xxl:mr-16 
 xxl:text-[2rem] xl:text-[1.9em] xll:leading-[2.7rem] xll:mr-6 xl:text-[1.8rem] lg:text-[1.6rem] xl:mr-4 xl:leading-9 
