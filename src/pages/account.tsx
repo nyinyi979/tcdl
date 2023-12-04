@@ -30,8 +30,12 @@ export default function Account(){
 
 //Side bar
 export function PageChooser(){
-    const btnClass = "inline-block text-text_violet cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center hover:bg-light_blue border-2 border-[#9580bc] hover:text-white duration-200"
-    const btnActiveClass = "inline-block cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center bg-light_blue text-white duration-200"
+    const btnClass = `inline-block text-text_violet cursor-pointer mx-auto my-[3px]
+    lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 
+    font-[600] rounded-full text-center hover:bg-[#9580bc] border-2 border-[#9580bc] hover:text-white duration-200`
+    const btnActiveClass = `inline-block cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 lg:h-16 h-12 
+    xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center bg-[#9580bc]
+     text-white duration-200`
 
     const [pages , setPages ] = React.useState<pages>({
         account: true, calendar: false, voice: false, password: false
@@ -59,7 +63,7 @@ export function PageChooser(){
             </h1>
             <div className="w-full max-w-full md:my-8 my-4 table clear-both py-20">
                 
-                <div className="lg:float-left float-none bg-gray-100 rounded-3xl lg:w-[27%] w-[94%] xll:h-[47.5rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
+                <div className="lg:float-left float-none bg-white rounded-3xl xl:w-[26.5%] lg:w-[27%] w-[94%] xll:h-[50rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
                     
                     <div className="flex xl:flex-col flex-row flex-wrap w-full lg:gap-4 gap-2 lg:py-10 py-5 lg:px-10 px-0">
                         <a onClick={goAccout} className={pages.account? btnActiveClass : btnClass}>
@@ -84,7 +88,7 @@ export function PageChooser(){
                     </div>
                      <AccountSidebar />
                 </div>
-                <div className='lg:float-left float-none lg:w-[68%] w-[94%] lg:mx-[1%] mx-auto xll:h-[47.5rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] h-fit bg-white rounded-3xl py-3'>
+                <div className='lg:float-right float-none xl:w-[69%] lg:w-[68%] w-[94%] lg:mx-[1%] mx-auto xll:h-[50rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] h-fit bg-white rounded-3xl py-3'>
                     {pages.account? <Accounts /> : pages.calendar? <Calendar /> : pages.voice? <Voices /> : pages.password? <Password /> : ''}
                 </div>
             

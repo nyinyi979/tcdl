@@ -2,10 +2,10 @@ import { bannerh1Class, bannerh2Class } from '../utilities';
 import {ImageCarousel} from '../carousels';
 export default function H_Carousel_Img(){
     return(
-        <div id='highlight' className={`pb-10 mt-10 lg:mt-0 lg:pt-0 pt-[4.5rem]`}>
-            <h2 className={`${bannerh1Class} text-center text-primary xl:py-8 py-3`}>The Highlights</h2>
+        <div id='highlight' className={`pb-10 mt-10 lg:mt-0 lg:pt-16 pt-[4.5rem]`}>
+            <h2 className={`${bannerh1Class} text-center text-primary py-3`}>The Highlights</h2>
 
-            <h2 className={`${bannerh2Class} text-center text-secondary`}>
+            <h2 className={`${bannerh2Class} text-center py-2 text-secondary`}>
                 This Month's Highlights
             </h2>
             

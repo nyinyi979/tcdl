@@ -6,8 +6,8 @@ import 'swiper/css/pagination'
 import { Link } from 'react-router-dom';
 type items = {id: number, img: string , heading: React.ReactNode , paragraph: string}[]
 export function ImageCarousel(){
-    const headingClass = "oswald md:text-2xl ssm:text-lg text-base text-secondary font-[400] py-5";
-    const pClass = "text-white font-[400] lg:text-xl md:text-lg xs:text-base text-sm leading-10 text-justify"
+    const headingClass = "oswald lg:py-9 xl:text-[29px] md:text-2xl ssm:text-lg text-base text-secondary font-[400] py-5";
+    const pClass = "text-white font-[400] lg:text-xl lg:leading-[40px] md:text-lg xs:text-base text-sm leading-10 text-justify"
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 text-xl font-[400] inline-block my-8'
     const items:items = [
         {
@@ -58,7 +58,7 @@ export function ImageCarousel(){
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 80, slidesPerView: 3}
-        ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
+        ,1365 : {spaceBetween: 75 , slidesPerView: 3}}}
          modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[63%] w-[60%] xs:py-10 py-0" >
             
             {items.map((item)=>(
@@ -68,7 +68,7 @@ export function ImageCarousel(){
                     <h1 className= {headingClass}>
                         {item.heading}
                     </h1>
-                    <div className= {pClass} style={{lineHeight: '2rem'}}>
+                    <div className= {pClass}>
                         {item.paragraph}
                     </div>
                     <Link to={`/highlight/${item.id}`} className={MoreClass}>More</Link>
@@ -77,13 +77,13 @@ export function ImageCarousel(){
             ))}
 
         </Swiper>
-        <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
+        <span className={`absolute md:w-8 md:h-8 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
         hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-        md:top-[23%] top-[25%] xll:left-[40px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
+        md:top-[20%] top-[25%] xll:left-[30px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
         left-[20px] cursor-pointer`}></span>
-        <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
+        <span className={`absolute md:w-8 md:h-8 w-6 h-6 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        md:top-[23%] top-[24%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[14px] 
+        md:top-[20%] top-[24%] xll:right-[25px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[14px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )

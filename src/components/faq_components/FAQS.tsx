@@ -13,7 +13,7 @@ export default function FAQS(){
                 <div className="text-violet rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-7 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
             </div>
 
-            <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] mx-auto font-[400] md:leading-10 leading-8 text-left ">
+            <div className="xll:w-[80%] xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] mx-auto font-[400] lg:text-[19px] text-base md:leading-10 leading-8 text-left ">
 
                 <div className={privilegesClass}>
                     <h1 className={`${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Plus and Elite Star Privileges</h1>

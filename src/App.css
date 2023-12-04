@@ -91,15 +91,22 @@ html::-webkit-scrollbar{
 .c li::before  , .d li::before
 {
     content: '\2022';
-    font-size: 3rem;
+    font-size: 5rem;
     color:#272228;
     position: absolute;
     left: -9%;
     top: 1%;
     font-weight: bolder;
 }
+@media only screen and (max-width:1099px) {
+    .c li::before  
+    {
+    font-size: 3rem;
+    }
+}
 .d li::before 
 {
+    font-size: 3.4rem;
     top: .7%;
 }
 span.swiper-pagination-bullet{

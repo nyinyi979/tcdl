@@ -8,7 +8,7 @@ export default function Carosusel(){
                 Sharing is caring
             </h2>
             <p className={`xll:w-5/6 xl:w-[80%] lg:w-[95%] md:w-[90%] w-[85%] mx-auto 
-            text-justify font-[400] xs:leading-10 leading-10 text-white xxl:text-[1.6rem] lg:text-[1.4rem] 
+            text-justify font-[400] xs:leading-9 leading-8 text-white xxl:text-[1.6rem] lg:text-[1.4rem] 
             md:text-[1.2rem] xs:text-base text-sm lg:py-10 md:py-6 xs:py-10 py-8`}>
                 In order to create a more interconnected and compassionate world, the founder and members 
                 share their insights, knowledge, and spiritual experiences with others. Substantial value and
