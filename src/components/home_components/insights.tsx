@@ -10,8 +10,8 @@ export default function Insight(){
     useAnimateLeft('h5');
     useAnimateLeft('h6');
     useAnimateLeft('h7');
-    const listClass = `font-[500] xxl:text-4xl xxl:leading-[6.4rem] 
-    xl:text-[1.7rem] py-1 md:leading-[3.4rem] xl:py-2 md:text-2xl xs:text-xl text-lg leading-[3.175rem]`
+    const listClass = `font-[500] xxl:text-4xl  
+    xl:text-[1.7rem] py-2 xl:py-2 md:text-2xl xs:text-xl text-lg `
     return(
         <div className={`${bg2Class} xl:lg-pb-40 lg:pb-20 relative py-10 text-white after:[content:''] z-10 after:absolute after:z-[-1]
          after:bg-black/50 after:w-full after:h-full after:top-0 after:left-0 `}>
