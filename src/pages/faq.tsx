@@ -8,7 +8,7 @@ import anime from "animejs";
 export default function FAQ(){
     React.useEffect(()=>{
         document.title = 'FAQ';
-        document.getElementById('highlight_item')!.style.opacity = '1'
+        document.getElementById('q_n_a')!.style.opacity = '1'
         
         // faq has navigation bar animation
         anime({

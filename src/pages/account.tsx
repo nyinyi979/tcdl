@@ -30,8 +30,8 @@ export default function Account(){
 
 //Side bar
 export function PageChooser(){
-    const btnClass = "inline-block text-[#5c545f] cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center hover:bg-[#908ec0] border-2 border-[#9580bc] hover:text-white duration-200"
-    const btnActiveClass = "inline-block cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center bg-[#908ec0] text-white duration-200"
+    const btnClass = "inline-block text-text_violet cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center hover:bg-light_blue border-2 border-[#9580bc] hover:text-white duration-200"
+    const btnActiveClass = "inline-block cursor-pointer mx-auto lg:w-full md:w-1/2 xs:w-11/12 w-4/6 lg:h-16 h-12 lg:h-16 h-12 xl:text-xl lg:text-base text-sm lg:py-4 py-3 lg:px-0 px-1 font-[600] rounded-full text-center bg-light_blue text-white duration-200"
 
     const [pages , setPages ] = React.useState<pages>({
         account: true, calendar: false, voice: false, password: false

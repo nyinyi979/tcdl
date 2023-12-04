@@ -15,8 +15,8 @@ export default function Voices(){
     ]
     return(
         <div>
-            <div className="border-b-2 border-b-[#908ec0] pt-6 pb-5">
-                <h1 className="text-center font-[600] text-2xl text-[#5c545f]">{voiceMessages.length}/5 Message(s)</h1>
+            <div className="border-b-2 border-b-light_blue pt-6 pb-5">
+                <h1 className="text-center font-[600] text-2xl text-text_violet">{voiceMessages.length}/5 Message(s)</h1>
             </div>
             <div className="w-full h-[35.5rem] overflow-y-scroll scrollbar scrollbar-h-[60rem] scrollbar-w-3 scrollbar-thumb-[#3c3f58] hover:scrollbar-thumb-black/30 scrollbar-track-[#bbbbbb]">
                 <div className="ssm:px-16 px-10 py-4">
@@ -54,9 +54,9 @@ export default function Voices(){
                 </div>
             </div>
             
-            <div className="border-t-2 border-t-[#908ec0] md:pt-8 py-4 w-full">
+            <div className="border-t-2 border-t-light_blue md:pt-8 py-4 w-full">
                 <div className="clear-both table w-full md:pl-10 md:pr-16 px-5">
-                    <h1 className="float-left md:ml-10 ml-0 md:mt-2 mt-0 text-sm text-[#5c545f] w-3/4">Your voice message can be recorded by clicking on the mic icon</h1>
+                    <h1 className="float-left md:ml-10 ml-0 md:mt-2 mt-0 text-sm text-text_violet w-3/4">Your voice message can be recorded by clicking on the mic icon</h1>
                     <img src="/sound-icon.png" alt="sound" className="md:w-[70px] md:h-[70px] w-10 h-10 md:-mt-4 mt-0 float-right cursor-pointer"/>
                 </div>
             </div>

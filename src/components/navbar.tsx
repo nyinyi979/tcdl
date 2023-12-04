@@ -78,10 +78,15 @@ export default function Navbar(props:{currentLink:string}){
             scale-100 [background-image:url(/bg5.png)]  
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
-            {/* Highlight item and q and a background picture */}
+            {/* Highlight item picture */}
             <div id='highlight_item' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] 
             xl:h-[1000px] lg:h-[1000px] md:h-[900px] h-[900px] [background-image:url(/bg7.png)] xl:bg-[left_-50px_top_-600px]
             lg:bg-[left_-50px_top_-530px] bg-[left_-200px_top_-500px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
+
+            {/* q and a background */}
+            <div id='q_n_a' className={`absolute opacity-0 top-0 left-0 w-full xll:w-[1500vh] xll:h-[150vh] 
+            xl:h-[1200px] lg:h-[1100px] md:h-[900px] xs:h-[700px] h-[500px] [background-image:url(/bg7.png)] xl:bg-[left_-120px_top_-550px] lg:bg-[left_-120px_top_-500px]
+            md:bg-[left_-130px_top_-430px] xs:bg-[left_-130px_top_-300px] bg-[left_-130px_top_-100px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 
             {/* Highlight background picture */}
             <div id='highlight_pic' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] 

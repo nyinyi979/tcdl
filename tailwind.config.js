@@ -26,8 +26,10 @@ export default {
         primary: '#ef4165',       //pink
         secondary: '#eac473',     //yellow
         light_secondary: '#ffeacf',
+        light_gray: '#beb9bf',
         violet: '#372c44',
         light_violet: '#443548',
+        text_violet : '#5c545f',
         darker_violet: '#18141a',
         t_violet: '#272228',
         light_blue: '#908ec1',

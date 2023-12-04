@@ -27,7 +27,7 @@ export default function Forgotten(){
                     <h2 onClick={closePopUp} className='float-right rounded-full font-[600] px-3 pb-1 text-lg cursor-pointer bg-primary text-white hover:bg-secondary hover:text-black duration-500'>x</h2>
                 </div>
 
-                <div className='px-6 ssm:px-12 font-[500] ssm:text-xl text-lg text-[#5c545f] after:clear-both after:table ssm:leading-9 leading-7'>
+                <div className='px-6 ssm:px-12 font-[500] ssm:text-xl text-lg text-text_violet after:clear-both after:table ssm:leading-9 leading-7'>
                     We will send you a six-digit verification code to your Email ID.
                 </div>
                 

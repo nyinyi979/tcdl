@@ -15,9 +15,9 @@ export default function Accounts(){
 
     //classes for input , input container, required input container 
     const inputClass =`z-10 font-[600] relative w-full ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 
-    lg:text-xl ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] 
-    outline-none text-[#5c545f] placeholder:text-[#5c545f]`
-    const inputBoxClass = `z-10 block relative md:w-full w-[98%] ssm:px-10 px-4 mx-auto my-2 py-2 text-[#5c545f]`
+    lg:text-xl ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray 
+    outline-none text-text_violet placeholder:text-text_violet`
+    const inputBoxClass = `z-10 block relative md:w-full w-[98%] ssm:px-10 px-4 mx-auto my-2 py-2 text-text_violet`
     const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary md:after:right-4 md:after:top-[36%] after:-right-0 after:top-[33%]`;
     
     //method for setting each value of the userinfo
@@ -99,7 +99,7 @@ export default function Accounts(){
                     <input className={inputClass} type="text" value={userInfo.DOB} onChange={(input)=>{setDOB(input.target.value)}}/>
                 </div>
 
-                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-2 gap-1 w-[70%] mx-auto xll:py-8 py-6 text-[#5c545f] font-[600] lg:text-lg xll:text-xl text-sm'}>
+                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-2 gap-1 w-[70%] mx-auto xll:py-8 py-6 text-text_violet font-[600] lg:text-lg xll:text-xl text-sm'}>
                     <span className={`z-[20] font-[400] absolute -top-2 left-2 block w-full h-fit bg-white rounded-full md:text-lg`}>Gender</span>
 
                     <label className='xl:pb-1' htmlFor="a_male">    <input onClick={()=>{setGender('Male')}} type="radio" name="gender" id="a_male" />Male</label>
@@ -110,8 +110,8 @@ export default function Accounts(){
 
                 <div className='lg:col-span-2 col-span-1 w-full lg:py-3 py-4 border-t border-t-gray-500'>
                     <div className='w-fit mx-auto'>
-                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] lg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] ssm:text-2xl xs:text-xl text-lg py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
-                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] lg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] ssm:text-2xl xs:text-xl text-lg py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-[#5c545f] text-[#5c545f] text-center hover:bg-primary hover:text-white duration-200'>Save</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] lg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] ssm:text-2xl xs:text-xl text-lg py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-text_violet text-text_violet text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] lg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] ssm:text-2xl xs:text-xl text-lg py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-text_violet text-text_violet text-center hover:bg-primary hover:text-white duration-200'>Save</a>
                     </div>
                     
                 </div>

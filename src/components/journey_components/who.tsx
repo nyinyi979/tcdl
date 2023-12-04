@@ -1,11 +1,11 @@
 import { bg4Class, h2Class , h3Class} from "../utilities";
 export default function Who(){
     return(
-        <div id="who" className={`w-full ${bg4Class} text-white text-center py-20`}>
+        <div id="who" className={`w-full ${bg4Class} text-white text-center xl:py-20 py-16`}>
             <h1 className={`${h2Class} xl:pt-8 lg:pt-6 md:py-4 pb-3`}>
                 Who she is?
             </h1>
-            <h1 className={`${h3Class} md:py-5`}>
+            <h1 className={`${h3Class} xl:py-5`}>
                 Founder's Bio
             </h1>
             <div className="xll:w-[85%] xl:w-[75%] w-[95%] text-justify sm:leading-[2.8rem] sm:text-xl ssm:text-[22px] text-lg mx-auto leading-9 ssm:leading-10 py-5">

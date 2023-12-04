@@ -114,7 +114,7 @@ export default function SignUp(){
                     <input className={inputClass} type="text" value={userInfo.currentPlace} onChange={(input)=>{setCurrentPlace(input.target.value)}}/>
                 </div>
 
-                <div className={'relative grid ssm:grid-cols-3 grid-cols-2 w-full px-10 mx-auto my-5 md:py-10 py-8 text-[#5c545f] font-[600] text-lg'}>
+                <div className={'relative grid ssm:grid-cols-3 grid-cols-2 w-full px-10 mx-auto my-5 md:py-10 py-8 text-text_violet font-[600] text-lg'}>
                     <span className={labelClass}>Gender</span>
                     <label htmlFor="s_male">    <input onClick={()=>{setGender('Male')}} type="radio" name="gender" id="s_male" />Male</label>
                     <label htmlFor="s_female">  <input onClick={()=>{setGender('Female')}} type="radio" name="gender" id="s_female" />female</label>
@@ -133,7 +133,7 @@ export default function SignUp(){
                     <input id='s_password' placeholder='Enter Password' className={inputClass} type="password" value={userInfo.password} onChange={(input)=>{setPassword(input.target.value)}}/>
                 </div>
                 
-                <div className='text-[#5c545f] font-[500] text-left md:ml-24 md:w-[70%] w-[70%] ml-12 lg:text-lg text-base md:leading-10 leading-6'>
+                <div className='text-text_violet font-[500] text-left md:ml-24 md:w-[70%] w-[70%] ml-12 lg:text-lg text-base md:leading-10 leading-6'>
                    <span className='inline-block w-3 h-3 bg-primary rounded-full mr-1'></span> Required fields <br />
                    <p className='ml-5'>Password must be 8 characters with alphabet and numeric.</p>
                 </div>

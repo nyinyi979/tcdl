@@ -35,7 +35,7 @@ export default function CalendarPage(){
     }
     return(
         <div onClick={closeTimeBox} className='xs:w-full xxs:w-[370px] xxs:-ml-3 w-[310px] xs:mx-auto'>
-            <h1 className='text-center xs:text-xl text-sm text-[#5c545f] font-[700] py-5 xs:pt-7'>Select Date & Time</h1>
+            <h1 className='text-center xs:text-xl text-sm text-text_violet font-[700] py-5 xs:pt-7'>Select Date & Time</h1>
             <div id="calendar" className='clear-both table lg:w-[70%] md:w-[80%] xs:w-[90%] xxs:w-[90.7%] w-[90%] h-fit py-0 mx-auto'></div>
             <div className='table clear-both w-full pb-6'>
                 <TimeSelectBox />
@@ -101,7 +101,7 @@ function TimeSelectBox(){
     <div className='ssm:w-full ssm:-ml-0 xs:-ml-10 xs:w-[120%] md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
         
         
-        <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto
+        <div className={`block relative items-center md:py-1 py-0 text-text_violet w-11/12 mx-auto
         xs:w-1/3 `}>
             
             {/* this is the up arrow of the dropdow box */}
@@ -123,8 +123,8 @@ function TimeSelectBox(){
                 
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
                     font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1
-                    xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none 
-                    text-[#5c545f] placeholder:text-[#5c545f] tracking-tighter`} type="text" name="daterange" id="date" 
+                    xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray outline-none 
+                    text-text_violet placeholder:text-text_violet tracking-tighter`} type="text" name="daterange" id="date" 
                     placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
                 {/* dropdown content */}
                 <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xs:w-80 w-[280px] h-fit 

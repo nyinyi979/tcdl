@@ -67,7 +67,7 @@ export default function Login(){
                     <input id='l_password' placeholder='Enter Password' className={inputClass} type="password" value={userInfo.password} onChange={(input)=>{setPassword(input.target.value)}}/>
                 </div>
                 
-                <div className='px-6 ssm:px-8 text-lg text-[#5c545f] after:clear-both after:table'>
+                <div className='px-6 ssm:px-8 text-lg text-text_violet after:clear-both after:table'>
                     <label className='float-left px-2 ml-2 -pt-2 font-[500]' htmlFor="remember" defaultChecked={false}><input type="checkbox" name="remember" id="remember" /> Remember me</label> <br className='ssm:hidden block'/>
                     <h2 onClick={openForogtten} className='hover:text-primary cursor-pointer ssm:float-right float-none text-center ssm:text-right underline duration-200'>Forgot your password?</h2>
                 </div>
