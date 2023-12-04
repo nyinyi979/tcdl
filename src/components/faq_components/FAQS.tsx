@@ -4,17 +4,17 @@ import PrivacyPolicy from "./privacy_policy";
 
 export default function FAQS(){
     const pClass = 'lg:my-[13px] my-3 text-[#443548] leading-[35px]';
-    const privilegesClass = 'w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4'
+    const privilegesClass = 'w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4 ssm:text-lg text-base'
     return(
         <div className="w-full bg-white pt-4 xll:pb-32 lg:pb-20 pb-10">
             
             <div className="w-fit h-fit mx-auto flex xxl:my-8 my-4 md:pt-16 pt-10 md:pb-8 pb-5">
-                <div className="text-white rounded-l-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-7 py-3 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
-                <div className="text-violet rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-7 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
+                <div className="text-white rounded-l-full lg:w-40 xll:px-12 xxl:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-10 py-4 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
+                <div className="text-violet rounded-r-full lg:w-40 xll:px-12 xxl:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-10 py-4 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
             </div>
 
             { /* adjust the width and padding of the whole FAQ page here */}
-            <div className={`xxl:w-[75%] xl:w-[84%] lg:w-[88%] md:w-[91.6%] xs:w-[93%] w-[90%] lg:mx-auto md:ml-5 
+            <div className={`xll:w-[80%] xl:w-[1000px] llg:w-[1000px] lg:w-[950px] md:w-[93%] w-[90%]
                 mx-auto font-[400] lg:leading-[50px] xs:text-[19px] text-base md:leading-10 leading-9 text-left `}>
 
                 <div className={privilegesClass}>
