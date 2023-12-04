@@ -10,7 +10,7 @@ export default function TheElite(){
             <h1 className={`${bannerh1Class} text-primary lg:py-6 pb-3`}>Be an Elite?</h1>
             <h1 className={`${bannerh2Class} text-center text-secondary md:pt-2 `}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 lg:px-4 px-10 py-8 mx-auto">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 ssm:px-4 px-8 py-8 mx-auto">
 
                 <div id='image' className="col-span-1 xs:w-full w-[85%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-fit md:mt-10 mt-0 rounded-xl my-3 mx-auto"/>
