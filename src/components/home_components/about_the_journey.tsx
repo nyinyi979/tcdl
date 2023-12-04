@@ -1,7 +1,7 @@
 import { bannerh1Class, moreBtn, useAnimateLeft, useAnimateRight } from '../utilities';
 export default function Journey(){
     //add animation by the ID of the component
-    // useAnimateLeft('about_the_journey')
+    useAnimateLeft('about_the_journey')
     useAnimateLeft('about_the_journey_text')
     useAnimateRight('image1');
     useAnimateRight('image2');

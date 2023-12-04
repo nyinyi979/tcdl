@@ -17,7 +17,7 @@ export default function Accounts(){
     const inputClass =`z-10 font-[600] relative w-full ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 
     lg:text-xl ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] 
     outline-none text-[#5c545f] placeholder:text-[#5c545f]`
-    const inputBoxClass = `z-10 block relative w-full ssm:px-10 px-4 mx-auto my-2 py-2 text-[#5c545f]`
+    const inputBoxClass = `z-10 block relative md:w-full w-[98%] ssm:px-10 px-4 mx-auto my-2 py-2 text-[#5c545f]`
     const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary md:after:right-4 md:after:top-[36%] after:-right-0 after:top-[33%]`;
     
     //method for setting each value of the userinfo
