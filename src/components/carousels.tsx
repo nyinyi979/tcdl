@@ -6,7 +6,7 @@ import 'swiper/css/pagination'
 import { Link } from 'react-router-dom';
 type items = {id: number, img: string , heading: React.ReactNode , paragraph: string}[]
 export function ImageCarousel(){
-    const headingClass = "oswald lg:py-9 xl:text-[29px] md:text-2xl ssm:text-lg text-base text-secondary font-[400] py-5";
+    const headingClass = "oswald lg:py-9 xl:text-[29px] md:text-2xl xs:text-lg text-base text-secondary font-[400] py-5";
     const pClass = "text-white font-[400] lg:text-xl lg:leading-[40px] md:text-lg xs:text-base text-sm leading-10 text-justify"
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 text-xl font-[400] inline-block my-8'
     const items:items = [
