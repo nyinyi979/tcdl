@@ -15,7 +15,7 @@ export default function Insight(){
     return(
         <div className={`${bg2Class} xl:lg-pb-40 lg:pb-20 relative py-10 text-white after:[content:''] z-10 after:absolute after:z-[-1]
          after:bg-black/50 after:w-full after:h-full after:top-0 after:left-0 `}>
-            <div className={`grid xs:grid-cols-2 grid-cols-1 lg:text-3xl md:text-2xl text-lg text-left 
+            <div className={`grid ssm:grid-cols-2 grid-cols-1 lg:text-3xl md:text-2xl text-lg text-left 
             xl:px-32 px-8 md:pt-10 pt-0 lg:pb-48 pb-20`}>
                 <h2 id="insights" className={`${h2Class} ssm:col-span-2 text-center py-5 md:py-10`}>Insights</h2>
                 <div>
