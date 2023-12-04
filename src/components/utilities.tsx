@@ -146,7 +146,7 @@ export const bg0Class = `[background-image:url('/home-banner-img.jpg')] [backgro
 export const bg1Class = `[background-image:url('/bg1.jpg')] bg-fixed md:bg-center 
     bg-[center_left_-600px] bg-cover bg-repeat`
 export const bg3Class = `[background-image:url('/bg3.jpg')] bg-scroll bg-center bg-repeat bg-cover`
-export const bg2Class = `[background-image:url('/bg2.jpg')] bg-[center_top_-20px] bg-cover bg-no-repeat`
+export const bg2Class = `[background-image:url('/bg2.jpg')] bg-[center_top] bg-cover bg-no-repeat`
 export const bg4Class = `[background-image:url('/bg4.jpg')] md:bg-center lg:[background-size: 95%] 
     sm:bg-center bg-[center_left_50%] bg-repeat bg-cover `
 export const bg5Class = `[background-image:url('/img5.jpg')] bg-fixed lg:bg-[center_left_-400px]
