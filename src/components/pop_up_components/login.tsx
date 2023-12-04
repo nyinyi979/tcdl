@@ -56,7 +56,7 @@ export default function Login(){
                 </div>
                 
 
-                <div className={`${requiredInputBoxClass} mt-12`}>
+                <div className={`${requiredInputBoxClass} md:mt-12 mt-6`}>
                     <span className={labelClass}>Email ID</span>
                     <input placeholder='drjsmith@gmail.com' className={inputClass} type="text" value={userInfo.emailID} onChange={(input)=>{setEmailID(input.target.value)}}/>
                 </div>

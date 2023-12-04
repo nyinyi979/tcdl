@@ -79,7 +79,7 @@ export default function SignUp(){
                 </div>
                 
 
-                <div className={`${requiredInputBoxClass} mt-12`}>
+                <div className={`${requiredInputBoxClass} md:mt-12 mt-6`}>
                     <span className={labelClass}>First name</span>
                     <input className={inputClass} type="text" value={userInfo.firstName} onChange={(input)=>{setFirstName(input.target.value)}}/>
                 </div>
