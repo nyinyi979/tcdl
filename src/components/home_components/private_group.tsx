@@ -22,7 +22,7 @@ export default function Private(){
                 spiritual guidance. 
             </div>
 
-            <div id='mySwiper' className="xll:w-5/6 xl:w-[75%] md:w-[94%] w-[85%] py-8 mx-auto">
+            <div id='mySwiper' className="xll:w-5/6 xl:w-[75%] lg:w-[96%] md:w-[94%] w-[85%] py-8 mx-auto">
                 <blockquote id="quote" className={`font-[500] text-left mx-auto xxl:leading-[3rem] 
                 xxl:text-[2rem] xl:text-[1.7rem] lg:text-2xl lg:leading-[2.8rem] ssm:text-[1.32rem] text-[1.2rem] 
                 leading-9 py-10 ${quoteClass}`}>

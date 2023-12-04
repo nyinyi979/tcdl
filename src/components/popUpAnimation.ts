@@ -68,9 +68,9 @@ export function forgottenPWPopUpBox(){
 
 }
 
-export const headingBoxClass = "clear-both table rounded-tl-3xl rounded-tr-3xl w-full font-[400] ssm:text-3xl text-2xl ssm:px-10 ssm:pt-[23px] ssm:pb-[30px] px-6 py-4 ssm:mb-5 mb-3 text-white bg-gradient-to-r from-[#a2438d] to-[#5c3477]"
+export const headingBoxClass = "clear-both table rounded-tl-3xl rounded-tr-3xl w-full font-[400] ssm:text-3xl text-2xl ssm:px-10 ssm:pt-[23px] ssm:pb-[30px] px-6 py-4 md:mb-5 mb-3 text-white bg-gradient-to-r from-[#a2438d] to-[#5c3477]"
 export const labelClass = 'z-[20] font-[500] absolute -top-2 ssm:left-[4.3rem] left-[2.3rem] block w-fit h-fit py-1 px-5 bg-white rounded-full text-[#696769] md:text-base text-sm'
 export const inputClass ='z-[10] font-[600] relative ssm:w-full w-[95%] ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 ssm:text-xl text-base leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none text-[#5c545f] placeholder:text-[#5c545f]'
-export const inputBoxClass = `block relative w-full ssm:px-10 px-4 mx-auto my-5 py-2 text-[#5c545f]`
+export const inputBoxClass = `block relative md:w-full w-[98%] ssm:px-10 px-4 mx-auto my-5 py-2 text-[#5c545f]`
 export const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary after:right-4 after:top-[37%]`;
 export const submitClass = 'block cursor-pointer mx-auto ssm:mt-5 mt-3 ssm:w-[13.2rem] ssm:h-[4.2rem] w-[11.4rem] h-[3.4rem] ssm:text-2xl text-xl ssm:py-4 ssm:px-[2.8rem] py-[0.675rem] px-6 font-[600] rounded-full text-white text-center bg-primary hover:bg-[#a0448d] duration-200'
