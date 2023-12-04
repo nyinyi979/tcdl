@@ -1,5 +1,5 @@
 import React from 'react'
-import { h1Class, h2Class, } from "../utilities";
+import { bannerh1Class, bannerh2Class, } from "../utilities";
 
 export default function TheElite(){
     React.useEffect(()=>{
@@ -7,16 +7,16 @@ export default function TheElite(){
     return(
         <div className={`text-center mt-10 lg:mt-0 lg:pt-0 pt-[4rem]`}>
 
-            <h1 className={`${h1Class} text-primary lg:py-6 pb-3`}>Be an Elite?</h1>
-            <h1 className={`${h2Class} text-center text-secondary md:pt-2 `}>Founder's Message</h1>
+            <h1 className={`${bannerh1Class} text-primary lg:py-6 pb-3`}>Be an Elite?</h1>
+            <h1 className={`${bannerh2Class} text-center text-secondary md:pt-2 `}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 py-8 lg:pl-10 pl-0">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-10 lg:px-4 px-10 py-8 mx-auto">
 
                 <div id='image' className="col-span-1 xs:w-full w-[85%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-fit md:mt-10 mt-0 rounded-xl my-3 mx-auto"/>
                 </div>
                 
-                <div className={`xll:w-[77%] xl:w-5/6 lg:w-[88%] lg:ml-0 w-[88%] lg:col-span-2
+                <div className={`xll:w-[77%] lg:w-[90%] lg:ml-0 w-[88%] lg:col-span-2
                 col-span-2 text-white md:text-xl xs:text-lg text-base mx-auto llg:mx-auto text-justify 
                 pr-4 font-[350]`} style={{lineHeight:'2.2rem'}}>
                     <p className="py-2">
@@ -51,7 +51,7 @@ export default function TheElite(){
                 </div>
 
                 <div id='image' className="md:block hidden col-span-1 w-full xll:mr-20 mr-10 relative">
-                    <img src="/pic1.png" alt="" className="bg-cover w-fit xl:w-[22rem] xl:h-[22rem] lg:h-[19rem] h-[15rem] xl:mt-6 mt-5 rounded-xl float-left"/>
+                    <img src="/pic1.png" alt="" className="bg-cover w-fit xl:w-[22rem] xl:h-[22rem] lg:h-[20rem] h-[15rem] xl:mt-6 mt-5 rounded-xl float-left"/>
                 </div>
 
             </div>

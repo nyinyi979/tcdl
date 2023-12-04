@@ -33,7 +33,7 @@ export default function CalendarPage(){
     }
     return(
         <div onClick={closeTimeBox} className='xs:w-full xxs:w-[370px] xxs:-ml-3 w-[310px] xs:mx-auto'>
-            <h1 className='text-center md:text-2xl xs:text-xl text-sm text-stone-600 font-[700] py-5 xs:pt-7'>Select Date & Time</h1>
+            <h1 className='text-center xs:text-xl text-sm text-[#5c545f] font-[700] py-5 xs:pt-7'>Select Date & Time</h1>
             <div id="calendar" className='clear-both table lg:w-[70%] md:w-[80%] xs:w-[90%] xxs:w-[90.7%] w-[90%] h-fit py-0 mx-auto'></div>
             <div className='table clear-both w-full pb-6'>
                 <TimeSelectBox />
@@ -76,8 +76,13 @@ function TimeSelectBox(){
         setTime({...time, startAM: value})
     }
     const openTimeBox = () =>{
+        console.log("LLL")
         const dropdown_content = document.getElementById('dropdown_content')!;
         dropdown_content.style.display = 'block';
+    }
+    const closeTimeBox = () =>{
+        const dropdown_content = document.getElementById('dropdown_content')!;
+        dropdown_content.style.display = 'none';
     }
     
     
@@ -85,24 +90,28 @@ function TimeSelectBox(){
         setDisplayTime(value)
     }
     //since all of the select boxes are the same I used this 
-    const selectClass = 'inline-block xs:mx-1 mx-[2px] outline-none bg-stone-100 md:text-sm text-xs'
+    const selectClass = 'inline-block xs:mx-1 mx-[2px] outline-none bg-stone-100 text-black text-xs'
     return(
     <div className='ssm:w-full ssm:-ml-0 xs:-ml-10 xs:w-[120%] md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
         
         {/* icon of down arrow is added here */}
-        <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto after:z-20 
-        xs:w-1/3 after:absolute after:[background-image:url('/drop-icon.png')] lg:after:top-4 ssm:after:top-4 
-        after:left-[80%] after:top-3 xs:after:top-4 md:after:w-10 after:w-7 after:h-7 md:after:h-10 md:scale-110 
-        after:bg-cover`}>
+        <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto
+        xs:w-1/3 `}>
+            
+            {/* this is the up arrow of the dropdow box */}
+            <span className='absolute ssm:-bottom-[6px] xs:-bottom-[10px] -bottom-2 z-20 left-4
+            border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] 
+            border-b-[#f5f5f5] w-0 h-0'></span>
+
+            <span className="absolute z-30 [background-image:url('/drop-icon.png')] lg:top-4 
+            ssm:top-4 left-[78%] top-3 xs:top-4 md:w-10 w-7 h-7 
+            md:h-10 md:scale-110 bg-cover block" onClick={(e)=>{e.stopPropagation();openTimeBox()}}></span>
 
             <span className={`z-[20] font-[400] absolute -top-2 lg:left-3 md:left-[3rem] left-[1rem] block xxs:w-fit w-fit h-fit py-1
             px-5 bg-white rounded-full xl:text-lg md:text-sm text-xs`}>Select a time slot</span>
             
-            <div className='dropdown relative'>
+            <div className='arial dropdown relative'>
 
-                {/* this is the up arrow of the dropdow box */}
-                <span className='absolute top-[2.9rem] z-20 left-10 outline-1 outline-gray-300
-                border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] hidden border-b-[#ffffff] w-0 h-0'></span>
 
                 
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
@@ -111,7 +120,7 @@ function TimeSelectBox(){
                     text-[#5c545f] placeholder:text-[#5c545f] tracking-tighter`} type="text" name="daterange" id="date" 
                     placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
                 {/* dropdown content */}
-                <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xxs:w-80 w-72 h-fit 
+                <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xs:w-80 w-[280px] h-fit 
                 bg-white pt-5 ssm:left-0 xs:-left-20 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
                     <div>
 
@@ -158,7 +167,7 @@ function TimeSelectBox(){
                             time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM} `}
                             
                             <button className='px-2 py-1 rounded-sm duration-300 text-black 
-                            hover:bg-stone-300 mx-1 outline-none border-[1px] border-stone-300'>
+                            hover:bg-stone-300 mx-1 outline-none border-[1px] border-stone-300' onClick={closeTimeBox}>
                                 Cancel
                             </button>
 

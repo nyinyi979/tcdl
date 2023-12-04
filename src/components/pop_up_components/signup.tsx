@@ -71,7 +71,7 @@ export default function SignUp(){
     return(
         <div onClick={closePopUp} id='signUpBG' className='hidden bg-black/30 w-full h-[100%] top-0 fixed overscroll-y-contain overflow-y-scroll z-[100]'>
             
-            <div id='signUp' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
+            <div id='signUp' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] xs:w-[23rem] w-[19rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 
                 <div className={headingBoxClass}>
                     <h2 className='oswald float-left tracking-[1px]'>Sign Up</h2>

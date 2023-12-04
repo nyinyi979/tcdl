@@ -1,11 +1,11 @@
-import { h2Class_V, } from "../utilities";
+import { h3FAQ } from "../utilities";
 
 export default function PrivacyPolicy(){
     const liClass = 'ssm:py-3 py-2'
     return(
         <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] py-10 border-b-[3px] border-b-gray-400 font-[400] text-left">
             
-            <h1 className={`oswald ${h2Class_V} text-dark_violet lg:pt-8 pt-3 pb-3`}>Privacy Policy</h1>
+            <h1 className={`oswald ${h3FAQ} text-dark_violet lg:pt-8 md:pt-3 pb-3`}>Privacy Policy</h1>
             <p className="text-lg text-stone-600 py-3">
                 For a personalised reading these data and info will be collected with high confidentiality for the reader:
             </p>

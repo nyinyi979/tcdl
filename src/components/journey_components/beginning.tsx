@@ -1,16 +1,16 @@
-import { h1Class, h2Class_S } from "../utilities";
+import { h1Class, h3Class } from "../utilities";
 
 export default function Beginning(){
     return(
-        <div className="bg-white text-[#4b2c64] md:py-20 leading-10 text-center">
+        <div className="bg-white text-[#4b2c64] xl:py-20 py-10 leading-10 text-center">
             <h1 className={`${h1Class} text-[#4b2c64] py-3`}>
                 The Beginning
             </h1>
-            <h1 className={`${h2Class_S} text-[#612a60] py-3`}>
+            <h1 className={`${h3Class} text-[#612a60] pt-3`}>
                 Initial phrase of <br />
                 the Journey on Facebook
             </h1>
-            <div className="xll:w-[78%] xl:w-[84%] w-[95%] mx-auto md:py-10 py-4 text-light_violet text-justify font-[400] text-xl leading-10">
+            <div className=" xxl:w-[78%] xl:w-[84%] xs:w-[95%] w-[90%] mx-auto md:py-10 pt-2 pb-4 text-light_violet text-justify font-[400] text-xl leading-10">
                 She began "The Cards Don't Lie" as a closed Facebook group, but its members' 
                 candor and willingness to share have allowed it to grow into a larger spiritual 
                 awakening community. Despite the fact that their spiritual paths diverge, they were 

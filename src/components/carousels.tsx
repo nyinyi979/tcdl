@@ -6,8 +6,8 @@ import 'swiper/css/pagination'
 import { Link } from 'react-router-dom';
 type items = {id: number, img: string , heading: React.ReactNode , paragraph: string}[]
 export function ImageCarousel(){
-    const headingClass = "lg:text-2xl md:text-xl ssm:text-lg text-base text-secondary font-semibold py-5";
-    const pClass = "text-white font-[400] lg:text-xl ssm:text-base text-sm leading-10 text-justify"
+    const headingClass = "oswald md:text-2xl ssm:text-lg text-base text-secondary font-[400] py-5";
+    const pClass = "text-white font-[400] lg:text-xl md:text-lg xs:text-base text-sm leading-10 text-justify"
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 text-xl font-[400] inline-block my-8'
     const items:items = [
         {
@@ -20,7 +20,7 @@ export function ImageCarousel(){
         {
             id: 2,
             img: '/img3.jpg',
-            heading: <>How the moon affects your psyhe</>,
+            heading: <>How the moon affects your psyhe.</>,
             paragraph: `
             The majority of tarot readers assert that the cards provide the clearest
             answers during the full moon. It reflects the diviner's enhanced intuition.`
@@ -56,15 +56,15 @@ export function ImageCarousel(){
         pagination={{clickable:true}}
         // Swiper breakpoints , screenSize(>=) : {spaceBetweenEachComponents , slidesVisible per view}
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
-        769: {spaceBetween: 30,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
+        769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 80, slidesPerView: 3}
         ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[70%] w-[60%] xs:py-10 py-0" >
+         modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[63%] w-[60%] xs:py-10 py-0" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
 
-                    <img src={item.img} alt="img" className="w-full xs:h-64 h-56 bg-cover rounded-lg"/>
+                    <img src={item.img} alt="img" className="lg:w-full w-[98%] h-fit bg-cover mx-auto rounded-lg"/>
                     <h1 className= {headingClass}>
                         {item.heading}
                     </h1>
@@ -83,14 +83,14 @@ export function ImageCarousel(){
         left-[20px] cursor-pointer`}></span>
         <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        md:top-[23%] top-[25%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[15px] 
+        md:top-[23%] top-[24%] xll:right-[35px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[14px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )
 }
 export function VideoCarousel(){
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 lg:text-3xl text-xl font-[400] block mt-4 mb-16 w-fit h-fit mx-auto cursor-pointer'
-    const headingClass = "md:text-xl xs:text-lg text-base text-left text-secondary font-semibold py-5";
+    const headingClass = "oswald md:text-2xl text-left text-lg text-secondary font-[400] py-5";
     const videoClass = 'xl:h-42 lg:h-36 md:h-28 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
     //play button style
     const playBtn = `md:w-20 md:h-20 w-16 h-16 [background-image:url('/play-btn.png')] absolute bg-no-repeat 

@@ -18,9 +18,9 @@ export default function Forgotten(){
         bgCloseAnimation.current!.restart();
     }
     return(
-        <div onClick={closePopUp} id='forgotBG' className='hidden bg-black/30 w-full h-[100%] fixed top-0 overscroll-y-contain overflow-y-scroll z-[100]'>
+        <div onClick={closePopUp} id='forgotBG' className='hidden bg-black/30 ssm:w-full w-full h-[100%] fixed top-0 overscroll-y-contain overflow-y-scroll z-[100]'>
             
-            <div id='forgot' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] w-[23rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
+            <div id='forgot' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] xs:w-[23rem] w-[19rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 
                 <div className={headingBoxClass}>
                     <h2 className='oswald float-left tracking-[1px]'>Forgot Password</h2>

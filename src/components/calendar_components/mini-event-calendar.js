@@ -2,7 +2,7 @@
 import jQuery from "jquery";
 (function($) {
     const calenderTpl = `
-		<div id="calTitle" class="flex w-fit mx-auto gap-4 items-center md:text-2xl xs:text-lg xxs:text-base text-xs md:py-2 px-2 pt-2 ">
+		<div id="calTitle" class="flex w-fit mx-auto gap-4 items-center xl:text-3xl md:text-2xl xs:text-lg xxs:text-base text-xs md:py-2 px-2 pt-2 ">
 			<button type="button" class="inline-block self-start prev bg-cover hover:scale-105 duration-300 month-mover xs:w-8 xs:h-8 w-4 h-4 rotate-90 [background-image:url('/drop-icon.png')]"></button>
 			<div id="monthYear" class="inline-block font-[700] text-[#4b2c64]"></div>
 			<button type="button" class="inline-block self-end next bg-cover hover:scale-105 duration-300 month-mover xs:w-8 xs:h-8 w-4 h-4 -rotate-90 [background-image:url('/drop-icon.png')]"></button>

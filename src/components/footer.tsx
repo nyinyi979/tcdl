@@ -2,11 +2,13 @@
 import { FaFacebookF, FaPlay, FaTiktok, } from "react-icons/fa6";
 import { FaTelegramPlane } from 'react-icons/fa';
 export default function Footer(){
-    const linkClass = 'text-light_blue font-[500] hover:text-primary duration-500 xll:text-[20px] md:text-lg ssm:text-base text-sm';
-    const iconClass ="text-darker_violet hover:rotate-[20deg] hover:text-black rounded-full lg:w-12 lg:h-12 w-10 h-10 xs:p-3 p-2 bg-blue cursor-pointer hover:bg-primary duration-300";
+    const linkClass = `text-light_blue font-[600] hover:text-primary duration-500 
+    xll:text-[20px] lg:text-lg ssm:text-base text-sm`;
+    const iconClass =`text-darker_violet hover:rotate-[20deg] hover:text-black rounded-full 
+    lg:w-12 lg:h-12 w-10 h-10 xs:p-3 p-2 bg-blue cursor-pointer hover:bg-primary duration-300`;
     return(
-        <div className="bg-darker_violet xs:py-12 py-7">
-            <div className="flex lg:w-[60%] w-[76%] mx-auto items-center justify-center my-4 flex-wrap gap-6">
+        <div className="bg-darker_violet lg:py-12 py-7">
+            <div className="flex llg:w-[60%] w-[76%] mx-auto items-center justify-center my-4 flex-wrap gap-6">
                 <a href="/" className={linkClass}>Home</a>
                 <a href="/journey" className={linkClass}>The Journey</a>
                 <a href="/be-an-elite" className={linkClass}>Be an Elite?</a>
@@ -22,8 +24,8 @@ export default function Footer(){
                 <FaTelegramPlane className={iconClass} />
                 <FaTiktok className={iconClass} />
             </div>
-            <a href="/"><img src="/footer-logo-e48cc106.png" alt="" className="lg:w-64 w-36 h-fit bg-cover md:mt-12 mt-4 mx-auto"/></a>
-            <div className="text-light_blue text-center pt-10 xs:pb-8 pb-3 sm:px-0 px-2 leading-10">
+            <a href="/"><img src="/footer-logo-e48cc106.png" alt="" className="lg:w-64 w-36 h-fit bg-cover lg:mt-12 mt-4 mx-auto"/></a>
+            <div className="text-light_blue text-center pt-10 lg:pb-8 pb-3 sm:px-0 px-2 leading-10 font-[600] lg:text-base text-sm">
                 Copyright © 2024 The Card's Don't Lie (TCDL). All Rights Reserved.
             </div>
         </div>

@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Communities from "../components/communities";
 import Navbar from "../components/navbar";
 import React from 'react';
-import { h1Class, h2Class } from "../components/utilities";
+import { bannerh1Class, bannerh2Class } from "../components/utilities";
 import anime from "animejs";
 export default function FAQ(){
     React.useEffect(()=>{
@@ -39,8 +39,8 @@ export default function FAQ(){
     return(
         <>
             <Navbar currentLink="/faq"/>
-            <div className={`${h1Class} mt-10 lg:mt-0 py-2 text-primary text-center lg:pt-0 pt-[4.5rem]`}>Q & A</div>
-            <div className={`${h2Class} md:py-8 py-4 pb-10 text-secondary text-center`}>Membership Privileges</div>
+            <div className={`${bannerh1Class} mt-10 lg:mt-0 text-primary text-center pt-[4.5rem]`}>Q & A</div>
+            <div className={`${bannerh2Class} xl:py-8 py-4 pb-12 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />
             <Footer />

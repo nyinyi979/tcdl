@@ -2,7 +2,7 @@ import { Navigation , Autoplay, Pagination } from 'swiper/modules';
 import {Swiper , SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { h1Class, h2Class, quoteClass, useAnimateLeft, useAnimateRight } from '../utilities';
+import { h1Class, h3Class, quoteClass, useAnimateLeft, useAnimateRight } from '../utilities';
 export default function Feedback(){
     //adding animation
     useAnimateLeft('feedback');
@@ -13,11 +13,11 @@ export default function Feedback(){
     xll:leading-[3.3rem] font-[600] xll:text-[1.7rem] md:text-2xl xl:leading-[2.75rem] ssm:leading-[2.4rem]  
     xs:text-xl text-lg leading-8 text-center` + quoteClass;
     return(
-        <div className="bg-white text-violet xl:py-20 py-16 text-center">
+        <div className="bg-white text-violet xl:py-20 md:py-16 py-10 text-center">
             <h2 id='feedback' className={`${h1Class} py-2`}>
                 The Feedbacks
             </h2>
-            <h2 id='feedback_text' className={`${h2Class} py-5`}>
+            <h2 id='feedback_text' className={`oswald ${h3Class} lg:py-5 py-2`}>
                 Incredibly accurate and insightful, <br />
                 and whatelse of their sayings!
             </h2>   

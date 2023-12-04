@@ -14,7 +14,9 @@ export default function Accounts(){
     })
 
     //classes for input , input container, required input container 
-    const inputClass ='z-10 font-[600] relative w-full ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 lg:text-xl ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] outline-none text-[#5c545f] placeholder:text-[#5c545f]'
+    const inputClass =`z-10 font-[600] relative w-full ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 
+    lg:text-xl ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-[#beb9bf] 
+    outline-none text-[#5c545f] placeholder:text-[#5c545f]`
     const inputBoxClass = `z-10 block relative w-full ssm:px-10 px-4 mx-auto my-2 py-2 text-[#5c545f]`
     const requiredInputBoxClass = inputBoxClass +  `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary md:after:right-4 md:after:top-[36%] after:-right-0 after:top-[33%]`;
     
@@ -97,8 +99,8 @@ export default function Accounts(){
                     <input className={inputClass} type="text" value={userInfo.DOB} onChange={(input)=>{setDOB(input.target.value)}}/>
                 </div>
 
-                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-3 gap-1 w-[80%] mx-auto xll:py-8 py-6 text-[#5c545f] font-[600] lg:text-lg xll:text-xl text-sm'}>
-                    <span className={`z-[20] font-[400] absolute -top-2 left-2 block w-full h-fit bg-white rounded-full text-lg`}>Gender</span>
+                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-2 gap-1 w-[70%] mx-auto xll:py-8 py-6 text-[#5c545f] font-[600] lg:text-lg xll:text-xl text-sm'}>
+                    <span className={`z-[20] font-[400] absolute -top-2 left-2 block w-full h-fit bg-white rounded-full md:text-lg`}>Gender</span>
 
                     <label className='xl:pb-1' htmlFor="a_male">    <input onClick={()=>{setGender('Male')}} type="radio" name="gender" id="a_male" />Male</label>
                     <label className='xl:pb-1' htmlFor="a_female">  <input onClick={()=>{setGender('Female')}} type="radio" name="gender" id="a_female" />female</label>

@@ -1,4 +1,4 @@
-import { h2Class_V, h3Class } from "../utilities";
+import { h3FAQ, h3FAQ2 } from "../utilities";
 import Monthly from "./monthly_update";
 import PrivacyPolicy from "./privacy_policy";
 
@@ -16,7 +16,7 @@ export default function FAQS(){
             <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] mx-auto font-[400] md:leading-10 leading-8 text-left ">
 
                 <div className={privilegesClass}>
-                    <h1 className={`${h2Class_V} text-dark_violet`}>Elite Plus and Elite Star Privileges</h1>
+                    <h1 className={`${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Plus and Elite Star Privileges</h1>
                     <p className="lg:my-5  my-3">
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
                         EP and ES members are to specify the type of reading or consultation requested upon booking.
@@ -39,7 +39,7 @@ export default function FAQS(){
                 </div>
                 
                 <div className="w-full ssm:text-lg text-base text-stone-600 py-4">
-                    <h1 className={`${h3Class} text-stone-800`}>
+                    <h1 className={`${h3FAQ2} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>
                     <p className={pClass}> 
@@ -60,7 +60,7 @@ export default function FAQS(){
                 </div>
 
                 <div className={privilegesClass}>
-                <h1 className={` ${h2Class_V} text-dark_violet`}>Elite Express and Elite Membership Privileges</h1>
+                <h1 className={` ${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Express and Elite Membership Privileges</h1>
 
                     <p className={pClass}>
                         EE and EL members are allowed a 30-min group consultation sessions every two month. 
@@ -86,7 +86,7 @@ export default function FAQS(){
                 </div>
 
                 <div className={privilegesClass}>
-                    <h1 className={`${h3Class} text-stone-800`}>
+                    <h1 className={`${h3FAQ2} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>
 
