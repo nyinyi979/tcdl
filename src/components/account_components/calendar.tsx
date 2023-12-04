@@ -29,7 +29,9 @@ export default function CalendarPage(){
     }, [])
     const closeTimeBox = () =>{
         const dropdown_content = document.getElementById('dropdown_content')!;
+        const arrow = document.getElementById('arrow')!;
         dropdown_content.style.display = 'none';
+        arrow.style.display = 'none';
     }
     return(
         <div onClick={closeTimeBox} className='xs:w-full xxs:w-[370px] xxs:-ml-3 w-[310px] xs:mx-auto'>
@@ -78,11 +80,15 @@ function TimeSelectBox(){
     const openTimeBox = () =>{
         console.log("LLL")
         const dropdown_content = document.getElementById('dropdown_content')!;
+        const arrow = document.getElementById('arrow')!;
         dropdown_content.style.display = 'block';
+        arrow.style.display = 'block';
     }
     const closeTimeBox = () =>{
         const dropdown_content = document.getElementById('dropdown_content')!;
+        const arrow = document.getElementById('arrow')!;
         dropdown_content.style.display = 'none';
+        arrow.style.display = 'none';
     }
     
     
@@ -94,15 +100,16 @@ function TimeSelectBox(){
     return(
     <div className='ssm:w-full ssm:-ml-0 xs:-ml-10 xs:w-[120%] md:px-10 w-[200px] flex md:flex-row flex-col mx-auto items-center justify-center'>
         
-        {/* icon of down arrow is added here */}
+        
         <div className={`block relative items-center md:py-1 py-0 text-[#5c545f] w-11/12 mx-auto
         xs:w-1/3 `}>
             
             {/* this is the up arrow of the dropdow box */}
-            <span className='absolute ssm:-bottom-[6px] xs:-bottom-[10px] -bottom-2 z-20 left-4
+            <span id="arrow" className='hidden absolute ssm:-bottom-[6px] xs:-bottom-[10px] -bottom-2 z-20 left-4
             border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] 
             border-b-[#f5f5f5] w-0 h-0'></span>
 
+            {/* icon of down arrow is added here */}
             <span className="absolute z-30 [background-image:url('/drop-icon.png')] lg:top-4 
             ssm:top-4 left-[78%] top-3 xs:top-4 md:w-10 w-7 h-7 
             md:h-10 md:scale-110 bg-cover block" onClick={(e)=>{e.stopPropagation();openTimeBox()}}></span>
