@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export function HighLightItemHeading({title}:{title:string}){
     const gtClass = 'px-2 lg:px-4 text-[#584f74]'
     return(
-        <div className="pt-16 lg:pt-0">
+        <div className="mt-16 lg:pt-0">
             <h1 className={`oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
                 xll:text-[3rem] lg:text-[2.5rem] md:font-[600] md:text-[2.4rem] lg:mr-3
                 md:leading-[3.8rem] xs:text-4xl text-3xl leading-[3.1rem]

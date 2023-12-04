@@ -12,7 +12,7 @@ export default function Private(){
             <h2 id='private_group' className={`${h3Class} text-center xl:py-2`}>
                 A Private Group of <br /> Seeking and Awakening Individuals
             </h2>
-            <div id='private_text' className={`xll:w-5/6 xl:w-[75%] lg:w-[96%] md:w-[94%] w-[85%] font-[400] text-justify 
+            <div id='private_text' className={`xll:w-5/6 xl:w-[75%] lg:w-[94.7%] md:w-[94%] w-[85%] font-[400] text-justify 
             mx-auto xl:text-xl xl:leading-[2.4rem] lg:text-xl lg:leading-[2.3rem] md:leading-10 ssm:text-lg text-base
             py-3 leading-9 md:py-6`}>
                 The initial phase of the trip was tarot card readings, but it has since expanded to encompass 
@@ -22,7 +22,7 @@ export default function Private(){
                 spiritual guidance. 
             </div>
 
-            <div id='mySwiper' className="xll:w-5/6 xl:w-[75%] lg:w-[96%] md:w-[94%] w-[85%] py-8 mx-auto">
+            <div id='mySwiper' className="xll:w-5/6 xl:w-[75%] lg:w-[94%] md:w-[94%] w-[85%] md:py-8 py-4 mx-auto">
                 <blockquote id="quote" className={`font-[500] text-left mx-auto xxl:leading-[3rem] 
                 xxl:text-[2rem] xl:text-[1.7rem] lg:text-2xl lg:leading-[2.8rem] ssm:text-[1.32rem] text-[1.2rem] 
                 leading-9 py-10 ${quoteClass}`}>

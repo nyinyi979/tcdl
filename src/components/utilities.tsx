@@ -10,10 +10,10 @@ export function useAnimateLeft(selector:string){
         introAnimation.current = anime({
             targets: `#${selector}`,
             autoplay: false,
-            translateX: [-50 , 0],
+            translateX: [-40 , 0],
             opacity: [0 , 1],
-            duration: 500,
-            delay: 600,
+            duration: 700,
+            delay: 400,
             easing: 'linear'
         })
         const observer = new IntersectionObserver((entries)=>{
@@ -36,7 +36,7 @@ export function useAnimateRight(selector:string){
         introAnimation.current = anime({
             targets: `#${selector}`,
             autoplay: false,
-            translateX: [50 , 0],
+            translateX: [40 , 0],
             opacity: [0 , 1],
             duration: 500,
             delay: 600,
@@ -126,7 +126,7 @@ export const h3Class = `oswald font-[600] xxl:text-5xl
 xxl:text-[2rem] xl:text-[1.9em] xll:leading-[2.7rem] xl:text-[1.8rem] lg:text-[1.6rem] xl:leading-9 
 md:font-[600] md:text-[1.3rem] lg:leading-10 md:leading-8 leading-7 ssm:text-[1.2rem] text-[1.1rem]`;
 //Second version of h2 which is used in Q&A pages
-export const h3FAQ = `oswald pb-4 font-[700] xl:text-[2.5rem] md:text-4xl md:text-3xl text-[26px]`  
+export const h3FAQ = `oswald md:pb-4 pb-2 font-[700] xl:text-[2.5rem] md:text-4xl md:text-3xl text-[26px]`  
 export const h3FAQ2 = `font-bold xl:text-3xl lg:text-2xl lg:pt-6 leading-10 text-[23px] pb-2`
 
 //Be elite button and reversed(background and text color) be elite button

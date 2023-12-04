@@ -11,12 +11,12 @@ export default function Insight(){
     useAnimateLeft('h6');
     useAnimateLeft('h7');
     const listClass = `font-[500] xxl:text-4xl xxl:leading-[6.4rem] 
-    xl:text-[1.7rem] py-3 md:leading-[3.4rem] xl:py-2 md:text-2xl xs:text-xl text-lg leading-[3.175rem]`
+    xl:text-[1.7rem] py-1 md:leading-[3.4rem] xl:py-2 md:text-2xl xs:text-xl text-lg leading-[3.175rem]`
     return(
         <div className={`${bg2Class} xl:lg-pb-40 lg:pb-20 relative py-10 text-white after:[content:''] z-10 after:absolute after:z-[-1]
          after:bg-black/50 after:w-full after:h-full after:top-0 after:left-0 `}>
             <div className={`grid ssm:grid-cols-2 grid-cols-1 lg:text-3xl md:text-2xl text-lg text-left 
-            xl:px-32 px-8 md:pt-10 pt-0 lg:pb-48 pb-20`}>
+            xl:px-32 px-8 lg:pt-10 pt-0 lg:pb-48 pb-12`}>
                 <h2 id="insights" className={`${h2Class} ssm:col-span-2 text-center py-5 md:py-10`}>Insights</h2>
                 <div>
                     <h2 id="h1" className={listClass}>Tarot Reading</h2>

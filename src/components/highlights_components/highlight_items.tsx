@@ -53,7 +53,7 @@ export default function HighlightItems(){
                 <div key={content.title}>
                     <img src={content.img} alt="img" className="w-full xl:h-72 lg:h-52 md:h-44 h-60 bg-cover rounded-md my-2"/>
                     <h1 className="oswald text-dark_violet my-5 xl:text-4xl ssm:text-2xl text-xl font-[400]">{content.title}</h1>
-                    <div className="font-[400] xl:text-xl ssm:text-base text-sm leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
+                    <div className="font-[400] xl:text-xl text-base leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
                     <a href={`/highlight/${content.id}`} className={MoreClass}>More</a>
                 </div>
             ))}

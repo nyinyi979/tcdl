@@ -17,7 +17,7 @@ export default function FAQS(){
 
                 <div className={privilegesClass}>
                     <h1 className={`${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Plus and Elite Star Privileges</h1>
-                    <p className="lg:my-5  my-3">
+                    <p className="lg:my-5 my-3">
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
                         EP and ES members are to specify the type of reading or consultation requested upon booking.
                     </p>

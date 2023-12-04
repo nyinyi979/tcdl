@@ -26,7 +26,7 @@ export default function EliteClubItems(){
         },
         {bg:'from-[#859086] to-[#405658]' , 
         name:'Elite LITE', price: '30' , 
-        texts: [<><b>5 short question responses</b>within a week</>],
+        texts: [<><b>5 short question responses </b>within a week</>],
         },
     ]
     return(
@@ -43,10 +43,10 @@ export default function EliteClubItems(){
             </div>
 
 
-            <div className="grid md:grid-cols-2 grid-cols-1 llg:w-[75%] lg:w-[88%] md:w-11/12 w-10/12 lg:gap-16 md:gap-8 gap-12 mx-auto text-left xll:py-10 lg:py-5">
+            <div className="grid md:grid-cols-2 grid-cols-1 llg:w-[75%] lg:w-[88%] md:w-11/12 xs:w-[90%] w-10/12 lg:gap-16 md:gap-8 gap-12 mx-auto text-left xll:py-10 lg:py-5">
 
                 {ClubItems.map((Item)=>(
-                <div key={Math.random()*1000} className="rounded-xl md:h-[28rem] md:w-full ssm:w-[74%] relative pb-24 w-fit mx-auto h-fit bg-gray-200 mt-4">
+                <div key={Math.random()*1000} className="rounded-xl lg:h-[28rem] md:h-[26rem] md:w-full ssm:w-[74%] relative pb-24 w-fit mx-auto h-fit bg-gray-200 mt-4">
                     <div className={`oswald font-[500] w-full md:text-3xl text-2xl rounded-t-xl px-5 py-5 text-white bg-gradient-to-r ${Item.bg}`}>{Item.name}</div>
                     
                     <div className="pb-3 px-3">
