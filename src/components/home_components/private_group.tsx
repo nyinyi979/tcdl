@@ -7,7 +7,7 @@ export default function Private(){
     useAnimateRight('mySwiper');
     useAnimateTop('private_btn');
     return(
-        <div className={`text-white text-center xl:py-16 py-12 ${bg1Class}`}>
+        <div className={`text-white text-center xl:py-16 pt-12 pb-16 ${bg1Class}`}>
             <h1 id='private' className={`${h1Class} py-3`}>The Private Group</h1>
             <h2 id='private_group' className={`${h3Class} text-center xl:py-2`}>
                 A Private Group of <br /> Seeking and Awakening Individuals
