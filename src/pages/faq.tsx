@@ -40,7 +40,7 @@ export default function FAQ(){
         <>
             <Navbar currentLink="/faq"/>
             <div className={`${bannerh1Class} mt-10 lg:mt-0 text-primary text-center pt-[4.5rem]`}>Q & A</div>
-            <div className={`${bannerh2Class} xl:py-8 py-4 pb-12 text-secondary text-center`}>Membership Privileges</div>
+            <div className={`${bannerh2Class} xl:py-8 py-2 pb-12 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />
             <Footer />

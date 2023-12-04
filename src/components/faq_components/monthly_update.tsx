@@ -3,9 +3,9 @@ import { h3FAQ } from "../utilities";
 export default function Monthly(){
     const liClass = 'ssm:py-3 py-2'
     return(
-        <div className="xl:w-[85%] lg:w-[96%] md:w-[92.4%] xs:w-[93%] w-[90%] py-10 font-[400] text-left">
+        <>
             
-            <h1 className={`${h3FAQ} text-dark_violet lg:pt-8 pt-3 pb-3`}>Monthly Highlights and Updates</h1>
+            <h1 className={`${h3FAQ} text-dark_violet xl:pt-20 lg:pt-12 pt-2 pb-3`}>Monthly Highlights and Updates</h1>
     
             <ol className="px-10 md:py-4 py-2 list-none ssm:text-lg text-base text-stone-600">
                 <li className={liClass}>Monthly General Collective PAC Tarot Readings</li>
@@ -21,6 +21,6 @@ export default function Monthly(){
                 <li className={liClass}>Spiritual Awakening Talks and Other Sharing Sessions</li>
             </ol>
 
-        </div>
+        </>
     )
 }
