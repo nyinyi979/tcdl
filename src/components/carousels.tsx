@@ -57,8 +57,8 @@ export function ImageCarousel(){
         // Swiper breakpoints , screenSize(>=) : {spaceBetweenEachComponents , slidesVisible per view}
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 450: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
-        , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 75 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xll:w-[82%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[75%] w-[60%] xs:py-10 py-0" >
+        , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 65 , slidesPerView: 3}}}
+         modules={[Navigation, Pagination]} className="xll:w-[81%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[75%] w-[60%] xs:py-10 py-0" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>

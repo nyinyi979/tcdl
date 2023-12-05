@@ -119,15 +119,15 @@ export const h2Class = `oswald font-[600] xxl:text-[4.6rem] xxl:leading-[4.5rem]
     xll:text-[2.9rem] xl:text-[2.8rem] lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
     md:leading-[3.8rem] xs:text-[2rem] text-[1.9rem] leading-[3.1rem]`
 export const bannerh2Class =  `oswald font-[500] xll:text-[2.15rem] xxl:leading-[4.5rem] 
-lg:text-[1.9rem] md:text-[1.8rem] xs:text-[1.7rem]
+lg:text-[1.9rem] md:text-[1.8rem] xs:text-[1.65rem]
 md:leading-[3.8rem] text-[1.6rem] leading-[3.1rem]` 
 
 export const h3Class = `oswald font-[600] xxl:text-5xl
 xxl:text-[2rem] xll:leading-[2.7rem] xll:text-[1.8rem] lg:text-[1.65rem] xl:leading-9 
 md:font-[600] md:text-[1.3rem] lg:leading-10 md:leading-8 xs:leading-9 leading-7 xs:text-[1.4rem] text-[1.1rem]`;
 //Second version of h2 which is used in Q&A pages
-export const h3FAQ = `oswald md:pb-4 pb-2 font-[700] xll:text-[40px] xl:text-[2.5rem] md:text-4xl md:text-3xl text-[26px]`  
-export const h3FAQ2 = `font-bold xl:text-3xl lg:text-2xl lg:pt-6 leading-10 text-[23px] pb-2`
+export const h3FAQ = `xl:pb-4 xl:pt-4 pb-3 arial font-[700] xl:text-[40px] lg:text-[2.1rem] md:text-[28px] text-[26px]`  
+export const h3FAQ2 = `font-bold xl:text-3xl lg:text-2xl lg:pt-6 leading-10 text-[23px]`
 
 //Be elite button and reversed(background and text color) be elite button
 export const BeEliteBtn = `mx-auto block oswald font-[500] xxl:w-[21.5rem] xxl:h-[6rem] xxl:pt-6 xxl:text-3xl 

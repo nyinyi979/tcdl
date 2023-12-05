@@ -39,8 +39,8 @@ export default function FAQ(){
     return(
         <>
             <Navbar currentLink="/faq"/>
-            <div className={`${bannerh1Class} mt-10 lg:mt-0 text-primary text-center pt-[4.5rem]`}>Q & A</div>
-            <div className={`${bannerh2Class} xl:py-8 py-2 pb-12 text-secondary text-center`}>Membership Privileges</div>
+            <div className={`${bannerh1Class} arial font-[300] mt-16 lg:mt-0 mr-3 text-primary text-center pt-[2.5rem]`} style={{fontWeight: '300'}}>Q & A</div>
+            <div className={`${bannerh2Class} arial xl:pb-20 lg:pt-6 pt-1 pb-12 text-secondary text-center`}>Membership Privileges</div>
             <FAQS />
             <Communities />
             <Footer />

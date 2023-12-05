@@ -3,23 +3,21 @@ import Monthly from "./monthly_update";
 import PrivacyPolicy from "./privacy_policy";
 
 export default function FAQS(){
-    const pClass = 'lg:my-[13px] my-3 text-[#443548] leading-[35px]';
-    const privilegesClass = 'w-full ssm:text-lg text-base text-stone-600 border-b-[3px] border-b-gray-300 py-4 ssm:text-lg text-base'
+    const pClass = 'arial lg:my-[13px] xl:my-6 xl:leading-[34px] md:my-4 my-3 text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
     return(
         <div className="w-full bg-white pt-4 xll:pb-32 lg:pb-20 pb-10">
-            
+ 
             <div className="w-fit h-fit mx-auto flex xxl:my-8 my-4 md:pt-16 pt-10 md:pb-8 pb-5">
-                <div className="text-white rounded-l-full lg:w-40 xll:px-12 xxl:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-10 py-4 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
-                <div className="text-violet rounded-r-full lg:w-40 xll:px-12 xxl:py-5 lg:text-2xl ssm:text-xl text-lg w-32 px-10 py-4 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
+                <div className="text-white rounded-l-full ssm:text-xl text-lg w-32 px-10 py-3 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
+                <div className="text-violet rounded-r-full ssm:text-xl text-lg w-32 px-10 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
             </div>
-
             { /* adjust the width and padding of the whole FAQ page here */}
-            <div className={`xll:w-[80%] xl:w-[1000px] llg:w-[1000px] lg:w-[950px] md:w-[93%] w-[90%]
-                mx-auto font-[400] lg:leading-[50px] xs:text-[19px] text-base md:leading-10 leading-9 text-left `}>
+            <div className={`xll:w-[1150px] xl:w-[1000px] llg:w-[1000px] lg:w-[97%] md:w-[96%] xs:w-[94%] w-[90%]
+                mx-auto font-[400] lg:leading-[50px] md:leading-10 leading-9 text-left `}>
 
-                <div className={privilegesClass}>
+                <div className={'w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10'}>
                     <h1 className={`${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Plus and Elite Star Privileges</h1>
-                    <p className="lg:my-5 my-3">
+                    <p className={`lg:my-5 my-3 ${pClass}`}>
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
                         EP and ES members are to specify the type of reading or consultation requested upon booking.
                     </p>
@@ -40,7 +38,7 @@ export default function FAQS(){
                     </p>
                 </div>
                 
-                <div className="w-full ssm:text-lg text-base text-stone-600 py-4">
+                <div className="w-full ssm:text-lg text-base text-stone-600 xl:pt-10 pt-4">
                     <h1 className={`${h3FAQ2} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>
@@ -61,7 +59,7 @@ export default function FAQS(){
                     </p>
                 </div>
 
-                <div className={`${privilegesClass} lg:pb-16`}>
+                <div className={`w-full border-b-[3px] border-b-gray-300 pb-4 lg:pb-16`}>
                     <h1 className={` ${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Express and Elite Membership Privileges</h1>
 
                     <p className={pClass}>
@@ -87,7 +85,7 @@ export default function FAQS(){
                     </p>
                 </div>
 
-                <div className={`${privilegesClass} lg:py-7`}>
+                <div className={`w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10 lg:py-7`}>
                     <h1 className={`${h3FAQ2} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>

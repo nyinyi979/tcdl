@@ -1,23 +1,25 @@
 import { h3FAQ } from "../utilities";
 
 export default function PrivacyPolicy(){
-    const liClass = 'ssm:py-3 py-2'
+    const pClass = 'arial lg:my-[13px] xl:my-5 xl:leading-[34px] my-3 text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
     return(
-        <div className="border-b-[3px] border-b-gray-300 pb-4">
+        <div className="border-b-[3px] border-b-gray-300 pb-4 lg:pb-12">
             
             <h1 className={`oswald ${h3FAQ} xl:pt-20 lg:pt-12 pt-2 text-dark_violet `}>Privacy Policy</h1>
-            <p className="text-lg text-stone-600 py-3">
+            <p className={`'arial lg:my-[13px] xl:leading-[34px]
+            text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] 
+            xs:text-[18px] text-base`}>
                 For a personalised reading these data and info will be collected with high confidentiality for the reader:
             </p>
-            <ol className="px-10 lg:py-4 py-2 list-decimal list-outside ssm:text-lg text-base text-stone-600 ">
-                <li className={liClass}>Member's DOB</li>
-                <li className={liClass}>Member's time and city of birth</li>
-                <li className={liClass}>Member's photo without masks/glasses</li>
-                <li className={liClass}>Member's full residential address (for delivery purposes)</li>
-                <li className={liClass}>Member's current phone number(s)</li>
-                <li className={liClass}>Member's valid email address</li>
-                <li className={liClass}>Member's preferred type of reading or consultation (may choose more than one)</li>
-                <li className={liClass}>Member's preferred process and outcome through the sessions with the reader</li>
+            <ol className="xl:px-16 px-10 list-decimal list-outside">
+                <li className={pClass}>Member's DOB</li>
+                <li className={pClass}>Member's time and city of birth</li>
+                <li className={pClass}>Member's photo without masks/glasses</li>
+                <li className={pClass}>Member's full residential address (for delivery purposes)</li>
+                <li className={pClass}>Member's current phone number(s)</li>
+                <li className={pClass}>Member's valid email address</li>
+                <li className={pClass}>Member's preferred type of reading or consultation (may choose more than one)</li>
+                <li className={pClass}>Member's preferred process and outcome through the sessions with the reader</li>
             </ol>
 
         </div>

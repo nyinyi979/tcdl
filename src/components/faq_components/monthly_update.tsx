@@ -1,26 +1,25 @@
 import { h3FAQ } from "../utilities";
 
 export default function Monthly(){
-    const liClass = 'ssm:py-3 py-2'
-    return(
-        <>
-            
-            <h1 className={`${h3FAQ} text-dark_violet xl:pt-20 lg:pt-12 pt-2 pb-3`}>Monthly Highlights and Updates</h1>
-    
-            <ol className="px-10 md:py-4 py-2 list-none ssm:text-lg text-base text-stone-600">
-                <li className={liClass}>Monthly General Collective PAC Tarot Readings</li>
-                <li className={liClass}>Monthly Full Moon and New Moon Rituals (General)</li>
-                <li className={liClass}>Product Highlights (if any)</li>
-                <li className={liClass}>Runic Readings and Highlights</li>
-                <li className={liClass}>Astrological Updates</li>
-                <li className={liClass}>Spiritual Practices for Mind, Body and Soul</li>
-                <li className={liClass}>Tarot Workshop Classes</li>
-                <li className={liClass}>Rune Workshops and Classes</li>
-                <li className={liClass}>Birth Chart and Astrology Classes</li>
-                <li className={liClass}>Spell Jars and other Ritual Spell Work Workshops</li>
-                <li className={liClass}>Spiritual Awakening Talks and Other Sharing Sessions</li>
-            </ol>
+    const pClass = 'arial lg:my-[13px] xl:my-5 xl:leading-[34px] my-3 text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
 
+    return(
+        <> 
+            <h1 className={`${h3FAQ} text-dark_violet lg:mt-12 mt-2`}>Monthly Highlights and Updates</h1>
+    
+            <ol className="px-10 list-none">
+                <li className={pClass}>Monthly General Collective PAC Tarot Readings</li>
+                <li className={pClass}>Monthly Full Moon and New Moon Rituals (General)</li>
+                <li className={pClass}>Product Highlights (if any)</li>
+                <li className={pClass}>Runic Readings and Highlights</li>
+                <li className={pClass}>Astrological Updates</li>
+                <li className={pClass}>Spiritual Practices for Mind, Body and Soul</li>
+                <li className={pClass}>Tarot Workshop Classes</li>
+                <li className={pClass}>Rune Workshops and Classes</li>
+                <li className={pClass}>Birth Chart and Astrology Classes</li>
+                <li className={pClass}>Spell Jars and other Ritual Spell Work Workshops</li>
+                <li className={pClass}>Spiritual Awakening Talks and Other Sharing Sessions</li>
+            </ol>
         </>
     )
 }
