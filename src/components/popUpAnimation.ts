@@ -68,7 +68,7 @@ export function forgottenPWPopUpBox(){
 
 }
 
-export const headingBoxClass = "clear-both table rounded-tl-3xl rounded-tr-3xl w-full font-[400] ssm:text-3xl text-2xl ssm:pl-10 ssm:pr-6 ssm:pt-[23px] ssm:pb-[30px] pz-6 py-4 md:mb-5 mb-3 text-white bg-gradient-to-r from-[#a2438d] to-[#5c3477]"
+export const headingBoxClass = "clear-both table rounded-tl-3xl rounded-tr-3xl w-full font-[400] ssm:text-3xl text-2xl ssm:pl-10 ssm:pr-6 ssm:pt-[23px] ssm:pb-[30px] px-6 py-4 md:mb-5 mb-3 text-white bg-gradient-to-r from-[#a2438d] to-[#5c3477]"
 export const labelClass = 'z-[20] font-[500] absolute -top-2 ssm:left-[4.3rem] left-[2.3rem] block w-fit h-fit py-1 px-5 bg-white rounded-full text-[#696769] md:text-base text-sm'
 export const inputClass ='z-[10] font-[600] relative ssm:w-full w-[95%] ssm:h-16 h-12 ssm:px-8 ssm:py-3 px-5 py-4 ssm:text-xl text-base leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray outline-none text-text_violet placeholder:text-text_violet'
 export const inputBoxClass = `block relative md:w-full w-[98%] ssm:px-10 px-4 mx-auto my-5 py-2 text-text_violet`
