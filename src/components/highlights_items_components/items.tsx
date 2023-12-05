@@ -145,7 +145,7 @@ export default function HighLightItem({id}:{id: string}){
     return(
         <>
         <HighLightItemHeading title={ItemTextAndImg[0].title}/>
-        <div className=" w-full bg-white lg:pb-20 xl:pb-32 xl:pt-16 lg:py-12 md:py-8 py-6">
+        <div className=" w-full bg-white md:pb-20 xl:pb-32 pb-10 xs:pb-16 xl:pt-16 lg:py-12 md:py-8 py-6">
             <div className="xll:w-[1140px] xl:w-[1000px] lg:w-[970px] xs:w-[94%] w-[88%] h-fit mx-auto">
                 <div>
                     <h1 className="oswald font-[600] text-dark_violet xxl:text-5xl xl:text-[40px] md:text-[34px] xs:text-[27px] text-[25px] trackingwide">{ItemTextAndImg[0].title}</h1>
