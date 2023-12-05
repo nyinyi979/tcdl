@@ -17,7 +17,7 @@ export default function FAQS(){
             <div className={`xll:w-[1150px] xl:w-[1000px] llg:w-[1000px] lg:w-[97%] md:w-[96%] xs:w-[94%] w-[90%]
                 mx-auto font-[400] lg:leading-[50px] md:leading-10 leading-9 text-left `}>
 
-                <div className={'w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10 pb-4'}>
+                <div className={'w-full border-b-[3px] border-b-gray-300 py-4 xs:pb-6 xl:pb-10 pb-4'}>
                     <h1 className={`${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Plus and Elite Star Privileges</h1>
                     <p className={`lg:my-5 my-3 ${pClass}`}>
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 
@@ -40,7 +40,7 @@ export default function FAQS(){
                     </p>
                 </div>
                 
-                <div className="w-full ssm:text-lg text-base text-stone-600 xl:pt-10 pt-4">
+                <div className="w-full ssm:text-lg text-base text-stone-600 xl:pt-10 xs:pt-6 pt-4">
                     <h1 className={`${h3FAQ2} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>
@@ -61,7 +61,7 @@ export default function FAQS(){
                     </p>
                 </div>
 
-                <div className={`w-full border-b-[3px] border-b-gray-300 pb-4 lg:pb-16`}>
+                <div className={`w-full border-b-[3px] border-b-gray-300 pb-4 xs:pb-7 lg:pb-16`}>
                     <h1 className={` ${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Express and Elite Membership Privileges</h1>
 
                     <p className={pClass}>
@@ -87,7 +87,7 @@ export default function FAQS(){
                     </p>
                 </div>
 
-                <div className={`w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10 lg:py-7`}>
+                <div className={`w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10 xs:pb-6 lg:py-7`}>
                     <h1 className={`${h3FAQ2} text-stone-800`}>
                         Payment FAQs and Policy
                     </h1>

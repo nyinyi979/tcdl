@@ -5,7 +5,7 @@ export default function Monthly(){
 
     return(
         <> 
-            <h1 className={`${h3FAQ} text-dark_violet lg:mt-12 mt-4`}>Monthly Highlights and Updates</h1>
+            <h1 className={`${h3FAQ} text-dark_violet lg:mt-12 xs:mt-6 mt-4`}>Monthly Highlights and Updates</h1>
     
             <ol className="px-10 list-none">
                 <li className={pClass}>Monthly General Collective PAC Tarot Readings</li>

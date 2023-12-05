@@ -5,7 +5,7 @@ export default function PrivacyPolicy(){
     return(
         <div className="border-b-[3px] border-b-gray-300 pb-4 lg:pb-12">
             
-            <h1 className={`oswald ${h3FAQ} xl:pt-20 lg:pt-12 pt-4 text-dark_violet `}>Privacy Policy</h1>
+            <h1 className={`oswald ${h3FAQ} xl:pt-20 lg:pt-12 xs:pt-7 pt-4 text-dark_violet `}>Privacy Policy</h1>
             <p className={`'arial lg:my-[13px] xl:leading-[34px]
             text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] 
             xs:text-[18px] text-base`}>

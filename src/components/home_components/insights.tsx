@@ -10,6 +10,13 @@ export default function Insight(){
     useAnimateLeft('h5');
     useAnimateLeft('h6');
     useAnimateLeft('h7');
+    useAnimateLeft('h1_');
+    useAnimateLeft('h2_');
+    useAnimateLeft('h3_');
+    useAnimateLeft('h4_');
+    useAnimateLeft('h5_');
+    useAnimateLeft('h6_');
+    useAnimateLeft('h7_');
     const listClass = `font-[500] xxl:text-4xl xxl:py-8 
     xl:text-[1.7rem] lg:leading-[3rem] leading-10 py-1 xsm:py-1 xs:py-[10px] md:py-3 xxl:text-5xl lg:text-[27px] ssm:text-[22px] xs:text-[19px] text-lg `
     return(
@@ -30,13 +37,13 @@ export default function Insight(){
                     <h2 id="h7" className={listClass}>Healing & Consultation</h2>
                 </div>
                 <div className="xsm:hidden block">
-                    <h2 id="h1" className={listClass}>Tarot Reading</h2>
-                    <h2 id="h5" className={listClass}>Spell & Rituals</h2>
-                    <h2 id="h2" className={listClass}>Birth Chart Reading</h2>
-                    <h2 id="h6" className={listClass}>Spiritual Guidance</h2>
-                    <h2 id="h3" className={listClass}>Rune Reading</h2>
-                    <h2 id="h7" className={listClass}>Healing & Consultation</h2>
-                    <h2 id="h4" className={listClass}>Energy Healing</h2>
+                    <h2 id="h1_" className={listClass}>Tarot Reading</h2>
+                    <h2 id="h5_" className={listClass}>Spell & Rituals</h2>
+                    <h2 id="h2_" className={listClass}>Birth Chart Reading</h2>
+                    <h2 id="h6_" className={listClass}>Spiritual Guidance</h2>
+                    <h2 id="h3_" className={listClass}>Rune Reading</h2>
+                    <h2 id="h7_" className={listClass}>Healing & Consultation</h2>
+                    <h2 id="h4_" className={listClass}>Energy Healing</h2>
                 </div>
             </div>
         </div>
