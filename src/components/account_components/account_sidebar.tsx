@@ -12,7 +12,7 @@ export default function AccountSidebar(){
                     </ul>
                 </div>
             </div>
-            <div className="flex-row gap-4 md:pl-12 px-0 py-5 items-center flex border-t-2 border-t-light_gray">
+            <div className="flex-row gap-4 md:pl-12 md:pr-0 px-4 py-5 items-center flex border-t-2 border-t-light_gray">
                 <div><img src='/fb-icon2.png' className="inline-block lg:w-[86px] w-[59px] h-fit"/></div>
                 <div className="text-[#333] text-xs font-[400] leading-5 ml-2">Copyright © 2024 The Card's Don't Lie (TCDL). All Rights Reserved.</div>
             </div>
