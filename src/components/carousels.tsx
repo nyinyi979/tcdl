@@ -78,11 +78,11 @@ export function ImageCarousel(){
         </Swiper>
         <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 prev
         hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-        xs:top-[20%] top-[25%] xll:left-[30px] xl:left-[40px] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
+        xs:top-[20%] top-[25%] xll:left-[3.6%] xl:left-[4%] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
         left-[20px] cursor-pointer`}></span>
         <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        xs:top-[20%] top-[24%] xll:right-[25px] xl:right-[35px] md:right-[5px] ssm:right-[20px] xs:right-[14px] 
+        xs:top-[20%] top-[24%] xll:right-[3.5%] xl:right-[4%] md:right-[5px] ssm:right-[20px] xs:right-[10px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )
