@@ -20,8 +20,8 @@ export default {
     },
     extend: {
       gridTemplateColumns: {
-        1.10: '1fr 1.1fr',
-        1.01: '1.1fr 1fr',
+        1.1: '1fr 1.3fr',
+        1.01: '1.3fr 1fr',
       },
       colors:{
         primary: '#ef4165',       //pink

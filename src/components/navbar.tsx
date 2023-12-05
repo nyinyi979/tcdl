@@ -80,7 +80,7 @@ export default function Navbar(props:{currentLink:string}){
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
             {/* Highlight item picture */}
-            <div id='highlight_item' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] 
+            <div id='highlight_item' className={`absolute opacity-0 top-0 left-0 w-full xxl:h-[1800px] xll:h-[1300px] 
             xl:h-[1000px] lg:h-[1000px] md:h-[900px] h-[900px] [background-image:url(/bg7.png)] xl:bg-[left_-50px_top_-600px]
             lg:bg-[left_-50px_top_-530px] bg-[left_-200px_top_-500px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 

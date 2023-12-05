@@ -108,11 +108,11 @@ export const quoteClass = `leading-8 xl:py-32 lg:py-24 xsm:py-[64px] py-16 relat
     after:[background-image:url('/right_quote.png')] after:absolute  after:w-[70px] after:h-[70px] md:after:left-[46%] xsm:after:left-[43%] xs:after:left-[45%] after:left-[40%] after:bottom-0 xl:after:w-[100px] xl:after:h-[100px] after:bg-cover  `
 
 //Class for h1 and h2 used in almost all pages
-export const h1Class = `oswald font-[600] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
+export const h1Class = `oswald font-[600] xxl:leading-[4.5rem] 
     xll:text-[2.9rem] xl:text-[2.8rem] lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
     md:leading-[3.8rem] xs:text-[2rem] text-[1.9rem] leading-[3.1rem]`
-export const bannerh1Class = `oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] mr-2 
-    xll:text-[3rem] xl:text-[2.5rem] md:font-[600] lg:text-[2.36rem] xs:text-[2.1rem]
+export const bannerh1Class = `oswald font-[500] xxl:leading-[4.5rem] mr-2 
+    xll:text-[3rem] xl:text-[2.5rem] md:font-[600] md:text-[2.4rem] xs:text-[2.1rem]
     md:leading-[3.8rem] text-[2rem] leading-[3.1rem]`
 
 export const h2Class = `oswald font-[600] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
