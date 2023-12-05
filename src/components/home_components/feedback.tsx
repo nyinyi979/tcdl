@@ -9,15 +9,15 @@ export default function Feedback(){
     useAnimateRight('feedback_text')
     useAnimateLeft('feedback_swiper');
     //overall quoteClass doesn't have text size values
-    const quoteClassHere = `xll:w-[40%] xl:w-[50%] lg:w-[74%] md:w-[65%] sm:w-[70%] ssm:w-[88%] xs:w-[90%] w-[90%] mx-auto xxl:text-[2.37rem] 
-    xll:leading-[3.3rem] font-[600] xll:text-[1.7rem] md:text-2xl xl:leading-[2.75rem] ssm:leading-[2.4rem]  
+    const quoteClassHere = `xxl:w-[45%] xl:w-[50%] lg:w-[74%] md:w-[65%] sm:w-[70%] ssm:w-[88%] xs:w-[94%] w-[90%] mx-auto xxl:text-[2.37rem] 
+    xll:leading-[3.3rem] font-[600] xll:text-[1.7rem] md:text-2xl xl:leading-[2.75rem] xs:leading-[2.4rem]  
     xs:text-xl text-lg leading-8 text-center` + quoteClass;
     return(
-        <div className="bg-white text-violet xl:py-20 md:py-16 py-10 text-center">
+        <div className="bg-white text-violet xl:py-20 md:py-16 py-8 text-center">
             <h2 id='feedback' className={`${h1Class} py-2`}>
                 The Feedbacks
             </h2>
-            <h2 id='feedback_text' className={`oswald ${h3Class} lg:py-5 py-2`}>
+            <h2 id='feedback_text' className={`oswald ${h3Class} py-2`}>
                 Incredibly accurate and insightful, <br />
                 and whatelse of their sayings!
             </h2>   

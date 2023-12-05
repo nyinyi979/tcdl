@@ -8,10 +8,11 @@ export default {
     screens:{
       'xxs' : '350px',
       'xs' : '425px',
+      'xsm' : '479px',
       'ssm' : '560px' ,
       'sm' : '690px' , 
       'md' : '767px' , 
-      'lg' : '992px',
+      'lg' : '993px',
       'llg' : '1099px' , 
       'xl' : '1199px' , 
       'xll' : '1365px',

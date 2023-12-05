@@ -6,9 +6,9 @@ import 'swiper/css/pagination'
 import { Link } from 'react-router-dom';
 type items = {id: number, img: string , heading: React.ReactNode , paragraph: string}[]
 export function ImageCarousel(){
-    const headingClass = "oswald lg:py-9 xl:text-[29px] md:text-2xl ssm:text-lg text-base text-secondary font-[400] py-5";
-    const pClass = "text-white font-[400] lg:text-xl lg:leading-[40px] md:text-lg xs:text-base text-sm leading-10 text-justify"
-    const MoreClass = 'oswald text-secondary hover:text-primary duration-500 text-xl font-[400] inline-block my-8'
+    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] md:text-2xl xs:text-xl text-base text-secondary font-[400] py-5";
+    const pClass = "text-white font-[400] lg:text-xl lg:leading-[36px] xs:text-lg xs:leading-9 text-sm leading-10 text-justify"
+    const MoreClass = 'oswald text-secondary hover:text-primary duration-500 xl:text-2xl text-xl font-[400] inline-block my-8'
     const items:items = [
         {
             id: 1,
@@ -55,11 +55,10 @@ export function ImageCarousel(){
         <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
         pagination={{clickable:true}}
         // Swiper breakpoints , screenSize(>=) : {spaceBetweenEachComponents , slidesVisible per view}
-        breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
+        breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 450: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
-        , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 80, slidesPerView: 3}
-        ,1365 : {spaceBetween: 75 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] xs:w-[63%] w-[60%] xs:py-10 py-0" >
+        , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 75 , slidesPerView: 3}}}
+         modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[75%] w-[60%] xs:py-10 py-0" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
@@ -77,13 +76,13 @@ export function ImageCarousel(){
             ))}
 
         </Swiper>
-        <span className={`absolute md:w-8 md:h-8 w-6 h-6 bg-no-repeat bg-contain duration-300 prev
+        <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 prev
         hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-        md:top-[20%] top-[25%] xll:left-[30px] xl:left-[35px] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
+        xs:top-[20%] top-[25%] xll:left-[30px] xl:left-[40px] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
         left-[20px] cursor-pointer`}></span>
-        <span className={`absolute md:w-8 md:h-8 w-6 h-6 bg-no-repeat bg-contain duration-300 next
+        <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        md:top-[20%] top-[24%] xll:right-[25px] xl:right-[25px] md:right-[5px] ssm:right-[25px] xs:right-[14px] 
+        xs:top-[20%] top-[24%] xll:right-[25px] xl:right-[35px] md:right-[5px] ssm:right-[25px] xs:right-[14px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )
