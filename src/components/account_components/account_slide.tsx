@@ -12,7 +12,7 @@ export default function Accounts(){
         currentPlace: 'Miami, United States of America' , Gender: ''
     })
 
-    const labelClass = `z-[20] font-[500] absolute -top-2 lg:left-[2.3rem] xs:left-[7rem] left-[2.3rem] 
+    const labelClass = `z-[20] font-[500] absolute -top-2 lg:left-[2.3rem] ssm:left-[7rem] left-[2.3rem] 
     block w-fit h-fit py-1 px-5 bg-white rounded-full text-[#696769] md:text-base text-sm`
 
     //classes for input , input container, required input container 
