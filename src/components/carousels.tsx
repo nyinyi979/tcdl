@@ -82,7 +82,7 @@ export function ImageCarousel(){
         left-[20px] cursor-pointer`}></span>
         <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        xs:top-[20%] top-[24%] xll:right-[25px] xl:right-[35px] md:right-[5px] ssm:right-[25px] xs:right-[14px] 
+        xs:top-[20%] top-[24%] xll:right-[25px] xl:right-[35px] md:right-[5px] ssm:right-[20px] xs:right-[14px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )
