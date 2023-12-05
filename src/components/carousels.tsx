@@ -58,12 +58,12 @@ export function ImageCarousel(){
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 450: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 75 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xll:w-5/6 xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[75%] w-[60%] xs:py-10 py-0" >
+         modules={[Navigation, Pagination]} className="xll:w-[82%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[75%] w-[60%] xs:py-10 py-0" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
 
-                    <img src={item.img} alt="img" className="lg:w-full w-[98%] h-fit bg-cover mx-auto rounded-lg"/>
+                    <img src={item.img} alt="img" className="lg:w-full w-[98%] h-fit bg-cover mx-auto rounded-xl"/>
                     <h1 className= {headingClass}>
                         {item.heading}
                     </h1>
@@ -88,26 +88,24 @@ export function ImageCarousel(){
     )
 }
 export function VideoCarousel(){
-    const MoreClass = 'oswald text-secondary hover:text-primary duration-500 lg:text-3xl text-xl font-[400] block mt-4 mb-16 w-fit h-fit mx-auto cursor-pointer'
-    const headingClass = "oswald md:text-2xl text-left text-lg text-secondary font-[400] py-5";
-    const videoClass = 'xl:h-42 lg:h-36 md:h-28 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
+    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] md:text-2xl xs:text-xl text-base text-secondary font-[400] py-5 text-left";
+    const MoreClass = 'oswald text-secondary hover:text-primary duration-500 xl:text-2xl text-xl font-[400] inline-block my-8'
+    const videoClass = 'xll:h-48 xl:h-42 lg:h-36 md:h-28 ssm:h-28 xsm:h-24 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
     //play button style
     const playBtn = `md:w-20 md:h-20 w-16 h-16 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
     hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover
-    md:top-[13%] lg:top-[24%] xs:top-[20%] xxs:top-[23%] top-[14%]
-    xll:left-[35%] xl:left-[37%] lg:left-[37%] xxs:left-[35%] lg:left-[30%] md:left-[29%] ssm:left-[35%] xs:left-[36%] left-[30%] 
+    xll:top-[30%] md:top-[13%] lg:top-[24%] ssm:top-[24%] xsm:top-[18%] xs:top-[20%] xxs:top-[23%] top-[14%]
+    xl:left-[37%] lg:left-[37%] xxs:left-[35%] lg:left-[30%] md:left-[29%] ssm:left-[36%] xs:left-[36%] xsm:left-[33%] left-[30%] 
     z-10 text-6xl p-3 cursor-pointer`
     return(
         <>
             <Swiper navigation={{nextEl: '.v_next', prevEl: '.v_prev'}} freeMode speed={1000} 
                 pagination={{clickable:true}}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
-                768: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
-                , 1099 : {spaceBetween: 80, slidesPerView: 3} , 1199 : {spaceBetween: 70, slidesPerView: 3}
-                ,1365 : {spaceBetween: 60 , slidesPerView: 3}}}
-                 modules={[Navigation, Pagination]} className="xxl:w-[40%] xll:w-[70%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[70%] xs:w-[60%] xxs:w-[200px] w-[50%] pt-10 md:pb-20 pb-10" >
+                768: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 40, slidesPerView :3} }}
+                 modules={[Navigation, Pagination]} className="xxl:w-[40%] xll:w-[83%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[70%] xsm:w-[75%] xs:w-[60%] xxs:w-[200px] w-[50%] pt-7 md:pb-20 pb-10" >
                     
-                    <SwiperSlide className=''>
+                    <SwiperSlide>
                         
                         <div className='relative rounded-lg '>
                             <div className={playBtn} id='p1' onClick={()=>{
@@ -164,13 +162,13 @@ export function VideoCarousel(){
                     More Videos
                 </a>
                 {/* left and right button */}
-                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 v_prev
+                <span className={`absolute w-8 h-8 bg-no-repeat bg-contain duration-300 v_prev
                 hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                md:top-[23%] top-[45%] xxl:left-[24.4%] xll:left-[95px] xl:left-[35px] md:left-[20px] ssm:left-[30px] xs:left-[30px] left-[44px] 
+                md:top-[23%] xsm:top-[35%] top-[45%] xxl:left-[24.4%] xll:left-[45px] xl:left-[35px] md:left-[20px] sm:left-[40px] xsm:left-[15px] xs:left-[30px] left-[44px] 
                 cursor-pointer `}></span>
-                <span className={`absolute md:w-10 md:h-10 w-6 h-6 bg-no-repeat bg-contain duration-300 v_next
+                <span className={`absolute w-8 h-8 bg-no-repeat bg-contain duration-300 v_next
                 hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                md:top-[23%] top-[45%] xxl:right-[25.4%] xll:right-[90px] xl:right-[25px] md:right-[5px] ssm:right-[30px] xs:right-[23px] right-[36px] 
+                md:top-[23%] xsm:top-[34.5%] top-[45%] xxl:right-[25.4%] xll:right-[40px] xl:right-[25px] md:right-[5px] sm:right-[35px] xsm:right-[10px] xs:right-[23px] right-[36px] 
                 cursor-pointer `}></span>
         </>
     )

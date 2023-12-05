@@ -51,8 +51,8 @@ export default function Login(){
             <div id='login' onClick={(e)=>{e.stopPropagation()}} className='ssm:w-[30.5rem] xs:w-[23rem] w-[19rem] md:my-8 my-4 mx-auto h-fit bg-white rounded-3xl pb-10'>
                 
                 <div className={headingBoxClass}>
-                    <h2 className='oswald float-left tracking-[1px]'>Login</h2>
-                    <h2 onClick={closePopUp} className='float-right rounded-full font-[600] px-3 pb-1 text-lg cursor-pointer bg-primary text-white hover:bg-secondary hover:text-black duration-500'>x</h2>
+                    <h2 className='oswald float-left tracking-[1px]'>Sign Up</h2>
+                    <img src='/close-icon.png' onClick={closePopUp} className='float-right w-[34px] h-[34px] text-lg cursor-pointer' />
                 </div>
                 
 

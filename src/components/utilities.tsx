@@ -112,7 +112,7 @@ export const h1Class = `oswald font-[600] xxl:text-[4.6rem] xxl:leading-[4.5rem]
     xll:text-[2.9rem] xl:text-[2.8rem] lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
     md:leading-[3.8rem] xs:text-[2rem] text-[1.9rem] leading-[3.1rem]`
 export const bannerh1Class = `oswald font-[500] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
-    xll:text-[3.1rem] xl:text-[2.5rem] md:font-[600] lg:text-[2.36rem] xs:text-[2.1rem]
+    xll:text-[3rem] xl:text-[2.5rem] md:font-[600] lg:text-[2.36rem] xs:text-[2.1rem]
     md:leading-[3.8rem] text-[2rem] leading-[3.1rem]`
 
 export const h2Class = `oswald font-[600] xxl:text-[4.6rem] xxl:leading-[4.5rem] 

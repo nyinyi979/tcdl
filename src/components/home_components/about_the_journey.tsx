@@ -6,7 +6,7 @@ export default function Journey(){
     useAnimateRight('image1');
     useAnimateRight('image2');
     return(
-        <div className={`xll:w-5/6 xl:w-[83%] lg:w-[98%] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[85%] h-fit mx-auto 
+        <div className={`xll:w-[85%] xl:w-[83%] lg:w-[98%] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[85%] h-fit mx-auto 
         xll:mt-[3.2rem] xl:mt-[2rem] mt-10 lg:mt-8 lg:pb-20 md:pb-12 pb-7 lg:pt-0 md:pt-[3rem] pt-[3.5rem]`}>
             
             <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full pb-3">
@@ -18,7 +18,7 @@ export default function Journey(){
                 </div>
 
                 <div className="col-span-2 xll:w-[720px] xl:w-full lg:w-[650px] md:w-[95%] ml-0 xl:ml-0 llg:ml-12 lg:ml-4 w-full">
-                    <h1 id='about_the_journey' className={`${bannerh1Class} text-secondary lg:pb-8 pb-2 md:mb-0 mb-2 xll:mb-3`}>About the Journey</h1>
+                    <h1 id='about_the_journey' className={`${bannerh1Class} text-secondary lg:pb-7 pb-2 md:mb-0 mb-2 xll:mb-3`}>About the Journey</h1>
                     <div id='about_the_journey_text'>
                         <p className={`text-gray-200 xxl:text-2xl lg:text-xl md:text-base 
                         xs:text-[17px] text-[15px] md:font-[450] font-[400] text-justify xll:leading-[2.6rem] 

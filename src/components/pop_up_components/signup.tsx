@@ -75,7 +75,7 @@ export default function SignUp(){
                 
                 <div className={headingBoxClass}>
                     <h2 className='oswald float-left tracking-[1px]'>Sign Up</h2>
-                    <h2 onClick={closePopUp} className='float-right rounded-full font-[500] px-3 pb-1 text-lg cursor-pointer bg-primary text-white hover:bg-secondary hover:text-black duration-500'>x</h2>
+                    <img src='/close-icon.png' onClick={closePopUp} className='float-right w-[34px] h-[34px] text-lg cursor-pointer' />
                 </div>
                 
 

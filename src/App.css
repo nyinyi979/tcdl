@@ -91,11 +91,11 @@ html::-webkit-scrollbar{
 .c li::before  , .d li::before
 {
     content: '\2022';
-    font-size: 5rem;
+    font-size: 4rem;
     color:#272228;
     position: absolute;
     left: -9%;
-    top: 1%;
+    top: 1.5%;
     font-weight: bolder;
 }
 @media only screen and (max-width:1099px) {

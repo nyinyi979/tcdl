@@ -47,13 +47,13 @@ export default function HighlightItems(){
     ]
     return(
         <div className="bg-white xs:py-10 py-5">
-            <div className="grid md:grid-cols-3 grid-cols-1 xll:w-[80%] xl:w-[88%] lg:w-[87%] md:w-[94%] xs:w-[22rem] w-[18rem] lg:gap-8 gap-5 mx-auto py-10">
+            <div className="grid md:grid-cols-3 grid-cols-1 xxl:w-[1500px] xll:w-[1200px] xl:w-[92%] lg:w-[87%] md:w-[94%] xs:w-[22rem] w-[18rem] xxl:gap-20 lg:gap-8 gap-5 mx-auto py-10">
 
             {contents.map((content)=>(
                 <div key={content.title}>
-                    <img src={content.img} alt="img" className="w-full xl:h-72 lg:h-52 md:h-44 h-60 bg-cover rounded-md my-2"/>
+                    <img src={content.img} alt="img" className="w-full xxl:h-fit xl:h-72 lg:h-52 md:h-44 h-60 bg-cover rounded-md my-2"/>
                     <h1 className="oswald text-dark_violet my-5 xl:text-4xl ssm:text-2xl text-xl font-[400]">{content.title}</h1>
-                    <div className="font-[400] xl:text-xl text-base leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
+                    <div className="font-[400] xxl:text-2xl xl:text-[20px] text-base leading-8 xl:leading-10 text-gray-900 lg:line-clamp-3 line-clamp-2">{content.contents}</div>
                     <a href={`/highlight/${content.id}`} className={MoreClass}>More</a>
                 </div>
             ))}

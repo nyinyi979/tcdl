@@ -9,7 +9,7 @@ import Login from './pop_up_components/login';
 import Forgotten from './pop_up_components/forgotten';
 export default function Navbar(props:{currentLink:string}){
     const liClass = 'float-left xll:px-[1.2rem] lg:px-4 list-none'
-    const linkClass = 'block underline_effect xxl:text-[1.7rem] xll:text-[1.3rem] xll:ml-0 llg:text-[1.24rem] xl:ml-2 font-[500] lg:text-base text-base underline_effect';
+    const linkClass = 'block underline_effect xxl:text-[1.3rem] xll:ml-0 llg:text-[1.2rem] xl:ml-2 font-[500] lg:text-base text-base underline_effect';
     const btnClass = 'cursor-pointer float-left font-[500] block xll:w-36 xll:h-[3.1rem] xl:w-32 xl:h-11 lg:w-28 lg:h-10 w-[5.5rem] h-8 xl:pt-3 pt-2 px-2 xll:text-[1.2rem] lg:text-base text-[0.8rem] lg:rounded-full rounded-[.7rem] leading-4 lg:ml-5 ml-2 text-center text-white bg-primary hover:bg-white hover:text-primary text-xs duration-500';
     const drawerBTN = 'inline-block text-left -mt-[5px] w-full py-[6px] font-[500] px-4 text-lg h-fit text-lg'
 
@@ -73,8 +73,9 @@ export default function Navbar(props:{currentLink:string}){
             <SignUp /> <Login /><Forgotten />
             {/* Be an elite background picture */}
             <div id='bg_elite' className={`absolute opacity-0 top-0 left-0 w-full xll:h-[1300px] xl:h-[1200px] 
-            lg:h-[1280px] md:h-[1350px] xs:h-[1880px] h-[2000px] xl:bg-center lg:bg-[top_-5px_left_-200px] md:bg-[top_5px_left_-370px]
-            bg-[top_-0px_left_-840px] lg:[background-position: top center] 
+            lg:h-[1280px] md:h-[1350px] ssm:h-[1500px] xs:h-[1880px] h-[2000px] xl:bg-center lg:bg-[top_-5px_left_-200px] 
+            md:bg-[top_5px_left_-370px] ssm:bg-[top_5px_left_-500px]
+            xs:bg-[top_-0px_left_-840px] bg-[top_-0px_left_-940px] lg:[background-position: top center] 
             scale-100 [background-image:url(/bg5.png)]  
             bg-cover -z-10 bg-repeat-y bg-scroll`}></div>
 
