@@ -6,8 +6,8 @@ import 'swiper/css/pagination'
 import { Link } from 'react-router-dom';
 type items = {id: number, img: string , heading: React.ReactNode , paragraph: string}[]
 export function ImageCarousel(){
-    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] md:text-2xl xs:text-xl text-base text-secondary font-[400] py-5";
-    const pClass = "text-white font-[400] lg:text-xl lg:leading-[36px] xs:text-lg xs:leading-9 text-sm leading-10 text-justify"
+    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] xs:text-2xl text-xl text-secondary font-[400] py-5";
+    const pClass = "text-white font-[400] lg:text-xl lg:leading-[36px] xs:text-lg xs:leading-8 text-sm leading-7 text-justify"
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 xl:text-2xl text-xl font-[400] inline-block my-8'
     const items:items = [
         {
@@ -58,7 +58,7 @@ export function ImageCarousel(){
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 450: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 65 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xll:w-[81%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[75%] w-[60%] xs:py-10 py-0" >
+         modules={[Navigation, Pagination]} className="xll:w-[81%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[73%] w-[60%] py-10" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
@@ -82,7 +82,7 @@ export function ImageCarousel(){
         left-[20px] cursor-pointer`}></span>
         <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        xs:top-[20%] top-[24%] xll:right-[3.5%] xl:right-[4%] md:right-[5px] ssm:right-[20px] xs:right-[10px] 
+        xs:top-[20%] top-[24%] xll:right-[3.5%] xl:right-[4%] md:right-[5px] ssm:right-[15px] xs:right-[10px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )
