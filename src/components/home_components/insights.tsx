@@ -29,7 +29,7 @@ export default function Insight(){
                     <h2 id="h6" className={listClass}>Spiritual Guidance</h2>
                     <h2 id="h7" className={listClass}>Healing & Consultation</h2>
                 </div>
-                <div className="xsm:hidden">
+                <div className="xsm:hidden block">
                     <h2 id="h1" className={listClass}>Tarot Reading</h2>
                     <h2 id="h5" className={listClass}>Spell & Rituals</h2>
                     <h2 id="h2" className={listClass}>Birth Chart Reading</h2>
