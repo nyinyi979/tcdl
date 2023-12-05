@@ -126,7 +126,7 @@ export const h3Class = `oswald font-[600] xxl:text-5xl
 xxl:text-[2rem] xll:leading-[2.7rem] xll:text-[1.8rem] lg:text-[1.65rem] xl:leading-9 
 md:font-[600] md:text-[1.3rem] lg:leading-10 md:leading-8 xs:leading-9 leading-7 xs:text-[1.4rem] text-[1.1rem]`;
 //Second version of h2 which is used in Q&A pages
-export const h3FAQ = `xl:pb-4 xl:pt-4 pb-3 arial font-[700] xl:text-[40px] lg:text-[2.1rem] md:text-[28px] text-[26px]`  
+export const h3FAQ = `xl:pb-4 xl:pt-4 pb-3 oswald font-[700] xl:text-[40px] lg:text-[2.1rem] md:text-[28px] text-[26px]`  
 export const h3FAQ2 = `font-bold xl:text-3xl lg:text-2xl lg:pt-6 leading-10 text-[23px]`
 
 //Be elite button and reversed(background and text color) be elite button
