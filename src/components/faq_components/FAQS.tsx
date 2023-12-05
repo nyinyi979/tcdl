@@ -17,7 +17,7 @@ export default function FAQS(){
             <div className={`xll:w-[1150px] xl:w-[1000px] llg:w-[1000px] lg:w-[97%] md:w-[96%] xs:w-[94%] w-[90%]
                 mx-auto font-[400] lg:leading-[50px] md:leading-10 leading-9 text-left `}>
 
-                <div className={'w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10'}>
+                <div className={'w-full border-b-[3px] border-b-gray-300 py-4 xl:pb-10 pb-4'}>
                     <h1 className={`${h3FAQ} text-dark_violet`} style={{lineHeight: '2rem'}}>Elite Plus and Elite Star Privileges</h1>
                     <p className={`lg:my-5 my-3 ${pClass}`}>
                         EP and ES members are allowed a 30-min reading or consultation sessions per month. 

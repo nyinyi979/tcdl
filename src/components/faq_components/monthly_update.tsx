@@ -1,11 +1,11 @@
 import { h3FAQ } from "../utilities";
 
 export default function Monthly(){
-    const pClass = 'arial lg:my-[13px] xl:my-5 xl:leading-[34px] my-3 text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
+    const pClass = 'arial lg:my-[13px] xl:my-5 xl:leading-[34px] my-3 text-light_violet font-[400] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
 
     return(
         <> 
-            <h1 className={`${h3FAQ} text-dark_violet lg:mt-12 mt-2`}>Monthly Highlights and Updates</h1>
+            <h1 className={`${h3FAQ} text-dark_violet lg:mt-12 mt-4`}>Monthly Highlights and Updates</h1>
     
             <ol className="px-10 list-none">
                 <li className={pClass}>Monthly General Collective PAC Tarot Readings</li>
