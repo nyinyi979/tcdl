@@ -3,13 +3,15 @@ import Monthly from "./monthly_update";
 import PrivacyPolicy from "./privacy_policy";
 
 export default function FAQS(){
-    const pClass = 'arial lg:my-[13px] xl:my-6 xl:leading-[34px] md:my-4 my-3 text-light_violet font-[500] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
+    const pillClass = `ssm:text-xl text-lg xl:w-[150px] xl:py-5 xl:text-2xl w-32 px-10 py-3
+    font-[700] duration-500 cursor-pointer`;
+    const pClass = 'arial lg:my-[13px] xl:my-6 xl:leading-[34px] md:my-4 my-3 text-[#443548] font-[400] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
     return(
         <div className="w-full bg-white pt-4 xll:pb-32 lg:pb-20 pb-10">
  
-            <div className="w-fit h-fit mx-auto flex xxl:my-8 my-4 md:pt-16 pt-10 md:pb-8 pb-5">
-                <div className="text-white rounded-l-full ssm:text-xl text-lg w-32 px-10 py-3 bg-[#372c44] font-bold hover:text-white duration-500 cursor-pointer">English</div>
-                <div className="text-violet rounded-r-full ssm:text-xl text-lg w-32 px-10 py-3 bg-[#b1abb8] font-bold hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
+            <div className="w-fit h-fit mx-auto flex xl:py-12 md:py-8 py-5">
+                <div className={`text-white rounded-l-full ${pillClass} bg-[#372c44] hover:text-white`}>English</div>
+                <div className={`text-violet rounded-r-full ${pillClass} bg-[#ccc5d4] font-bold hover:text-white`}>မြန်မာ</div>
             </div>
             { /* adjust the width and padding of the whole FAQ page here */}
             <div className={`xll:w-[1150px] xl:w-[1000px] llg:w-[1000px] lg:w-[97%] md:w-[96%] xs:w-[94%] w-[90%]

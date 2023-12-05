@@ -16,7 +16,7 @@ export default function TheElite(){
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-fit md:mt-10 mt-0 rounded-xl my-3 mx-auto"/>
                 </div>
                 
-                <div className={`xxl:w-[78%] xll:w-[83%] xl:w-[78%] llg:w-[88%] md:w-[90%] xs:w-[95.5%] w-[88%] lg:ml-0 lg:col-span-2
+                <div className={`xxl:w-[78%] xll:w-[84%] xl:w-[78%] llg:w-[88%] md:w-[90%] xs:w-[95.5%] w-[88%] lg:ml-0 lg:col-span-2
                 col-span-2 text-white lg:text-xl md:text-[19px] xs:text-lg text-base mx-auto llg:mx-auto text-justify 
                 lg:leading-[35px] leading-[35px] xs:leading-10
                 llg:pr-6 md:pr-4 font-[400]`}>
