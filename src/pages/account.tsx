@@ -65,7 +65,7 @@ export function PageChooser(){
                 
                 <div className="lg:float-left float-none bg-white rounded-3xl xl:w-[26.5%] lg:w-[27%] w-[94%] xll:h-[50rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
                     
-                    <div className="flex xl:flex-col flex-row flex-wrap w-full lg:gap-4 gap-2 lg:py-10 py-5 lg:px-10 px-0">
+                    <div className="flex xl:flex-col flex-row flex-wrap w-full lg:gap-4 gap-2 lg:pt-10 lg:pb-5 py-5 lg:px-10 px-0">
                         <a onClick={goAccout} className={pages.account? btnActiveClass : btnClass}>
                             Account
                         </a>
