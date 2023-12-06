@@ -22,7 +22,7 @@ export function HighLightItemHeading({title}:{title:string}){
 
 export default function HighLightItem({id}:{id: string}){
     console.log(id);
-    const pClass = 'lg:my-3 md:my-2 my-1 xxl:text-[25px] xxl:leading-10 lg:leading-9 md:text-[19px] text-[#443548] text-lg text-black text-left leading-9'
+    const pClass = 'lg:my-3 md:my-2 my-1 xxl:text-[25px] font-[400] xxl:leading-10 lg:leading-9 md:text-[19px] text-[#443548] text-lg text-black text-left leading-9'
     const imgClass = "w-full h-[95%] bg-cover rounded-md self-center";
     const divClass = 'my-4';
     //THIS IS A DATA STYLE FOR DYNAMIC RENDERING, YOU CAN MATCH THE ID AND RENDER
