@@ -80,17 +80,17 @@ export default function SignUp(){
                 
 
                 <div className={`${requiredInputBoxClass} md:mt-12 mt-6`}>
-                    <span className={labelClass}>First name</span>
+                    <span className={labelClass}>First Name</span>
                     <input className={inputClass} type="text" value={userInfo.firstName} onChange={(input)=>{setFirstName(input.target.value)}}/>
                 </div>
 
                 <div className={inputBoxClass}>
-                    <span className={labelClass}>Middle name</span>
+                    <span className={labelClass}>Middle Name</span>
                     <input className={inputClass} type="text" value={userInfo.middleName} onChange={(input)=>{setMiddleName(input.target.value)}}/>
                 </div>
 
                 <div className={inputBoxClass}>
-                    <span className={labelClass}>Last name</span>
+                    <span className={labelClass}>Last Name</span>
                     <input className={inputClass} type="text" value={userInfo.lastName} onChange={(input)=>{setLastName(input.target.value)}}/>
                 </div>
 

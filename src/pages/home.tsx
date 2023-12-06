@@ -12,28 +12,25 @@ export default function Home(){
     React.useEffect(()=>{
         document.title = 'Home';
         anime({
-            targets: '#links',
+            targets: '.link',
             opacity: [0 , 1],
-            translateY: [-20 , 0 , -1 , 0],
+            translateY: [-40 , 0],
             delay: 600,
-            easing:'linear',
-            duration: 1000,
+            duration: 2000,
         })
         anime({
             targets: '#img',
             opacity: [0 , 1],
-            translateX: [-20 , 0 , -1, 0],
+            translateX: [-40 , 0],
             delay: 600,
-            easing:'linear',
             duration: 1000,
         })
         anime({
             targets: '#btns',
             opacity: [0 , 1],
-            translateX: [20, 0 , 1, 0],
+            translateX: [40 , 0],
             delay: 600,
-            easing:'linear',
-            duration: 1000,
+            duration:2000,
         })
     }, [])
     return(

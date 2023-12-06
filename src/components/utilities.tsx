@@ -12,9 +12,8 @@ export function useAnimateLeft(selector:string){
             autoplay: false,
             translateX: [-40 , 0],
             opacity: [0 , 1],
-            duration: 700,
+            duration: 2000,
             delay: 400,
-            easing: 'linear'
         })
         const observer = new IntersectionObserver((entries)=>{
             if (entries[0].intersectionRatio <= 0) {
@@ -38,9 +37,8 @@ export function useAnimateRight(selector:string){
             autoplay: false,
             translateX: [40 , 0],
             opacity: [0 , 1],
-            duration: 500,
+            duration: 2000,
             delay: 600,
-            easing: 'linear'
         })
         const observer = new IntersectionObserver((entries)=>{
             if (entries[0].intersectionRatio <= 0) {
@@ -104,8 +102,8 @@ export function useAnimateScale(selector:string){
 }
 //Class for quotation
 export const quoteClass = `leading-8 xl:py-32 lg:py-24 xsm:py-[64px] py-16 relative
-    before:[background-image:url('/left_quote.png')] before:absolute before:w-[70px] before:h-[70px] md:before:left-[46%] xsm:before:left-[43%] xs:before:left-[45%] before:left-[40%] before:top-0 xl:before:w-[100px] xl:before:h-[100px] before:bg-cover
-    after:[background-image:url('/right_quote.png')] after:absolute  after:w-[70px] after:h-[70px] md:after:left-[46%] xsm:after:left-[43%] xs:after:left-[45%] after:left-[40%] after:bottom-0 xl:after:w-[100px] xl:after:h-[100px] after:bg-cover  `
+    before:[background-image:url('/left_quote.png')] before:absolute before:w-[70px] before:h-[70px] md:before:left-[46%] xsm:before:left-[43%] xs:before:left-[45%] before:left-[40%] before:top-0 xl:before:w-[120px] xl:before:h-[120px] before:bg-cover
+    after:[background-image:url('/right_quote.png')] after:absolute  after:w-[70px] after:h-[70px] md:after:left-[46%] xsm:after:left-[43%] xs:after:left-[45%] after:left-[40%] after:bottom-0 xl:after:w-[120px] xl:after:h-[120px] after:bg-cover  `
 
 //Class for h1 and h2 used in almost all pages
 export const h1Class = `oswald font-[600] xxl:text-[3.6rem] xxl:leading-[4.5rem] xll:text-[2.9rem]
