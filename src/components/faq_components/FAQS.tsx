@@ -1,11 +1,10 @@
 import { h3FAQ, h3FAQ2 } from "../utilities";
 import Monthly from "./monthly_update";
 import PrivacyPolicy from "./privacy_policy";
-
 export default function FAQS(){
     const pillClass = `ssm:text-xl text-lg xl:w-[150px] xl:py-5 xl:text-2xl w-32 px-10 py-3
     font-[700] duration-500 cursor-pointer`;
-    const pClass = 'arial lg:my-[13px] xl:my-6 xl:leading-[34px] md:my-4 my-3 text-[#443548] font-[400] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
+    const pClass = 'lg:my-[13px] xl:my-6 xl:leading-[34px] md:my-4 my-3 text-[#443548] font-[400] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
     return(
         <div className="w-full bg-white pt-4 xll:pb-32 lg:pb-20 pb-10">
  
