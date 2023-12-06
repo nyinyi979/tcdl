@@ -8,7 +8,7 @@ export default function Who(){
             <h1 className={`${h3Class} xll:pb-8 `}>
                 Founder's Bio
             </h1>
-            <div className={`xll:w-[1140px] xl:w-[990px] lg:w-[980px] xs:w-[95.5%] w-[88%] text-justify 
+            <div className={`xll:w-[1140px] xl:w-[990px] lg:w-[987px] xs:w-[95.5%] w-[88%] text-justify 
             xxl:text-2xl xxl:leading-[44px] sm:leading-[2.5rem] sm:text-xl ssm:text-[22px] text-lg mx-auto leading-9 ssm:leading-10 py-5`}>
                 Thazin Soe, creator of the spiritual products of Genie in a bottle and tarot 
                 reader for The Cards Don't Lie, began her career in the field in 2020. She taught 

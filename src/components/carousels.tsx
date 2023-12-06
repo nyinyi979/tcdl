@@ -6,7 +6,7 @@ import 'swiper/css/pagination'
 import { Link } from 'react-router-dom';
 type items = {id: number, img: string , heading: React.ReactNode , paragraph: string}[]
 export function ImageCarousel(){
-    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] xs:text-2xl text-xl text-secondary font-[400] py-5";
+    const headingClass = "oswald lg:py-9 xs:py-6 xl:text-[29px] xs:text-2xl text-xl text-secondary font-[400] py-5";
     const pClass = "text-white font-[400] lg:text-xl lg:leading-[36px] xs:text-lg xs:leading-8 text-sm leading-7 text-justify"
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 xl:text-2xl text-xl font-[400] inline-block my-8'
     const items:items = [
@@ -58,7 +58,7 @@ export function ImageCarousel(){
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 65 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xxl:w-[1300px] xll:w-[1100px] xl:w-[960px] llg:w-[960px] lg:w-[850px] md:w-[85%] ssm:w-[78%] xs:w-[73%] w-[60%] py-10" >
+         modules={[Navigation, Pagination]} className="xxl:w-[1300px] xll:w-[1100px] xl:w-[960px] llg:w-[960px] lg:w-[850px] md:w-[85%] ssm:w-[78%] xs:w-[68%] w-[60%] py-10" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>

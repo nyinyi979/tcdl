@@ -35,7 +35,7 @@ export default function Navbar(props:{currentLink:string}){
             targets: '#drawers',
             right: [-300 , 0],
             easing: 'linear',
-            duration: 500,
+            duration: 300,
             begin: ()=>{
                 document.getElementById('drawers')!.style.display = 'block'
             },
@@ -45,7 +45,7 @@ export default function Navbar(props:{currentLink:string}){
             targets: '#drawers',
             right: [0 , -300],
             easing: 'linear',
-            duration: 500, 
+            duration: 300, 
             complete: ()=>{
                 document.getElementById('drawers')!.style.display = 'none'
             },
@@ -96,7 +96,7 @@ export default function Navbar(props:{currentLink:string}){
             lg:bg-[left_-400px_top_-380px] md:bg-[left_-340px_top_-100px] bg-[left_-410px_top_0px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 
             {/* journey background picture */}
-            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[890px] xl:h-[650px] xs:h-[750px] h-[950px]
+            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[890px] xl:h-[650px] lg:h-[620px] xs:h-[700px] h-[950px]
             [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-[top_center]
             bg-repeat-y bg-scroll'></div>
 

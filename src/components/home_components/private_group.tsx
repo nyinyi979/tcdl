@@ -14,7 +14,7 @@ export default function Private(){
             </h2>
             <div id='private_text' className={`xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[85%] font-[400] text-justify 
             mx-auto  xxl:text-2xl xxl:leading-[44px] xl:text-xl xl:leading-[2.4rem] lg:text-xl lg:leading-[2.3rem] md:leading-10 xs:leading-9 xs:text-lg text-base
-            py-3 leading-9 md:py-6`}>
+            pt-3 leading-9 md:pt-6`}>
                 The initial phase of the trip was tarot card readings, but it has since expanded to encompass 
                 many forms of energy healing, runic readings, astrological/birth chart readings, spiritual practices, 
                 and even the acquisition of knowledge in global languages and guidance. Consequently, she has made the
@@ -22,10 +22,10 @@ export default function Private(){
                 spiritual guidance. 
             </div>
 
-            <div id='mySwiper' className=" xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] xs:w-[86%] w-[85%] md:py-8 py-4 mx-auto">
-                <blockquote id="quote" className={`font-[500] text-left mx-auto xxl:leading-[3rem] 
+            <div id='mySwiper' className=" xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] xs:w-[86%] w-[85%] mx-auto">
+                <blockquote id="quote" className={`font-[500] text-left mx-auto xxl:leading-[3rem] w-full
                 xxl:text-[2rem] xll:text-[1.7rem] lg:text-2xl lg:leading-[2.8rem] xsm:text-[1.32rem] xs:text-[1.3rem] text-[1.2rem] 
-                leading-9 py-10 ${quoteClass}`}>
+                leading-9 ${quoteClass}`}>
                 Her primary mission is to serve as a source of enlightenment and support for individuals and 
                 communities seeking answers and guidance on a regular basic, hence, the Elite Club.
                 </blockquote>
