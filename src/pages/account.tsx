@@ -61,10 +61,10 @@ export function PageChooser(){
             <h1 className={`${h1Class} text-primary text-center lg:pt-16 pt-[7rem]`}>
                 {pages.account? 'My Account' : pages.calendar? 'Schedule Zoom Meeting' : pages.voice? 'Voice Message' : pages.password? 'Change Password' : ''}
             </h1>
-            <div className="w-full llg:px-5 lg:px-2 max-w-full my-1 mb-10 table clear-both py-20">
+            <div className="w-full xll:px-10 md:px-7 ssm:px-4 xs:px-2 px-1 max-w-full my-1 mb-10 table clear-both py-20">
                 
                 <div className={`lg:float-left float-none bg-white rounded-3xl 
-                xll:w-[355px] xl:w-[26.5%] lg:w-[27%] w-[94%] lg:h-[47rem] lg:mx-[1%] 
+                xll:w-[355px] lg:w-[28%] w-[94%] lg:h-[47rem] 
                 lg:my-0 my-3 mx-auto lg:pb-10 pb-0`}>
                     
                     <div className="flex xl:flex-col flex-row flex-wrap w-full lg:gap-4 gap-2 lg:pt-10 lg:pb-5 py-5 lg:px-6 llg:px-10 px-0">
@@ -90,7 +90,7 @@ export function PageChooser(){
                     </div>
                      <AccountSidebar />
                 </div>
-                <div className='lg:float-right float-none xll:w-[910px] xl:w-[69%] lg:w-[68%] w-[94%] lg:mx-[1%] mx-auto lg:h-[47rem] h-fit bg-white rounded-3xl py-3'>
+                <div className='lg:float-right float-none xll:w-[900px] lg:w-[70%] w-[94%] mx-auto lg:h-[47rem] h-fit bg-white rounded-3xl py-3'>
                     {pages.account? <Accounts /> : pages.calendar? <Calendar /> : pages.voice? <Voices /> : pages.password? <Password /> : ''}
                 </div>
             
