@@ -17,12 +17,12 @@ export default function Journey(){
                     <div className='absolute w-[20px] h-[150px] bg-secondary xs:right-3 right-5 bottom-10'></div>
                 </div>
 
-                <div className="col-span-2 xll:w-[720px] xl:w-full lg:w-[650px] md:w-[95%] ml-0 xl:ml-0 llg:ml-12 lg:ml-4 w-full">
+                <div className="col-span-2 xll:w-[730px] xl:w-full lg:w-[650px] md:w-[95%] ml-0 xl:ml-0 llg:ml-12 lg:ml-4 w-full">
                     <h1 id='about_the_journey' className={`${bannerh1Class} text-secondary lg:pb-7 pb-2 md:mb-0 mb-2 xll:mb-3`}>About the Journey</h1>
                     <div id='about_the_journey_text'>
                         <p className={`text-gray-200 xxl:text-2xl lg:text-xl md:text-base 
-                        xs:text-[17px] text-[15px] md:font-[450] font-[400] text-justify xll:leading-[2.6rem] 
-                        xll:mb-7 lg:leading-9 md:leading-8 lg:font-[500] xl:mb-5 xl:leading-9 mb-4 leading-8`}>
+                        xs:text-[17px] text-[15px] font-[400] text-justify xll:leading-[2.6rem] 
+                        xll:mb-7 lg:leading-9 md:leading-8 xl:mb-5 xl:leading-9 mb-4 leading-8`}>
                             Her tarot journey is not easy. Immense traumatic events served as significant 
                             catalysts for her journey of self-discovery, healing, and transformation. The awakening 
                             transformation and further motivation empowered her to assist to individuals in her vicinity.
@@ -36,7 +36,7 @@ export default function Journey(){
 
                 {/* image displayed in large screen */}
                 <div id='image2' className="col-span-1 w-[100%] h-full mx-auto relative md:block hidden">
-                    <img src="/img1.jpg" alt="" className={`bg-cover xl:w-[90%] lg:w-[88%] xl:h-[94%] lg:h-[90%] md:w-[96%] 
+                    <img src="/img1.jpg" alt="" className={`bg-cover xll:h-[90%] xl:w-[90%] lg:w-[88%] xl:h-[94%] lg:h-[90%] md:w-[96%] 
                     md:h-[89%] lg:mt-9 mt-12 rounded-2xl float-right xl:mr-0 lg:mr-4 my-3`}/>
                     <div className='absolute llg:w-[30px] llg:h-[200px] w-[20px] lg:h-[150px] h-[140px] bg-secondary xl:-right-2 llg:right-1 lg:bottom-6 right-7 bottom-4'></div>
                 </div>
