@@ -20,7 +20,7 @@ export default function Accounts(){
     xll:text-xl xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray 
     outline-none text-text_violet placeholder:text-text_violet`
     
-    const inputBoxClass = `z-10 block relative lg:w-full w-[98%] xll:px-4 lg:px-4 ssm:px-20 px-4 mx-auto my-[2px] py-2 text-text_violet`
+    const inputBoxClass = `z-10 block relative lg:w-full w-[98%] xll:px-4 lg:px-4 ssm:px-20 px-4 mx-auto lg:my-[2px] my-1 py-2 text-text_violet`
     const requiredInputBoxClass = inputBoxClass +  
     `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary 
     md:after:top-[36%] lg:after:-right-1 ssm:after:right-12 after:-right-1 after:top-[33%]`;
