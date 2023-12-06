@@ -58,7 +58,7 @@ export function ImageCarousel(){
         breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 65 , slidesPerView: 3}}}
-         modules={[Navigation, Pagination]} className="xll:w-[81%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[73%] w-[60%] py-10" >
+         modules={[Navigation, Pagination]} className="xxl:w-[1300px] xll:w-[1100px] xl:w-[960px] llg:w-[960px] lg:w-[850px] md:w-[85%] ssm:w-[78%] xs:w-[73%] w-[60%] py-10" >
             
             {items.map((item)=>(
                 <SwiperSlide key={Math.random()*1000}>
@@ -76,19 +76,19 @@ export function ImageCarousel(){
             ))}
 
         </Swiper>
-        <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 prev
+        <span className={`absolute xxl:w-12 xxl:h-12 w-8 h-8 bg-no-repeat bg-contain duration-300 prev
         hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-        xs:top-[20%] top-[25%] xll:left-[3.6%] xl:left-[4%] lg:left-[4.3%] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
+        xs:top-[20%] top-[25%] xxl:left-[8%] xll:left-[3%] xl:left-[7%] lg:left-[4.3%] md:left-[20px] ssm:left-[25px] xs:left-[20px] 
         left-[20px] cursor-pointer`}></span>
-        <span className={`absolute md:w-8 md:h-8 w-8 h-8 bg-no-repeat bg-contain duration-300 next
+        <span className={`absolute xxl:w-12 xxl:h-12 w-8 h-8 bg-no-repeat bg-contain duration-300 next
         hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-        xs:top-[20%] top-[24%] xll:right-[3.5%] xl:right-[4%] lg:right-[3%] md:right-[5px] ssm:right-[15px] xs:right-[10px] 
+        xs:top-[20%] top-[24%] xxl:right-[7.8%] xll:right-[2.9%] xl:right-[6.9%] lg:right-[3%] md:right-[5px] ssm:right-[15px] xs:right-[10px] 
         right-[5px] cursor-pointer`}></span>
         </>
     )
 }
 export function VideoCarousel(){
-    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] md:text-2xl xs:text-xl text-base text-secondary font-[400] py-5 text-left";
+    const headingClass = "oswald lg:py-9 ssm:py-6 xl:text-[29px] xl:leading-10 md:text-2xl xs:text-xl text-base text-secondary font-[400] py-5 text-left";
     const MoreClass = 'oswald text-secondary hover:text-primary duration-500 xl:text-2xl text-xl font-[400] inline-block my-8'
     const videoClass = 'xll:h-48 xl:h-42 lg:h-36 md:h-28 ssm:h-28 xsm:h-24 xs:h-32 xxs:h-28 h-24 relative bg-cover rounded-[1.2rem] object-cover w-full'
     //play button style
@@ -103,7 +103,7 @@ export function VideoCarousel(){
                 pagination={{clickable:true}}
                 breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 40 }, 
                 768: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 40, slidesPerView :3} }}
-                 modules={[Navigation, Pagination]} className="xxl:w-[40%] xll:w-[83%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[70%] xsm:w-[75%] xs:w-[60%] xxs:w-[200px] w-[50%] pt-7 md:pb-20 pb-10" >
+                 modules={[Navigation, Pagination]} className="xxl:w-[1300px] xll:w-[1120px] xl:w-[970px] llg:w-[960px] lg:w-[850px] md:w-[85%] ssm:w-[70%] xsm:w-[75%] xs:w-[60%] xxs:w-[200px] w-[50%] pt-7 md:pb-20 pb-10" >
                     
                     <SwiperSlide>
                         
@@ -162,13 +162,13 @@ export function VideoCarousel(){
                     More Videos
                 </a>
                 {/* left and right button */}
-                <span className={`absolute w-8 h-8 bg-no-repeat bg-contain duration-300 v_prev
+                <span className={`absolute xxl:w-12 xxl:h-12  w-8 h-8 bg-no-repeat bg-contain duration-300 v_prev
                 hover:[background-image:url('/arrow-left-hover.png')] [background-image:url('/arrow-left.png')]
-                md:top-[23%] xsm:top-[35%] top-[45%] xxl:left-[24.4%] xll:left-[45px] xl:left-[35px] md:left-[20px] sm:left-[40px] xsm:left-[15px] xs:left-[30px] left-[44px] 
+                md:top-[23%] xsm:top-[35%] top-[45%] xxl:left-[9%] xll:left-[3%] xl:left-[5.4%] lg:left-[4%] llg:left-[5%] md:left-[20px] sm:left-[40px] xsm:left-[15px] xs:left-[30px] left-[44px] 
                 cursor-pointer `}></span>
-                <span className={`absolute w-8 h-8 bg-no-repeat bg-contain duration-300 v_next
+                <span className={`absolute xxl:w-12 xxl:h-12 w-8 h-8 bg-no-repeat bg-contain duration-300 v_next
                 hover:[background-image:url('/arrow-right-hover.png')] [background-image:url('/arrow-right.png')] 
-                md:top-[23%] xsm:top-[34.5%] top-[45%] xxl:right-[25.4%] xll:right-[40px] xl:right-[25px] md:right-[5px] sm:right-[35px] xsm:right-[10px] xs:right-[23px] right-[36px] 
+                md:top-[23%] xsm:top-[34.5%] top-[45%] xxl:right-[8.8%] xll:right-[2.8%] lg:right-[3.7%] llg:right-[4.7%] xl:right-[5%] md:right-[5px] sm:right-[35px] xsm:right-[10px] xs:right-[23px] right-[36px] 
                 cursor-pointer `}></span>
         </>
     )

@@ -17,7 +17,7 @@ export default function Feedback(){
             <h2 id='feedback' className={`${h1Class} py-2`}>
                 The Feedbacks
             </h2>
-            <h2 id='feedback_text' className={`oswald ${h3Class} py-2`}>
+            <h2 id='feedback_text' className={`oswald ${h3Class} xxl:py-8 py-2`}>
                 Incredibly accurate and insightful, <br />
                 and whatelse of their sayings!
             </h2>   

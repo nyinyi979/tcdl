@@ -9,7 +9,7 @@ import Login from './pop_up_components/login';
 import Forgotten from './pop_up_components/forgotten';
 export default function Navbar(props:{currentLink:string}){
     const liClass = 'float-left xll:px-[1.2rem] lg:px-4 list-none'
-    const linkClass = 'block underline_effect xxl:text-[1.3rem] xll:ml-0 llg:text-[1.2rem] xl:ml-2 font-[500] lg:text-base text-base underline_effect';
+    const linkClass = 'block underline_effect xxl:text-[1.8rem] xxl:-ml-1 xll:ml-0 llg:text-[1.2rem] xl:ml-2 font-[500] lg:text-base text-base underline_effect';
     const btnClass = 'cursor-pointer float-left font-[500] block xll:w-36 xll:h-[3.1rem] xl:w-32 xl:h-11 lg:w-28 lg:h-10 w-[5.5rem] h-8 xl:pt-3 pt-2 px-2 xll:text-[1.2rem] lg:text-base text-[0.8rem] lg:rounded-full rounded-[.7rem] leading-4 lg:ml-5 ml-2 text-center text-white bg-primary hover:bg-white hover:text-primary text-xs duration-500';
     const drawerBTN = 'inline-block text-left -mt-[5px] w-full py-[6px] font-[500] px-4 text-lg h-fit text-lg'
 
@@ -96,7 +96,7 @@ export default function Navbar(props:{currentLink:string}){
             lg:bg-[left_-400px_top_-380px] md:bg-[left_-340px_top_-100px] bg-[left_-410px_top_0px] bg-cover -z-10 bg-no-repeat bg-scroll`}></div>
 
             {/* journey background picture */}
-            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[900px] xl:h-[950px] xs:h-[750px] h-[950px]
+            <div id='bg_j' className='absolute opacity-0 top-0 left-0 w-full xll:h-[890px] xl:h-[650px] xs:h-[750px] h-[950px]
             [background-image:url(/home-banner-img.jpg)] bg-cover -z-10 bg-[top_center]
             bg-repeat-y bg-scroll'></div>
 
@@ -111,16 +111,16 @@ export default function Navbar(props:{currentLink:string}){
             </div>
 
             {/* navigation bar starts from here */}
-            <div id='navbar' className="z-50 lg:relative xl:pt-[46px] lg:h-fit lg:py-10 py-5 lg:bg-transparent fixed top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full clear-both table bg-black/80">
+            <div id='navbar' className="z-50 lg:relative xxl:pt-[80px] xl:pt-[46px] lg:h-fit lg:py-10 py-5 lg:bg-transparent fixed top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full clear-both table bg-black/80">
 
-                <div className={`xxl:w-[12.3rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 
+                <div className={`xxl:w-[14rem] xxl:left-[9%] xxl:top-[6rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 
                 lg:top-8 lg:left-6 lg:w-[7.5rem] left-3 top-1 xs:w-[5.5rem] w-[4.5rem] h-full 
                 bg-cover float-left absolute`}>
                     <a href="/"><img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/></a>
                 </div>
 
                 {/* links */}
-                <div id='links' className='mt-0 float-right xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
+                <div id='links' className='mt-0 float-right xxl:pr-[10%] xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
                     <div className='lg:block mr-0 hidden float-left xll:pt-16 xll:pr-8 lg:pt-6'>
                         <li className={liClass}>
                             <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link> 

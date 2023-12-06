@@ -51,7 +51,7 @@ export default function TheElite(){
                     </p>
                 </div>
 
-                <div id='image' className="md:block hidden col-span-1 w-full xll:mr-20 mr-12 relative">
+                <div id='image' className="md:block hidden col-span-1 w-full xl:mr-20 mr-12 relative">
                     <img src="/pic1.png" alt="" className="bg-cover w-fit xl:w-[22rem] xl:h-[22rem] lg:h-[20rem] h-[15rem] xl:mt-8 mt-5 rounded-xl float-left"/>
                 </div>
 

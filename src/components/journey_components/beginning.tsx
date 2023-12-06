@@ -6,12 +6,12 @@ export default function Beginning(){
             <h1 className={`${h1Class} text-[#4b2c64] py-3`}>
                 The Beginning
             </h1>
-            <h1 className={`${h3Class} text-[#612a60] pb-3`}>
+            <h1 className={`${h3Class} text-[#612a60] xll:py-4 pb-3`}>
                 Initial phrase of <br />
                 the Journey on Facebook
             </h1>
-            <div className={`xxl:w-[78%] xl:w-[84%] lg:w-[97%] xs:w-[95.5%] w-[88%] mx-auto md:py-10 pt-2 pb-4 
-            xs:tracking-normal tracking-tight text-[#443548] text-justify font-[400] lg:text-xl
+            <div className={`xll:w-[1140px] xl:w-[990px] lg:w-[980px] xs:w-[95.5%] w-[88%] mx-auto md:py-10 pt-2 pb-4 
+            xs:tracking-normal tracking-tight text-[#443548] text-justify font-[400] xxl:text-2xl xxl:leading-[44px] lg:text-xl
             lg:leading-10 md:text-[19px] md:leading-10 text-lg leading-[34px]`}>
                 She began "The Cards Don't Lie" as a closed Facebook group, but its members' 
                 candor and willingness to share have allowed it to grow into a larger spiritual 

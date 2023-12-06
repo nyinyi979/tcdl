@@ -108,22 +108,22 @@ export const quoteClass = `leading-8 xl:py-32 lg:py-24 xsm:py-[64px] py-16 relat
     after:[background-image:url('/right_quote.png')] after:absolute  after:w-[70px] after:h-[70px] md:after:left-[46%] xsm:after:left-[43%] xs:after:left-[45%] after:left-[40%] after:bottom-0 xl:after:w-[100px] xl:after:h-[100px] after:bg-cover  `
 
 //Class for h1 and h2 used in almost all pages
-export const h1Class = `oswald font-[600] xxl:leading-[4.5rem] 
-    xll:text-[2.9rem] xl:text-[2.8rem] lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
+export const h1Class = `oswald font-[600] xxl:text-[3.6rem] xxl:leading-[4.5rem] xll:text-[2.9rem]
+    lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
     md:leading-[3.8rem] xs:text-[2rem] text-[1.9rem] leading-[3.1rem]`
-export const bannerh1Class = `oswald font-[500] xxl:leading-[4.5rem] mr-2 
+export const bannerh1Class = `oswald font-[500] xxl:leading-[4.5rem] mr-2 xxl:text-[3rem]
     xll:text-[3rem] xl:text-[2.5rem] md:font-[600] md:text-[2.4rem] xs:text-[2.1rem]
     md:leading-[3.8rem] text-[2rem] leading-[3.1rem]`
 
-export const h2Class = `oswald font-[600] xxl:text-[4.6rem] xxl:leading-[4.5rem] 
-    xll:text-[2.9rem] xl:text-[2.8rem] lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
+export const h2Class = `oswald font-[600] xxl:leading-[4.5rem] xll:text-[2.8rem]
+    lg:text-[2.5rem] md:font-[600] md:text-[2.2rem] 
     md:leading-[3.8rem] xs:text-[2rem] text-[1.9rem] leading-[3.1rem]`
-export const bannerh2Class =  `oswald font-[500] xll:text-[2.15rem] xxl:leading-[4.5rem] 
+export const bannerh2Class =  `oswald font-[500] xxl:text-[2.7rem] xll:text-[2.15rem] xxl:leading-[4.5rem] 
 lg:text-[1.9rem] md:text-[1.8rem] xs:text-[1.65rem]
 md:leading-[3.8rem] text-[1.6rem] leading-[3.1rem]` 
 
-export const h3Class = `oswald font-[600] xxl:text-5xl
-xxl:text-[2rem] xll:leading-[2.7rem] xll:text-[1.8rem] lg:text-[1.65rem] xl:leading-9 
+export const h3Class = `oswald font-[600] xxl:leading-[2.9rem]
+xxl:text-[2.5rem] xll:leading-[2.7rem] xll:text-[1.9rem] lg:text-[1.65rem] xl:leading-9 
 md:font-[600] md:text-[1.3rem] lg:leading-10 md:leading-8 xs:leading-9 leading-7 xs:text-[1.4rem] text-[1.1rem]`;
 //Second version of h2 which is used in Q&A pages
 export const h3FAQ = `xl:pb-4 xl:pt-4 pb-3 oswald font-[700] xl:text-[40px] lg:text-[2.1rem] md:text-[28px] text-[26px]`  
@@ -147,7 +147,7 @@ export const bg1Class = `[background-image:url('/bg1.jpg')] bg-fixed md:bg-cente
     bg-[center_left_-600px] bg-cover bg-repeat`
 export const bg3Class = `[background-image:url('/bg3.jpg')] bg-scroll bg-center bg-repeat bg-cover`
 export const bg2Class = `[background-image:url('/bg2.jpg')] xsm:h-full xs:h-[640px] h-[560px] bg-[center_top] bg-cover bg-no-repeat`
-export const bg4Class = `[background-image:url('/bg4.jpg')] md:bg-center lg:[background-size: 95%] 
+export const bg4Class = `[background-image:url('/bg4.jpg')] xxl:bg-[center_top_-300px] xll:bg-[center_top_-200px] 
     sm:bg-center bg-[center_left_50%] bg-repeat bg-cover `
 export const bg5Class = `[background-image:url('/img5.jpg')] bg-fixed lg:bg-[center_left_-400px]
     bg-[center_left_-1200px] bg-repeat bg-cover`

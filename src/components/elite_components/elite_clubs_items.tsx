@@ -50,7 +50,7 @@ export default function EliteClubItems(){
                     <div className={`oswald font-[500] w-full md:text-3xl text-2xl rounded-t-xl xl:px-8 px-5 py-5 text-white bg-gradient-to-r ${Item.bg}`}>{Item.name}</div>
                     
                     <div className="pb-3 lg:px-5 px-3">
-                        <ul className="c pl-1 pt-5 lg:text-xl ssm:text-lg xs:text-lg text-base font-[500] ml-4 text-t_violet lg:leading-[2.5rem] leading-[2rem]">
+                        <ul className="c pl-1 pt-5 llg:text-xl ssm:text-lg xs:text-lg text-base font-[500] ml-4 text-t_violet llg:leading-[2.5rem] leading-[2rem]">
                             {Item.texts.map((text)=>(
                                 <li className="ml-4 lg:mt-3 mt-1" key={Math.random()*900}>{text}</li>
                             ))}
