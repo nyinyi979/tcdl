@@ -3,7 +3,7 @@ export default function AccountSidebar(){
         <>
             <div className="border-t-2 border-t-light_gray block">
 
-                <div className="py-6 xl:py-8 w-full px-16">
+                <div className="py-6 xl:py-8 w-fit lg:w-full mx-auto xl:px-20 lg:px-10 px-16">
                     <ul className="d font-[600] text-[#4b2c64] w-full leading-7 md:text-base text-sm">
                         <li className="px-3 py-[2px]">Help</li>
                         <li className="px-3 py-[2px]">Contact Us </li>

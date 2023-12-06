@@ -8,17 +8,17 @@ export default function TheElite(){
         <div className={`text-center mt-10 lg:mt-0 lg:pt-0 pt-[4rem] xll:pb-16 xl:pb-10`}>
 
             <h1 className={`${bannerh1Class} text-primary lg:py-3 pb-2`}>Be an Elite?</h1>
-            <h1 className={`${bannerh2Class} text-center text-secondary xl:py-4 pb-2`}>Founder's Message</h1>
+            <h1 className={`${bannerh2Class} text-center text-secondary xll:py-4 pb-2`}>Founder's Message</h1>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-5 lg:px-8 ssm:px-3 px-3 py-8 mx-auto">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-5 xl:px-10 lg:px-8 ssm:px-3 px-3 py-8 mx-auto">
 
                 <div id='image' className="col-span-1 xs:w-full w-[85%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-fit md:mt-10 mt-0 rounded-xl my-3 mx-auto"/>
                 </div>
                 
-                <div className={`xxl:w-[78%] xll:w-[84%] xl:w-[78%] llg:w-[88%] md:w-[90%] xs:w-[95.5%] w-[88%] lg:ml-0 lg:col-span-2
+                <div className={`xxl:w-[78%] xll:w-[84%] xl:w-[630px] llg:w-[88%] lg:w-[92%] md:w-[90%] xs:w-[95.5%] w-[88%] lg:ml-0 lg:col-span-2
                 col-span-2 text-white lg:text-xl md:text-[19px] xs:text-lg text-base mx-auto llg:mx-auto text-justify 
-                lg:leading-[35px] leading-[35px] xs:leading-10
+                lg:leading-[35px] leading-[35px] xs:leading-10 
                 llg:pr-6 md:pr-4 font-[400]`}>
                     <p className="py-2">
                         Magic exists in you. But most of us don't know about it and completely untapped.

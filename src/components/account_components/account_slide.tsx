@@ -16,10 +16,11 @@ export default function Accounts(){
     block w-fit h-fit py-1 px-5 bg-white rounded-full text-[#696769] md:text-base text-sm`
 
     //classes for input , input container, required input container 
-    const inputClass =`z-10 font-[600] relative w-[100%] ssm:h-16 h-12 ssm:px-8 ssm:py-2 px-5 py-4 
-    lg:text-xl ssm:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray 
+    const inputClass =`z-10 font-[600] relative w-[100%] lg:h-16 h-12 ssm:px-8 ssm:py-2 px-5 py-4 
+    xll:text-xl xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray 
     outline-none text-text_violet placeholder:text-text_violet`
-    const inputBoxClass = `z-10 block relative lg:w-full w-[98%] xll:px-4 lg:px-4 ssm:px-20 px-4 mx-auto my-2 py-2 text-text_violet`
+    
+    const inputBoxClass = `z-10 block relative lg:w-full w-[98%] xll:px-4 lg:px-4 ssm:px-20 px-4 mx-auto my-[2px] py-2 text-text_violet`
     const requiredInputBoxClass = inputBoxClass +  
     `after:[content-''] after:absolute after:w-3 after:h-3 after:rounded-full after:bg-primary 
     md:after:top-[36%] lg:after:-right-1 ssm:after:right-12 after:-right-1 after:top-[33%]`;
@@ -52,11 +53,11 @@ export default function Accounts(){
     
     return(
         <>
-            <div className='w-full xll:py-8 py-5 border-b border-gray-400'>
+            <div className='w-full py-5 border-b border-gray-400'>
                 <div className='w-fit table clear-both mx-auto'>
                     <img src="/upload-img.png" alt="img" className='border-[6px] lg:w-36 w-24 float-left lg:mr-8 mr-5 border-[#a88ec0] rounded-full p-1'/>
                     <div className='float-right lg:mt-10 mt-4'>
-                        <h2 className='lg:text-[25px] text-2xl text-[#4b2c64]  font-[700]'>AKARAI YAMATO</h2>
+                        <h2 className='lg:text-[25px] xs:text-2xl text-xl text-[#4b2c64]  font-[700]'>AKARAI YAMATO</h2>
                         <label htmlFor="file" className='cursor-pointer lg:text-lg text-base text-violet py-1 font-[600]'>
                             <input type='file' className='hidden' id='file'/>Change my photo
                         </label>
@@ -105,7 +106,7 @@ export default function Accounts(){
                     <input className={inputClass} type="text" value={userInfo.DOB} onChange={(input)=>{setDOB(input.target.value)}}/>
                 </div>
 
-                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-2 gap-1 lg:w-[75%] w-[60%] mx-auto xll:py-8 py-6 text-text_violet font-[600] lg:text-lg xll:text-xl text-sm'}>
+                <div className={'relative grid xl:grid-cols-3 grid-cols-2 xll:gap-2 gap-1 lg:w-[80%] w-[70%] mx-auto xll:py-8 py-6 text-text_violet font-[600] lg:text-lg xll:text-xl text-sm'}>
                     <span className={`z-[20] font-[400] absolute -top-2 left-2 block w-full h-fit bg-white rounded-full md:text-lg`}>Gender</span>
 
                     <label className='xl:pb-1' htmlFor="a_male">    <input onClick={()=>{setGender('Male')}} type="radio" name="gender" id="a_male" />Male</label>
@@ -116,8 +117,8 @@ export default function Accounts(){
             </div>
             <div className='lg:col-span-2 col-span-1 w-full lg:py-3 py-4 border-t border-t-gray-500'>
                     <div className='w-fit mx-auto'>
-                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] lg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] ssm:text-2xl xs:text-xl text-lg py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-text_violet text-text_violet text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
-                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 lg:w-[13.2rem] lg:h-[4.2rem] lg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] ssm:text-2xl xs:text-xl text-lg py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-text_violet text-text_violet text-center hover:bg-primary hover:text-white duration-200'>Save</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 llg:w-[13.2rem] llg:h-[4.2rem] llg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] llg:text-2xl lg:text-xl xs:text-lg text-base py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-text_violet text-text_violet text-center hover:bg-primary hover:text-white duration-200'>Cancel</a>
+                        <a className='inline-block lg:mx-4 ml-2 cursor-pointer lg:mt-5 llg:w-[13.2rem] llg:h-[4.2rem] llg:py-4 xs:w-[9rem] xs:h-[3.4rem] w-[7rem] h-[3.2rem] llg:text-2xl lg:text-xl xs:text-lg text-base py-[0.675rem] lg:px-6 px-4 font-[600] rounded-full border-[1.5px] border-text_violet text-text_violet text-center hover:bg-primary hover:text-white duration-200'>Save</a>
                     </div>
                 </div>
                 

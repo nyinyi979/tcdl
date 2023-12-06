@@ -6,15 +6,15 @@ export default function Journey(){
     useAnimateRight('image1');
     useAnimateRight('image2');
     return(
-        <div className={`xll:w-[85%] xl:w-[83%] lg:w-[98%] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[85%] h-fit mx-auto 
+        <div className={`xll:w-[85%] xl:w-[83%] lg:w-[98%] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[83%] h-fit mx-auto 
         xll:mt-[3.2rem] xl:mt-[2rem] mt-10 lg:mt-8 xll:pb-20 md:pb-12 pb-7 lg:pt-0 md:pt-[3rem] pt-[3.5rem]`}>
             
             <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full pb-3">
                 
                 {/* image displayed in small screen */}
-                <div id='image1' className="col-span-2 ssm:w-[45%] xsm:w-[70%] xs:w-[88%] w-[93%] mx-auto h-full flex items-center justify-center relative md:hidden">
+                <div id='image1' className="col-span-2 ssm:w-[45%] xsm:w-[70%] w-[97%] mx-auto h-full flex items-center justify-center relative md:hidden">
                     <img src="/img1.jpg" alt="" className="mx-auto bg-cover w-full h-fit xs:mt-3 mb-3 mt-0 rounded-xl md:float-right float-left"/>
-                    <div className='absolute w-[20px] h-[150px] bg-secondary xs:right-3 right-5 bottom-10'></div>
+                    <div className='absolute w-[20px] h-[150px] bg-secondary xs:right-3 right-3 bottom-10'></div>
                 </div>
 
                 <div className="col-span-2 xll:mx-auto xll:w-[730px] xll:float-right llg:w-[640px] lg:w-[600px] md:w-[95%] ml-0 xl:ml-16 llg:ml-12 lg:ml-4 w-full">

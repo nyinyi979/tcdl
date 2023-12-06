@@ -101,12 +101,6 @@ html::-webkit-scrollbar{
     top: 1.5%;
     font-weight: bolder;
 }
-@media only screen and (max-width:1099px) {
-    .c li::before  
-    {
-    font-size: 3rem;
-    }
-}
 .d li::before 
 {
     font-size: 3.4rem;
@@ -174,4 +168,12 @@ input[type='checkbox']::before{
 input[type='checkbox']:checked::before{
     background-image: url(/check-active.png);
     transition: all .5s;
+}
+
+
+@media only screen and (max-width:1099px) {
+    .c li::before  
+    {
+    font-size: 3rem;
+    }
 }
