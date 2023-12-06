@@ -55,7 +55,7 @@ export function ImageCarousel(){
         <Swiper navigation={{nextEl: '.next', prevEl: '.prev'}} freeMode speed={1000} 
         pagination={{clickable:true}}
         // Swiper breakpoints , screenSize(>=) : {spaceBetweenEachComponents , slidesVisible per view}
-        breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 450: {slidesPerView: 2, spaceBetween: 30 }, 
+        breakpoints={{0: {slidesPerView:1 , spaceBetween:40}, 479: {slidesPerView: 2, spaceBetween: 30 }, 
         769: {spaceBetween: 40,slidesPerView:3} , 992 : {spaceBetween: 30, slidesPerView :3} 
         , 1099 : {spaceBetween: 70, slidesPerView: 3} ,1365 : {spaceBetween: 65 , slidesPerView: 3}}}
          modules={[Navigation, Pagination]} className="xll:w-[81%] xl:w-[75%] lg:w-[85%] md:w-[85%] ssm:w-[78%] xs:w-[73%] w-[60%] py-10" >
