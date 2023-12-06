@@ -61,7 +61,7 @@ export function PageChooser(){
             <h1 className={`${h1Class} text-primary text-center lg:pt-16 pt-[7rem]`}>
                 {pages.account? 'My Account' : pages.calendar? 'Schedule Zoom Meeting' : pages.voice? 'Voice Message' : pages.password? 'Change Password' : ''}
             </h1>
-            <div className="w-full max-w-full md:my-8 my-4 table clear-both py-20">
+            <div className="w-full max-w-full my-1 mb-10 table clear-both py-20">
                 
                 <div className="lg:float-left float-none bg-white rounded-3xl xl:w-[26.5%] lg:w-[27%] w-[94%] xll:h-[50rem] xl:h-[47rem] llg:h-[48.6rem] lg:h-[49.7rem] lg:mx-[1%] lg:my-0 my-3 mx-auto lg:pb-10 pb-0">
                     
