@@ -61,6 +61,7 @@ export function PageChooser(){
             <h1 className={`${h1Class} text-primary text-center lg:pt-16 pt-[7rem]`}>
                 {pages.account? 'My Account' : pages.calendar? 'Schedule Zoom Meeting' : pages.voice? 'Voice Message' : pages.password? 'Change Password' : ''}
             </h1>
+            {/* Account tab switching is done here! */}
             <div className="w-full xxl:px-[11%] xll:px-[5%] lg:px-[3%] md:px-7 ssm:px-4 xs:px-2 px-1 max-w-full my-1 mb-10 table clear-both py-20">
                 
                 <div className={`lg:float-left float-none bg-white rounded-3xl xxl:w-[30%]

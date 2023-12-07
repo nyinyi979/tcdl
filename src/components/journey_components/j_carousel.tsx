@@ -7,6 +7,7 @@ export default function J_Carosusel(){
             <h2 className={`${h3Class} text-light_secondary py-5`}>
             Incredibly accurate and insightful, <br /> and whatelse of their sayings!
             </h2>
+            
             <p className={`xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] xs:w-[86%] w-[85%] mx-auto 
             text-justify font-[400] xs:leading-9 leading-8 text-white xxl:text-[1.6rem] xll:text-[1.4rem] lg:text-[1.3rem] 
             md:text-[1.2rem] xs:text-lg text-sm md:py-6 xs:py-10 py-8`}>

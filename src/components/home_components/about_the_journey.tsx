@@ -12,14 +12,18 @@ export default function Journey(){
             <div className="grid md:grid-cols-3 col-span-2 gap-3 w-full pb-3">
                 
                 {/* image displayed in small screen */}
-                <div id='image1' className="col-span-2 ssm:w-[45%] xsm:w-[70%] w-[97%] mx-auto h-full flex items-center justify-center relative md:hidden">
+                <div id='image1' className={`col-span-2 ssm:w-[45%] xsm:w-[70%] w-[97%] mx-auto h-full 
+                flex items-center justify-center relative md:hidden`}>
                     <img src="/img1.jpg" alt="" className="mx-auto bg-cover w-full h-fit xs:mt-3 mb-3 mt-0 rounded-xl md:float-right float-left"/>
                     <div className='absolute w-[20px] h-[150px] bg-secondary xs:right-3 right-3 bottom-10'></div>
                 </div>
 
-                <div className="col-span-2 xll:mx-auto xll:w-[730px] xll:float-right llg:w-[640px] lg:w-[600px] md:w-[95%] ml-0 xl:ml-16 llg:ml-12 lg:ml-4 w-full">
+                <div className={`col-span-2 xll:mx-auto xll:w-[730px] xll:float-right llg:w-[640px] lg:w-[600px] md:w-[95%] 
+                ml-0 xl:ml-16 llg:ml-12 lg:ml-4 w-full`}>
+
                     <h1 id='about_the_journey' className={`${bannerh1Class} text-secondary lg:pb-7 pb-2 md:mb-0 mb-2 xll:mb-3`}>About the Journey</h1>
                     <div id='about_the_journey_text'>
+                        
                         <p className={`text-gray-200 xxl:text-2xl xxl:leading-10 lg:text-xl md:text-base 
                         xs:text-[17px] text-[15px] font-[400] text-justify xll:leading-[2.6rem] 
                         xll:mb-7 lg:leading-9 md:leading-8 xl:mb-5 xl:leading-9 mb-4 leading-8`}>
@@ -30,6 +34,7 @@ export default function Journey(){
                             readings, propelled by mouth-to-mouth recommendations, became the very basic foundation of 
                             the “The Cards Don't Lie” movement.
                         </p>
+                        
                         <a href="/" className={moreBtn}>More</a>
                     </div>
                 </div>

@@ -52,11 +52,14 @@ function TimeSelectBox(){
         startHour: 12 , startMinute: 0 , startAM: 'AM' , endHour: 11 , endMinute: 59 , endAM: 'PM'
     })
     const [displayedTime , setDisplayTime]= React.useState(`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM} `);
+    // for mapping purpose
     const hours = [1,2,3,4,5,6,7,8,9,10,11,12]
     const minutes = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,
     33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59]
     const AM_PM = ['AM' , 'PM']
-    console.log(time.startHour , displayedTime)
+
+    console.log(time.startHour , displayedTime);
+
     const setStartHour = (value:string) =>{
         setDisplayTime(`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM} `)
         setTime({...time, startHour: Number(value)})
@@ -78,7 +81,6 @@ function TimeSelectBox(){
         setTime({...time, startAM: value})
     }
     const openTimeBox = () =>{
-        console.log("LLL")
         const dropdown_content = document.getElementById('dropdown_content')!;
         const arrow = document.getElementById('arrow')!;
         dropdown_content.style.display = 'block';
@@ -104,7 +106,7 @@ function TimeSelectBox(){
         <div className={`block relative items-center md:py-1 py-0 text-text_violet w-11/12 mx-auto
         xs:w-1/3 `}>
             
-            {/* this is the up arrow of the dropdow box */}
+            {/* this is the up arrow of the dropdown box */}
             <span id="arrow" className='hidden absolute ssm:-bottom-[6px] xs:-bottom-[10px] -bottom-2 z-20 left-4
             border-l-[10px] border-l-transparent border-r-transparent border-r-[10px] border-b-[10px] 
             border-b-[#f5f5f5] w-0 h-0'></span>
@@ -119,45 +121,51 @@ function TimeSelectBox(){
             
             <div className='arial dropdown relative'>
 
-
-                
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
                     font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1
-                    xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray outline-none 
-                    text-text_violet placeholder:text-text_violet tracking-tighter`} type="text" name="daterange" id="date" 
-                    placeholder="05:00 AM  - 05:30 PM" value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
+                    xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px]
+                    border-light_gray outline-none text-text_violet placeholder:text-text_violet tracking-tighter`} 
+                    type="text" name="daterange" id="date" placeholder="05:00 AM  - 05:30 PM" 
+                    value={`${time.startHour < 9 ? '0' + time.startHour : time.startHour}:${time.startMinute < 9 ? '0' + time.startMinute : time.startMinute} ${time.startAM} - ${time.endHour < 9 ? '0' + time.endHour : time.endHour}:${time.endMinute < 9 ? '0' + time.endMinute : time.endMinute} ${time.endAM}`} onChange={(e)=>{setTimeForInputBox(e.target.value)}}/>
+                
                 {/* dropdown content */}
                 <div onClick={(e)=>{e.stopPropagation()}} id='dropdown_content' className='absolute xs:w-80 w-[280px] h-fit 
                 bg-white pt-5 ssm:left-0 xs:-left-20 -left-10 top-[114%] hidden border-[1px] border-stone-300 ' style={{fontFamily:'initial'}}>
                     <div>
 
-                        <select className={selectClass} name="s_hours" id="s_hours" defaultValue={time.startHour} onChange={(e)=>{setStartHour(e.target.value)}}>
+                        <select className={selectClass} name="s_hours" id="s_hours" 
+                        defaultValue={time.startHour} onChange={(e)=>{setStartHour(e.target.value)}}>
                             {hours.map((hour)=>(
                                 <option value={hour} key={hour}>{hour}</option>
                             ))}
                         </select> : 
-                        <select className={selectClass} name="s_mins" id="s_mins" defaultValue={time.startMinute} onChange={(e)=>{setStartMinute(e.target.value)}}>
+                        <select className={selectClass} name="s_mins" id="s_mins" 
+                        defaultValue={time.startMinute} onChange={(e)=>{setStartMinute(e.target.value)}}>
                             {minutes.map((minute)=>(
                                 <option value={minute} key={minute}>{minute}</option>
                             ))}
                         </select> :
-                        <select className={selectClass} name="s_am" id="s_am" defaultValue={time.startAM} onChange={(e)=>{setStartAM(e.target.value)}}>
+                        <select className={selectClass} name="s_am" id="s_am" 
+                        defaultValue={time.startAM} onChange={(e)=>{setStartAM(e.target.value)}}>
                             {AM_PM.map((value)=>(
                                 <option value={value} key={value}>{value}</option>
                             ))}
                         </select>   
 
-                        <select className={selectClass} name="e_hours" id="e_hours" defaultValue={time.endHour} onChange={(e)=>{setEndHour(e.target.value)}}>
+                        <select className={selectClass} name="e_hours" id="e_hours" 
+                        defaultValue={time.endHour} onChange={(e)=>{setEndHour(e.target.value)}}>
                             {hours.map((hour)=>(
                                 <option value={hour} key={hour}>{hour}</option>
                             ))}
                         </select> : 
-                        <select className={selectClass} name="e_mins" id="e_mins" defaultValue={time.endMinute} onChange={(e)=>{setEndMinute(e.target.value)}}>
+                        <select className={selectClass} name="e_mins" id="e_mins" 
+                        defaultValue={time.endMinute} onChange={(e)=>{setEndMinute(e.target.value)}}>
                             {minutes.map((minute)=>(
                                 <option value={minute} key={minute}>{minute}</option>
                             ))}
                         </select> :
-                        <select className={selectClass} name="e_am" id="e_am" defaultValue={time.endAM} onChange={(e)=>{setEndAM(e.target.value)}}>
+                        <select className={selectClass} name="e_am" id="e_am" 
+                        defaultValue={time.endAM} onChange={(e)=>{setEndAM(e.target.value)}}>
                             {AM_PM.map((value)=>(
                                 <option value={value} key={value}>{value}</option>
                             ))}
@@ -165,6 +173,7 @@ function TimeSelectBox(){
 
                     </div>
 
+                    {/* bottom text in the dropdown box */}
                     <div className='clear-both table my-2 w-full border-t-[1px] border-stone-300 py-2'>
                         <div className='xxs:float-right float-left xxs:text-xs text-[10px] font-[500] font-sans'>
 
@@ -184,11 +193,11 @@ function TimeSelectBox(){
                             </button>
 
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
+        
         <a href="" className={`block mx-auto oswald font-[500] md:float-right md:mt-0 mt-2 
         xxl:pt-4 xll:w-[14rem] xll:text-xl xl:w-[12.5rem] xl:h-[3.8rem] xl:pt-4
         xs:w-40 xs:h-[3.3rem] w-32 h-[3rem] pt-3 text-base bg-primary text-white hover:bg-secondary hover:text-black

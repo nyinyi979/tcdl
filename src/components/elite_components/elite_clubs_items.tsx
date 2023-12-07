@@ -46,9 +46,15 @@ export default function EliteClubItems(){
             <div className="grid md:grid-cols-2 grid-cols-1 llg:w-[76%] lg:w-[88%] md:w-11/12 xs:w-[90%] w-10/12 lg:gap-16 md:gap-8 gap-12 mx-auto text-left xll:py-10 lg:py-5">
 
                 {ClubItems.map((Item)=>(
-                <div key={Math.random()*1000} className="rounded-xl lg:h-[28rem] md:h-[26rem] md:w-full ssm:w-[74%] relative pb-24 w-fit mx-auto h-fit bg-gray-200 mt-4">
-                    <div className={`oswald font-[500] w-full md:text-3xl text-2xl rounded-t-xl xl:px-8 px-5 py-5 text-white bg-gradient-to-r ${Item.bg}`}>{Item.name}</div>
-                    
+
+                <div key={Math.random()*1000} className={`rounded-xl lg:h-[28rem] md:h-[26rem] 
+                md:w-full ssm:w-[74%] relative pb-24 w-fit mx-auto h-fit bg-gray-200 mt-4`}>
+
+                    {/* heading */}
+                    <div className={`oswald font-[500] w-full md:text-3xl text-2xl rounded-t-xl xl:px-8 px-5 py-5 
+                    text-white bg-gradient-to-r ${Item.bg}`}>{Item.name}</div>
+
+                    {/* lists */}
                     <div className="pb-3 lg:px-5 px-3">
                         <ul className="c pl-1 pt-5 llg:text-xl ssm:text-lg xs:text-lg text-base font-[500] ml-4 text-t_violet llg:leading-[2.5rem] leading-[2rem]">
                             {Item.texts.map((text)=>(
@@ -57,10 +63,12 @@ export default function EliteClubItems(){
                         </ul>
                     </div>
                     
+                    {/* price */}
                     <div className="absolute left-7 bottom-10 text-gray-700 font-[600]">
                         <span className="oswald llg:text-5xl lg:text-4xl xs:text-3xl text-2xl text-[#4b2c64] font-[800]">${Item.price}</span>
                         <sub className="oswald relative bottom-0 lg:text-[27px] xl:text-2xl xs:text-xl text-lg font-[600]">/Month</sub>
                     </div>
+
                     <div className="absolute md:right-8 sm:right-10 sm:bottom-8 xl:px-6 xl:py-5 lg:px-3 lg:py-4 lg:text-base xl:text-lg 
                     sm:py-4 sm:px-4 xs:text-base text-xs px-3 py-3 right-5 xs:bottom-10 bottom-9 font-bold cursor-pointer
                     rounded-full text-white bg-primary hover:bg-secondary hover:text-black duration-500">
@@ -69,8 +77,6 @@ export default function EliteClubItems(){
                 </div>
                 ))}    
                 
-              
-
             </div>
         </div>
     )

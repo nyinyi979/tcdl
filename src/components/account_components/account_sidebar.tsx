@@ -1,14 +1,15 @@
 export default function AccountSidebar(){
+    const liClass = 'px-3 py-[2px]';
     return(
         <>
             <div className="border-t-2 border-t-light_gray block">
 
                 <div className="py-6 xl:py-8 w-fit lg:w-full mx-auto xl:pl-20 lg:px-10 px-16">
                     <ul className="d font-[600] text-[#4b2c64] w-full leading-7 md:text-base text-sm">
-                        <li className="px-3 py-[2px]">Help</li>
-                        <li className="px-3 py-[2px]">Contact Us </li>
-                        <li className="px-3 py-[2px]">Terms and Condition </li>
-                        <li className="px-3 py-[2px]">Privacy Policy</li>
+                        <li className={liClass}>Help</li>
+                        <li className={liClass}>Contact Us </li>
+                        <li className={liClass}>Terms and Condition </li>
+                        <li className={liClass}>Privacy Policy</li>
                     </ul>
                 </div>
             </div>

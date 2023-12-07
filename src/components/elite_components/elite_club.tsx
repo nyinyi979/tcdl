@@ -6,11 +6,15 @@ export default function Elite_Club(){
             <h1 className={`${h2Class} py-2`}>
                 Elite Club Privileges
             </h1>
+
             <h1 className={`${h3Class} text-[#612a60] px-2 md:py-4`}>
                 Take a seat, walk along with the reader <br className="xs:hidden "/> for<br />
                 your personalize coaching and healing
             </h1>
-            <div className="xll:w-[1150px] xl:w-[80%] llg:w-[90%] w-[95%] mx-auto py-4 text-light_violet font-[400] md:leading-[2.7rem] sm:leading-10 leading-8 md:text-xl xs:leading-8 xs:text-lg text-base text-justify">
+            
+            <div className={`xll:w-[1150px] xl:w-[80%] llg:w-[90%] w-[95%] mx-auto py-4 text-light_violet font-[400] 
+            md:leading-[2.7rem] sm:leading-10 leading-8 md:text-xl xs:leading-8 xs:text-lg text-base text-justify`}>
+                
                 <p className="py-2">
                     In 2024, TCDL introduces the Elite Club to provide its members with more individualized readings, 
                     deeper spiritual insights, and more frequent consultations and coaching sessions.

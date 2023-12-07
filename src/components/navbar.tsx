@@ -148,6 +148,7 @@ export default function Navbar(props:{currentLink:string}){
                 </div>
 
             </div>
+            
             {/* drawer component */}
             <div id='drawers' className='lg:hidden fixed right-[-400px] hidden top-0 bg-[#37213c] w-64 h-full z-[60]'>
                 <div className='inline-block w-fit h-fit text-white text-xl p-3 hover:text-primary cursor-pointer' onClick={()=>{DrawerOutro.current!.restart()}}><ImCross /></div>

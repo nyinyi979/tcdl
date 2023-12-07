@@ -12,6 +12,7 @@ export default function FAQS(){
                 <div className={`text-white rounded-l-full ${pillClass} bg-[#372c44] hover:text-white`}>English</div>
                 <div className={`text-violet rounded-r-full ${pillClass} bg-[#ccc5d4] font-bold hover:text-white`}>မြန်မာ</div>
             </div>
+            
             { /* adjust the width and padding of the whole FAQ page here */}
             <div className={`xll:w-[1150px] xl:w-[1000px] llg:w-[1000px] lg:w-[97%] md:w-[96%] xs:w-[94%] w-[90%]
                 mx-auto font-[400] lg:leading-[50px] md:leading-10 leading-9 text-left `}>

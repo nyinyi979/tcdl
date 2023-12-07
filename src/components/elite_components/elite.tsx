@@ -12,14 +12,15 @@ export default function TheElite(){
 
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:py-5 xl:px-10 lg:px-8 ssm:px-3 px-3 py-8 mx-auto">
 
+                {/* top image */}
                 <div id='image' className="col-span-1 xs:w-full w-[85%] mx-auto relative md:hidden block">
                     <img src="/pic1.png" alt="" className="bg-cover w-[20rem] h-fit md:mt-10 mt-0 rounded-xl my-3 mx-auto"/>
                 </div>
                 
-                <div className={`xxl:w-[78%] xll:w-[84%] xl:w-[630px] llg:w-[88%] lg:w-[92%] md:w-[90%] xs:w-[95.5%] w-[88%] lg:ml-0 lg:col-span-2
-                col-span-2 text-white lg:text-xl md:text-[19px] xs:text-lg text-base mx-auto llg:mx-auto text-justify 
-                lg:leading-[35px] leading-[35px] xs:leading-10 
-                llg:pr-6 md:pr-4 font-[400]`}>
+                <div className={`lg:col-span-2 xxl:w-[78%] xll:w-[84%] xl:w-[630px] llg:w-[88%] lg:w-[92%] md:w-[90%] xs:w-[95.5%] w-[88%] 
+                lg:ml-0 col-span-2 text-white lg:text-xl md:text-[19px] xs:text-lg text-base mx-auto llg:mx-auto text-justify 
+                lg:leading-[35px] leading-[35px] xs:leading-10 llg:pr-6 md:pr-4 font-[400]`}>
+
                     <p className="py-2">
                         Magic exists in you. But most of us don't know about it and completely untapped.
                         We were born with this ability, therefore you've always had it. It's a quest you must undertake;
@@ -51,6 +52,7 @@ export default function TheElite(){
                     </p>
                 </div>
 
+                {/* side imag */}
                 <div id='image' className="md:block hidden col-span-1 w-full xl:mr-20 mr-12 relative">
                     <img src="/pic1.png" alt="" className="bg-cover w-fit xl:w-[22rem] xl:h-[22rem] lg:h-[20rem] h-[15rem] xl:mt-8 mt-5 rounded-xl float-left"/>
                 </div>
