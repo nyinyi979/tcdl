@@ -113,14 +113,14 @@ export default function Navbar(props:{currentLink:string}){
             {/* navigation bar starts from here */}
             <div id='navbar' className="z-50 lg:relative xxl:pt-[80px] xl:pt-[46px] lg:h-fit lg:py-10 py-5 lg:bg-transparent fixed top-0 right-0 xs:h-16 h-[4.3rem] px-2 w-full clear-both table bg-black/80">
 
-                <div className={`xxl:w-[14rem] xxl:left-[9%] xxl:top-[6rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 
+                <div className={`xxl:w-[13rem] xxl:left-[9%] xxl:top-[6rem] xll:top-[3.7rem] xll:left-10 xll:w-[11rem] xl:w-[8.6rem] xl:top-8 
                 lg:top-8 lg:left-6 lg:w-[7.5rem] left-3 top-1 xs:w-[5.5rem] w-[4.5rem] h-full 
                 bg-cover float-left absolute`}>
                     <a href="/"><img id='img' src="/The Card Don't Lie - TDCL - Tarot - Rune Logo- 01.png" alt="Logo"/></a>
                 </div>
 
                 {/* links */}
-                <div className='mt-0 float-right xxl:pr-[10%] xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
+                <div className='mt-0 float-right xxl:pr-[8.5%] xll:pr-12 xl:pr-5 lg:pr-2 pr-0'>
                     <div className='lg:block mr-0 hidden float-left xll:pt-16 xll:pr-8 lg:pt-6'>
                         <li className={liClass}>
                             <Link to="/" className={`${linkClass} ${props.currentLink === '/'? 'text-primary underline_active' : 'text-secondary '}`}>Home</Link> 
