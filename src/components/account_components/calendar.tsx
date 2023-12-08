@@ -122,7 +122,7 @@ function TimeSelectBox(){
             <div className='arial dropdown relative'>
 
                 <input onClick={(e)=>{e.stopPropagation()}} onFocus={openTimeBox} className={`oswald z-[10] mx-auto block
-                    font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1
+                    font-[600] relative w-full xxs:h-16 ssm:px-8 ssm:py-2 px-5 xs:py-4 py-1 bg-white
                     xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px]
                     border-light_gray outline-none text-text_violet placeholder:text-text_violet tracking-tighter`} 
                     type="text" name="daterange" id="date" placeholder="05:00 AM  - 05:30 PM" 
