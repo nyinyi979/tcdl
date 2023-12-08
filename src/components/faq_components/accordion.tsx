@@ -2,7 +2,7 @@ import { h3FAQ } from "../utilities";
 
 export default function FAQAccordion(){
     const items = [1 , 2 , 3, 4 , 5];    
-    const pClass = 'xl:leading-[34px] text-[#443548] font-[400] leading-[30px] align-baseline bg-transparent md:text-[19px] text-base';
+    const pClass = 'xl:leading-[34px] text-[#443548] font-[400] leading-[30px] align-baseline bg-transparent md:text-base text-[14px]';
     const questionClass = 'text-[#443548] font-[600] md:text-[19px] text-base h-fit leading-0 '
     return(
         <div className="border-t-[3px] border-gray-300 pt-7 mt-10">
