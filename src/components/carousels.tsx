@@ -95,7 +95,7 @@ export function VideoCarousel(){
     const playBtn = `md:w-20 md:h-20 w-16 h-16 [background-image:url('/play-btn.png')] absolute bg-no-repeat 
     hover:[background-image:url('/play-btn-hover.png')] duration-500 bg-cover
     xll:top-[30%] md:top-[13%] lg:top-[24%] ssm:top-[24%] xsm:top-[18%] xs:top-[20%] xxs:top-[23%] top-[14%]
-    xl:left-[37%] lg:left-[37%] xxs:left-[35%] lg:left-[30%] md:left-[29%] ssm:left-[36%] xs:left-[36%] xsm:left-[33%] left-[30%] 
+    xl:left-[38%] lg:left-[37%] xxs:left-[35%] lg:left-[30%] md:left-[29%] ssm:left-[36%] xs:left-[36%] xsm:left-[33%] left-[30%] 
     z-10 text-6xl p-3 cursor-pointer`
     return(
         <>
