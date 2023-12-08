@@ -42,7 +42,8 @@ export default {
   plugins: [require('tailwind-scrollbar')({ nocompatible: true }), require('daisyui'),],
   daisyui:{
     theme: false,
-    prefix: 'ds-'
+    prefix: 'ds-',
+    base: false,
   },
 }
 //272228 text violet
