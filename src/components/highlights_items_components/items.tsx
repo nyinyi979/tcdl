@@ -3,7 +3,8 @@ import { HighLightItemHeading } from "./heading";
 
 export default function HighLightItem({id}:{id: string}){
     console.log(id);
-    const pClass = 'lg:my-3 md:my-2 my-1 xxl:text-[25px] font-[400] xxl:leading-10 lg:leading-9 md:text-[19px] text-[#443548] text-lg text-black text-left leading-9'
+    const pClass = `xxl:text-[25px] font-[400] xxl:leading-10 lg:leading-9 md:text-[19px] text-lg 
+    lg:my-3 md:my-2 my-1 text-[#443548] text-black text-left leading-9`
     const imgClass = "w-full h-[95%] bg-cover rounded-md self-center";
     const divClass = 'my-4';
     //THIS IS A DATA STYLE FOR DYNAMIC RENDERING, YOU CAN MATCH THE ID AND RENDER
@@ -128,9 +129,15 @@ export default function HighLightItem({id}:{id: string}){
         <HighLightItemHeading title={ItemTextAndImg[0].title}/>
         <div className=" w-full bg-white md:pb-20 xl:pb-32 pb-10 xs:pb-16 xl:pt-16 lg:py-12 md:py-8 py-6">
             <div className="xll:w-[1140px] xl:w-[1000px] lg:w-[970px] xs:w-[94%] w-[88%] h-fit mx-auto">
+                
                 <div>
-                    <h1 className="oswald font-[600] text-dark_violet xxl:text-5xl xl:text-[40px] md:text-[34px] xs:text-[27px] text-[25px] trackingwide">{ItemTextAndImg[0].title}</h1>
-                    <h2 className="xl:pt-8 md:text-lg lg:pt-6 md:pt-5 pt-3 align-baseline font-[400] text-[#443548]">Posted on 2023/10/02</h2>
+                    <h1 className={`oswald font-[600] text-dark_violet 
+                    xxl:text-5xl xl:text-[40px] md:text-[34px] xs:text-[27px] text-[25px] trackingwide`}>
+                        {ItemTextAndImg[0].title}
+                    </h1>
+                    <h2 className={`xl:pt-8 md:text-lg lg:pt-6 md:pt-5 pt-3 align-baseline font-[400] text-[#443548]`}>
+                        Posted on 2023/10/02
+                    </h2>
                 </div>
         
                 <div className={divClass}>

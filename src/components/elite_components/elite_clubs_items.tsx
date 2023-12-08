@@ -37,9 +37,18 @@ export default function EliteClubItems(){
                 Quality of reading remains consistent <br />
                 across all membership levels.
             </h1>
+
             <div className="w-fit h-fit mx-auto flex my-8">
-                <div className="rounded-l-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 font-bold bg-primary text-white duration-500 cursor-pointer">English</div>
-                <div className="text-[#4b2c64] rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 bg-gray-300 font-bold hover:bg-primary hover:text-white duration-500 cursor-pointer">မြန်မာ</div>
+                <div className={`rounded-l-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl w-32 px-7 py-3 
+                font-bold bg-primary text-white duration-500 cursor-pointer`}>
+                    English
+                </div>
+
+                <div className={`text-[#4b2c64] rounded-r-full lg:w-40 lg:px-12 lg:py-5 lg:text-2xl text-xl 
+                w-32 px-7 py-3 bg-gray-300 font-bold hover:bg-primary hover:text-white duration-500 
+                cursor-pointer`}>
+                    မြန်မာ
+                </div>
             </div>
 
 
@@ -65,8 +74,12 @@ export default function EliteClubItems(){
                     
                     {/* price */}
                     <div className="absolute left-7 bottom-10 text-gray-700 font-[600]">
-                        <span className="oswald llg:text-5xl lg:text-4xl xs:text-3xl text-2xl text-[#4b2c64] font-[800]">${Item.price}</span>
-                        <sub className="oswald relative bottom-0 lg:text-[27px] xl:text-2xl xs:text-xl text-lg font-[600]">/Month</sub>
+                        <span className="oswald llg:text-5xl lg:text-4xl xs:text-3xl text-2xl text-[#4b2c64] font-[800]">
+                            ${Item.price}
+                        </span>
+                        <sub className="oswald relative bottom-0 lg:text-[27px] xl:text-2xl xs:text-xl text-lg font-[600]">
+                            /Month
+                        </sub>
                     </div>
 
                     <div className="absolute md:right-8 sm:right-10 sm:bottom-8 xl:px-6 xl:py-5 lg:px-3 lg:py-4 lg:text-base xl:text-lg 

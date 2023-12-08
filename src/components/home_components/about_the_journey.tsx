@@ -14,14 +14,19 @@ export default function Journey(){
                 {/* image displayed in small screen */}
                 <div id='image1' className={`col-span-2 ssm:w-[45%] xsm:w-[70%] w-[97%] mx-auto h-full 
                 flex items-center justify-center relative md:hidden`}>
-                    <img src="/img1.jpg" alt="" className="mx-auto bg-cover w-full h-fit xs:mt-3 mb-3 mt-0 rounded-xl md:float-right float-left"/>
-                    <div className='absolute w-[20px] h-[150px] bg-secondary xs:right-3 right-3 bottom-10'></div>
+                    <img src="/img1.jpg" alt="" className={`mx-auto bg-cover w-full h-fit xs:mt-3 mb-3 mt-0 
+                    rounded-xl md:float-right float-left`}/>
+
+                    {/* yellow block */}
+                    <div className={`absolute w-[20px] h-[150px] bg-secondary xs:right-3 right-3 bottom-10`}></div>
                 </div>
 
                 <div className={`col-span-2 xll:mx-auto xll:w-[730px] xll:float-right llg:w-[640px] lg:w-[600px] md:w-[95%] 
                 ml-0 xl:ml-16 llg:ml-12 lg:ml-4 w-full`}>
 
-                    <h1 id='about_the_journey' className={`${bannerh1Class} text-secondary lg:pb-7 pb-2 md:mb-0 mb-2 xll:mb-3`}>About the Journey</h1>
+                    <h1 id='about_the_journey' className={`${bannerh1Class} text-secondary lg:pb-7 pb-2 md:mb-0 mb-2 xll:mb-3`}>
+                        About the Journey
+                    </h1>
                     <div id='about_the_journey_text'>
                         
                         <p className={`text-gray-200 xxl:text-2xl xxl:leading-10 lg:text-xl md:text-base 
@@ -41,9 +46,13 @@ export default function Journey(){
 
                 {/* image displayed in large screen */}
                 <div id='image2' className="col-span-1 w-[100%] h-full mx-auto relative md:block hidden">
-                    <img src="/img1.jpg" alt="" className={`bg-cover xxl:float-left xxl:w-[80%] xll:h-[90%] xl:w-[90%] lg:w-[88%] xl:h-[94%] lg:h-[90%] md:w-[96%] 
-                    md:h-[89%] lg:mt-9 mt-12 rounded-2xl float-right xl:mr-0 lg:mr-4 my-3`}/>
-                    <div className='absolute llg:w-[30px] llg:h-[200px] w-[20px] lg:h-[150px] h-[140px] bg-secondary xl:-right-2 llg:right-1 lg:bottom-6 right-7 bottom-4'></div>
+                    <img src="/img1.jpg" alt="" className={`xxl:w-[80%] xl:w-[90%] lg:w-[88%] md:w-[96%] 
+                    xll:h-[90%] xl:h-[94%] lg:h-[90%] md:h-[89%]bg-cover xxl:float-left 
+                    lg:mt-9 mt-12 rounded-2xl float-right xl:mr-0 lg:mr-4 my-3`}/>
+
+                    {/* yellow block */}
+                    <div className={`absolute llg:w-[30px] llg:h-[200px] w-[20px] lg:h-[150px] h-[140px] 
+                    bg-secondary xl:-right-2 llg:right-1 lg:bottom-6 right-7 bottom-4`}></div>
                 </div>
 
             </div>

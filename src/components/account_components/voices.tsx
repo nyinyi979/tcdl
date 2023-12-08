@@ -31,7 +31,9 @@ export default function Voices(){
                                     {/* if it is not sender , the image  would be on the left*/}
                                     {message.sender? 
                                     '' :
-                                    <img className="float-left xs:-mt-1 mr-4 ssm:w-20 ssm:h-20 xs:w-12 xs:h-12 w-10 -mt-3 h-10 rounded-full border-[3px] border-[#755f83]/80 p-[2px]" src="/pic1.png" alt="sender" />
+                                    <img src="/pic1.png" alt="sender"
+                                    className={`float-left xs:-mt-1 mr-4 ssm:w-20 ssm:h-20 xs:w-12 xs:h-12 w-10 -mt-3 h-10 
+                                    rounded-full border-[3px] border-[#755f83]/80 p-[2px]`}/>
                                     }
                             
                                     
@@ -42,11 +44,16 @@ export default function Voices(){
                                     
                                     {/* if it is sender , the image  would be on the right*/}
                                     {message.sender? 
-                                    <img className="float-right ml-4 xs:-mt-1 ssm:w-20 ssm:h-20 xs:w-12 xs:h-12 w-10 -mt-3 h-10 rounded-full border-[3px] border-[#755f83]/80 p-[2px]" src="/upload-img.png" alt="sender" />
+                                    <img src="/upload-img.png" alt="sender"
+                                    className={`float-right ml-4 xs:-mt-1 ssm:w-20 ssm:h-20 xs:w-12 xs:h-12 w-10 -mt-3 h-10 
+                                    rounded-full border-[3px] border-[#755f83]/80 p-[2px]`} />
                                     : ''}
                                 </div>
                                 
-                                <span className={`block font-[400] md:text-lg xs:text-base text-sm mt-2 ${message.sender? 'float-right' : 'float-left'} text-[#5c545fbe]`}>{message.date} {message.time} </span>
+                                <span className={`block font-[400] md:text-lg xs:text-base text-sm mt-2
+                                ${message.sender? 'float-right' : 'float-left'} text-[#5c545fbe]`}>
+                                    {message.date} {message.time} 
+                                </span>
                             </div>
                         ))}
                     </div>
@@ -56,8 +63,11 @@ export default function Voices(){
             
             <div className="border-t-2 border-t-light_blue md:pt-8 py-4 w-full">
                 <div className="clear-both table w-full md:pl-10 md:pr-16 px-5">
-                    <h1 className="float-left md:ml-10 ml-0 md:mt-2 mt-0 text-sm text-text_violet w-3/4">Your voice message can be recorded by clicking on the mic icon</h1>
-                    <img src="/sound-icon.png" alt="sound" className="md:w-[70px] md:h-[70px] w-10 h-10 md:-mt-4 mt-0 float-right cursor-pointer"/>
+                    <h1 className="float-left md:ml-10 ml-0 md:mt-2 mt-0 text-sm text-text_violet w-3/4">
+                        Your voice message can be recorded by clicking on the mic icon
+                    </h1>
+                    <img src="/sound-icon.png" alt="sound" 
+                    className="md:w-[70px] md:h-[70px] w-10 h-10 md:-mt-4 mt-0 float-right cursor-pointer"/>
                 </div>
             </div>
         </div>

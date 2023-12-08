@@ -16,8 +16,8 @@ export default function TheJourney(){
                     there arises a quest to uncover significance.
                 </h1>
 
-                <div className={`text-white xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[960px] md:w-[92%] xs:w-[88%] w-[81%] 
-                font-[400] text-justify mx-auto xll:text-2xl xll:leading-[3rem] md:text-xl text-lg 
+                <div className={`xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[960px] md:w-[92%] xs:w-[88%] w-[81%] 
+                text-white font-[400] text-justify mx-auto xll:text-2xl xll:leading-[3rem] md:text-xl text-lg 
                 md:leading-9 leading-8 md:pb-8 py-2`}>
                     Two immense incidents: Covid-19 pandemic, as well as the political unrest in 
                     Myanmar during 2020 - 2021 served as significant catalysts for her awakening, 

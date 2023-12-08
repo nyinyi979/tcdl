@@ -91,8 +91,12 @@ export function PageChooser(){
                     </div>
                      <AccountSidebar />
                 </div>
-                <div className='lg:float-right float-none xxl:w-[68%] xll:w-[71%] lg:w-[70%] w-[94%] mx-auto lg:h-[47rem] h-fit bg-white rounded-3xl py-3'>
-                    {pages.account? <Accounts /> : pages.calendar? <Calendar /> : pages.voice? <Voices /> : pages.password? <Password /> : ''}
+                <div className={`lg:float-right float-none xxl:w-[68%] xll:w-[71%] lg:w-[70%] w-[94%] mx-auto lg:h-[47rem] 
+                h-fit bg-white rounded-3xl py-3`}>
+                    {pages.account? <Accounts /> : 
+                    pages.calendar? <Calendar /> : 
+                    pages.voice? <Voices /> : 
+                    pages.password? <Password /> : ''}
                 </div>
             
             </div>

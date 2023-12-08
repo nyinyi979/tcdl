@@ -13,9 +13,9 @@ export default function Carosusel(){
                 Sharing is caring
             </h2>
 
-            <p id='car_text' className={`xll:w-[1160px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] xs:w-[86%] w-[85%] mx-auto 
+            <p id='car_text' className={`xll:w-[1160px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] xs:w-[86%] w-[85%] 
             text-justify font-[400] xs:leading-9 leading-8 text-white xxl:text-[1.6rem] lg:text-[1.4rem] 
-            md:text-[1.2rem] xs:text-lg text-sm lg:py-10 md:py-6 xs:py-10 py-8`}>
+            md:text-[1.2rem] xs:text-lg text-sm lg:py-10 md:py-6 xs:py-10 py-8 mx-auto`}>
                 In order to create a more interconnected and compassionate world, the founder and members 
                 share their insights, knowledge, and spiritual experiences with others. Substantial value and
                 worth reading articles.

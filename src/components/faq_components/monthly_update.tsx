@@ -1,7 +1,8 @@
 import { h3FAQ } from "../utilities";
 
 export default function Monthly(){
-    const pClass = 'lg:my-[13px] xl:my-5 xl:leading-[34px] my-3 text-light_violet font-[400] leading-[30px] align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base';
+    const pClass = `lg:my-[13px] xl:my-5 xl:leading-[34px] my-3 text-light_violet font-[400] leading-[30px] 
+    align-baseline bg-transparent md:text-[19px] xs:text-[18px] text-base`;
 
     return(
         <> 

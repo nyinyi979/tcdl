@@ -15,9 +15,9 @@ export default function Private(){
                 A Private Group of <br /> Seeking and Awakening Individuals
             </h2>
 
-            <div id='private_text' className={`xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[85%] font-[400] text-justify 
-            mx-auto  xxl:text-2xl xxl:leading-[44px] xl:text-xl xl:leading-[2.4rem] lg:text-xl lg:leading-[2.3rem] md:leading-10 xs:leading-9 xs:text-lg text-base
-            pt-3 leading-9 md:pt-6`}>
+            <div id='private_text' className={`xll:w-[1140px] xl:w-[990px] llg:w-[980px] lg:w-[950px] md:w-[94%] ssm:w-[88%] xs:w-[86%] w-[85%] 
+            font-[400] text-justify mx-auto xxl:leading-[44px] xl:leading-[2.4rem] lg:leading-[2.3rem] md:leading-10 xs:leading-9 
+            xs:text-lg text-base xxl:text-2xl xl:text-xl lg:text-xl pt-3 leading-9 md:pt-6`}>
                 The initial phase of the trip was tarot card readings, but it has since expanded to encompass 
                 many forms of energy healing, runic readings, astrological/birth chart readings, spiritual practices, 
                 and even the acquisition of knowledge in global languages and guidance. Consequently, she has made the

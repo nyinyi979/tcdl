@@ -36,8 +36,12 @@ export default function FAQ(){
     return(
         <>
             <Navbar currentLink="/faq"/>
-            <div className={`${bannerh1Class} mt-16 lg:mt-0 mr-3 text-primary text-center pt-[2.3rem]`}>Q & A</div>
-            <div className={`${bannerh2Class} xl:pb-[66px] lg:pt-6 pt-1 pb-12 text-secondary text-center`}>Membership Privileges</div>
+            <div className={`${bannerh1Class} mt-16 lg:mt-0 mr-3 text-primary text-center pt-[2.3rem]`}>
+                Q & A
+            </div>
+            <div className={`${bannerh2Class} xl:pb-[66px] lg:pt-6 pt-1 pb-12 text-secondary text-center`}>
+                Membership Privileges
+            </div>
             <FAQS />
             <Communities />
             <Footer />
