@@ -39,7 +39,11 @@ export default {
       }
     },
   },
-  plugins: [require('tailwind-scrollbar')({ nocompatible: true })]
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true }), require('daisyui'),],
+  daisyui:{
+    theme: false,
+    prefix: 'ds-'
+  },
 }
 //272228 text violet
 //ef4165 - pink

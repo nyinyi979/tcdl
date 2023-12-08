@@ -1,4 +1,5 @@
 import { h3FAQ, h3FAQ2 } from "../utilities";
+import FAQAccordion from "./accordion";
 import Monthly from "./monthly_update";
 import PrivacyPolicy from "./privacy_policy";
 export default function FAQS(){
@@ -110,6 +111,7 @@ export default function FAQS(){
                 you would have to adjust it for two times */}
                 <PrivacyPolicy />
                 <Monthly />
+                <FAQAccordion />
             </div>
         </div>
     )
