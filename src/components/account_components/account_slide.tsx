@@ -16,7 +16,7 @@ export default function Accounts(){
     block w-fit h-fit py-1 px-5 bg-white rounded-full text-[#696769] md:text-base text-sm`
 
     //classes for input , input container, required input container 
-    const inputClass =`z-10 font-[600] relative w-[100%] lg:h-16 h-12 ssm:px-8 ssm:py-2 px-5 py-4 
+    const inputClass =`z-10 font-[600] relative w-[100%] lg:h-16 h-12 ssm:px-8 ssm:py-2 px-5 py-4 bg-white
     xxl:text-xl xl:text-lg md:text-base text-sm leading-10 rounded-l-full rounded-r-full border-[2.4px] border-light_gray 
     outline-none text-text_violet placeholder:text-text_violet`
     
