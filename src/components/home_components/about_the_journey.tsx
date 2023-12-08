@@ -44,15 +44,15 @@ export default function Journey(){
                     </div>
                 </div>
 
-                {/* image displayed in large screen */}
+                {/* image displayed in medium screen */}
                 <div id='image2' className="col-span-1 w-[100%] h-full mx-auto relative md:block hidden">
                     <img src="/img1.jpg" alt="" className={`xxl:w-[80%] xl:w-[90%] lg:w-[88%] md:w-[96%] 
-                    xll:h-[90%] xl:h-[94%] lg:h-[90%] md:h-[89%]bg-cover xxl:float-left 
+                    xll:h-[90%] xl:h-[94%] lg:h-[90%] md:h-[89%] bg-cover xxl:float-left 
                     lg:mt-9 mt-12 rounded-2xl float-right xl:mr-0 lg:mr-4 my-3`}/>
 
                     {/* yellow block */}
                     <div className={`absolute llg:w-[30px] llg:h-[200px] w-[20px] lg:h-[150px] h-[140px] 
-                    bg-secondary xl:-right-2 llg:right-1 lg:bottom-6 right-7 bottom-4`}></div>
+                    bg-secondary xl:-right-2 llg:right-1 md:right-3 lg:bottom-6 right-7 bottom-4`}></div>
                 </div>
 
             </div>

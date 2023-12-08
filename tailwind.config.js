@@ -41,7 +41,7 @@ export default {
   },
   plugins: [require('tailwind-scrollbar')({ nocompatible: true }), require('daisyui'),],
   daisyui:{
-    theme: false,
+    themes: [],
     prefix: 'ds-',
     base: false,
   },
